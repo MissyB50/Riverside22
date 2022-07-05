@@ -52,7 +52,7 @@
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingManure.xml" position="-686.588 60 904.592" rotation="0 -90 0"/>
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingSlurry.xml" position="-681.296 60 891.313" rotation="0 -180 0"/>
     <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyFarm.xml" position="644.695 60 -254.505" rotation="0 0 0"/>
-    <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyFarmNorth.xml" position="-970.823 76.173 -925.336" rotation="0 0 0"/>
+    <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyNorthFarm.xml" position="-970.823 76.173 -925.336" rotation="0 0 0"/>
 
 
 <!--productions-->

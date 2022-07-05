@@ -149,7 +149,6 @@
                 <waterPlace node="waterPlace7" />
                 <waterPlace node="waterPlace8" />
                 <waterPlace node="waterPlace9" />
-                <waterPlace node="waterPlace10" />
             </waterPlaces>
         </water>
     </husbandry>
@@ -191,7 +190,6 @@
         <i3dMapping id="waterPlace7" node="0>8|2|6" />
         <i3dMapping id="waterPlace8" node="0>8|2|7" />
         <i3dMapping id="waterPlace9" node="0>8|2|8" />
-        <i3dMapping id="waterPlace10" node="0>8|2|9" />
         <i3dMapping id="navigationRootNode" node="0>9" />
         <i3dMapping id="vectorGarage" node="0>11" />
         <i3dMapping id="splineReverse" node="0>11|0" />

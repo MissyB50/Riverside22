@@ -48,5 +48,7 @@
 		<i3dMapping id="aiNodeLoading" node="0>1|2" />
 		<i3dMapping id="pipeEffect" node="0>1|3|0" />
 		<i3dMapping id="pipeEffectSmoke" node="0>1|3|1" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node=""/>
+        <i3dMapping id="tipOcclusionUpdateArea1End" node=""/>
     </i3dMappings>
 </placeable>
