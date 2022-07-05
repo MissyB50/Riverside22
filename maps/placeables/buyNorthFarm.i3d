@@ -38,6 +38,11 @@
             <Shape shapeId="3" name="pipeEffectSmoke" translation="-5.31797e-15 -2.35297 0.541608" clipDistance="100" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
         </TransformGroup>
+        <TransformGroup name="tipocculation" nodeId="22">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-2 0 2" nodeId="23">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4 0 -4" nodeId="24"/>
+          </TransformGroup>
+        </TransformGroup>
       </TransformGroup>
   </Scene>
 
