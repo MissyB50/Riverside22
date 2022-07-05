@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_bakery</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/placeables/lizard/productionPoints/bakeryEU/store_bakeryEU.png</image>
+        <price>50000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>732160</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>110592</indexBufferMemoryUsage>
+        <textureMemoryUsage>11337728</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/bakeryEUC.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/lizard/productionPoints/bakeryEU/props.i3d" node="0" linkNode="propsLinkNode" />
+    </dynamicallyLoadedParts>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="linkedLight1" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="linkedLight2" groupIndex="1"/>
+
+        <lightShape node="interiorDay" groupIndex="1"/>
+        <lightShape node="interiorDayLOD" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="bread" name="$l10n_fillType_bread" cyclesPerHour="90" costsPerActiveHour="2.5">
+                <inputs>
+                    <input fillType="FLOUR" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="BREAD" amount="1" />
+                </outputs>
+            </production>
+            <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="8" costsPerActiveHour="2.5">
+                <inputs>
+                    <input fillType="FLOUR"      amount="2" />
+                    <input fillType="SUGAR"      amount="2" />
+                    <input fillType="MILK"       amount="2" />
+                    <input fillType="EGG"        amount="2" />
+                    <input fillType="BUTTER"     amount="2" />
+                    <input fillType="STRAWBERRY" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="CAKE" amount="5" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY" />
+        </sellingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="FLOUR"      capacity="65000" />
+            <capacity fillType="SUGAR"      capacity="7000" />
+            <capacity fillType="MILK"       capacity="7000" />
+            <capacity fillType="EGG"        capacity="7000" />
+            <capacity fillType="BUTTER"     capacity="7000" />
+            <capacity fillType="STRAWBERRY" capacity="7000" />
+            <capacity fillType="BREAD"      capacity="7000" />
+            <capacity fillType="CAKE"       capacity="7000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle template="bakeryIdle" linkNode="0>" volumeScale="0.2"/>
+            <active template="bakeryWork" linkNode="0>" volumeScale="0.5"/>
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="interiorDay" node="0>0|0|0|1|0|0" />
+        <i3dMapping id="propsLinkNode" node="0>0|0|1" />
+        <i3dMapping id="interiorDayLOD" node="0>0|1|0|1|0|0" />
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+        <i3dMapping id="sellingStation" node="0>6" />
+        <i3dMapping id="unloadTrigger" node="0>6|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>6|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>6|1" />
+        <i3dMapping id="playerTrigger" node="0>7|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>7|0|0" />
+        <i3dMapping id="palletSpawner" node="0>8" />
+        <i3dMapping id="spawnSpace1start" node="0>8|0" />
+        <i3dMapping id="warningStripes" node="0>9" />
+        <i3dMapping id="infoTrigger" node="0>10" />
+        <i3dMapping id="realLightsLow" node="0>12|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>12|0|1" />
+        <i3dMapping id="linkedLight1" node="0>12|1|0" />
+        <i3dMapping id="linkedLight2" node="0>12|1|1" />
+        <i3dMapping id="effectNodeChimneyLarge" node="0>13|0" />
+        <i3dMapping id="effectNodeChimneySmall1" node="0>13|1" />
+        <i3dMapping id="effectNodeChimneySmall2" node="0>13|2" />
+    </i3dMappings>
+</placeable>

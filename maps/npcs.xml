@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <npcs>
+        <npc name="NPC_FR_01" title="Rebecca Thibault" imageFilename="$dataS/character/humans/npc/portraits/npc_21.png" />-
+        <npc name="NPC_FR_02" title="Jasmine Crevier" imageFilename="$dataS/character/humans/npc/portraits/npc_22.png" />
+        <npc name="NPC_FR_03" title="Amélie Bourdon" imageFilename="$dataS/character/humans/npc/portraits/npc_23.png" />-
+        <npc name="NPC_FR_05" title="Jean Cuvier" imageFilename="$dataS/character/humans/npc/portraits/npc_25.png" />
+        <npc name="NPC_FR_06" title="Caroline Rodin" imageFilename="$dataS/character/humans/npc/portraits/npc_26.png" />
+        <npc name="NPC_FR_10" title="Murielle Moineau" imageFilename="$dataS/character/humans/npc/portraits/npc_30.png" />-
+        <npc name="NPC_FR_13" title="Alexis Jacquet" imageFilename="$dataS/character/humans/npc/portraits/npc_33.png" />
+        <npc name="NPC_ALPINE_10" title="Emilia Lambert" imageFilename="$dataS/character/humans/npc/portraits/npc_50.png" />
+        <npc name="NPC_ALPINE_11" title="Sandra Steiner" imageFilename="$dataS/character/humans/npc/portraits/npc_51.png" />
+        <npc name="NPC_ALPINE_06" title="Heidi Meierhofer" imageFilename="$dataS/character/humans/npc/portraits/npc_46.png" />
+        <npc name="NPC_ALPINE_02" title="Maria Zumbrunn" imageFilename="$dataS/character/humans/npc/portraits/npc_42.png" />
+        <npc name="NPC_US_14" title="Evelyn Carson"    imageFilename="$dataS/character/humans/npc/portraits/npc_14.png" />
+        <npc name="NPC_US_15" title="Emily Nicholson"  imageFilename="$dataS/character/humans/npc/portraits/npc_15.png" />-
+        <npc name="NPC_US_09" title="Zoe Scott"        imageFilename="$dataS/character/humans/npc/portraits/npc_09.png" />
+        <npc name="NPC_US_10" title="Sheila McFarland" imageFilename="$dataS/character/humans/npc/portraits/npc_10.png" />
+        <npc name="NPC_US_04" title="Gianna Hartman"   imageFilename="$dataS/character/humans/npc/portraits/npc_04.png" />
+    </npcs>
+</map>

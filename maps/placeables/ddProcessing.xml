@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint">
+    <storeData>
+        <name>Diesel Refinery</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/store/store_empty.png</image>
+        <price>95000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/ddProcessing.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="loadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <productionPoint>
+	
+        <productions>
+            <production id="Diesel Processing" name="$l10n_fillType_sunflower|$l10n_fillType_diesel" cyclesPerHour="200" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="SUNFLOWER" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="DIESEL" amount="8.5" />
+                </outputs>
+            </production>
+			
+			<production id="Diesel Processing2" name="$l10n_fillType_canola|$l10n_fillType_diesel" cyclesPerHour="200" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="CANOLA" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="DIESEL" amount="8.5" />
+                </outputs>
+            </production>
+			
+			<production id="Diesel Processing3" name="$l10n_fillType_silage|$l10n_fillType_diesel" cyclesPerHour="200" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="SILAGE" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="DIESEL" amount="8.5" />
+                </outputs>
+            </production>
+			
+            <production id="Deionised Water" name="$l10n_fillType_water|$l10n_fillType_deionised_water" cyclesPerHour="100" costsPerActiveHour="7.5">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="DEIONISED_WATER" amount="3.75" />
+                </outputs>
+            </production>
+            <production id="Urea Fertilizer" name="$l10n_fillType_fertilier|$l10n_fillType_urea_fertilizer" cyclesPerHour="100" costsPerActiveHour="7.5">
+                <inputs>
+                    <input fillType="FERTILIZER" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="UREA_FERTILIZER" amount="3.5" />
+                </outputs>
+            </production>
+            <production id="DEF Processing" name="$l10n_fillType_urea_fertilizer|$l10n_fillType_deionised_water|$l10n_fillType_def" cyclesPerHour="200" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="DEIONISED_WATER" amount="4" />
+                </inputs>
+                <inputs>
+                    <input fillType="UREA_FERTILIZER" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="DEF" amount="6" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="SUNFLOWER" capacity="500000" />
+            <capacity fillType="WATER" capacity="500000" />
+			<capacity fillType="CANOLA" capacity="500000" />
+			<capacity fillType="SILAGE" capacity="500000" />
+            <capacity fillType="DEIONISED_WATER" capacity="500000" />
+            <capacity fillType="UREA_FERTILIZER" capacity="500000" />
+            <capacity fillType="DEF" capacity="500000" />
+            <capacity fillType="DIESEL" capacity="500000" />
+            <capacity fillType="FERTILIZER" capacity="500000" />
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FERTILIZER SUNFLOWER WATER CANOLA SILAGE UREA_FERTILIZER DEIONISED_WATER"/>
+        </sellingStation>
+
+        <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="5">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="DIESEL DEF UREA_FERTILIZER DEIONISED_WATER" aiNode="aiLoadingNode">
+            </loadTrigger>
+        </loadingStation>
+
+        <playerTrigger node="playerTrigger" />
+
+</productionPoint>
+	
+        <sounds>
+            <idle template="oilPlantIdle" linkNode="0>" volumeScale="0.3"/>
+            <active template="oilPlantWork" linkNode="0>" volumeScale="0.5"/>
+        </sounds>
+
+    <i3dMappings>
+        <i3dMapping id="testArea1Start" node="0>0|0" />
+        <i3dMapping id="testArea1End" node="0>0|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>1|0|0" />
+        <i3dMapping id="infoTrigger" node="0>2" />
+        <i3dMapping id="loadingTrigger" node="0>4|0|0" />
+        <i3dMapping id="dischargeNode" node="0>4|0|1" />
+        <i3dMapping id="aiLoadingNode" node="0>4|0|2" />
+        <i3dMapping id="loadTriggerMarker" node="0>4|1" />
+        <i3dMapping id="sellingStation" node="0>3" />
+        <i3dMapping id="unloadTrigger" node="0>3|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>3|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>3|1" />
+        <i3dMapping id="aiSpline" node="0>3|2" />
+        <i3dMapping id="playerTrigger" node="0>5|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>5|0|0" />
+        <i3dMapping id="teleportNode" node="0>5|1" />
+        <i3dMapping id="warningStripes" node="0>6" />
+    </i3dMappings>
+</placeable>

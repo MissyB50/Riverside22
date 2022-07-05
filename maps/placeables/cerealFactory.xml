@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_cerealFactory</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/placeables/lizard/productionPoints/cerealFactory/store_cerealFactory.png</image>
+        <price>110000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>1126656</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>161024</indexBufferMemoryUsage>
+        <textureMemoryUsage>12910592</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/lizard/productionPoints/cerealFactory/cerealFactory.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+            <testArea startNode="testArea2Start" endNode="testArea2End" />
+            <testArea startNode="testArea3Start" endNode="testArea3End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" />
+            <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" />
+        </levelAreas>
+
+        <paintAreas>
+            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="asphalt"/>
+            <paintArea startNode="paintArea2Start" widthNode="paintArea2Width" heightNode="paintArea2Height" groundType="asphalt"/>
+            <paintArea startNode="paintArea3Start" widthNode="paintArea3Width" heightNode="paintArea3Height" groundType="asphalt"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/lizard/productionPoints/cerealFactory/props.i3d" node="0" linkNode="propsLinkNode" />
+    </dynamicallyLoadedParts>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight1" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight2" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight3" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight4" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight5" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight6" groupIndex="1"/>
+
+        <lightShape node="interiorDay" groupIndex="1"/>
+        <lightShape node="interiorDayLOD" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <productionPoint>
+        <productions>
+            <production id="cereal" name="$l10n_fillType_cereal" cyclesPerHour="90" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="HONEY" amount="1" />
+                    <input fillType="RAISINS" amount="1" />
+                    <input fillType="OAT" amount="2" />
+                    <input fillType="MAIZE" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="CEREAL" amount="2" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="HONEY"   capacity="30000" />
+            <capacity fillType="RAISINS" capacity="30000" />
+            <capacity fillType="OAT"     capacity="60000" />
+            <capacity fillType="MAIZE"   capacity="60000" />
+            <capacity fillType="CEREAL"  capacity="7000" />
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="HONEY RAISINS OAT MAIZE"/>
+        </sellingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle template="cerealFactoryIdle" linkNode="0>" />
+            <active template="cerealFactoryWork" linkNode="0>" />
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="interiorDay" node="0>0|0|0|2|0" />
+        <i3dMapping id="propsLinkNode" node="0>0|0|1" />
+        <i3dMapping id="interiorDayLOD" node="0>0|1|0|5" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>1|1" />
+        <i3dMapping id="clearArea2Width" node="0>1|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>1|1|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea2Start" node="0>2|1" />
+        <i3dMapping id="levelArea2Width" node="0>2|1|0" />
+        <i3dMapping id="levelArea2Height" node="0>2|1|1" />
+        <i3dMapping id="paintArea1Start" node="0>3|0" />
+        <i3dMapping id="paintArea1Width" node="0>3|0|0" />
+        <i3dMapping id="paintArea1Height" node="0>3|0|1" />
+        <i3dMapping id="paintArea2Start" node="0>3|1" />
+        <i3dMapping id="paintArea2Width" node="0>3|1|0" />
+        <i3dMapping id="paintArea2Height" node="0>3|1|1" />
+        <i3dMapping id="paintArea3Start" node="0>3|2" />
+        <i3dMapping id="paintArea3Width" node="0>3|2|0" />
+        <i3dMapping id="paintArea3Height" node="0>3|2|1" />
+        <i3dMapping id="indoorArea1Start" node="0>4|0" />
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1" />
+        <i3dMapping id="indoorArea2Start" node="0>4|1" />
+        <i3dMapping id="indoorArea2Width" node="0>4|1|0" />
+        <i3dMapping id="indoorArea2Height" node="0>4|1|1" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="testArea2Start" node="0>5|1" />
+        <i3dMapping id="testArea2End" node="0>5|1|0" />
+        <i3dMapping id="testArea3Start" node="0>5|2" />
+        <i3dMapping id="testArea3End" node="0>5|2|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="realLightsLow" node="0>9|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>9|0|1" />
+        <i3dMapping id="linkedLight1" node="0>9|1|0" />
+        <i3dMapping id="linkedLight2" node="0>9|1|1" />
+        <i3dMapping id="linkedLight3" node="0>9|1|2" />
+        <i3dMapping id="linkedLight4" node="0>9|1|3" />
+        <i3dMapping id="linkedLight5" node="0>9|1|4" />
+        <i3dMapping id="linkedLight6" node="0>9|1|5" />
+        <i3dMapping id="effectChimney1" node="0>10|0" />
+        <i3dMapping id="effectChimney2" node="0>10|1" />
+        <i3dMapping id="sellingStation" node="0>11" />
+        <i3dMapping id="unloadTrigger" node="0>11|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>11|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>11|1" />
+        <i3dMapping id="playerTrigger" node="0>12|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>12|0|0" />
+        <i3dMapping id="palletSpawner" node="0>13" />
+        <i3dMapping id="spawnSpace1start" node="0>13|0" />
+        <i3dMapping id="warningStripes" node="0>14" />
+    </i3dMappings>
+</placeable>

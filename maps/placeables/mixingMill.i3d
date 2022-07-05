@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="mixingMill.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="mixingMill" nodeId="13">
+        <TransformGroup name="testAreas" nodeId="14">
+          <TransformGroup name="testArea1Start" nodeId="15">
+            <TransformGroup name="testArea1End" nodeId="16"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="17">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" nodeId="18">
+            <TransformGroup name="tipOcclusionUpdateArea1End" nodeId="19"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="1" name="infoTrigger" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="effects" nodeId="21">
+          <TransformGroup name="effect1" nodeId="22"/>
+        </TransformGroup>
+        <TransformGroup name="loadingStation" nodeId="23">
+          <TransformGroup name="loadingTriggers" nodeId="24">
+            <Shape shapeId="2" name="loadingTrigger" translation="0.495886 0 -0.605343" static="true" trigger="true" collisionMask="1073741824" nodeId="25" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" nodeId="26"/>
+            <TransformGroup name="dischargeEffect" nodeId="27">
+              <Shape shapeId="3" name="pipeEffect" translation="0.535749 2.0066e-07 -0.61582" rotation="90 0 0" clipDistance="300" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="4" name="pipeEffectSmoke" translation="0 0 -0.510678" clipDistance="100" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="aiLoadingNode" rotation="0 -90 0" nodeId="30"/>
+          </TransformGroup>
+          <TransformGroup name="markerLoading" translation="-7.19763 1.00732 9.49417" rotation="0 -90 0" nodeId="31"/>
+        </TransformGroup>
+        <TransformGroup name="sellingStation" nodeId="32">
+          <Shape shapeId="5" name="unloadTrigger" translation="0.439307 0 -0.573956" rotation="0 90 0" scale="1.27698 1 1.32961" static="true" trigger="true" collisionMask="1073741824" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="unloadTriggerMarker" translation="-12.8833 0 1.7418" nodeId="34"/>
+          </Shape>
+          <TransformGroup name="unloadTriggerAINode" translation="2.68099 0 16.5131" rotation="0 180 0" nodeId="35"/>
+          <TransformGroup name="teleportNode" translation="-6.2864 0 0" nodeId="36"/>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" nodeId="37">
+          <Shape shapeId="6" name="playerTrigger" translation="0.57345 0 -0.558303" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="38" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" translation="-5.09796 0 2.57617" nodeId="39"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

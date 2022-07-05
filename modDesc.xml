@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="67">
+    <author>MissyB</author>
+    <version>0.9.0.2</version>
+    <title>
+        <en>Riverside 22</en>
+        <de>Flussufer 22</de>
+        <sw>Riverside 22</sw>
+    </title>
+    <description>
+        <en><![CDATA[......Disturbed Simulations]]></en>
+        <de><![CDATA[Dies ist die Beispiel Mod Map FR.]]></de>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+    <maps>
+        <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map.xml" defaultVehiclesXMLFilename="maps/vehicles.xml" defaultPlaceablesXMLFilename="maps/placeables.xml" defaultItemsXMLFilename="maps/items.xml">
+            <title>
+                <en>Riverside 22</en>
+            </title>
+            <description>
+<en>Welcome to Riverside Farms,  This is a fictous map, Base on farm from around East Cheshire.
+There's 5 farms to choose from. All anminal pens are built into the map for ease of use.  Riverside Farm has 5 farms 77 fields, with Pigs, Cows sheep and horse's.</en>
+<de>Willkommen bei Riverside Farms. Dies ist eine fiktive Karte, die auf der wunderschönen Region East Cheshire basiert.
+Es stehen 5 Farmen zur Auswahl. Alle Tierställe sind verbaut und an die Karte angepasst. Riverside Farm besitzt 77 Felder, 5 Höfe mit Schweinen, Kühen, Schafen und Pferden.</de>
+<sw>Välkommen till Riverside Farms, detta är en fiktiv karta, Base on farm från runt East Cheshire.
+Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för enkel användning. Riverside Farm har 5 gårdar 77 fält, med grisar, kor får och hästar.</sw>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+
+    <storeItems>
+        <storeItem xmlFilename="maps/animals/prehusbandryChicken.xml"/>
+        <storeItem xmlFilename="maps/animals/horseBarn.xml"/>
+        <storeItem xmlFilename="maps/animals/prehusbandrySheep.xml"/>
+		<storeItem xmlFilename="maps/animals/cowBarnMain.xml"/>
+        <storeItem xmlFilename="maps/animals/prehusbandryPig.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingStationGrain.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingGrain1.xml" />
+        <storeItem xmlFilename="maps/placeables/baleMainShop.xml" />
+        <storeItem xmlFilename="maps/placeables/baleNorthShop.xml" />
+        <storeItem xmlFilename="maps/placeables/sellADbales.xml" />
+        <storeItem xmlFilename="maps/placeables/northFarmShop.xml" />
+        <storeItem xmlFilename="maps/placeables/northSellGrain.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingCF.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingFarmShop.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingGM.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingGrain1.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingGW.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingOM.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingSM.xml" />
+        <storeItem xmlFilename="maps/placeables/woodChip.xml" />
+        <storeItem xmlFilename="maps/placeables/restaurant.xml" />
+        <storeItem xmlFilename="maps/placeables/farmersMarket.xml" />
+        <storeItem xmlFilename="maps/placeables/pizzeria.xml" />
+        <storeItem xmlFilename="maps/placeables/fastFood.xml" />
+        <storeItem xmlFilename="maps/placeables/bakeryEUC.xml" />
+        <storeItem xmlFilename="maps/placeables/carpenterEU.xml" />
+        <storeItem xmlFilename="maps/placeables/cerealFactory.xml" />
+        <storeItem xmlFilename="maps/placeables/dairyEUC.xml" />
+        <storeItem xmlFilename="maps/placeables/oilPlant.xml" />
+        <storeItem xmlFilename="maps/placeables/raisinFactory.xml" />
+        <storeItem xmlFilename="maps/placeables/spinnery.xml" />
+        <storeItem xmlFilename="maps/placeables/sugarMill.xml" />
+        <storeItem xmlFilename="maps/placeables/tailorShop.xml" />
+        <storeItem xmlFilename="maps/placeables/grainMill.xml" />
+        <storeItem xmlFilename="maps/placeables/ddProcessing.xml"/>
+        <storeItem xmlFilename="maps/placeables/mixingMill.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingddf.xml"/>
+        <storeItem xmlFilename="maps/placeables/manureHeap.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingSB.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingBIO.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingBN.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingBM.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingCW.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingWC.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingWCM.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingRC.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingPT.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingSlurry.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingManure.xml"/>
+        <storeItem xmlFilename="maps/placeables/buyFarm.xml"/>
+        <storeItem xmlFilename="maps/placeables/buyNorthFarm.xml"/>
+    </storeItems>
+
+    <l10n>
+        <text name="Lights On">
+            <en>Lights On</en>
+            <de>Lichter an</de>
+        </text>
+        <text name="Lights Off">
+            <en>Lights Off</en>
+            <de>Lichten aus</de>
+        </text>
+        <text name="Open Door">
+            <en>Open Door</en>
+            <de>Offene Tür</de>
+        </text>
+        <text name="Close Door">
+            <en>Close Door</en>
+            <de>Öffnen schließen</de>
+        </text>
+        <text name="Open Gate">
+            <en>Open Gate</en>
+            <de>Offenes Tor</de>
+        </text>
+        <text name="Close Gate">
+            <en>Close Gate</en>
+            <de>Tor schließen</de>
+        </text>
+        <text name="action_change">
+            <en>Show/Hide</en>
+            <de>Anzeigen/Ausblenden</de>
+        </text>
+    </l10n>
+
+</modDesc>

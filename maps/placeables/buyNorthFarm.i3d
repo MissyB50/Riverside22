@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert2" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="buyNorthFarm.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="buyingStation" nodeId="10">
+        <TransformGroup name="mapPosition" translation="0 0 3.5" nodeId="11"/>
+        <TransformGroup name="loadingStation" nodeId="12">
+          <Shape shapeId="1" name="loadingTrigger" translation="0 2.34898 0.647" static="true" trigger="true" collisionMask="1073741824" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" translation="0 3.4728 0.086" nodeId="14"/>
+          <TransformGroup name="aiNodeLoading" translation="5.47063e-17 0 0" rotation="0 -90 0" nodeId="15"/>
+          <TransformGroup name="dischargeEffect" translation="0 2.44895 0" nodeId="16">
+            <Shape shapeId="2" name="pipeEffect" translation="-0.0580625 2.15685 0.106835" rotation="90 0 0" scale="2.09341 2.05546 2" clipDistance="300" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="pipeEffectSmoke" translation="-5.31797e-15 -2.35297 0.541608" clipDistance="100" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

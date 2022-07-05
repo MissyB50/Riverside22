@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sound xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/ambientSounds.xsd">
+
+    <ambient3d filename="maps/sounds.i3d" />
+
+
+    <ambient>
+        <!-- Info:
+        Sample
+            filename:                   path to file
+            probability:                the probability of the sound
+
+        Settings:
+            audioGroup:                 the audio group the sound will be assigned to
+            minVolume:                  the minVolume if the player is outdoor (default 1)
+            maxVolume:                  the maxVolume if the player is outdoor (default 1)
+            indoorVolume:               the volume if the player is indoor or in a vehicle
+            minLoops:                   the minimum number of loops played once a sound is triggered (0 means it will play one loop)
+            maxLoops:                   the maximum number of loops played once a sound is triggered
+            minRetriggerDelaySeconds:   the minimum number of seconds until sound can be retriggred
+            maxRetriggerDelaySeconds:   the maximum number of seconds until the sound has to be retriggered
+            minPitch:                   the minPitch (default 1)
+            maxPitch:                   the maxPitch (default 1)
+            minDelay:                   the minDelay (default 0) (ms)
+            maxDelay:                   the maxDelay (default 0) (ms)
+            fadeInTime:                 the fadeIn time (default 0) (s)
+            fadeOutTime:                the fadeOut time (default 0) (s)
+            minOffset:                  the minOffset time (default 0)
+            maxOffset:                  the maxOffset time (default 0)
+            minLength:                  the minLength time (ms) (default 0)
+            maxLength:                  the maxLength time (ms) (default 0)
+
+            <required /> :   ALL attributes have to be active
+            <prevent />  :   If ONE of these attributes is active the sound won't be active
+
+            Available attributes:
+
+                night
+                preSunrise
+                sunrise
+                postSunrise
+                morning
+                preNoon
+                noon
+                postNoon
+                afternoon
+                preSunset
+                sunset
+                postSunset
+                spring
+                summer
+                autumn
+                winter
+                sun
+                rain
+                cloudy
+                snow
+                inForest
+                nearWater
+                inVehicle
+                outVehicle
+                isIndoor
+        -->
+
+    <!--Environment-->
+
+        <sample filename="$data/sounds/maps/shared/environment/windMain.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.12" minLoops="0" maxLoops="0" minVolume="0.7" maxVolume="0.7" fadeInTime="1" fadeOutTime="2" />
+            <required />
+            <prevent />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windLowLayer01.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="1" minVolume="0.4" maxVolume="0.4" minRetriggerDelaySeconds="6" maxRetriggerDelaySeconds="10" fadeInTime="1" fadeOutTime="1"/>
+            <required />
+            <prevent inVehicle="true"/>
+            <variation filename="$data/sounds/maps/shared/environment/windLowLayer02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windLowLayer03.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windWinterLoop.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="0" maxLoops="0" minVolume="0.5" maxVolume="0.5" fadeInTime="1" fadeOutTime="2" />
+            <required winter="true"/>
+            <prevent isIndoor="true" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windWinterLoop.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="0" maxLoops="0" minVolume="0.5" maxVolume="0.5" fadeInTime="1" fadeOutTime="2" />
+            <required snow="true"/>
+            <prevent inVehicle="true" winter="true"/>
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windStrong1.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="1" minVolume="0.6" maxVolume="0.7" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="8" maxRetriggerDelaySeconds="16" minPitch="0.3" maxPitch="0.3"/>
+            <required rain="true" />
+            <prevent inVehicle="true" />
+            <variation filename="$data/sounds/maps/shared/environment/windStrong2.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windStrong3.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windLeavesLayer01.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="1" minVolume="0.3" maxVolume="0.4" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="3" maxRetriggerDelaySeconds="6"/>
+            <required inForest="true"/>
+            <prevent inVehicle="true" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeavesLayer02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeavesLayer03.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeavesLayer04.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/rainMain.wav" >
+            <settings audioGroup="ENVIRONMENT" minVolume="0.55" maxVolume="0.55" indoorVolume="0" minLoops="0" maxLoops="0" fadeInTime="0.5"/>
+            <required rain="true" />
+            <prevent isIndoor="true"/>
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/rainInVehicle.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="6.0" minLoops="0" maxLoops="0"/>
+            <required rain="true" isIndoor="true"/>
+            <prevent outVehicle="true" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/thunder01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.6" minLoops="1" maxLoops="1" minVolume="2.6" maxVolume="2.6" minRetriggerDelaySeconds="18" maxRetriggerDelaySeconds="30"/>
+            <required rain="true" />
+            <prevent />
+            <variation filename="$data/sounds/maps/shared/environment/thunder02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/thunder03.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windLeaves02.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="1" minVolume="0.1" maxVolume="0.1" fadeInTime="0.1" fadeOutTime="0.1" indoorVolume="0.4" minRetriggerDelaySeconds="10" maxRetriggerDelaySeconds="15"/>
+            <required inForest="true" autumn="true" />
+            <prevent isIndoor="true"/>
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves03.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves04.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windLeaves02.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="1" minVolume="0.1" maxVolume="0.1" fadeInTime="0.1" fadeOutTime="0.1" indoorVolume="0.4" minRetriggerDelaySeconds="5" maxRetriggerDelaySeconds="10"/>
+            <required inForest="true" autumn="true" rain="true"/>
+            <prevent isIndoor="true"/>
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves03.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves04.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windLeaves02.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="1" minVolume="0.1" maxVolume="0.1" fadeInTime="0.1" fadeOutTime="0.1" indoorVolume="0.4" minRetriggerDelaySeconds="15" maxRetriggerDelaySeconds="20"/>
+            <required inForest="true" />
+            <prevent isIndoor="true" autumn="true" winter="true" rain="true"/>
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves03.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves04.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/environment/windLeaves02.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="1" minVolume="0.1" maxVolume="0.1" fadeInTime="0.1" fadeOutTime="0.1" indoorVolume="0.4" minRetriggerDelaySeconds="5" maxRetriggerDelaySeconds="10"/>
+            <required rain="true" inForest="true"/>
+            <prevent isIndoor="true" autumn="true" winter="true" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves03.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/environment/windLeaves04.wav" probability="50" />
+        </sample>
+
+        <!-- FAUNA -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/morningChorus01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.2" minLoops="1" maxLoops="2" minVolume="0.9" maxVolume="0.9" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="10" maxRetriggerDelaySeconds="20"/>
+            <required />
+            <prevent night="true" preNoon="true" noon="true" postNoon="true" afternoon="true" preSunset="true" sunset="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/morningChorus02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/morningChorus03.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/fauna/cricketNight01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="2" minVolume="0.2" maxVolume="0.2" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="2" maxRetriggerDelaySeconds="6"/>
+            <required night="true"/>
+            <prevent />
+            <variation filename="$data/sounds/maps/shared/fauna/cricketNight02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/cricketNight03.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/cricketNight04.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/cricketNight05.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/fauna/crickets01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="2" minVolume="0.2" maxVolume="0.2" minRetriggerDelaySeconds="15" maxRetriggerDelaySeconds="25"/>
+            <required night="true"/>
+            <prevent />
+            <variation filename="$data/sounds/maps/shared/fauna/crickets02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/crickets04.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/fauna/crickets04.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="2" minVolume="0.1" maxVolume="0.2" minRetriggerDelaySeconds="8" maxRetriggerDelaySeconds="16"/>
+            <required />
+            <prevent winter="true" autumn="true" night="true" preSunrise="true" sunrise="true" postSunset="true" rain="true" snow="true" />
+            <variation filename="$data/sounds/maps/shared/fauna/crickets05.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/crickets06.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/crickets07.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/crickets08.wav" probability="50" />
+        </sample>
+
+        <sample filename="$data/sounds/maps/shared/fauna/raven1.wav" >
+            <settings audioGroup="ENVIRONMENT" minLoops="1" maxLoops="2" minVolume="0.7" maxVolume="0.8" minRetriggerDelaySeconds="10" maxRetriggerDelaySeconds="15"/>
+            <required />
+            <prevent inVehicle="true" sunrise="true" postSunrise="true" morning="true" preNoon="true" noon="true" postNoon="true" afternoon="true" preSunset="true" sunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/raven2.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/owl01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/owl02.wav" probability="50" minVolume="0.8" maxVolume="0.9" />
+        </sample>
+
+        <!-- SUMMER/SPRING -->
+            <!-- FIELD -->
+
+                <!-- SUN -->
+
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="8" maxRetriggerDelaySeconds="20" minPitch="0.9" maxPitch="1.1" />
+            <required />
+            <prevent rain="true" snow="true" inForest="true" autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="12" maxRetriggerDelaySeconds="20" minPitch="0.9" maxPitch="1.1" />
+            <required />
+            <prevent rain="true" snow="true" inForest="true" autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+        </sample>
+
+            <!-- RAIN -->
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="25" maxRetriggerDelaySeconds="50" minPitch="0.9" maxPitch="1.1" />
+            <required rain="true" />
+            <prevent inForest="true" autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true" />
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="52" maxRetriggerDelaySeconds="70" minPitch="0.9" maxPitch="1.1" />
+            <required rain="true" />
+            <prevent inForest="true" autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true" />
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+        </sample>
+
+
+        <!-- SUMMER/SPRING -->
+            <!-- FOREST-->
+                <!-- SUN/CLOUDY -->
+
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1.1" fadeOutTime="1" minRetriggerDelaySeconds="4" maxRetriggerDelaySeconds="7" minPitch="0.9" maxPitch="1.1" />
+            <required inForest="true"/>
+            <prevent rain="true" snow="true" autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerDry01.wav" probability="70" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="6" maxRetriggerDelaySeconds="10" minPitch="0.9" maxPitch="1.1" />
+            <required inForest="true"/>
+            <prevent rain="true" snow="true" autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerWet01.wav" probability="65" minVolume="2" maxVolume="3"/>
+        </sample>
+
+                <!-- RAIN -->
+
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1.1" fadeOutTime="1" minRetriggerDelaySeconds="20" maxRetriggerDelaySeconds="40" minPitch="0.9" maxPitch="1.1" />
+            <required rain="true" inForest="true"/>
+            <prevent autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerDry01.wav" probability="50" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="32" maxRetriggerDelaySeconds="45" minPitch="0.9" maxPitch="1.1" />
+            <required rain="true" inForest="true"/>
+            <prevent autumn="true" winter="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerWet01.wav" probability="50" minVolume="2" maxVolume="3"/>
+        </sample>
+
+        <!-- WINTER/AUTUMN -->
+            <!-- FIELD -->
+
+                <!-- SUN/CLOUDY -->
+
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1.1" fadeOutTime="1" minRetriggerDelaySeconds="16" maxRetriggerDelaySeconds="25" minPitch="0.9" maxPitch="1.1" />
+            <required />
+            <prevent rain="true" snow="true" inForest="true" summer="true" spring="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="30" maxRetriggerDelaySeconds="40" minPitch="0.9" maxPitch="1.1" />
+            <required />
+            <prevent rain="true" snow="true" inForest="true" summer="true" spring="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+        </sample>
+
+                <!-- RAIN/SNOW -->
+
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1.1" fadeOutTime="1" minRetriggerDelaySeconds="20" maxRetriggerDelaySeconds="30" minPitch="0.9" maxPitch="1.1" />
+            <required />
+            <prevent inForest="true" summer="true" spring="true" sun="true" cloudy="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="35" maxRetriggerDelaySeconds="45" minPitch="0.9" maxPitch="1.1" />
+            <required />
+            <prevent inForest="true" summer="true" spring="true" sun="true" cloudy="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+        </sample>
+
+            <!-- FOREST -->
+
+                <!-- SUN/CLOUDY -->
+
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1.1" fadeOutTime="1" minRetriggerDelaySeconds="12" maxRetriggerDelaySeconds="20" minPitch="0.9" maxPitch="1.1" />
+            <required inForest="true"/>
+            <prevent rain="true" snow="true" summer="true" spring="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerDry01.wav" probability="70" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="16" maxRetriggerDelaySeconds="24" minPitch="0.9" maxPitch="1.1" />
+            <required inForest="true"/>
+            <prevent rain="true" snow="true" summer="true" spring="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerWet01.wav" probability="60" minVolume="2" maxVolume="3"/>
+        </sample>
+
+
+                <!-- RAIN/SNOW -->
+
+<!-- DRY -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdDry01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.5" maxVolume="0.7" fadeInTime="1.1" fadeOutTime="1" minRetriggerDelaySeconds="26" maxRetriggerDelaySeconds="35" minPitch="0.9" maxPitch="1.1" />
+            <required inForest="true"/>
+            <prevent summer="true" spring="true" sun="true" cloudy="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdDry02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkDry02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinDry03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkDry02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerDry01.wav" probability="50" />
+        </sample>
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.8" maxVolume="1" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="30" maxRetriggerDelaySeconds="40" minPitch="0.9" maxPitch="1.1" />
+            <required inForest="true"/>
+            <prevent summer="true" spring="true" sun="true" cloudy="true" night="true" preSunrise="true" sunrise="true" postSunrise="true" postSunset="true"/>
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/woodPeckerWet01.wav" probability="50" minVolume="2" maxVolume="3"/>
+        </sample>
+
+        <!-- Night Ambience -->
+
+<!-- WET -->
+
+        <sample filename="$data/sounds/maps/shared/fauna/blackBirdWet01.wav" >
+            <settings audioGroup="ENVIRONMENT" indoorVolume="0.05" minLoops="1" maxLoops="1" minVolume="0.7" maxVolume="0.8" fadeInTime="1" fadeOutTime="1" minRetriggerDelaySeconds="40" maxRetriggerDelaySeconds="50" minPitch="0.9" maxPitch="1.1" />
+            <required  night="true"/>
+            <prevent rain="true" />
+            <variation filename="$data/sounds/maps/shared/fauna/blackBirdWet02.wav"  probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet01.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/meadowlarkWet02.wav" probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet01.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet02.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/robinWet03.wav"      probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet01.wav"    probability="50" />
+            <variation filename="$data/sounds/maps/shared/fauna/skylarkWet02.wav"    probability="50" />
+        </sample>
+    </ambient>
+
+    <surface>
+        <!--
+            materialId      layer name
+            1               dirt
+            2               grass
+            3               beachSand
+            4
+            5               leaves
+            6               gravel
+            7               rock, asphalt, plate (also used for 'on object')
+            99              shallowWater
+
+            Note:
+        -->
+
+        <material materialId="0"  name="field"         type="wheel" loopCount="0" template="DEFAULT_SURFACE_FIELD" />
+        <material materialId="1"  name="dirt"          type="wheel" loopCount="0" template="DEFAULT_SURFACE_DIRT" />
+        <material materialId="2"  name="grass"         type="wheel" loopCount="0" template="DEFAULT_SURFACE_GRASS" />
+        <material materialId="3"  name="sand"          type="wheel" loopCount="0" template="DEFAULT_SURFACE_SAND" />
+        <material materialId="4"  name="sound"         type="wheel" loopCount="0" template="DEFAULT_SURFACE_SOUND" />
+        <material materialId="5"  name="leaves"        type="wheel" loopCount="0" template="DEFAULT_SURFACE_GRASS" />
+        <material materialId="6"  name="gravel"        type="wheel" loopCount="0" template="DEFAULT_SURFACE_GRAVEL" />
+        <material materialId="7"  name="asphalt"       type="wheel" loopCount="0" template="DEFAULT_SURFACE_ASPHALT" />
+        <material materialId="0"  name="snow"          type="wheel" loopCount="0" template="DEFAULT_SURFACE_SNOW" />
+        <material materialId="97" name="railroad"      type="wheel" loopCount="0" template="DEFAULT_SURFACE_RAILROAD" />
+        <material materialId="98" name="mediumWater"   type="wheel" loopCount="0" template="DEFAULT_SURFACE_WATER_MEDIUM" />
+        <material materialId="99" name="shallowWater"  type="wheel" loopCount="0" template="DEFAULT_SURFACE_WATER_SHALLOW" />
+
+        <material materialId="0"  name="field"         type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_FIELD" />
+        <material materialId="1"  name="dirt"          type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_DIRT" />
+        <material materialId="2"  name="grass"         type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_GRASS" />
+        <material materialId="3"  name="sand"          type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_SAND" />
+        <material materialId="4"  name="sound"         type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_SOUND" />
+        <material materialId="5"  name="leaves"        type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_GRASS" />
+        <material materialId="6"  name="gravel"        type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_GRAVEL" />
+        <material materialId="7"  name="asphalt"       type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_ASPHALT" />
+        <material materialId="0"  name="snow"          type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_SNOW" />
+        <material materialId="98" name="mediumWater"   type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_WATER_MEDIUM" />
+        <material materialId="99" name="shallowWater"  type="footstep" loopCount="1" template="DEFAULT_FOOTSTEP_WATER_SHALLOW" />
+
+        <material materialId="0"  name="field"         type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_FIELD" />
+        <material materialId="1"  name="dirt"          type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_DIRT" />
+        <material materialId="2"  name="grass"         type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_GRASS" />
+        <material materialId="3"  name="sand"          type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_SAND" />
+        <material materialId="4"  name="sound"         type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_SOUND" />
+        <material materialId="5"  name="leaves"        type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_GRASS" />
+        <material materialId="6"  name="gravel"        type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_GRAVEL" />
+        <material materialId="7"  name="asphalt"       type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_ASPHALT" />
+        <material materialId="0"  name="snow"          type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_SNOW" />
+        <material materialId="98" name="mediumWater"   type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_WATER_MEDIUM" />
+        <material materialId="99" name="shallowWater"  type="hoofstep" loopCount="1" template="DEFAULT_HOOFSTEP_WATER_SHALLOW" />
+    </surface>
+    <cutting>
+        <sample name="tree" file="$data/sounds/cutting/treeFall.wav">
+            <sourceRandomization file="$data/sounds/cutting/treeFall02.wav"/>
+            <sourceRandomization file="$data/sounds/cutting/treeFall03.wav"/>
+        </sample>
+    </cutting>
+</sound>

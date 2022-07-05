@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Mixing Mill</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/store/store_empty.png</image>
+        <price>150000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/mixingMill.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas/>
+    <leveling/>
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="loadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="False">
+            <production id="Total Mixed Ration" name="TMR Mixer" cyclesPerHour="150" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="SILAGE" amount="25000" />
+                    <input fillType="DRYGRASS_WINDROW" amount="12000" />
+                    <input fillType="STRAW" amount="9000" />
+                    <input fillType="MINERAL_FEED" amount="310" />
+                </inputs>
+                <outputs>
+                    <output fillType="FORAGE" amount="46000" />
+                </outputs>
+			</production>
+
+		    <production id="Pig Food1" name="Pig FOOD1" cyclesPerHour="25" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="WHEAT" amount="30" />
+                    <input fillType="BARLEY" amount="30" />
+                    <input fillType="OAT" amount="30" />
+                </inputs>
+				<outputs>
+                    <output fillType="PIGFOOD" amount="90" />
+                </outputs>
+			</production>
+			
+			<production id="Pig Food2" name="Pig FOOD2" cyclesPerHour="25" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="POTATO" amount="30" /> 
+                    <input fillType="SUGARBEET" amount="30" />
+                    <input fillType="MAIZE" amount="30" />
+                    <input fillType="CHAFF" amount="30" />
+                </inputs>
+				<outputs>
+                    <output fillType="PIGFOOD" amount="120" />
+                </outputs>
+			</production>
+			
+			<production id="Pig Food3" name="Pig FOOD3" cyclesPerHour="25" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="CANOLA" amount="30" />
+                    <input fillType="SOYBEAN" amount="30" />
+                    <input fillType="SUNFLOWER" amount="30" />
+				</inputs>
+				<outputs>
+                    <output fillType="PIGFOOD" amount="90" />
+                </outputs>
+			</production>
+			
+			<production id="Hay Dryer" name="Hay Dryer" cyclesPerHour="15" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="GRASS_WINDROW" amount="5000" />
+                </inputs>
+                <outputs>
+                    <output fillType="DRYGRASS_WINDROW" amount="4750" />
+                </outputs>
+            </production>
+			
+			<production id="Silage Fermenter" name="Silage Fermenter"  cyclesPerHour="10" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="CHAFF" amount="5000" />
+                </inputs>
+                <outputs>
+                    <output fillType="SILAGE" amount="4880" />
+                </outputs>
+            </production>
+			
+			<production id="Bio Dryer 1" name="Bio Dryer1"  cyclesPerHour="15" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="LIQUIDMANURE" amount="3.25" />
+                </inputs>
+				<outputs>
+                    <output fillType="FERTILIZER" amount="3" />
+                </outputs>
+			</production>
+				
+			<production id="Bio Dryer 2" name="Bio Dryer2"  cyclesPerHour="15" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="MANURE" amount="4" />
+                </inputs>
+				<outputs>
+                    <output fillType="FERTILIZER" amount="3.75" />
+                </outputs>
+			</production>
+			
+			<production id="Bio Dryer 3" name="Bio Dryer 3"  cyclesPerHour="15" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="DIGESTATE" amount="3.25" />
+                </inputs>
+                <outputs>
+                    <output fillType="FERTILIZER" amount="3" />
+                </outputs>
+            </production>
+			
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="WHEAT"   capacity="500000" />
+            <capacity fillType="BARLEY"  capacity="500000" />
+            <capacity fillType="OAT"     capacity="500000" />
+            <capacity fillType="CANOLA"  capacity="500000" />
+            <capacity fillType="SUNFLOWER"   capacity="500000" />
+            <capacity fillType="SOYBEAN" capacity="500000" />
+            <capacity fillType="POTATO" capacity="500000" />
+            <capacity fillType="SUGARBEET" capacity="500000" />
+            <capacity fillType="MAIZE" capacity="500000" />
+            <capacity fillType="SILAGE" capacity="500000" />
+            <capacity fillType="DRYGRASS_WINDROW" capacity="500000" />
+            <capacity fillType="STRAW" capacity="500000" />
+            <capacity fillType="MINERAL_FEED" capacity="500000" />
+            <capacity fillType="FORAGE" capacity="500000" />
+            <capacity fillType="GRASS_WINDROW" capacity="500000" />
+            <capacity fillType="CHAFF" capacity="500000" />
+            <capacity fillType="PIGFOOD" capacity="500000"/>
+            <capacity fillType="LIQUIDMANURE" capacity="500000"/>
+            <capacity fillType="MANURE" capacity="500000"/>
+            <capacity fillType="DIGESTATE" capacity="500000"/>
+            <capacity fillType="FERTILIZER" capacity="500000"/>
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN POTATO SUGARBEET MAIZE STRAW MINERAL_FEED GRASS_WINDROW CHAFF FERTILIZER DIGESTATE MANURE LIQUIDMANURE SILAGE DRYGRASS_WINDROW"/>
+        </sellingStation>
+
+        <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="5">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="4000" dischargeNode="dischargeNode" fillTypes="FORAGE SILAGE DRYGRASS_WINDROW PIGFOOD FERTILIZER WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN POTATO SUGARBEET MAIZE STRAW MINERAL_FEED GRASS_WINDROW CHAFF FERTILIZER DIGESTATE MANURE LIQUIDMANURE" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="3.25 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <playerTrigger node="playerTrigger" />
+		
+    </productionPoint>
+	
+        <sounds>
+            <idle template="grainMillIdle" linkNode="0>" volumeScale="0.3"/>
+            <active template="grainMillWork" linkNode="0>" volumeScale="0.5"/>
+        </sounds>
+
+
+    <i3dMappings>
+        <i3dMapping id="testArea1Start" node="0>0" />
+        <i3dMapping id="testArea1End" node="0>0|0" />
+        <i3dMapping id="infoTrigger" node="0>2" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>1|0|0" />
+        <i3dMapping id="loadingTrigger" node="0>4|0|0" />
+        <i3dMapping id="dischargeNode" node="0>4|0|1" />
+        <i3dMapping id="pipeEffect" node="0>4|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>4|0|2|1" />
+        <i3dMapping id="aiLoadingNode" node="0>4|0|3" />
+        <i3dMapping id="loadTriggerMarker" node="0>4|1" />
+        <i3dMapping id="sellingStation" node="0>5" />
+        <i3dMapping id="unloadTrigger" node="0>5|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>5|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5|1" />
+        <i3dMapping id="teleportNode" node="0>5|2" />
+        <i3dMapping id="playerTrigger" node="0>6|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|0|0" />
+<!--         <i3dMapping id="effect1" node="0>9|0" /> -->
+    </i3dMappings>
+</placeable>

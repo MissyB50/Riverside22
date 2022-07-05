@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="spotlight" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="1" filename="$data/shared/assets/lights/terraLed/spotlight20W_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/assets/lights/terraLed/spotlight20W_emissive.png"/>
+    <File fileId="2" filename="$data/shared/assets/lights/terraLed/spotlight20W_normal.png"/>
+    <File fileId="3" filename="$data/shared/assets/lights/terraLed/spotlight20W_specular.png"/>
+    <File fileId="7" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="spotlight20W_emissive_mat" materialId="4" specularColor="0.8 1 1" customShaderId="9" customShaderVariation="additive_colorScale">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <CustomParameter name="lightControl" value="10 0 1 0"/>
+      <CustomParameter name="colorScale" value="1 1 1 0"/>
+    </Material>
+    <Material name="spotlight20W_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="spotlight.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="spotlight20W_edit" rotation="90 -0 0" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true">
+        <TransformGroup name="rotfix" translation="-0.404 1.2e-07 0.2889" nodeId="11">
+          <Shape shapeId="2" name="rotNode" translation="0.303 -8.52529e-08 -0.193" nodeId="12" materialIds="5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="emissive" translation="0.10064 -3.07707e-08 -0.095" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="3"/>
+            <Light name="light" translation="-0.00796118 0.0801173 0.399" rotation="180 0 0" nodeId="14" type="spot" color="0.45 0.45 0.45" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" range="20" coneAngle="140" dropOff="5" weatherRequiredMask="64"/>
+          </Shape>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>

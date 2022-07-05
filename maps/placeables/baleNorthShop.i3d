@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="baleNorthShop.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="sellingStationBales" clipDistance="200" nodeId="10">
+        <TransformGroup name="indoorAreas" nodeId="11">
+          <TransformGroup name="indoorArea1Start" nodeId="12">
+            <TransformGroup name="indoorArea1Width" translation="0 0 1" nodeId="13"/>
+            <TransformGroup name="indoorArea1Height" translation="1 0 0" nodeId="14"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="15">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-5 0 -5" nodeId="16">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="10 0 10" nodeId="17"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="1" name="infoTrigger" translation="0 1.5 0" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="collisions" nodeId="19">
+          <Shape shapeId="2" name="tipCollision" visibility="false" static="true" collisionMask="524288" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <Shape shapeId="3" name="unloadTrigger" kinematic="true" compound="true" collisionMask="1073741824" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="4" name="baleTrigger" kinematic="true" compound="true" trigger="true" collisionMask="16781312" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="unloadMarker" translation="0 0.6 0" nodeId="23"/>
+        <TransformGroup name="hotspotNode" nodeId="24"/>
+        <TransformGroup name="teleportNode" nodeId="25"/>
+        <TransformGroup name="aiNode" translation="2 -1.33431e-08 1" rotation="-180 0 -180" nodeId="26"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

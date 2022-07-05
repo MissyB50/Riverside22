@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Fast Food Restaurant</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>$data/placeables/lizard/sellingPoints/fastFoodRestaurant/store_fastFoodRestaurant.png</image>
+        <price>55000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>sellingPoints</tab>
+        </brush>
+        <vertexBufferMemoryUsage>613376</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>86016</indexBufferMemoryUsage>
+        <textureMemoryUsage>9306112</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/lizard/sellingPoints/fastFoodRestaurant/fastFoodRestaurant.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+            <testArea startNode="testArea2Start" endNode="testArea2End" />
+            <testArea startNode="testArea3Start" endNode="testArea3End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+            <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <!-- TODO -->
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/lizard/sellingPoints/fastFoodRestaurant/props.i3d" node="0" linkNode="propsLinkNode" />
+    </dynamicallyLoadedParts>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml"          linkNode="linkedLight1" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml"          linkNode="linkedLight2" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml"          linkNode="linkedLight3" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight4" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight5" groupIndex="1"/>
+
+        <lightShape node="interiorDay" groupIndex="1"/>
+        <lightShape node="interiorDayLOD" groupIndex="1"/>
+        <lightShape node="blinker02Decal" groupIndex="1"/>
+        <lightShape node="blinker01Decal" groupIndex="1"/>
+        <lightShape node="dinnerDecal" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <sellingStation appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="CEREAL CHOCOLATE POTATO MAIZE FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BUTTER CHEESE SUGAR EGG CAKE HONEY TOMATO LETTUCE STRAWBERRY GRAPE GRAPEJUICE"/>
+
+        <fillType name="POTATO"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="MAIZE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHOCOLATE"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FLOUR"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUNFLOWER_OIL"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CANOLA_OIL"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="OLIVE_OIL"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BUTTER"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHEESE"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGAR"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="EGG"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CAKE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="HONEY"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="TOMATO"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="LETTUCE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="STRAWBERRY"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="GRAPE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="GRAPEJUICE"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CEREAL"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+
+        <sounds>
+            <idle template="fastFoodRestaurantTemplate"/>
+        </sounds>
+    </sellingStation>
+
+    <i3dMappings>
+        <i3dMapping id="interiorDay" node="0>0|0|0|2|0" />
+        <i3dMapping id="blinker02Decal" node="0>0|0|0|2|1|0" />
+        <i3dMapping id="blinker01Decal" node="0>0|0|0|2|1|1" />
+        <i3dMapping id="dinnerDecal" node="0>0|0|0|2|1|2" />
+        <i3dMapping id="propsLinkNode" node="0>0|0|1" />
+        <i3dMapping id="interiorDayLOD" node="0>0|1|0|0" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>1|1" />
+        <i3dMapping id="clearArea2Width" node="0>1|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>1|1|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea2Start" node="0>2|1" />
+        <i3dMapping id="levelArea2Width" node="0>2|1|0" />
+        <i3dMapping id="levelArea2Height" node="0>2|1|1" />
+        <i3dMapping id="testArea1Start" node="0>3|0" />
+        <i3dMapping id="testArea1End" node="0>3|0|0" />
+        <i3dMapping id="testArea2Start" node="0>3|1" />
+        <i3dMapping id="testArea2End" node="0>3|1|0" />
+        <i3dMapping id="testArea3Start" node="0>3|2" />
+        <i3dMapping id="testArea3End" node="0>3|2|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+        <i3dMapping id="infoTrigger" node="0>5" />
+        <i3dMapping id="realLightsLow" node="0>8|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>8|0|1" />
+        <i3dMapping id="linkedLight1" node="0>8|1|0" />
+        <i3dMapping id="linkedLight2" node="0>8|1|1" />
+        <i3dMapping id="linkedLight3" node="0>8|1|2" />
+        <i3dMapping id="linkedLight4" node="0>8|1|3" />
+        <i3dMapping id="linkedLight5" node="0>8|1|4" />
+        <i3dMapping id="sellingStation" node="0>9" />
+        <i3dMapping id="unloadTrigger" node="0>9|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>9|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>9|1" />
+    </i3dMappings>
+</placeable>

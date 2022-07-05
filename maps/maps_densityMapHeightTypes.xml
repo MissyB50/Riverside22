@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <densityMapHeightTypes firstChannel="0" numChannels="6">
+        <densityMapHeightType fillTypeName="WHEAT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="BARLEY" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="OAT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="CANOLA" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SORGHUM" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="GRAPE" maxSurfaceAngle="35" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="MAIZE" maxSurfaceAngle="30" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="POTATO" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SUGARBEET" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SUGARBEET_CUT" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="COTTON" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SOYBEAN" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SUNFLOWER" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="CHAFF" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="true">
+            <collision scale="0.7" baseOffset="0.0" minOffset="0.20" maxOffset="0.60" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SEEDS" maxSurfaceAngle="20" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.05" minOffset="0.0" maxOffset="0.05" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="LIME" maxSurfaceAngle="20" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.05" minOffset="0.0" maxOffset="0.05" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="FERTILIZER" maxSurfaceAngle="20" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.05" minOffset="0.0" maxOffset="0.05" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SUGARCANE" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="STRAW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="GRASS_WINDROW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="DRYGRASS_WINDROW" maxSurfaceAngle="35" fillToGroundScale="7.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SILAGE" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="FORAGE" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="PIGFOOD" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="MANURE" maxSurfaceAngle="30" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.00" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="WOODCHIPS" maxSurfaceAngle="30" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.00" baseOffset="0.2" minOffset="0.1" maxOffset="0.3" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="TARP" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="SNOW" maxSurfaceAngle="38" fillToGroundScale="2.0" allowsSmoothing="false">
+            <collision scale="0.80" baseOffset="0.1" minOffset="0.1" maxOffset="0.9" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="ROADSALT" maxSurfaceAngle="32" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="0.80" baseOffset="0.1" minOffset="0.1" maxOffset="0.9" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="STONE" maxSurfaceAngle="32" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="0.80" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
+        </densityMapHeightType>
+        <densityMapHeightType fillTypeName="OLIVE" maxSurfaceAngle="32" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+	    <densityMapHeightType fillTypeName="CARROT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+	    <densityMapHeightType fillTypeName="ONION" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+    </densityMapHeightTypes>
+</map>

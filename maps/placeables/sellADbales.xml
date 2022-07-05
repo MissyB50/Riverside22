@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+ <storeData>
+  <name>Animal Dealer Bales</name>
+  <image>$data/store/store_empty.png</image>
+  <price>1</price>
+  <canBeSold>false</canBeSold>
+  <showInStore>false</showInStore>
+  <lifetime>1000</lifetime>
+  <rotation>0</rotation>
+  <brand>NONE</brand>
+  <species>placeable</species>
+  <category>placeableMisc</category>
+ </storeData>
+
+ <base>
+  <filename>maps/placeables/sellADbales.i3d</filename>
+ </base>
+
+ <placement />
+
+ <clearAreas />
+
+ <leveling />
+
+ <indoorAreas />
+
+ <tipOcclusionUpdateAreas>
+  <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+ </tipOcclusionUpdateAreas>
+
+ <ai>
+  <updateAreas>
+   <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+  </updateAreas>
+ </ai>
+
+ <hotspots>
+  <hotspot type="UNLOADING" linkNode="unloadMarker" teleportNode="teleportNode"/>
+ </hotspots>
+
+ <triggerMarkers>
+  <triggerMarker node="unloadMarker"  filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="false" />
+ </triggerMarkers>
+
+ <sellingStation supportsExtension="false" litersForFullPriceDrop="500000" fullPriceRecoverHours="48">
+  <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW" aiNode="aiNode" >
+   <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
+  </unloadTrigger>
+
+  <fillType name="STRAW"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+  <fillType name="DRYGRASS_WINDROW" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+  <fillType name="GRASS_WINDROW"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+ </sellingStation>
+
+ <i3dMappings>
+  <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>1|0" />
+  <i3dMapping id="tipOcclusionUpdateArea1End" node="0>1|0|0" />
+  <i3dMapping id="unloadTrigger" node="0>4" />
+  <i3dMapping id="baleTrigger" node="0>5" />
+  <i3dMapping id="unloadMarker" node="0>6" />
+  <i3dMapping id="hotspotNode" node="0>7" />
+  <i3dMapping id="teleportNode" node="0>8" />
+  <i3dMapping id="aiNode" node="0>9" />
+ </i3dMappings>
+
+</placeable>

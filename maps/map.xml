@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="2048" height="2048" imageFilename="maps/overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
+    <filename>maps/map.i3d</filename>
+    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+    <textureMemoryUsage>0</textureMemoryUsage>
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+    <placementCollision revision="1" />
+    <navigationCollision revision="1" />
+
+    <shop filename="maps/shop.xml" />
+    <storeItems filename="$data/maps/mapFR/storeItems.xml" />
+
+    <sounds filename="maps/sound.xml" />
+    <environment filename="$data/maps/mapFR/environment.xml" />
+    <growth filename="maps/maps_growth.xml" />
+    <weed filename="$data/maps/mapFR/weed.xml" />
+    <fieldGround filename="$data/maps/mapFR/fieldGround.xml" />
+    <farmlands filename="maps/farmlands.xml" />
+
+    <animals filename="$dataS/character/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="$dataS/character/animalFood.xml" />
+    </animals>
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <npcs filename="$data/maps/mapFR/npcs.xml" />
+    <!-- <helpers filename="$data/maps/maps_helpers.xml" /> -->
+    
+    <helpline filename="$dataS/helpLine.xml">
+    </helpline>
+    
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+
+    <licensePlates filename="$data/maps/mapFR/licensePlates/licensePlatesFR.xml" />
+    
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+
+    <hotspots>
+        <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="139 -258" teleportWorldPosition="139 60 -258" />
+        <placeableHotspot type="SHOP_ANIMAL" text="Livestock_Market" worldPosition="144 -47" teleportWorldPosition="144 60 -47" />
+    </hotspots>
+
+    <!-- <competitiveMultiplayer filename="$data/maps/mapFR/competitiveMultiplayer.xml" /> -->
+        <fillTypes filename="maps/maps_fillTypes.xml" />
+        <fruitTypes filename="maps/maps_fruitTypes.xml" />
+    <!-- <sprayTypes filename="$data/maps/mapFR/maps_sprayTypes.xml" /> -->
+    <!-- <treeTypes filename="$data/maps/mapFR/maps_treeTypes.xml" /> -->
+        <densityMapHeightTypes filename="maps/maps_densityMapHeightTypes.xml" />
+
+    <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
+    <bales filename="$data/maps/maps_bales.xml"/>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+    </additionalFiles>
+
+    <precisionFarming>
+        <soilMap filename="maps/data/infoLayer_soilMap.grle"/>
+
+        <fruitRequirements>
+            <fruitRequirement fruitTypeName="onion" alwaysAllowFertilization="false" ignoreOverfertilization="false">
+                <soil soilTypeIndex="1" targetLevel="110" reduction="110" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="150" reduction="130" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="170" reduction="150" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="130" reduction="130" yieldPotential="0.9"/>
+            </fruitRequirement>
+            <fruitRequirement fruitTypeName="carrot" alwaysAllowFertilization="false" ignoreOverfertilization="false">
+                <soil soilTypeIndex="1" targetLevel="140" reduction="120" yieldPotential="0.8"/>
+                <soil soilTypeIndex="2" targetLevel="160" reduction="140" yieldPotential="1.0"/>
+                <soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
+                <soil soilTypeIndex="4" targetLevel="130" reduction="130" yieldPotential="0.9"/>
+            </fruitRequirement>
+        </fruitRequirements>
+    </precisionFarming>
+
+    <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+        <decoFoliage layerName="grass" startChannel="0" numChannels="4" mowable="true"/>
+        <mapping name="grassShort" layerName="decoFoliage" state="1" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="grass" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+
+    <!-- paintable ground types - need to be defined in map.i3d node TerrainTransformGroup|CombinedLayer -->
+     <groundTypeMappings>
+    <!-- Base -->
+        <groundTypeMapping type="dirt"           title="$l10n_groundType_dirt" layer="DIRT" />
+    <!-- Standard -->
+        <groundTypeMapping type="asphalt"        title="$l10n_groundType_asphalt" layer="ASPHALT" />
+        <groundTypeMapping type="gravel"         title="$l10n_groundType_gravel" layer="GRAVEL" />
+        <groundTypeMapping type="grass"          title="$l10n_groundType_grass" layer="GRASS" />
+        <groundTypeMapping type="animalMud"      title="$l10n_groundType_animalMud" layer="MUD_ANIMAL" />
+        <groundTypeMapping type="concrete"       title="$l10n_groundType_concrete" layer="CONCRETE" />
+    <!-- Special -->
+        <groundTypeMapping type="forestGround"   title="$l10n_groundType_forestGround" layer="FOREST_NEEDLES" />
+        <groundTypeMapping type="grass_dry"      title="$l10n_groundType_grassDry" layer="GRASS_DIRT" />
+        <groundTypeMapping type="rock"           title="$l10n_groundType_rock" layer="ROCK" />
+        <groundTypeMapping type="rock_granite"   title="$l10n_groundType_rockGranite" layer="ROCK_DARK" />
+    </groundTypeMappings>
+</map>

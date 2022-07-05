@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+ <storeData>
+  <name>Wood Chip</name>
+  <image>$data/store/store_empty.png</image>
+  <price>1</price>
+  <canBeSold>false</canBeSold>
+  <showInStore>false</showInStore>
+  <lifetime>1000</lifetime>
+  <rotation>0</rotation>
+  <brand>NONE</brand>
+  <species>placeable</species>
+  <category>placeableMisc</category>
+ </storeData>
+
+ <base>
+  <filename>maps/placeables/woodChip.i3d</filename>
+ </base>
+
+ <placement />
+
+ <clearAreas />
+
+ <leveling />
+
+ <indoorAreas />
+
+ <tipOcclusionUpdateAreas />
+
+ <ai>
+  <updateAreas />
+  <splines />
+ </ai>
+
+ <hotspots>
+  <hotspot type="UNLOADING" teleportNode="teleportNode" />
+ </hotspots>
+
+ <triggerMarkers>
+  <triggerMarker node="unloadTriggerMarker"		filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="false" />
+  <triggerMarker node="woodSellTriggerMarker"	filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="false" />
+ </triggerMarkers>
+
+ <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+  <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="WOODCHIPS">
+  <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
+  </unloadTrigger>
+  <unloadTrigger fillTypes="WOOD" >
+   <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodSellTrigger" />
+  </unloadTrigger>
+  <fillType name="woodChips" priceScale="5.5" supportsGreatDemand="true"	disablePriceDrop="false" />
+ </sellingStation>
+
+ <i3dMappings>
+  <i3dMapping id="unloadingStation" node="0>" />
+  <i3dMapping id="unloadTrigger" node="0>0" />
+  <i3dMapping id="unloadTriggerMarker" node="0>0|0" />
+  <i3dMapping id="baleTrigger" node="0>1" />
+  <i3dMapping id="woodTrigger" node="0>2|0" />
+  <i3dMapping id="woodSellTrigger" node="0>2|1" />
+  <i3dMapping id="woodSellTriggerMarker" node="0>2|1|0" />
+  <i3dMapping id="teleportNode" node="0>3" />
+  <i3dMapping id="aiNode" node="0>4" />
+ </i3dMappings>
+
+</placeable>

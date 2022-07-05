@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_dairy</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/placeables/lizard/productionPoints/dairyEU/store_dairyEU.png</image>
+        <price>70000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/lizard/productionPoints/dairyEU/dairyEU.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End"/>
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+            <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/lizard/productionPoints/dairyEU/props.i3d" node="0" linkNode="propsLinkNode" />
+    </dynamicallyLoadedParts>
+
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml"          linkNode="linkedLight1" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml"          linkNode="linkedLight2" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight3" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight4" groupIndex="1"/>
+
+        <lightShape node="interiorSelfIllum" groupIndex="1"/>
+        <lightShape node="interiorSelfIllumLOD" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <productionPoint>
+        <productions>
+            <production id="butter" name="$l10n_fillType_butter" cyclesPerHour="20" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="MILK" amount="15" />
+                </inputs>
+                <outputs>
+                    <output fillType="BUTTER" amount="13" />
+                </outputs>
+            </production>
+            <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="50" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="MILK" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHEESE" amount="2" />
+                </outputs>
+            </production>
+            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="100" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="MILK" amount="1" />
+                    <input fillType="SUGAR" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHOCOLATE" amount="1" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="MILK"       capacity="100000" />
+            <capacity fillType="SUGAR"      capacity="36000" />
+            <capacity fillType="BUTTER"     capacity="10000" />
+            <capacity fillType="CHEESE"     capacity="5000" />
+            <capacity fillType="CHOCOLATE"  capacity="5000" />
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="MILK SUGAR"/>
+        </sellingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1Start" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle template="dairyIdle" linkNode="0>" volumeScale="0.3"/>
+            <active template="dairyWork" linkNode="0>" volumeScale="0.5"/>
+        </sounds>
+
+        <animationNodes>
+            <animationNode node="mainRotor1"    rotSpeed="-30" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="smallRotor1_1" rotSpeed="-60" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="smallRotor1_2" rotSpeed= "60" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="mainRotor2"    rotSpeed="-30" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="smallRotor2_1" rotSpeed="-60" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="smallRotor2_2" rotSpeed= "60" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+        </animationNodes>
+    </productionPoint>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <i3dMappings>
+        <i3dMapping id="mainRotor1" node="0>0|0|0|0|9" />
+        <i3dMapping id="smallRotor1_1" node="0>0|0|0|0|9|0" />
+        <i3dMapping id="smallRotor1_2" node="0>0|0|0|0|9|1" />
+        <i3dMapping id="mainRotor2" node="0>0|0|0|0|10" />
+        <i3dMapping id="smallRotor2_1" node="0>0|0|0|0|10|0" />
+        <i3dMapping id="smallRotor2_2" node="0>0|0|0|0|10|1" />
+        <i3dMapping id="interiorSelfIllum" node="0>0|0|0|1|0" />
+        <i3dMapping id="propsLinkNode" node="0>0|0|1" />
+        <i3dMapping id="interiorSelfIllumLOD" node="0>0|1|0|1" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>1|1" />
+        <i3dMapping id="clearArea2Width" node="0>1|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>1|1|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea2Start" node="0>2|1" />
+        <i3dMapping id="levelArea2Width" node="0>2|1|0" />
+        <i3dMapping id="levelArea2Height" node="0>2|1|1" />
+        <i3dMapping id="indoorArea1Start" node="0>3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>3|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>3|0|1" />
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+        <i3dMapping id="infoTrigger" node="0>6" />
+        <i3dMapping id="realLightsLow" node="0>8|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>8|0|1" />
+        <i3dMapping id="linkedLight1" node="0>8|1|0" />
+        <i3dMapping id="linkedLight2" node="0>8|1|1" />
+        <i3dMapping id="linkedLight3" node="0>8|1|2" />
+        <i3dMapping id="linkedLight4" node="0>8|1|3" />
+        <i3dMapping id="sellingStation" node="0>9" />
+        <i3dMapping id="unloadTrigger" node="0>9|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>9|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>9|1" />
+        <i3dMapping id="playerTrigger" node="0>10|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>10|0|0" />
+        <i3dMapping id="spawnSpace1Start" node="0>11|0" />
+    </i3dMappings>
+</placeable>

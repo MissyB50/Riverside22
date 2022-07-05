@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<collectibles achievementName="CollectiblesFR" hotspotThreshold="20">
+
+    <group name="default" dialogText="Well done on collecting all of them, Now find the easter egg" />
+
+    <collectible name="seed01" group="default" target="seed01" moneyReward="50000" />
+    <collectible name="seed02" group="default" target="seed02" moneyReward="50000" />
+    <collectible name="seed03" group="default" target="seed03" moneyReward="50000" />
+    <collectible name="seed04" group="default" target="seed04" moneyReward="50000" />
+    <collectible name="seed05" group="default" target="seed05" moneyReward="50000" />
+    <collectible name="seed06" group="default" target="seed06" moneyReward="50000" />
+    <collectible name="seed07" group="default" target="seed07" moneyReward="50000" />
+    <collectible name="seed08" group="default" target="seed08" moneyReward="50000" />
+    <collectible name="seed09" group="default" target="seed09" moneyReward="50000" />
+    <collectible name="seed10" group="default" target="seed10" moneyReward="50000" />
+    <collectible name="seed11" group="default" target="seed11" moneyReward="50000" />
+    <collectible name="seed12" group="default" target="seed12" moneyReward="50000" />
+    <collectible name="seed13" group="default" target="seed13" moneyReward="50000" />
+    <collectible name="seed14" group="default" target="seed14" moneyReward="50000" />
+    <collectible name="seed15" group="default" target="seed15" moneyReward="50000" />
+    <collectible name="seed16" group="default" target="seed16" moneyReward="50000" />
+    <collectible name="seed17" group="default" target="seed17" moneyReward="50000" />
+    <collectible name="seed18" group="default" target="seed18" moneyReward="50000" />
+    <collectible name="seed19" group="default" target="seed19" moneyReward="50000" />
+    <collectible name="seed20" group="default" target="seed20" moneyReward="50000" />
+    <collectible name="seed21" group="default" target="seed21" moneyReward="50000" />
+    <collectible name="seed22" group="default" target="seed22" moneyReward="50000" />
+    <collectible name="seed23" group="default" target="seed23" moneyReward="50000" />
+    <collectible name="seed24" group="default" target="seed24" moneyReward="50000" />
+    <collectible name="seed25" group="default" target="seed25" moneyReward="50000" />
+</collectibles>

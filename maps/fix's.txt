@@ -1,0 +1,23 @@
+disbuction center location 88.661 61.21 609.281 rotate -90
+ 
+Redo light on dis center 
+code BGA,
+
+
+
+
+
+
+cow barn main 744.564 60 -595.235 r y 180
+Manure Pit 815.414 60 -602.932 RY -90
+Slurry Pit 812.822 60 -627.129 RY -90
+
+
+
+
+
+
+Images:
+
+water use's two (2) drops
+fertilizer use's bag with green leaf

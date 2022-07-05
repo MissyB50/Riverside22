@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="potatoHaulm" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/foliage/potato/potatoHaulm_alpha.png"/>
+    <File fileId="1" filename="$data/foliage/potato/potatoHaulm_diffuse.png"/>
+    <File fileId="2" filename="$data/foliage/potato/potatoHaulm_normal.png"/>
+    <File fileId="3" filename="$data/shaders/solidFoliageShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="potatoHaulm_mat" materialId="4" customShaderId="3" customShaderVariation="ALPHA_MAP">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="alphaMap" fileId="4"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.4 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="carrotHaulm.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="haulm" clipDistance="500" nodeId="7" materialIds="4" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

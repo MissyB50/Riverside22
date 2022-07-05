@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="20" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingCF.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="unloadingStation" lockedgroup="true" nodeId="10">
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="11">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-4.40057 0 2.40134" rotation="0 90 0" nodeId="12">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.8 0 8.8" nodeId="13"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="1" name="unloadTriggerGrain" static="true" trigger="true" collisionMask="1073741824" nodeId="14" materialIds="4" nonRenderable="true">
+          <TransformGroup name="unloadTriggerGrainMarker" translation="-0.6 0.7 0" nodeId="15"/>
+        </Shape>
+        <Shape shapeId="2" name="baleTrigger" static="true" trigger="true" collisionMask="16777216" nodeId="16" materialIds="4" nonRenderable="true"/>
+        <TransformGroup name="teleportNode" translation="0 0 4" nodeId="17"/>
+        <TransformGroup name="aiNodeGrain" rotation="0 90 0" nodeId="18"/>
+        <Shape shapeId="3" name="aiSplineGrain" nodeId="19"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

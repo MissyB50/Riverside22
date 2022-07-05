@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="carrot" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="9" filename="carrot01LOD_alpha_H.dds"/>
+    <File fileId="7" filename="carrot01LOD_diffuse_H.dds"/>
+    <File fileId="8" filename="carrot01LOD_normal_H.png"/>
+    <File fileId="12" filename="carrot02LOD_alpha_H.dds"/>
+    <File fileId="10" filename="carrot02LOD_diffuse_H.dds"/>
+    <File fileId="11" filename="carrot02LOD_normal_H.png"/>
+    <File fileId="15" filename="carrot03LOD_alpha_H.dds"/>
+    <File fileId="13" filename="carrot03LOD_diffuse_H.dds"/>
+    <File fileId="14" filename="carrot03LOD_normal_H.png"/>
+    <File fileId="18" filename="carrot04LOD_alpha_H.dds"/>
+    <File fileId="16" filename="carrot04LOD_diffuse_H.dds"/>
+    <File fileId="17" filename="carrot04LOD_normal_H.png"/>
+    <File fileId="21" filename="carrot05LOD_alpha_H.dds"/>
+    <File fileId="19" filename="carrot05LOD_diffuse_H.dds"/>
+    <File fileId="20" filename="carrot05LOD_normal_H.png"/>
+    <File fileId="6" filename="carrot_alpha.dds"/>
+    <File fileId="1" filename="carrot_diffuse.dds"/>
+    <File fileId="2" filename="carrot_normal.dds"/>
+    <File fileId="3" filename="carrot_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="carrotStage01_mat" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+    </Material>
+    <Material name="carrotStage01LOD_mat" materialId="5" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Custommap name="alphaMap" fileId="9"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+    </Material>
+    <Material name="carrotStage02LOD_mat" materialId="6" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Custommap name="alphaMap" fileId="12"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+    </Material>
+    <Material name="carrotStage03LOD_mat" materialId="7" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Custommap name="alphaMap" fileId="15"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+    </Material>
+    <Material name="carrotStage04LOD_mat" materialId="8" customShaderId="4" customShaderVariation="PLANT_ROTATION">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Custommap name="alphaMap" fileId="18"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="plantRotate" value="0.4363 1.57 0 0"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+    </Material>
+    <Material name="carrotStage05LOD_mat" materialId="9" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Custommap name="alphaMap" fileId="21"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="carrot.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="carrot" nodeId="23">
+        <TransformGroup name="LOD0" nodeId="24">
+          <Shape shapeId="1" name="greenSmall" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="25" materialIds="4"/>
+          <Shape shapeId="2" name="greenMiddle" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="26" materialIds="4"/>
+          <Shape shapeId="3" name="greenBig" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="27" materialIds="4"/>
+          <Shape shapeId="4" name="harvestReady" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="28" materialIds="4"/>
+          <Shape shapeId="5" name="dead" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="29" materialIds="4"/>
+          <Shape shapeId="6" name="cutHaulm" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="30" materialIds="4"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="31">
+          <Shape shapeId="7" name="greenSmall" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="32" materialIds="5"/>
+          <Shape shapeId="8" name="greenMiddle" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="33" materialIds="6"/>
+          <Shape shapeId="9" name="greenBig" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="34" materialIds="7"/>
+          <Shape shapeId="10" name="harvestReady" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="35" materialIds="8"/>
+          <Shape shapeId="11" name="dead" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="36" materialIds="9"/>
+          <Shape shapeId="12" name="cutHaulm" rotation="-6.83019e-06 -0 0" clipDistance="500" nodeId="37" materialIds="8"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
