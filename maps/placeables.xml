@@ -6,7 +6,7 @@
     <placeable mapBoundId="animalSheep" filename="$mapdir$/maps/animals/prehusbandrySheep.xml" position="350 60 -870" rotation=" 0 180 0" /> 
     <placeable mapBoundId="animalCowMain" filename="$mapdir$/maps/animals/cowBarnMain.xml" position="745.529 60 -596.896" rotation=" 0 180 0" /> 
     <placeable mapBoundId="animalPig" filename="$mapdir$/maps/animals/prehusbandryPig.xml" position="634.707 60 -159.29" rotation=" 0 0 0" /> 
-    <placeable mapBoundId="animalCow" filename="data/placeables/rudolfHormann/cowBarnBig/cowBarnBig.xml" position="-961.384 74.926 -131.917" rotation="0 90 0"/>
+    <placeable mapBoundId="animalCow" filename="$mapdir$/maps/animals/cattleBarn.xml" position="-961.384 74.926 -131.917" rotation="0 90 0"/>
 
 
 <!--
