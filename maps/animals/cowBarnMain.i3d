@@ -184,34 +184,34 @@
           <TransformGroup name="markerAnimals" translation="-51.5015 0.02 -7.30475" nodeId="117"/>
           <TransformGroup name="markerLiquidManure" translation="16.2734 0.02 19.6056" nodeId="118"/>
           <TransformGroup name="markerFood" translation="-0.021144 0.269954 8.2775" rotation="0 -90 0" nodeId="119"/>
-          <TransformGroup name="markerStraw" translation="-61.7627 0.269954 3.92131" nodeId="141"/>
+          <TransformGroup name="markerStraw" translation="-61.7627 0.269954 3.92131" nodeId="120"/>
         </TransformGroup>
-        <Shape shapeId="28" name="infoTrigger" translation="0 0.13 -9" static="true" trigger="true" collisionMask="3145728" nodeId="120" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <Shape shapeId="29" name="infoTriggerVector" translation="37.7078 0.13 -12.8886" static="true" trigger="true" collisionMask="3145728" nodeId="121" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <Shape shapeId="30" name="loadingTrigger" translation="-51.065 0.13 -6.99532" static="true" trigger="true" collisionMask="3145728" nodeId="122" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <TransformGroup name="indoorAreas" translation="0 0.13 0" nodeId="123">
-          <TransformGroup name="indoorArea1Start" translation="29.6714 0 -14.68" nodeId="124">
-            <TransformGroup name="indoorArea1Width" translation="-59.2 0 0" nodeId="125"/>
-            <TransformGroup name="indoorArea1Height" translation="0 0 29.7" nodeId="126"/>
+        <Shape shapeId="28" name="infoTrigger" translation="0 0.13 -9" static="true" trigger="true" collisionMask="3145728" nodeId="121" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="29" name="infoTriggerVector" translation="37.7078 0.13 -12.8886" static="true" trigger="true" collisionMask="3145728" nodeId="122" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="30" name="loadingTrigger" translation="-51.065 0.13 -6.99532" static="true" trigger="true" collisionMask="3145728" nodeId="123" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="indoorAreas" translation="0 0.13 0" nodeId="124">
+          <TransformGroup name="indoorArea1Start" translation="29.6714 0 -14.68" nodeId="125">
+            <TransformGroup name="indoorArea1Width" translation="-59.2 0 0" nodeId="126"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 29.7" nodeId="127"/>
           </TransformGroup>
-          <TransformGroup name="indoorArea1Start" translation="31.7816 0 4.38855" nodeId="127">
-            <TransformGroup name="indoorArea1Width" translation="26.2943 0 0" nodeId="128"/>
-            <TransformGroup name="indoorArea1Height" translation="0 0 10.113" nodeId="129"/>
-          </TransformGroup>
-        </TransformGroup>
-        <TransformGroup name="testAreas" translation="0 0.08 0" nodeId="130">
-          <TransformGroup name="testArea1Start" translation="-31.5 0 15.8" nodeId="131">
-            <TransformGroup name="testArea1End" translation="63 13.5 -32.5" nodeId="132"/>
+          <TransformGroup name="indoorArea1Start" translation="31.7816 0 4.38855" nodeId="128">
+            <TransformGroup name="indoorArea1Width" translation="26.2943 0 0" nodeId="129"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 10.113" nodeId="130"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="tipOcclusionUpdateAreas" translation="0 0.08 0" nodeId="133">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-31.5 0 15.8" nodeId="134">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="63 0 -32.5" nodeId="135"/>
+        <TransformGroup name="testAreas" translation="0 0.08 0" nodeId="131">
+          <TransformGroup name="testArea1Start" translation="-31.5 0 15.8" nodeId="132">
+            <TransformGroup name="testArea1End" translation="63 13.5 -32.5" nodeId="133"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="winter" translation="0 0.13 0" nodeId="136">
-          <Shape shapeId="31" name="snow" clipDistance="150" nodeId="137" materialIds="12" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
-          <Shape shapeId="32" name="icicles" clipDistance="100" nodeId="138" materialIds="9" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="0 0.08 0" nodeId="134">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-31.5 0 15.8" nodeId="135">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="63 0 -32.5" nodeId="136"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="winter" translation="0 0.13 0" nodeId="137">
+          <Shape shapeId="31" name="snow" clipDistance="150" nodeId="138" materialIds="12" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+          <Shape shapeId="32" name="icicles" clipDistance="100" nodeId="139" materialIds="9" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
         </TransformGroup>
       </TransformGroup>
   </Scene>
@@ -220,7 +220,7 @@
     <UserAttribute nodeId="107">
       <Attribute name="animalType" type="string" value="cow"/>
     </UserAttribute>
-    <UserAttribute nodeId="122">
+    <UserAttribute nodeId="123">
       <Attribute name="animalType" type="string" value="cow"/>
     </UserAttribute>
   </UserAttributes>

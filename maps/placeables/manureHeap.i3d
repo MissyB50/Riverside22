@@ -2,7 +2,7 @@
 
 <i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
   </Asset>
 
   <Files>
@@ -26,7 +26,7 @@
       <TransformGroup name="manureHeap" clipDistance="600" nodeId="13">
         <TransformGroup name="manureHeap" nodeId="14">
           <Shape shapeId="1" name="loadingTrigger" translation="-13.5 2 -2" static="true" trigger="true" collisionMask="1073741824" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-          <TransformGroup name="loadingTriggerAINode" translation="-13.5 0 -2" rotation="0 175 0" nodeId="16"/>
+          <TransformGroup name="loadingTriggerAINode" translation="-13.5 0 -2" rotation="0 180 0" nodeId="16"/>
           <TransformGroup name="loadingTriggerMarker" translation="-13.5 0 -2" nodeId="17"/>
           <TransformGroup name="tipArea" translation="-4.1 0 -6.75" nodeId="18">
             <TransformGroup name="tipAreaStart" translation="-6.6 0 0" nodeId="19">
@@ -35,9 +35,9 @@
             </TransformGroup>
           </TransformGroup>
           <Shape shapeId="2" name="activationTrigger" translation="-1.93053e-16 3 0" visibility="false" static="true" trigger="true" collisionMask="3145728" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-          <TransformGroup name="clearAreaStart" translation="-4.72251 0 -7.30043" nodeId="23">
-            <TransformGroup name="clearAreaWidth" translation="9.52339 1.18431e-14 0" nodeId="24"/>
-            <TransformGroup name="clearAreaHeight" translation="0 6.444e-15 14.3004" nodeId="25"/>
+          <TransformGroup name="clearAreaStart" translation="-10 0 -6.75" nodeId="23">
+            <TransformGroup name="clearAreaWidth" translation="20 1.18431e-14 0" nodeId="24"/>
+            <TransformGroup name="clearAreaHeight" translation="0 6.444e-15 9.5" nodeId="25"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="indoorAreas" nodeId="26">

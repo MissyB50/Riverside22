@@ -16,7 +16,7 @@
     <placeable mapBoundId="bgaWeighingStation" filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" position="303.443 59.9 888.349" rotation="0 180 0" />
     <placeable mapBoundId="bgaWeighingStation" filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" position="320.309 59.9 890.546" rotation="0 0 0" />
     <placeable mapBoundId="manureHeapCattle" filename="data/placeables/lizard/manureHeap/manureHeap.xml" position="-943.935 75 -112.737" rotation="0 0 0" />
-    <placeable mapBoundId="manureHeapMain" filename="$mapdir$/maps/placeables/manureHeap.xml" position="802.958 60 -629.269" rotation="0 0 0" />
+    <placeable mapBoundId="manureHeapMain" filename="data/placeables/lizard/manureHeap/manureHeapExtension.xml" position="811.25 60 -631.75" rotation="0 270 0" />
     <placeable mapBoundId="bgaSiloMain" filename="$mapdir$/maps/placeables/bunkerSilo.xml" position="784.338 60 -661.93" rotation="0 -90 0" />
 
 

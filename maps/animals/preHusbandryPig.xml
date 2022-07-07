@@ -63,6 +63,7 @@
         <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
         <triggerMarker node="markerWater" filename="$data/shared/assets/marker/markerIcons.xml" id="WATER" />
+        <triggerMarker node="markerStraw" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
     </triggerMarkers>
 
     <hotspots>
@@ -79,7 +80,7 @@
             <capacity fillType="WATER" capacity="120000" />
         </storage>
 
-         <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true">
+         <unloadingStation supportsExtension="true" storageRadius="75" hideFromPricesMenu="true">
             <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" >
             <unloadTrigger exactFillRootNode="exactFillRootNodeWater" fillTypes="WATER" />
                 <baleTrigger triggerNode="baleTriggerStraw"/>
@@ -147,6 +148,7 @@
         <i3dMapping id="markerFood" node="0>7|1" />
         <i3dMapping id="markerAnimals" node="0>7|3" />
         <i3dMapping id="markerWater" node="0>7|2" />
+        <i3dMapping id="markerStraw" node="0>5|3" />
         <i3dMapping id="infoTrigger" node="0>8" />
         <i3dMapping id="loadingTrigger" node="0>9" />
         <i3dMapping id="indoorArea1Start" node="0>10|0" />

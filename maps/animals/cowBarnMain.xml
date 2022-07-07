@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="cowHusbandryFeedingRobot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_animalBarnCowBigVector</name>
+        <name>Cow Barn With Vector</name>
         <image>$data/placeables/rudolfHormann/cowBarnBig/store_cowBarnBigVector.png</image>
         <price>1</price>
         <functions>
@@ -143,8 +143,8 @@
 
         <water automaticWaterSupply="false" >
             <waterPlane node="waterPlane" minY="0.065" maxY="0.35" changeVisibility="true" />
-<!--             <waterPlane node="waterPlane1" minY="0.065" maxY="0.35" changeVisibility="true" />
-            <waterPlane node="waterPlane2" minY="0.065" maxY="0.35" changeVisibility="true" /> -->
+            <waterPlane node="waterPlane1" minY="0.065" maxY="0.35" changeVisibility="true" />
+            <waterPlane node="waterPlane2" minY="0.065" maxY="0.35" changeVisibility="true" />
             <waterPlaces>
                 <waterPlace node="waterPlace1" />
                 <waterPlace node="waterPlace2" />
@@ -183,8 +183,8 @@
         <i3dMapping id="liquidManureTrigger" node="0>7|0" />
         <i3dMapping id="aiLoadingNodeLiquidManure" node="0>7|1" />
         <i3dMapping id="waterPlane" node="0>8|3"/>
-        <i3dMapping id="waterPlane" node="0>8|4"/>
-        <i3dMapping id="waterPlane" node="0>8|6"/>
+        <i3dMapping id="waterPlane1" node="0>8|4"/>
+        <i3dMapping id="waterPlane2" node="0>8|6"/>
         <i3dMapping id="exactFillRootNodeWater" node="0>8|0" />
         <i3dMapping id="exactFillRootNodeWater1" node="0>8|5" />
         <i3dMapping id="waterPlace1" node="0>8|2|0" />

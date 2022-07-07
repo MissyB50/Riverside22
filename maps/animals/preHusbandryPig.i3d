@@ -105,7 +105,7 @@
           <TransformGroup name="aiLoadingNodeLiquidManure" translation="20.705 0 10.1441" nodeId="45"/>
         </TransformGroup>
         <TransformGroup name="water" nodeId="46">
-          <Shape shapeId="4" name="exactFillRootNodeWater" translation="-10.521 -0.016 5.95376" static="true" collisionMask="1073741824" nodeId="47" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="exactFillRootNodeWater" translation="-10.521 -0.016 6.9107" static="true" collisionMask="1073741824" nodeId="47" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <TransformGroup name="waterAINode" translation="-9.58112 0 6.6342" rotation="0 -90 0" nodeId="48"/>
           <TransformGroup name="waterPlaces" nodeId="49">
             <TransformGroup name="waterPlace1" translation="-14.4138 0.0698242 2.7" rotation="0 -90 0" nodeId="50"/>
@@ -121,7 +121,8 @@
         <TransformGroup name="straw" translation="0 0.099 0" nodeId="58">
           <Shape shapeId="6" name="strawPlane" translation="0 -0.2 -0.871331" clipDistance="150" nodeId="59" materialIds="10" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="7" name="baleTriggerStraw" translation="-13.9315 0.19 20.7791" static="true" trigger="true" collisionMask="16777216" nodeId="60" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-          <Shape shapeId="8" name="exactFillRootNodeStraw" translation="-13.5883 0.19 20.8679" static="true" trigger="true" collisionMask="1073741824" nodeId="61" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="exactFillRootNodeStraw" translation="-13.588 0.19 20.8679" static="true" trigger="true" collisionMask="1073741824" nodeId="61" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="markerStraw" translation="-13.588 0 20.8679" nodeId="93"/>
         </TransformGroup>
         <TransformGroup name="navigationRootNode" nodeId="62">
           <Shape shapeId="9" name="walkingPlane" static="true" collisionMask="131072" density="0.0001" nodeId="63" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>

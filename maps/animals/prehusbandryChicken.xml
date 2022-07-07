@@ -61,7 +61,8 @@
         </animals>
 
         <food capacity="25000" >
-            <foodPlane node="foodPlane" minY="-0.29" maxY="0" changeVisibility="true" defaultFillType="WHEAT"/>
+            <foodPlane node="foodPlane" minY="-0.29" maxY="0" changeVisibility="false" defaultFillType="WHEAT"/>
+            <foodPlane node="foodPlane1" minY="-0.29" maxY="0" changeVisibility="false" defaultFillType="WHEAT"/>
             <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
         </food>
 
@@ -76,7 +77,7 @@
     <i3dMappings>
         <i3dMapping id="teleportNode" node="0>2" />
         <i3dMapping id="foodPlane" node="0>0|1" />
-        <i3dMapping id="foodPlane" node="0>0|1|0" />
+        <i3dMapping id="foodPlane1" node="0>0|2" />
         <i3dMapping id="exactFillRootNodeFood" node="0>0|0|0" />
         <i3dMapping id="foodPlace1" node="0>0|0|1|0" />
         <i3dMapping id="foodPlace2" node="0>0|0|1|1" />
