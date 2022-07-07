@@ -69,7 +69,7 @@
         <area startNode="tipAreaStart" widthNode="tipAreaWidth" heightNode="tipAreaHeight" activationTriggerNode="activationTrigger" />
         <clearArea startNode="clearAreaStart" widthNode="clearAreaWidth" heightNode="clearAreaHeight" />
 
-        <loadingStation storageRadius="10" supportsExtension="false">
+        <loadingStation storageRadius="50" supportsExtension="false">
             <loadTrigger triggerNode="loadingTrigger" aiNode="loadingTriggerAINode" fillTypes="MANURE" fillLitersPerSecond="2000" />
         </loadingStation>
     </manureHeap>

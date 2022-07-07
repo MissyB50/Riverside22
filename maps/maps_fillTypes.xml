@@ -425,7 +425,7 @@
                         specular="$data/fillPlanes/sugarCane_specular.png"
                         distance="$data/fillPlanes/distance/sugarCaneDistance_diffuse.png" />
         </fillType>
-		<fillType name="CARROT" title="Carrot" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+<!-- 		<fillType name="CARROT" title="Carrot" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
             <economy pricePerLiter="0.11">
                 <factors>
@@ -476,7 +476,7 @@
                         normal  ="maps/fruits/fillPlanes/onion_normal.png"
                         specular="maps/fruits/fillPlanes/onion_specular.png"
                         distance="maps/fruits/fillPlanes/distance/onionDistance_diffuse.png" /> 
-        </fillType>
+        </fillType> -->
 
         <fillType name="SEEDS" title="$l10n_fillType_seeds" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="15" />
@@ -1626,7 +1626,7 @@
     </fillTypes>
 
     <fillTypeCategories>
-        <fillTypeCategory name="BULK" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW SUGARCANE FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM OLIVE STONE MINERAL_FEED CARROT ONION UREA_FERTILIZER</fillTypeCategory>
+        <fillTypeCategory name="BULK" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW SUGARCANE FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM OLIVE STONE MINERAL_FEED UREA_FERTILIZER</fillTypeCategory>
         <fillTypeCategory name="LIQUID" >MILK WATER DIESEL DEF DEIONISED_WATER</fillTypeCategory>
         <fillTypeCategory name="PIECE" >WOOL TREESAPLINGS EGG</fillTypeCategory>
         <fillTypeCategory name="WINDROW" >STRAW DRYGRASS_WINDROW GRASS_WINDROW</fillTypeCategory>
@@ -1634,20 +1634,20 @@
         <fillTypeCategory name="SPRAYER" >LIQUIDFERTILIZER HERBICIDE</fillTypeCategory>
         <fillTypeCategory name="SPREADER" >FERTILIZER</fillTypeCategory>
         <fillTypeCategory name="MIXERWAGON" >FORAGE FORAGE_MIXING DRYGRASS_WINDROW SILAGE STRAW MINERAL_FEED</fillTypeCategory>
-        <fillTypeCategory name="AUGERWAGON" >WHEAT BARLEY OAT CANOLA SOYBEAN SUNFLOWER MAIZE FERTILIZER SEEDS SORGHUM CARROT ONION</fillTypeCategory>
+        <fillTypeCategory name="AUGERWAGON" >WHEAT BARLEY OAT CANOLA SOYBEAN SUNFLOWER MAIZE FERTILIZER SEEDS SORGHUM</fillTypeCategory>
         <fillTypeCategory name="FORAGEWAGON" >STRAW GRASS_WINDROW DRYGRASS_WINDROW CHAFF SILAGE</fillTypeCategory>
         <fillTypeCategory name="SILAGETRAILER" >STRAW GRASS_WINDROW DRYGRASS_WINDROW CHAFF SILAGE WOODCHIPS SUGARCANE</fillTypeCategory>
-        <fillTypeCategory name="TRAINWAGON" >WHEAT BARLEY OAT CANOLA MAIZE SUNFLOWER SOYBEAN SUGARCANE SUGARBEET POTATO SORGHUM WOODCHIPS OLIVE GRAPE CARROT ONION</fillTypeCategory>
+        <fillTypeCategory name="TRAINWAGON" >WHEAT BARLEY OAT CANOLA MAIZE SUNFLOWER SOYBEAN SUGARCANE SUGARBEET POTATO SORGHUM WOODCHIPS OLIVE GRAPE</fillTypeCategory>
         <fillTypeCategory name="FORAGEHARVESTER" >CHAFF GRASS_WINDROW WOODCHIPS</fillTypeCategory>
         <fillTypeCategory name="SLURRYTANK" >LIQUIDMANURE DIGESTATE</fillTypeCategory>
         <fillTypeCategory name="MANURESPREADER" >MANURE</fillTypeCategory>
         <fillTypeCategory name="FORK" >MANURE SILAGE CHAFF STRAW GRASS_WINDROW DRYGRASS_WINDROW</fillTypeCategory>
-        <fillTypeCategory name="SHOVEL" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW SUGARCANE FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM GRAPE OLIVE STONE MINERAL_FEED CARROT ONION</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW SUGARCANE FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM GRAPE OLIVE STONE MINERAL_FEED</fillTypeCategory>
         <fillTypeCategory name="ANIMAL" >COW_SWISS_BROWN COW_ANGUS COW_HOLSTEIN COW_LIMOUSIN SHEEP_BLACK_WELSH SHEEP_STEINSCHAF SHEEP_SWISS_MOUNTAIN SHEEP_LANDRACE PIG_LANDRACE PIG_BLACK_PIED PIG_BERKSHIRE CHICKEN CHICKEN_ROOSTER</fillTypeCategory>
         <fillTypeCategory name="HORSE" >HORSE_PALOMINO HORSE_BLACK HORSE_BAY HORSE_PINTO HORSE_SEAL_BROWN HORSE_GRAY HORSE_DUN HORSE_CHESTNUT</fillTypeCategory>
-        <fillTypeCategory name="FARMSILO" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM CARROT ONION</fillTypeCategory>
+        <fillTypeCategory name="FARMSILO" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM</fillTypeCategory>
         <fillTypeCategory name="HAYLOFT" >STRAW DRYGRASS_WINDROW</fillTypeCategory>
-        <fillTypeCategory name="LOADINGVEHICLE">WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SEEDS FORAGE CHAFF WOODCHIPS SILAGE FERTILIZER LIME SORGHUM CARROT ONION DEIONISED_WATER UREA_FERTILIZER</fillTypeCategory>
+        <fillTypeCategory name="LOADINGVEHICLE">WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SEEDS FORAGE CHAFF WOODCHIPS SILAGE FERTILIZER LIME SORGHUM DEIONISED_WATER UREA_FERTILIZER</fillTypeCategory>
         <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO EGG</fillTypeCategory>
         <fillTypeCategory name="PRODUCT_BGA">METHANE ELECTRICCHARGE</fillTypeCategory>
     </fillTypeCategories>
@@ -1697,7 +1697,7 @@
             <sound template="manureFill"/>
         </fillTypeSound>
 
-        <fillTypeSound fillTypes="POTATO SUGARBEET CARROT ONION">
+        <fillTypeSound fillTypes="POTATO SUGARBEET">
             <sound template="potatoFill"/>
         </fillTypeSound>
 

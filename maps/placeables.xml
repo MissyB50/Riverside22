@@ -17,7 +17,7 @@
     <placeable mapBoundId="bgaWeighingStation" filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" position="320.309 59.9 890.546" rotation="0 0 0" />
     <placeable mapBoundId="manureHeapCattle" filename="data/placeables/lizard/manureHeap/manureHeap.xml" position="-943.935 75 -112.737" rotation="0 0 0" />
     <placeable mapBoundId="manureHeapMain" filename="$mapdir$/maps/placeables/manureHeap.xml" position="802.958 60 -629.269" rotation="0 0 0" />
-
+    <placeable mapBoundId="bgaSiloMain" filename="$mapdir$/maps/placeables/bunkerSilo.xml" position="784.338 60 -661.93" rotation="0 -90 0" />
 
 
 <!--selling Station-->
@@ -42,7 +42,7 @@
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingddf.xml" position="-457.402 60.9 -20.8" rotation="0 90 0" />
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingSB.xml" position="-693.934 60.03 1002.04" rotation="0 90 0"/>
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingBIO.xml" position="-471.083 60.296 -669.654" rotation="0 0 0"/>
-    <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingBN.xml" position="" rotation="0 0 0"/>    
+    <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingBN.xml" position="-974 76.071 -936.092" rotation="0 90 0"/>    
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingBM.xml" position="634.217 60 -250.863" rotation="0 0 0"/>  
 	<placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingCW.xml" position="-999.827 76 -964.59" rotation="0 90 0"/>
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingWC.xml" position="641.163 60 -239.844" rotation="0 0 0"/>

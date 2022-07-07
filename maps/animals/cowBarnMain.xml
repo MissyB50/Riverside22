@@ -53,6 +53,7 @@
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
         <triggerMarker node="markerWater"        filename="$data/shared/assets/marker/markerIcons.xml" id="WATER" />
         <triggerMarker node="markerWater1"       filename="$data/shared/assets/marker/markerIcons.xml" id="WATER" />
+        <triggerMarker node="markerStraw"        filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
     </triggerMarkers>
 
     <tipOcclusionUpdateAreas>
@@ -75,20 +76,20 @@
         <storage node="storage" fillTypes="LIQUIDMANURE MILK STRAW MANURE WATER" isExtension="false">
             <capacity fillType="LIQUIDMANURE" capacity="800000" />
             <capacity fillType="MILK" capacity="500000" />
-            <capacity fillType="STRAW" capacity="60000" />
+            <capacity fillType="STRAW" capacity="80000" />
             <capacity fillType="MANURE" capacity="0" />
-            <capacity fillType="WATER" capacity="200000" />
+            <capacity fillType="WATER" capacity="120000" />
         </storage>
 
-        <unloadingStation supportsExtension="true" storageRadius="75" hideFromPricesMenu="true">
+        <unloadingStation supportsExtension="true" storageRadius="100" hideFromPricesMenu="true">
             <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
             <unloadTrigger exactFillRootNode="exactFillRootNodeWater" fillTypes="WATER" />
             <unloadTrigger exactFillRootNode="exactFillRootNodeWater1" fillTypes="WATER" />
             <unloadTrigger fillTypes="MANURE MILK LIQUIDMANURE WATER STRAW" />
         </unloadingStation>
 
-        <loadingStation supportsExtension="true" storageRadius="50">
-            <loadTrigger triggerNode="lqiuidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure" />
+        <loadingStation supportsExtension="true" storageRadius="100">
+            <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure" />
             <loadTrigger triggerNode="milkTrigger" fillTypes="MILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
         </loadingStation>
 
@@ -108,6 +109,8 @@
             <manure factor="1.5" />
             <strawPlane node="strawPlane" minY="-0.455" maxY="-0.16" colorChange="false" />
         </straw>
+
+        <liquidManure />
 
         <food capacity="500000">
             <foodPlaces>
@@ -137,8 +140,11 @@
                 <animatedObject index="2" direction="1" />
             </animatedObjects>
         </feedingRobot>
+
         <water automaticWaterSupply="false" >
             <waterPlane node="waterPlane" minY="0.065" maxY="0.35" changeVisibility="true" />
+<!--             <waterPlane node="waterPlane1" minY="0.065" maxY="0.35" changeVisibility="true" />
+            <waterPlane node="waterPlane2" minY="0.065" maxY="0.35" changeVisibility="true" /> -->
             <waterPlaces>
                 <waterPlace node="waterPlace1" />
                 <waterPlace node="waterPlace2" />
@@ -168,13 +174,13 @@
         <i3dMapping id="baleTrigger" node="0>1|3" />
         <i3dMapping id="storage" node="0>3" />
         <i3dMapping id="strawPlane" node="0>4|1" />
-        <i3dMapping id="strawPlane" node="0>4|2" />
+        <i3dMapping id="strawPlane1" node="0>4|2" />
         <i3dMapping id="exactFillRootNodeStraw" node="0>4|0" />
         <i3dMapping id="milkTrigger" node="0>5|0" />
         <i3dMapping id="milkingRobot1" node="0>5|1" />
         <i3dMapping id="milkingRobot2" node="0>5|2" />
         <i3dMapping id="aiLoadingNodeMilk" node="0>5|3" />
-        <i3dMapping id="lqiuidManureTrigger" node="0>7|0" />
+        <i3dMapping id="liquidManureTrigger" node="0>7|0" />
         <i3dMapping id="aiLoadingNodeLiquidManure" node="0>7|1" />
         <i3dMapping id="waterPlane" node="0>8|3"/>
         <i3dMapping id="waterPlane" node="0>8|4"/>
@@ -202,6 +208,7 @@
         <i3dMapping id="markerFood" node="0>12|3" />
         <i3dMapping id="markerWater" node="0>8|7" />
         <i3dMapping id="markerWater1" node="0>8|8" />
+        <i3dMapping id="markerStraw"  node="0>12|4" />
         <i3dMapping id="infoTrigger" node="0>13" />
         <i3dMapping id="infoTriggerVector" node="0>14" />
         <i3dMapping id="loadingTrigger" node="0>15" />

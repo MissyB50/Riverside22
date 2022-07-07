@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="bunkerSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>bunker Silo Large</name>
+        <functions>
+            <function>$l10n_function_bunkerSilo</function>
+        </functions>
+        <image>maps/textures/store_empty.dds</image>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>PLANET</brand>
+        <species>placeable</species>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/bunker.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas/>
+
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <bunkerSilo isExtendable="true" siloToSiloDistance="34.5" acceptedFillTypes="chaff grass_windrow dryGrass_windrow" inputFillType="chaff" outputFillType="silage" distanceToCompactedFillLevel="100" openingLength="5" >
+        <area startNode="siloAreaStart" widthNode="siloAreaWidth" heightNode="siloAreaHeight" />
+        <innerArea startNode="siloInnerAreaStart" widthNode="siloInnerAreaWidth" heightNode="siloInnerAreaHeight" />
+        <interactionTrigger node="siloAreaTrigger" />
+        <wallLeft  node="wallLeft"  collision="wallLeftCollision"/>
+        <wallRight node="wallRight" collision="wallRightCollision"/>
+    </bunkerSilo>
+
+    <i3dMappings>
+        <i3dMapping id="wallLeft" node="0>1" />
+        <i3dMapping id="wallRight" node="0>2" />
+        <i3dMapping id="siloAreaStart" node="0>0|0" />
+        <i3dMapping id="siloAreaWidth" node="0>0|1" />
+        <i3dMapping id="siloAreaHeight" node="0>0|2" />
+        <i3dMapping id="siloAreaTrigger" node="0>0|3" />
+        <i3dMapping id="siloInnerAreaStart" node="0>1|0" />
+        <i3dMapping id="siloInnerAreaWidth" node="0>1|1" />
+        <i3dMapping id="siloInnerAreaHeight" node="0>1|2" />
+        <i3dMapping id="testArea1Start" node="0>2|0" />
+        <i3dMapping id="testArea1End" node="0>2|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>3|0|0" />
+        <i3dMapping id="wallLeftCollision" node="0>4|1" />
+        <i3dMapping id="wallRightCollision" node="0>4|2" />
+    </i3dMappings>
+</placeable>

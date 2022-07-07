@@ -94,11 +94,11 @@
         <densityMapHeightType fillTypeName="OLIVE" maxSurfaceAngle="32" fillToGroundScale="1.0" allowsSmoothing="false">
             <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
         </densityMapHeightType>
-	    <densityMapHeightType fillTypeName="CARROT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+<!-- 	    <densityMapHeightType fillTypeName="CARROT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
             <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
         </densityMapHeightType>
 	    <densityMapHeightType fillTypeName="ONION" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
             <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
-        </densityMapHeightType>
+        </densityMapHeightType> -->
     </densityMapHeightTypes>
 </map>

@@ -902,7 +902,7 @@
             </period>
         </fruit>
 		 <!-- carrot has 9 states -->
-        <fruit name="carrot" initialState="5-6">
+<!--         <fruit name="carrot" initialState="5-6">
             <period index="1" plantingAllowed="true">                
             </period>
             <period index="2" plantingAllowed="true">
@@ -937,10 +937,10 @@
             </period>
             <period index="12">
             </period>
-        </fruit>
+        </fruit> -->
 	  
 	  <!-- onion has 9 states -->
-        <fruit name="onion" initialState="5-6">
+<!--         <fruit name="onion" initialState="5-6">
             <period index="1" plantingAllowed="true">
                 <update range="1" add="1" />
                 <update range="10" set="2" />
@@ -976,7 +976,7 @@
             </period>
             <period index="12">
             </period>
-        </fruit>
+        </fruit> -->
     </seasonal>
     <nonSeasonal>
         <fruit name="grape">

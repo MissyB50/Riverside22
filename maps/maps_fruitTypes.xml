@@ -219,7 +219,7 @@
             <mapColors default="0.0685 0.4564 0.2307 1" colorBlind="0.0130 0.0908 0.5210 1"/>
             <destruction canBeDestroyed="true" />
         </fruitType>
-		<fruitType name="carrot" shownOnMap="true" useForFieldJob="true">
+<!-- 		<fruitType name="carrot" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="true" allowsSeeding="true"  directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.04" />
             <harvest minHarvestingGrowthState="8" maxHarvestingGrowthState="8" cutState="10" allowsPartialGrowthState="false" literPerSqm="3.78" />
@@ -240,7 +240,7 @@
             <destruction canBeDestroyed="true" filterStart="4" filterEnd="12" />
             <cropCare maxWeederState="3" maxWeederHoeState="5" />
             <mapColors default="0.2622 0.1248 0.0782 1" colorBlind="0.3329 0.4664 0.8911 1"/>
-        </fruitType>
+        </fruitType> -->
         <fruitType name="meadow" shownOnMap="false" useForFieldJob="false">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="false" allowsSeeding="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
@@ -263,7 +263,7 @@
         <fruitTypeCategory name="PICKUP" >GRASS</fruitTypeCategory>
         <fruitTypeCategory name="SOWINGMACHINE" >WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM OILSEEDRADISH GRASS</fruitTypeCategory>
         <fruitTypeCategory name="SUGARCANE_PLANTER" >SUGARCANE</fruitTypeCategory>
-        <fruitTypeCategory name="PLANTER" >MAIZE SUNFLOWER SOYBEAN SUGARBEET COTTON CARROT ONION</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER" >MAIZE SUNFLOWER SOYBEAN SUGARBEET COTTON</fruitTypeCategory>
         <fruitTypeCategory name="WEEDER" >OILSEEDRADISH GRASS</fruitTypeCategory>
     </fruitTypeCategories>
 

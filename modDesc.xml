@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="67">
     <author>MissyB</author>
-    <version>0.0.987.2</version>
+    <version>1.0.0.0</version>
     <title>
         <en>Riverside 22</en>
         <de>Flussufer 22</de>
-        <sw>Riverside 22</sw>
     </title>
     <description>
         <en><![CDATA[......Disturbed Simulations]]></en>
@@ -83,6 +82,8 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
         <storeItem xmlFilename="maps/placeables/sellingManure.xml"/>
         <storeItem xmlFilename="maps/placeables/buyFarm.xml"/>
         <storeItem xmlFilename="maps/placeables/buyNorthFarm.xml"/>
+        <storeItem xmlFilename="maps/placeables/bunkerSilo.xml"/>
+
     </storeItems>
 
     <l10n>
