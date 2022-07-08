@@ -102,6 +102,15 @@
           <TransformGroup name="palletArea2Start" translation="0.8 0 -4.4" nodeId="54">
             <TransformGroup name="palletArea2End" translation="0 0 8.4" nodeId="55"/>
           </TransformGroup>
+          <TransformGroup name="palletArea3Start" translation="0 0 -4.4" nodeId="73">
+            <TransformGroup name="palletArea3End" translation="0 0 8.4" nodeId="74"/>
+          </TransformGroup>
+          <TransformGroup name="palletArea4Start" translation="-0.8 0 -4.4" nodeId="75">
+            <TransformGroup name="palletArea4End" translation="0 0 8.4" nodeId="76"/>
+          </TransformGroup>
+          <TransformGroup name="palletArea5Start" translation="-1.9 0 -4.4" nodeId="77">
+            <TransformGroup name="palletArea5End" translation="0 0 8.4" nodeId="78"/>
+          </TransformGroup>
         </TransformGroup>
         <Shape shapeId="9" name="infoTrigger" static="true" trigger="true" collisionMask="3145728" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         <Shape shapeId="10" name="loadingTrigger" translation="-1.65379 0 -16.3776" static="true" trigger="true" collisionMask="3145728" nodeId="57" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>

@@ -55,7 +55,7 @@
         <TransformGroup name="teleportNode" translation="19.8331 0 -108.338" nodeId="25"/>
         <TransformGroup name="food" translation="9.96503 0 -100" rotation="0 20 0" nodeId="26">
           <Shape shapeId="1" name="foodPlane" translation="3.715 0.175044 -0.312896" clipDistance="30" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="2" name="exactFillRootNodeFood" translation="1 -0.016331 -1.79959" static="true" collisionMask="1073741824" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="2" name="exactFillRootNodeFood" translation="1 0 -1.79959" static="true" collisionMask="1073741824" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <TransformGroup name="foodAINode" translation="1 0 -2.36932" rotation="0 -90 0" nodeId="29"/>
           <Shape shapeId="3" name="baleTrigger" translation="1 0.32165 -1.73862" visibility="false" static="true" trigger="true" collisionMask="16777216" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <TransformGroup name="foodPlaces" nodeId="31">
@@ -76,7 +76,7 @@
         </TransformGroup>
         <TransformGroup name="storage" translation="-4.63963 0 -94.9" rotation="0 20 0" nodeId="45"/>
         <TransformGroup name="water" translation="-18.2617 0 -89.508" rotation="0 20 0" nodeId="46">
-          <Shape shapeId="5" name="exactFillRootNodeWater" translation="-0.275 -0.016331 -1.86028" visibility="false" static="true" collisionMask="1073741824" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="5" name="exactFillRootNodeWater" translation="-0.275 0 -3.07442" static="true" collisionMask="1073741824" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <TransformGroup name="waterAINode" translation="0 0 -2.3468" rotation="0 -90 0" nodeId="48"/>
           <TransformGroup name="waterPlaces" nodeId="49">
             <TransformGroup name="waterPlace1" translation="-3.86128 0 -0.018305" rotation="0 180 0" nodeId="50"/>
@@ -94,7 +94,7 @@
           <Shape shapeId="4" name="water5" translation="3.43481 -0.153187 -0.316" rotation="0 180 0" clipDistance="150" nodeId="61" materialIds="4" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="4" name="water6" translation="5.24252 -0.153187 -0.316" rotation="0 180 0" clipDistance="150" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="6" name="waterPlane" translation="0.71197 0.175044 -0.313" clipDistance="30" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="6" name="waterPlane" translation="4.33331 0.175044 -0.312896" clipDistance="30" nodeId="64" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="waterPlane1" translation="4.33331 0.175044 -0.312896" clipDistance="30" nodeId="64" materialIds="5" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
         <TransformGroup name="palletAreas" nodeId="65">
           <Shape shapeId="7" name="palletTrigger" translation="33.469 0.54816 -100.743" visibility="false" static="true" trigger="true" collisionMask="2097152" nodeId="66" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>

@@ -71,6 +71,9 @@
             <spawnPlaces>
                 <spawnPlace startNode="palletArea1Start" endNode="palletArea1End" />
                 <spawnPlace startNode="palletArea2Start" endNode="palletArea2End" />
+                <spawnPlace startNode="palletArea3Start" endNode="palletArea3End" />
+                <spawnPlace startNode="palletArea4Start" endNode="palletArea4End" />
+                <spawnPlace startNode="palletArea5Start" endNode="palletArea5End" />
             </spawnPlaces>
         </pallets>
     </husbandry>
@@ -90,6 +93,12 @@
         <i3dMapping id="palletArea1End" node="0>5|1|0" />
         <i3dMapping id="palletArea2Start" node="0>5|2" />
         <i3dMapping id="palletArea2End" node="0>5|2|0" />
+        <i3dMapping id="palletArea3Start" node="0>5|3" />
+        <i3dMapping id="palletArea3End" node="0>5|3|0" />
+        <i3dMapping id="palletArea4Start" node="0>5|4" />
+        <i3dMapping id="palletArea4End" node="0>5|4|0" />
+        <i3dMapping id="palletArea5Start" node="0>5|5" />
+        <i3dMapping id="palletArea5End" node="0>5|5|0" />
         <i3dMapping id="markerFood" node="0>11" />
         <i3dMapping id="markerAnimals" node="0>10" />
         <i3dMapping id="infoTrigger" node="0>6" />
