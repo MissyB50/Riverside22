@@ -146,10 +146,4 @@
       </TransformGroup>
   </Scene>
 
-  <UserAttributes>
-    <UserAttribute nodeId="74">
-      <Attribute name="animalType" type="string" value="sheep"/>
-    </UserAttribute>
-  </UserAttributes>
-
 </i3D>

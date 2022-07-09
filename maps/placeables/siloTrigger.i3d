@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="liquidSilo" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="78" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="17" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="siloTrigger.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="silo" nodeId="151">
+        <TransformGroup name="gameplay" nodeId="55">
+          <TransformGroup name="IN" nodeId="56">
+            <TransformGroup name="unloadingStation" nodeId="57">
+              <TransformGroup name="unloadingTriggers" nodeId="58">
+                <Shape shapeId="1" name="exactFillRootNode" translation="0 -0.45 0" static="true" collisionMask="1073741824" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <Shape shapeId="2" name="baleTrigger" translation="5.36204e-07 3.5 0" rotation="0 -4.37897e-13 0" scale="16.1976 5.48759 6.33607" static="true" trigger="true" nodeId="60" materialIds="17" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <TransformGroup name="aiUnloadingNode" translation="0 0.37 -3.24719e-07" rotation="0 -90 0" nodeId="61"/>
+                <TransformGroup name="markerUnloading" translation="0 0.2 1" rotation="0 -90 0" nodeId="62"/>
+                <Shape shapeId="3" name="palletTrigger" translation="0 -0.1 0" static="true" trigger="true" collisionMask="16777216" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              </TransformGroup>
+              <Shape shapeId="4" name="infoTrigger" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="64" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="OUT" nodeId="65">
+            <TransformGroup name="loadingStation" nodeId="66">
+              <TransformGroup name="loadingTriggers" nodeId="67">
+                <Shape shapeId="5" name="loadingTrigger" translation="0 7.8 0" static="true" trigger="true" collisionMask="1073741824" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <TransformGroup name="dischargeNode" translation="0 5 10" nodeId="69"/>
+                <TransformGroup name="dischargeEffect" translation="0 5 10" nodeId="70">
+                  <Shape shapeId="6" name="pipeEffect" translation="0 3 -9.737" rotation="90 0 0" clipDistance="300" nodeId="71" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="7" name="pipeEffectSmoke" translation="0 -4.168 -9.5" visibility="false" clipDistance="100" nodeId="72" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="aiLoadingNode" translation="2.39808e-16 0.37 0" rotation="0 -90 0" nodeId="73"/>
+              </TransformGroup>
+              <TransformGroup name="markerLoading" translation="9.64294e-08 0.025 -1" rotation="0 -90 0" nodeId="74"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="storageFarm" nodeId="75"/>
+          <TransformGroup name="mapPosition" nodeId="76"/>
+          <Shape shapeId="8" name="aiSpline" rotation="0 180 0" visibility="false" nodeId="77"/>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" nodeId="145">
+          <Shape shapeId="9" name="playerTrigger" translation="0.159239 1.28492 -4.12798" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="146" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" nodeId="147"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="teleportNode" rotation="0 -45 0" nodeId="148"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="138">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-12 0 -9" nodeId="139">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="27 0 27" nodeId="140"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="135">
+          <TransformGroup name="testArea1Start" translation="-15 0 -10" nodeId="136">
+            <TransformGroup name="testArea1End" translation="30.5 0 28" nodeId="137"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="60">
+      <Attribute name="onCreate" type="scriptCallback" value="BaleDestroyerTrigger.onCreate"/>
+    </UserAttribute>
+    <UserAttribute nodeId="76">
+      <Attribute name="mapPositionIndex" type="string" value="0|3"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

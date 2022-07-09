@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="285" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingVehiclesMain.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="sellingStationVehicles" translation="667.313 59.9961 -693.878" clipDistance="200" nodeId="80280">
+        <Shape shapeId="1" name="vehicleTrigger" static="true" trigger="true" collisionMask="2097152" nodeId="80281" materialIds="285" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="2" name="playerInteractionTrigger" translation="-0.782507 0 -6.20121" static="true" trigger="true" collisionMask="1048576" nodeId="80282" materialIds="285" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="workshopMarker" nodeId="80283">
+            <TransformGroup name="playerTriggerMarker" translation="0 1.25 0" scale="0.5 0.5 0.5" clipDistance="200" nodeId="80284"/>
+          </TransformGroup>
+        </Shape>
+        <TransformGroup name="hotspotNode" translation="0 0 -3.87235" nodeId="80285"/>
+        <TransformGroup name="teleportNode" translation="-3.1478 0 5.07832" nodeId="80286"/>
+        <Shape shapeId="3" name="tipCollision" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="80287" materialIds="285" nonRenderable="true"/>
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.13569 0 -4" nodeId="80288">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.6317 0 8" nodeId="80289"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

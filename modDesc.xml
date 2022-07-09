@@ -83,7 +83,14 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
         <storeItem xmlFilename="maps/placeables/buyFarm.xml"/>
         <storeItem xmlFilename="maps/placeables/buyNorthFarm.xml"/>
         <storeItem xmlFilename="maps/placeables/bunkerSilo.xml"/>
+        <storeItem xmlFilename="maps/placeables/bunkerSilo1.xml"/>
+        <storeItem xmlFilename="maps/placeables/bunkerSilo2.xml"/>
+        <storeItem xmlFilename="maps/placeables/bunkerSilo3.xml"/>
+        <storeItem xmlFilename="maps/placeables/bunkerSilo4.xml"/>
 
+
+        <storeItem xmlFilename="maps/placeables/Silo300.xml"/>
+        <storeItem xmlFilename="maps/placeables/SiloFarm3.xml"/>
     </storeItems>
 
     <l10n>

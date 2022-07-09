@@ -21,7 +21,7 @@
   </Dynamics>
 
   <Scene>
-      <NavigationMesh name="NavMesh" nodeId="158" shapeId="1"/>
+      <NavigationMesh name="NavMesh" nodeId="148" shapeId="1"/>
   </Scene>
 
 </i3D>

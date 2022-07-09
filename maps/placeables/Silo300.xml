@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+		    <en>Large Prodution</en>
+            <de>Große Produktion</de>
+            <fr>Grande production</fr>
+            <sw>Stor produktion</sw>
+        </name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>store.dds</image>
+        <price>110000</price>
+        <lifetime>500</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/Silo300.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas/>
+    <leveling/>
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="mapPosition" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+    </triggerMarkers>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="Wheat" name="$l10n_fillType_wheat" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="WHEAT" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="WHEAT" amount="1" />
+                </outputs>
+            </production>
+            <production id="Barley" name="$l10n_fillType_barley"  cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="BARLEY" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="BARLEY" amount="1" />
+                </outputs>
+            </production>
+            <production id="Oat" name="$l10n_fillType_oat" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="OAT" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="OAT" amount="1" />
+                </outputs>
+            </production>
+            <production id="Sorghum" name="$l10n_fillType_sorghum" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="SORGHUM" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SORGHUM" amount="1" />
+                </outputs>
+            </production>
+            <production id="Canola" name="$l10n_fillType_canola" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="CANOLA" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CANOLA" amount="1" />
+                </outputs>
+            </production>
+            <production id="Corn" name="$l10n_fillType_maize" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="MAIZE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="MAIZE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Olive" name="$l10n_fillType_olive" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="OLIVE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="OLIVE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Grape" name="$l10n_fillType_grape" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="GRAPE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="GRAPE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Sunflower" name="$l10n_fillType_sunflower" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="SUNFLOWER" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SUNFLOWER" amount="1" />
+                </outputs>
+            </production>
+            <production id="Soybeans" name="$l10n_fillType_soybean" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="SOYBEAN" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOYBEAN" amount="1" />
+                </outputs>
+            </production>
+            <production id="Sugarcane" name="$l10n_fillType_sugarCane" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="SUGARCANE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SUGARCANE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Straw" name="$l10n_fillType_straw" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="STRAW" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAW" amount="1" />
+                </outputs>
+            </production>
+            <production id="Sugarbeet" name="$l10n_fillType_sugarBeet" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="SUGARBEET" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SUGARBEET" amount="1" />
+                </outputs>
+            </production>
+            <production id="Potato" name="$l10n_fillType_potato" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="POTATO" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATO" amount="1" />
+                </outputs>
+            </production>
+            <production id="Milk" name="$l10n_fillType_milk" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="MILK" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="MILK" amount="1" />
+                </outputs>
+            </production>
+            <production id="Manure" name="$l10n_fillType_manure" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="MANURE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="MANURE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Slurry" name="$l10n_fillType_liquidManure" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="LIQUIDMANURE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="LIQUIDMANURE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Silage" name="$l10n_fillType_silage" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="SILAGE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SILAGE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Hay" name="Hay" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="DRYGRASS_WINDROW" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="DRYGRASS_WINDROW" amount="1" />
+                </outputs>
+            </production>
+            <production id="Grass" name="Grass" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="GRASS_WINDROW" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="GRASS_WINDROW" amount="1" />
+                </outputs>
+            </production>
+            <production id="SugarBeet Cut" name="SugarBeet Cut" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="SUGARBEET_CUT" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SUGARBEET_CUT" amount="1" />
+                </outputs>
+            </production>
+            <production id="Digestate" name="$l10n_fillType_digestate" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="DIGESTATE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="DIGESTATE" amount="1" />
+                </outputs>
+            </production>
+            <production id="Diesel" name="$l10n_fillType_diesel" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="DIESEL" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="DIESEL" amount="1" />
+                </outputs>
+            </production>
+            <production id="Mineral Feed" name="MINERAL FEED" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="MINERAL_FEED" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="MINERAL_FEED" amount="1" />
+                </outputs>
+            </production>
+            <production id="TMR" name="Total Mixed Ration" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="FORAGE" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="FORAGE" amount="1" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="WHEAT"   capacity="1000000" />
+            <capacity fillType="BARLEY"  capacity="1000000" />
+            <capacity fillType="OAT"     capacity="1000000" />
+            <capacity fillType="SORGHUM" capacity="1000000" />
+            <capacity fillType="CANOLA" capacity="1000000" />
+            <capacity fillType="MAIZE" capacity="1000000" />
+            <capacity fillType="OLIVE" capacity="1000000" />
+            <capacity fillType="GRAPE" capacity="1000000" />
+            <capacity fillType="SUNFLOWER" capacity="1000000" />
+            <capacity fillType="SOYBEAN" capacity="1000000" />
+            <capacity fillType="MANURE" capacity="1000000" />
+            <capacity fillType="POTATO" capacity="1000000" />
+            <capacity fillType="SUGARBEET" capacity="1000000" />
+            <capacity fillType="STRAW" capacity="1000000" />
+            <capacity fillType="SILAGE" capacity="1000000" />
+            <capacity fillType="MILK" capacity="1000000" />
+            <capacity fillType="SUGARCANE" capacity="1000000" />
+            <capacity fillType="LIQUIDMANURE" capacity="1000000"/>
+            <capacity fillType="DRYGRASS_WINDROW" capacity="1000000"/>
+            <capacity fillType="GRASS_WINDROW" capacity="1000000"/>
+            <capacity fillType="DRYGRASS_WINDROW" capacity="1000000"/>
+            <capacity fillType="SUGARBEET_CUT" capacity="1000000" />
+            <capacity fillType="DIGESTATE" capacity="1000000" />
+            <capacity fillType="DIESEL" capacity="1000000" />
+            <capacity fillType="MINERAL_FEED" capacity="1000000" />
+            <capacity fillType="FORAGE" capacity="1000000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="aiUnloadingNode" fillTypes="WHEAT BARLEY OAT SORGHUM CANOLA SOYBEAN MAIZE SUNFLOWER OLIVE GRAPE POTATO SUGARBEET SUGARCANE STRAW MILK MANURE SILAGE LIQUIDMANURE DRYGRASS_WINDROW GRASS_WINDROW SUGARBEET_CUT DIGESTATE MINERAL_FEED DIESEL FORAGE_MIXING" />
+			<baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="5000" />
+        </sellingStation>
+
+        <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="WHEAT BARLEY OAT SORGHUM CANOLA SOYBEAN MAIZE SUNFLOWER OLIVE GRAPE POTATO SUGARBEET SUGARCANE STRAW MILK MANURE SILAGE LIQUIDMANURE DRYGRASS_WINDROW GRASS_WINDROW SUGARBEET_CUT DIGESTATE MINERAL_FEED DIESEL FORAGE_MIXING" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <sounds>
+            <idle template="grainMillIdle" linkNode="0>" volumeScale="0.2"/>
+            <active template="grainMillWork" linkNode="0>" volumeScale="0.4"/>
+        </sounds>
+    </productionPoint>
+
+
+    <i3dMappings>
+        <i3dMapping id="mapPosition" node="0>0|3" />
+        <i3dMapping id="storage" node="0>0|2" />
+        <i3dMapping id="loadingTrigger" node="0>0|1|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1|1" />
+        <i3dMapping id="pipeEffect" node="0>0|1|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>0|1|2|1" />
+        <i3dMapping id="aiLoadingNode" node="0>0|1|3" />
+        <i3dMapping id="markerLoading" node="0>0|1|4" />
+        <i3dMapping id="exactFillRootNode" node="0>0|0|0" />
+        <i3dMapping id="baleTriggerNode" node="0>0|0|1" />
+        <i3dMapping id="aiUnloadingNode" node="0>0|0|2" />
+        <i3dMapping id="markerUnloading" node="0>0|0|3" />
+        <i3dMapping id="infoTrigger" node="0>2" />
+        <i3dMapping id="aiSpline" node="0>0|4" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+        <i3dMapping id="teleportNode" node="0>3" />
+        <i3dMapping id="playerTrigger" node="0>1|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>1|0|0" />
+    </i3dMappings>
+</placeable>

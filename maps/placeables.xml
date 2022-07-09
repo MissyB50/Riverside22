@@ -10,14 +10,16 @@
 
 
 <!--
-    <placeable mapBoundId="bga"          filename="maps/placeables/bga.xml" position="287.844 60 967.439" rotation="0 0 0" />
-    <placeable mapBoundId="bgaSilo1"     filename="data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.xml" position="-420.5 61.79 605" rotation="0 0 0" />
-    <placeable mapBoundId="bgaSilo2"     filename="data/placeables/planET/bgaBunkerSilo/bgaBunkerSilo.xml" position="-386 61.79 605" rotation="0 0 0" />-->
+    <placeable mapBoundId="bga"          filename="maps/placeables/bga.xml" position="287.844 60 967.439" rotation="0 0 0" />-->
+    <placeable mapBoundId="bgaSiloBGA1" filename="$mapdir$/maps/placeables/bunkerSilo1.xml" position="269 60.1 996.523" rotation="0 90 0" />
+    <placeable mapBoundId="bgaSiloBGA2" filename="$mapdir$/maps/placeables/bunkerSilo2.xml" position="269 60 975.731" rotation="0 90 0" />
+    <placeable mapBoundId="bgaSiloBGA3" filename="$mapdir$/maps/placeables/bunkerSilo3.xml" position="269 60.1 954.913" rotation="0 90 0" />
+    <placeable mapBoundId="bgaSiloBGA4" filename="$mapdir$/maps/placeables/bunkerSilo4.xml" position="269 60 934.092" rotation="0 90 0" />
     <placeable mapBoundId="bgaWeighingStation" filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" position="303.443 59.9 888.349" rotation="0 180 0" />
     <placeable mapBoundId="bgaWeighingStation" filename="data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.xml" position="320.309 59.9 890.546" rotation="0 0 0" />
     <placeable mapBoundId="manureHeapCattle" filename="data/placeables/lizard/manureHeap/manureHeap.xml" position="-943.935 75 -112.737" rotation="0 0 0" />
     <placeable mapBoundId="manureHeapMain" filename="data/placeables/lizard/manureHeap/manureHeapExtension.xml" position="811.25 60 -631.75" rotation="0 270 0" />
-    <placeable mapBoundId="bgaSiloMain" filename="$mapdir$/maps/placeables/bunkerSilo.xml" position="784.338 60 -661.93" rotation="0 -90 0" />
+    <placeable mapBoundId="bgaSiloMain" filename="$mapdir$/maps/placeables/bunkerSilo.xml" position="781.6 59.99 -661.848" rotation="0 -90 0" />
 
 
 <!--selling Station-->
@@ -68,4 +70,38 @@
 	<placeable mapBoundId="sellingStationgrainMill" filename="$mapdir$/maps/placeables/grainMill.xml" position="-652.416 60 136.479"  rotation="0 0 0" />
     <placeable mapBoundId="sellingStationDiesel" filename="$mapdir$/maps/placeables/ddProcessing.xml" position="955.241 60 992.076" rotation="0 180 0"/>
     <placeable mapBoundId="sellingStationMixingMill" filename="$mapdir$/maps/placeables/mixingMill.xml" position="1003 60 920" rotation="0 0 0"/>
+
+<!--    <placeable mapBoundId="sellingStationVehiclesMain" filename="" position="667.313 60 -693.878" rotation=""/>
+    <placeable mapBoundId="sellingStationVehiclesShop" filename="" position="150.557 60.11 -245.597" rotation=""/>
+    <placeable mapBoundId="sellingStationVehiclesUEG" filename="" position="-454.145 61.9 488.704" rotation=""/>
+    <placeable mapBoundId="sellingStationVehiclesMiss" filename="" position="" rotation=""/>
+    <placeable mapBoundId="sellingStationVehicles3" filename="" position="-454.145 61.9 612.281" rotation=""/>
+    <placeable mapBoundId="sellingStationVehiclescattle" filename="" position="-888.842 75 162.886" rotation=""/>
+	<placeable mapBoundId="" filename="" position="" rotation=""/> -->
+
+
+
+
+<!--silos-->
+    <placeable mapBoundId="farmStorageSilo" filename="$mapdir$/maps/placeables/Silo300.xml" position="-464.369 62 537.9" rotation="0 90 0"/>
+    <placeable mapBoundId="farmStorageSilo1" filename="$mapdir$/maps/placeables/SiloFarm3.xml" position="-518.912 62 687.322" rotation="0 0 0"/>
+<!--    <placeable mapBoundId="farmStorageSilo2" filename="" position="" rotation=""/>
+    <placeable mapBoundId="farmStorageSilo3" filename="" position="" rotation=""/>
+    <placeable mapBoundId="farmStorageSilo4" filename="" position="" rotation=""/> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--     <placeable mapBoundId="" filename="" position="" rotation=""/> -->
 </placeables>

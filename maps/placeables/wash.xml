@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="highPressureWasher" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+		    <en>Kaercher Washer</en>
+            <de>Kärcher Washer</de>
+            <sw>Kaercher tvättmaskin</sw>
+        </name>
+        <functions>
+            <function>$l10n_function_highPressureWasher</function>
+        </functions>
+        <image>store_sa.dds</image>
+        <price>1000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>KAERCHER</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/wash.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" alignToWorldY="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" pitchScale="1.6"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling />
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <highPressureWasher>
+        <handtool filename="$data/placeables/kaercher/hds9184M/firstPerson/hds9184MLance.xml" />
+        <lance node="lance" />
+        <sounds>
+            <compressor template="PRESSURE_WASHER_RUN_01" linkNode="0>" />
+            <switch template="PRESSURE_WASHER_SWITCH_01" linkNode="lanceMountedSoundNode" />
+        </sounds>
+    </highPressureWasher>
+
+    <i3dMappings>
+        <i3dMapping id="lance" node="0>0|0" />
+        <i3dMapping id="lanceMountedSoundNode" node="0>0|1" />
+        <i3dMapping id="exhaust" node="0>0|2" />
+        <i3dMapping id="positionRef1" node="0>1|0" />
+        <i3dMapping id="positionRef2" node="0>1|1" />
+        <i3dMapping id="positionRef3" node="0>1|2" />
+        <i3dMapping id="infoTrigger" node="0>2" />
+        <i3dMapping id="clearArea1Start" node="0>3|0" />
+        <i3dMapping id="clearArea1Width" node="0>3|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>3|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>4|0" />
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+        <i3dMapping id="kaercherHDS918" node="0>7|0" />
+    </i3dMappings>
+</placeable>
