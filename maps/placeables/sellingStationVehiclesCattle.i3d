@@ -10,7 +10,7 @@
 
 
   <Materials>
-    <Material name="lambert1" materialId="285" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
   </Materials>
 
@@ -23,18 +23,18 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="sellingStationVehicles" translation="-888.842 75 -162.886" clipDistance="200" nodeId="80280">
-        <Shape shapeId="1" name="vehicleTrigger" scale="1 1 1.481" static="true" trigger="true" collisionMask="2097152" nodeId="80281" materialIds="285" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <Shape shapeId="2" name="playerInteractionTrigger" translation="0.676559 0 -5.75429" static="true" trigger="true" collisionMask="1048576" nodeId="80282" materialIds="285" castsShadows="true" receiveShadows="true" nonRenderable="true">
-          <TransformGroup name="workshopMarker" nodeId="80283">
-            <TransformGroup name="playerTriggerMarker" translation="0 1.25 0" scale="0.5 0.5 0.5" clipDistance="200" nodeId="80284"/>
+      <TransformGroup name="sellingStationVehicles" clipDistance="200" nodeId="9">
+        <Shape shapeId="1" name="vehicleTrigger" scale="1 1 1.481" static="true" trigger="true" collisionMask="2097152" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="2" name="playerInteractionTrigger" translation="0.676559 0 -5.75429" static="true" trigger="true" collisionMask="1048576" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="workshopMarker" nodeId="12">
+            <TransformGroup name="playerTriggerMarker" translation="0 1.25 0" scale="0.5 0.5 0.5" clipDistance="200" nodeId="13"/>
           </TransformGroup>
         </Shape>
-        <TransformGroup name="hotspotNode" translation="0 0 -3.87235" nodeId="80285"/>
-        <TransformGroup name="teleportNode" translation="-3.1478 0 5.07832" nodeId="80286"/>
-        <Shape shapeId="3" name="tipCollision" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="80287" materialIds="285" nonRenderable="true"/>
-        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.13569 0 -4" nodeId="80288">
-          <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.6317 0 8" nodeId="80289"/>
+        <TransformGroup name="hotspotNode" translation="0 0 -3.87235" nodeId="14"/>
+        <TransformGroup name="teleportNode" translation="-3.1478 0 5.07832" nodeId="15"/>
+        <Shape shapeId="3" name="tipCollision" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="16" materialIds="4" nonRenderable="true"/>
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.13569 0 -4" nodeId="17">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.6317 0 8" nodeId="18"/>
         </TransformGroup>
       </TransformGroup>
   </Scene>

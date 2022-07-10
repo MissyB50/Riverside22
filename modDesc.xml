@@ -36,6 +36,12 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
 		<storeItem xmlFilename="maps/animals/cowBarnMain.xml"/>
         <storeItem xmlFilename="maps/animals/prehusbandryPig.xml"/>
 		<storeItem xmlFilename="maps/animals/cattleBarn.xml"/>
+<!--         <storeItem xmlFilename="maps/placeables/sellingStationVehiclesMain.xml" /> -->
+        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesShop.xml" />
+<!--         <storeItem xmlFilename="maps/placeables/sellingStationVehiclesMiss.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingStationVehicles3.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesCat.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesUEG.xml" />-->
         <storeItem xmlFilename="maps/placeables/sellingStationGrain.xml" />
         <storeItem xmlFilename="maps/placeables/sellingGrain1.xml" />
         <storeItem xmlFilename="maps/placeables/baleMainShop.xml" />
@@ -87,6 +93,11 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
         <storeItem xmlFilename="maps/placeables/bunkerSilo2.xml"/>
         <storeItem xmlFilename="maps/placeables/bunkerSilo3.xml"/>
         <storeItem xmlFilename="maps/placeables/bunkerSilo4.xml"/>
+        <storeItem xmlFilename="maps/placeables/wash.xml"/>
+        <storeItem xmlFilename="maps/placeables/wash1.xml"/>
+        <storeItem xmlFilename="maps/placeables/wash2.xml"/>
+        <storeItem xmlFilename="maps/placeables/wash3.xml"/>
+        <storeItem xmlFilename="maps/placeables/wash4.xml"/>
 
 
         <storeItem xmlFilename="maps/placeables/Silo300.xml"/>

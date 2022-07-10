@@ -71,13 +71,17 @@
     <placeable mapBoundId="sellingStationDiesel" filename="$mapdir$/maps/placeables/ddProcessing.xml" position="955.241 60 992.076" rotation="0 180 0"/>
     <placeable mapBoundId="sellingStationMixingMill" filename="$mapdir$/maps/placeables/mixingMill.xml" position="1003 60 920" rotation="0 0 0"/>
 
-<!--    <placeable mapBoundId="sellingStationVehiclesMain" filename="" position="667.313 60 -693.878" rotation=""/>
-    <placeable mapBoundId="sellingStationVehiclesShop" filename="" position="150.557 60.11 -245.597" rotation=""/>
-    <placeable mapBoundId="sellingStationVehiclesUEG" filename="" position="-454.145 61.9 488.704" rotation=""/>
-    <placeable mapBoundId="sellingStationVehiclesMiss" filename="" position="" rotation=""/>
-    <placeable mapBoundId="sellingStationVehicles3" filename="" position="-454.145 61.9 612.281" rotation=""/>
-    <placeable mapBoundId="sellingStationVehiclescattle" filename="" position="-888.842 75 162.886" rotation=""/>
-	<placeable mapBoundId="" filename="" position="" rotation=""/> -->
+<!--     <placeable mapBoundId="sellingStationVehiclesMain" filename="$mapdir$/maps/placeables/sellingStationVehiclesMain.xml" position="667.313 60 -693.878" rotation="0 0 0"/> -->
+    <placeable mapBoundId="sellingStationVehiclesShop" filename="$mapdir$/maps/placeables/sellingStationVehiclesShop.xml" position="150.557 60.11 -245.597" rotation="0 0 0"/>
+<!--     <placeable mapBoundId="sellingStationVehiclesUEG" filename="$mapdir$/maps/placeables/sellingStationVehiclesUEG.xml" position="-454.145 61.9 488.704" rotation="0 0 0"/>
+    <placeable mapBoundId="sellingStationVehiclesMiss" filename="$mapdir$/maps/placeables/sellingStationVehiclesMiss.xml" position="-558.211 60 961.488" rotation="0 0 0"/>
+    <placeable mapBoundId="sellingStationVehicles3" filename="$mapdir$/maps/placeables/sellingStationVehicles3.xml" position="-454.145 61.9 612.281" rotation="0 0 0"/>
+    <placeable mapBoundId="sellingStationVehiclescattle" filename="$mapdir$/maps/placeables/sellingStationVehiclescattle.xml" position="-888.842 75 162.886" rotation="0 0 0"/> -->
+	<placeable mapBoundId="washerMain" filename="$mapdir$/maps/placeables/wash.xml" position="664.609 60 -676.458" rotation="0 0 0"/>
+	<placeable mapBoundId="washer300" filename="$mapdir$/maps/placeables/wash1.xml" position="-460.333 61.926 482.428" rotation="0 -90 0"/>
+	<placeable mapBoundId="washerF3" filename="$mapdir$/maps/placeables/wash2.xml" position="-460.333 61.926 605.952" rotation="0 -90 0"/>
+	<placeable mapBoundId="washerMiss" filename="$mapdir$/maps/placeables/wash3.xml" position="-553.511 60 953.2" rotation="0 -90 0"/>
+	<placeable mapBoundId="washerCat" filename="$mapdir$/maps/placeables/wash4.xml" position="-893.584 75 -169.183" rotation="0 -90 0"/>
 
 
 

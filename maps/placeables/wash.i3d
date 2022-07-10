@@ -16,21 +16,14 @@
     <File fileId="9" filename="$data/shared/default_normal.png"/>
     <File fileId="15" filename="$data/shared/default_specular.dds"/>
     <File fileId="12" filename="$data/shared/default_vmask.png"/>
-    <File fileId="20" filename="../textures/kracher.dds"/>
-    <File fileId="21" filename="../textures/panel.dds"/>
+    <File fileId="19" filename="../textures/kracher.dds"/>
+    <File fileId="20" filename="../textures/panel.dds"/>
     <File fileId="13" filename="../textures/panel1.dds"/>
     <File fileId="14" filename="../textures/powdercoat_normal.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="black" materialId="4" customShaderId="16" customShaderVariation="customParallax">
-      <Texture fileId="13"/>
-      <Normalmap fileId="14"/>
-      <Glossmap fileId="15"/>
-      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
-      <CustomParameter name="snowScale" value="1 0 0 0"/>
-    </Material>
     <Material name="kaercherHDS918_4M_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
@@ -62,12 +55,19 @@
     <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
     <Material name="UnnamedMaterial" materialId="9" alphaBlending="true">
-      <Texture fileId="20"/>
+      <Texture fileId="19"/>
     </Material>
     <Material name="UnnamedMaterial" materialId="10">
-      <Texture fileId="21"/>
+      <Texture fileId="20"/>
     </Material>
     <Material name="UnnamedMaterial" materialId="11" diffuseColor="0 0 0 1">
+    </Material>
+    <Material name="washer_mat" materialId="64" customShaderId="16">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
     </Material>
   </Materials>
 
@@ -117,15 +117,14 @@
             <TransformGroup name="tipOcclusionUpdateArea1End" translation="1 0 1.66051" nodeId="49"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="visuals" nodeId="50">
-          <Shape shapeId="5" name="Karcher" static="true" clipDistance="400" nodeId="51" materialIds="4" castsShadows="true" receiveShadows="true">
+        <TransformGroup name="visuals" nodeId="103">
+          <Shape shapeId="5" name="karcher" static="true" clipDistance="400" nodeId="104" materialIds="64" castsShadows="true" receiveShadows="true">
             <Shape shapeId="6" name="plane" nodeId="52" materialIds="11" distanceBlending="false"/>
             <Shape shapeId="7" name="plane" nodeId="53" materialIds="11" distanceBlending="false"/>
             <Shape shapeId="8" name="mainDecal" clipDistance="400" nodeId="54" materialIds="9" distanceBlending="false"/>
             <Shape shapeId="9" name="decal" clipDistance="400" nodeId="55" materialIds="10" distanceBlending="false"/>
             <Shape shapeId="10" name="rope" clipDistance="40" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true"/>
           </Shape>
-          <TransformGroup name="winter" nodeId="57"/>
         </TransformGroup>
         <TransformGroup name="collisions" nodeId="58">
           <Shape shapeId="11" name="tipCollision" visibility="false" static="true" collisionMask="524288" nodeId="59" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
