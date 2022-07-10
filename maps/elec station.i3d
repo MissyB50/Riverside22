@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Sample Mod Map 1" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="16" filename="maps/sounds/electric_buzz_02_loop.wav"/>
+    <File fileId="9" filename="textures/auxialiarySet_normal.png"/>
+    <File fileId="10" filename="textures/auxialiarySet_specular.png"/>
+    <File fileId="11" filename="textures/auxiliaryDecals01_diffuse.png"/>
+    <File fileId="12" filename="textures/auxiliaryDecals01_normal.png"/>
+    <File fileId="13" filename="textures/auxiliaryDecals01_specular.png"/>
+    <File fileId="1" filename="textures/texturatlasMW_01_diffuse.dds"/>
+    <File fileId="3" filename="textures/texturatlasMW_01_gloss.dds"/>
+    <File fileId="2" filename="textures/texturatlasMW_01_normal.dds"/>
+    <File fileId="14" filename="textures/trafostation_decals_diffuse.dds"/>
+    <File fileId="15" filename="textures/trafostation_decals_spec.dds"/>
+    <File fileId="5" filename="textures/trafostation_spec.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="auxialiarySet_mat" materialId="4">
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="auxiliaryDecals01_mat" materialId="5">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="trafostation_decals" materialId="6">
+      <Texture fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="trafostation_mat" materialId="7" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="elec station.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="trafostation_02" scale="2 2 2" static="true" clipDistance="299" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true">
+        <TransformGroup name="addon" nodeId="22">
+          <Shape shapeId="2" name="wallVent01" translation="-1.62778 1.7417 0.580746" rotation="-0 -90 0" clipDistance="40" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="dirt_decal" translation="-1.40461e-07 5.72205e-08 0.00194531" clipDistance="30" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="4" name="wallVent02" translation="0.66697 1.9036 -1.10777" rotation="180 -5.00896e-06 180" clipDistance="100" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="dirt_decal" translation="-1.22012e-07 -2.68555e-08 0.00316836" clipDistance="30" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="6" name="ventGridTiny" translation="1.18847 2.21189 1.10777" rotation="5.00896e-06 0 5.00896e-06" clipDistance="40" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="dirt_decal" translation="5.07742e-08 9.53674e-09 0.00166457" clipDistance="30" nodeId="28" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="8" name="decal" translation="-0.099 1.06146 0.718291" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <AudioSource name="electric_sound" nodeId="30" fileIds="16" range="10" innerRange="1" volume="0.6" loops="1"/>
+      </Shape>
+      <Shape shapeId="9" name="trafostation_03" translation="0 0 -4.18111" scale="2 2 2" static="true" clipDistance="299" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true">
+        <TransformGroup name="addon" nodeId="33">
+          <Shape shapeId="10" name="ventGridSmall" translation="0.684691 1.13244 -0.971273" rotation="-180 0 -180" clipDistance="40" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="dirt_decal" translation="0 9.53674e-09 0.00174108" clipDistance="30" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="6" name="ventGridTiny" translation="0.75539 1.20468 0.971273" rotation="5.00896e-06 -0 5.00896e-06" clipDistance="40" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="dirt_decal" translation="5.07742e-08 9.53674e-09 0.00166457" clipDistance="30" nodeId="37" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="12" name="decal" translation="-0.0318378 0 -0.28" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <AudioSource name="electric_sound" nodeId="39" fileIds="16" range="10" innerRange="1" volume="0.6" loops="1"/>
+      </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="30">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateSoundNode"/>
+      <Attribute name="playByDay" type="boolean" value="true"/>
+      <Attribute name="playByNight" type="boolean" value="true"/>
+      <Attribute name="playDuringHail" type="boolean" value="true"/>
+      <Attribute name="playDuringRain" type="boolean" value="true"/>
+      <Attribute name="playDuringSun" type="boolean" value="true"/>
+      <Attribute name="playExterior" type="boolean" value="true"/>
+      <Attribute name="playHour" type="boolean" value="false"/>
+      <Attribute name="playHourEnd" type="float" value="0"/>
+      <Attribute name="playHourInverted" type="boolean" value="false"/>
+      <Attribute name="playHourStart" type="float" value="0"/>
+      <Attribute name="playInsideBuilding" type="boolean" value="false"/>
+      <Attribute name="playInterior" type="boolean" value="false"/>
+      <Attribute name="retriggerMaxDelay" type="float" value="0"/>
+      <Attribute name="retriggerMinDelay" type="float" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateSoundNode"/>
+      <Attribute name="playByDay" type="boolean" value="true"/>
+      <Attribute name="playByNight" type="boolean" value="true"/>
+      <Attribute name="playDuringHail" type="boolean" value="true"/>
+      <Attribute name="playDuringRain" type="boolean" value="true"/>
+      <Attribute name="playDuringSun" type="boolean" value="true"/>
+      <Attribute name="playExterior" type="boolean" value="true"/>
+      <Attribute name="playHour" type="boolean" value="false"/>
+      <Attribute name="playHourEnd" type="float" value="0"/>
+      <Attribute name="playHourInverted" type="boolean" value="false"/>
+      <Attribute name="playHourStart" type="float" value="0"/>
+      <Attribute name="playInsideBuilding" type="boolean" value="false"/>
+      <Attribute name="playInterior" type="boolean" value="false"/>
+      <Attribute name="retriggerMaxDelay" type="float" value="0"/>
+      <Attribute name="retriggerMinDelay" type="float" value="0"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

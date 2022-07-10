@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="Sample Mod Map 1" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.2.2"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="textures/Brick_Antique.dds"/>
+        <File fileId="1" filename="textures/House2.png"/>
+        <File fileId="2" filename="textures/grey_roof_slate1.dds"/>
+    </Files>
+    <Materials>
+        <Material name="Brick_Antique" materialId="84">
+            <Texture fileId="3"/>
+        </Material>
+        <Material name="House2" materialId="247">
+            <Texture fileId="1"/>
+        </Material>
+        <Material name="Material.003" materialId="320">
+            <Texture fileId="2"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="house.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="House2" translation="-149.645 60.148 -124.329" rotation="-180 -35.457 -180" static="true" clipDistance="400" nodeId="11257" materialIds="247,320,84" castsShadows="true" receiveShadows="true"/>
+    </Scene>
+</i3D>
