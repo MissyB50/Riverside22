@@ -300,12 +300,12 @@
         <playerTrigger node="playerTrigger" />
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="aiUnloadingNode" fillTypes="WHEAT BARLEY OAT SORGHUM CANOLA SOYBEAN MAIZE SUNFLOWER OLIVE GRAPE POTATO SUGARBEET SUGARCANE STRAW MILK MANURE SILAGE LIQUIDMANURE DRYGRASS_WINDROW GRASS_WINDROW SUGARBEET_CUT DIGESTATE MINERAL_FEED DIESEL FORAGE_MIXING" />
+            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="aiUnloadingNode" fillTypes="WHEAT BARLEY OAT SORGHUM CANOLA SOYBEAN MAIZE SUNFLOWER OLIVE GRAPE POTATO SUGARBEET SUGARCANE STRAW MILK MANURE SILAGE LIQUIDMANURE DRYGRASS_WINDROW GRASS_WINDROW SUGARBEET_CUT DIGESTATE MINERAL_FEED DIESEL FORAGE_MIXING FORAGE" />
 			<baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="5000" />
         </sellingStation>
 
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
-            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="WHEAT BARLEY OAT SORGHUM CANOLA SOYBEAN MAIZE SUNFLOWER OLIVE GRAPE POTATO SUGARBEET SUGARCANE STRAW MILK MANURE SILAGE LIQUIDMANURE DRYGRASS_WINDROW GRASS_WINDROW SUGARBEET_CUT DIGESTATE MINERAL_FEED DIESEL FORAGE_MIXING" aiNode="aiLoadingNode">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="WHEAT BARLEY OAT SORGHUM CANOLA SOYBEAN MAIZE SUNFLOWER OLIVE GRAPE POTATO SUGARBEET SUGARCANE STRAW MILK MANURE SILAGE LIQUIDMANURE DRYGRASS_WINDROW GRASS_WINDROW SUGARBEET_CUT DIGESTATE MINERAL_FEED DIESEL FORAGE_MIXING FORAGE" aiNode="aiLoadingNode">
                 <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
                 <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
             </loadTrigger>
