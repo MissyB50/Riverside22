@@ -36,12 +36,12 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
 		<storeItem xmlFilename="maps/animals/cowBarnMain.xml"/>
         <storeItem xmlFilename="maps/animals/prehusbandryPig.xml"/>
 		<storeItem xmlFilename="maps/animals/cattleBarn.xml"/>
-<!--         <storeItem xmlFilename="maps/placeables/sellingStationVehiclesMain.xml" /> -->
+        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesMain.xml" />
         <storeItem xmlFilename="maps/placeables/sellingStationVehiclesShop.xml" />
-<!--         <storeItem xmlFilename="maps/placeables/sellingStationVehiclesMiss.xml" />
-        <storeItem xmlFilename="maps/placeables/sellingStationVehicles3.xml" />
-        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesCat.xml" />
-        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesUEG.xml" />-->
+        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesMiss.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesFarm3.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingStationVehiclesCattle.xml" />
+        <storeItem xmlFilename="maps/placeables/sellingStationVehicles300.xml" />
         <storeItem xmlFilename="maps/placeables/sellingStationGrain.xml" />
         <storeItem xmlFilename="maps/placeables/sellingGrain1.xml" />
         <storeItem xmlFilename="maps/placeables/baleMainShop.xml" />
@@ -84,6 +84,7 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
         <storeItem xmlFilename="maps/placeables/sellingWCM.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingRC.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingPT.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingCN.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingSlurry.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingManure.xml"/>
         <storeItem xmlFilename="maps/placeables/buyFarm.xml"/>
@@ -98,8 +99,6 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
         <storeItem xmlFilename="maps/placeables/wash2.xml"/>
         <storeItem xmlFilename="maps/placeables/wash3.xml"/>
         <storeItem xmlFilename="maps/placeables/wash4.xml"/>
-
-
         <storeItem xmlFilename="maps/placeables/Silo300.xml"/>
         <storeItem xmlFilename="maps/placeables/SiloFarm3.xml"/>
     </storeItems>

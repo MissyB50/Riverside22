@@ -1492,7 +1492,7 @@
         <fillType name="UREA_FERTILIZER" title="UREA FERTILIZER" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.8" maxPhysicalSurfaceAngle="15" />
             <economy pricePerLiter="2" />
-            <image      hud     ="maps/fruits/huds/hud_fill_urea.png" />
+            <image      hud     ="maps/huds/hud_fill_urea.png" />
             <textures   diffuse ="$data/fillPlanes/fertilizer_diffuse.png"
                         normal  ="$data/fillPlanes/fertilizer_normal.png"
                         specular="$data/fillPlanes/fertilizer_specular.png"
@@ -1501,7 +1501,7 @@
         <fillType name="DEIONISED_WATER" title="DEIONISED WATER" showOnPriceTable="false" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="1.25" maxPhysicalSurfaceAngle="0" />
             <economy pricePerLiter="0.1"/>
-            <image      hud     ="maps/fruits/huds/hud_fill_dw.png" />
+            <image      hud     ="maps/huds/hud_fill_dw.png" />
         </fillType>
 <!-- horses -->
         <fillType name="HORSE_PALOMINO" title="$l10n_fillType_horse" showOnPriceTable="false">
