@@ -8,9 +8,7 @@
     <placeable mapBoundId="animalPig" filename="$mapdir$/maps/animals/prehusbandryPig.xml" position="634.707 60 -159.29" rotation=" 0 0 0" /> 
     <placeable mapBoundId="animalCow" filename="$mapdir$/maps/animals/cattleBarn.xml" position="-961.384 74.926 -131.917" rotation="0 90 0"/>
 
-
-<!--
-    <placeable mapBoundId="bga"          filename="maps/placeables/bga.xml" position="287.844 60 967.439" rotation="0 0 0" />-->
+    <placeable mapBoundId="bga"         filename="$mapdir$/maps/placeables/bga.xml" position="287.844 60 967.439" rotation="0 0 0" />
     <placeable mapBoundId="bgaSiloBGA1" filename="$mapdir$/maps/placeables/bunkerSilo1.xml" position="269 60.1 996.523" rotation="0 90 0" />
     <placeable mapBoundId="bgaSiloBGA2" filename="$mapdir$/maps/placeables/bunkerSilo2.xml" position="269 60 975.731" rotation="0 90 0" />
     <placeable mapBoundId="bgaSiloBGA3" filename="$mapdir$/maps/placeables/bunkerSilo3.xml" position="269 60.1 954.913" rotation="0 90 0" />

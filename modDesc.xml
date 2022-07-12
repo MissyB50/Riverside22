@@ -101,6 +101,8 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
         <storeItem xmlFilename="maps/placeables/wash4.xml"/>
         <storeItem xmlFilename="maps/placeables/Silo300.xml"/>
         <storeItem xmlFilename="maps/placeables/SiloFarm3.xml"/>
+        <storeItem xmlFilename="maps/placeables/bga.xml"/>
+
     </storeItems>
 
     <l10n>

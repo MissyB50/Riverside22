@@ -42,6 +42,24 @@
         </sounds>
     </animatedObject>
 
+<!--gateNew-->
+    <animatedObject index="gateHouse">
+		<controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gate" negText="Close Gate" />
+          <sounds>
+                <moving file="maps/sounds/swingGate.ogg" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="5">
+	        <part node="1">
+                <keyFrame time="0.00" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 90 0"  />
+            </part>
+	        <part node="1|0">
+                <keyFrame time="0" translation="0 0 -1.8" rotation="0 0 0" />
+                <keyFrame time="1" translation="0 0 -1.78" rotation="0 0 0" />
+            </part>
+        </animation>
+	</animatedObject>
+
 <!--doubleGate-->
     <animatedObject index="double" >
         <animation duration="6">
