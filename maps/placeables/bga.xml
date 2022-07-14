@@ -9,7 +9,7 @@
         <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
-        <brand>PLANET</brand>
+        <brand>NONE</brand>
         <species>placeable</species>
         <category>productionPoints</category>
         <brush>
@@ -56,7 +56,6 @@
 
     <triggerMarkers>
         <triggerMarker node="unloadTriggerMarker1"            filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="false" />
-        <triggerMarker node="unloadTriggerMarker2"            filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="false" />
         <triggerMarker node="unloadTriggerLiquidManureMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
         <triggerMarker node="loadTriggerMarker"               filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD"   adjustToGround="true" />
         <triggerMarker node="playerTriggerMarker"             filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="false" />
@@ -111,15 +110,10 @@
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
-            <unloadTrigger exactFillRootNode="unloadTriggerBunker1" fillTypes="SILAGE MANURE SUGARBEET_CUT" />
             <unloadTrigger exactFillRootNode="unloadTriggerBunker1top" fillTypes="SILAGE MANURE SUGARBEET_CUT" />
             <unloadTrigger fillTypes="SILAGE">
                 <baleTrigger triggerNode="baleTriggerBunker1" />
             </unloadTrigger>
-            <unloadTrigger fillTypes="SILAGE">
-                <baleTrigger triggerNode="baleTriggerBunker1top" />
-            </unloadTrigger>
-
             <unloadTrigger exactFillRootNode="unloadTriggerLiquidManure" fillTypes="LIQUIDMANURE" aiNode="unloadTriggerLiquidManureAINode"/>
         </sellingStation>
 
@@ -145,12 +139,10 @@
 
     <i3dMappings>
         <i3dMapping id="infoTrigger" node="0>0" />
-        <i3dMapping id="unloadTriggerBunker1" node="0>1|0|0|0" />
-        <i3dMapping id="unloadTriggerMarker1" node="0>1|0|0|1" />
+        <i3dMapping id="unloadTriggerBunker1top" node="0>1|0|0|0" />
+        <i3dMapping id="unloadTriggerBunker1topAINode" node="0>1|0|0|1" />
         <i3dMapping id="baleTriggerBunker1" node="0>1|0|0|2" />
-        <i3dMapping id="unloadTriggerBunker1top" node="0>1|0|1|0" />
-        <i3dMapping id="unloadTriggerBunker1topAINode" node="0>1|0|1|1" />
-        <i3dMapping id="baleTriggerBunker1top" node="0>1|0|1|2" />
+        <i3dMapping id="unloadTriggerMarker1" node="0>1|0|0|3"/>
         <i3dMapping id="unloadTriggerLiquidManureMarker" node="0>1|1|0" />
         <i3dMapping id="unloadTriggerLiquidManureAINode" node="0>1|1|1" />
         <i3dMapping id="unloadingLiquidManureAISpline" node="0>1|1|2" />
@@ -158,8 +150,8 @@
         <i3dMapping id="loadTrigger" node="0>1|2|0" />
         <i3dMapping id="loadTriggerMarker" node="0>1|2|1" />
         <i3dMapping id="loadTriggerAiNode" node="0>1|2|2" />
-        <i3dMapping id="playerTrigger" node="0>2|4" />
-        <i3dMapping id="playerTriggerMarker" node="0>2|4|0" />
+        <i3dMapping id="playerTrigger" node="0>1|3" />
+        <i3dMapping id="playerTriggerMarker" node="0>1|3|0" />
         <i3dMapping id="hotspotNode" node="0>2" />
         <i3dMapping id="teleportNode" node="0>3" />
         <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />

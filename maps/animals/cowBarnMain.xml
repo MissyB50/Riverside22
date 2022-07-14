@@ -142,9 +142,8 @@
         </feedingRobot>
 
         <water automaticWaterSupply="false" >
-            <waterPlane node="waterPlane" minY="0.065" maxY="0.35" changeVisibility="true" />
-            <waterPlane node="waterPlane1" minY="0.065" maxY="0.35" changeVisibility="true" />
-            <waterPlane node="waterPlane2" minY="0.065" maxY="0.35" changeVisibility="true" />
+            <waterPlane node="waterPlane" minY="0.04" maxY="0.34" changeVisibility="true" />
+            <waterPlane node="waterPlane1" minY="0.04" maxY="0.34" changeVisibility="true" />
             <waterPlaces>
                 <waterPlace node="waterPlace1" />
                 <waterPlace node="waterPlace2" />
@@ -184,7 +183,6 @@
         <i3dMapping id="aiLoadingNodeLiquidManure" node="0>7|1" />
         <i3dMapping id="waterPlane" node="0>8|3"/>
         <i3dMapping id="waterPlane1" node="0>8|4"/>
-        <i3dMapping id="waterPlane2" node="0>8|6"/>
         <i3dMapping id="exactFillRootNodeWater" node="0>8|0" />
         <i3dMapping id="exactFillRootNodeWater1" node="0>8|5" />
         <i3dMapping id="waterPlace1" node="0>8|2|0" />

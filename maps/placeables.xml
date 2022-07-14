@@ -33,7 +33,6 @@
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingOM.xml" position="968.616 60.061 1001.76" rotation="0 90 0" />
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingSM.xml" position="947.939 60.12 965.711" rotation="0 0 0" />
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingGrain1.xml" position="175.248 60.101 -84.284" rotation="0 90 0" />
-    <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/woodChip.xml" position="-210.505 82 -339.51" rotation="0 0 0" />
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/restaurant.xml" position="807.6 60 -305.3" rotation="0 -90 0" />
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/farmersMarket.xml" position="174.181 60 -198.624" rotation="0 0 0" />
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/pizzeria.xml" position="171.625 60 -161.131" rotation="0 0 0" />
@@ -68,6 +67,7 @@
 	<placeable mapBoundId="sellingStationgrainMill" filename="$mapdir$/maps/placeables/grainMill.xml" position="-652.416 60 136.479"  rotation="0 0 0" />
     <placeable mapBoundId="sellingStationDiesel" filename="$mapdir$/maps/placeables/ddProcessing.xml" position="955.241 60 992.076" rotation="0 180 0"/>
     <placeable mapBoundId="sellingStationMixingMill" filename="$mapdir$/maps/placeables/mixingMill.xml" position="1003 60 920" rotation="0 0 0"/>
+    <placeable mapBoundId="sellingStationWood" filename="$mapdir$/maps/placeables/woodPro.xml" position="-226 82 -355" rotation="0 0 0" />
 
     <placeable mapBoundId="sellingStationVehiclesMain" filename="$mapdir$/maps/placeables/sellingStationVehiclesMain.xml" position="667.313 60 -693.878" rotation="0 0 0"/>
     <placeable mapBoundId="sellingStationVehiclesShop" filename="$mapdir$/maps/placeables/sellingStationVehiclesShop.xml" position="150.557 60.11 -245.597" rotation="0 0 0"/>

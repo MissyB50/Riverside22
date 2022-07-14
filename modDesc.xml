@@ -56,7 +56,7 @@ Det finns 5 gårdar att välja mellan. Alla djurfack är inbyggda i kartan för 
         <storeItem xmlFilename="maps/placeables/sellingGW.xml" />
         <storeItem xmlFilename="maps/placeables/sellingOM.xml" />
         <storeItem xmlFilename="maps/placeables/sellingSM.xml" />
-        <storeItem xmlFilename="maps/placeables/woodChip.xml" />
+        <storeItem xmlFilename="maps/placeables/woodPro.xml" />
         <storeItem xmlFilename="maps/placeables/restaurant.xml" />
         <storeItem xmlFilename="maps/placeables/farmersMarket.xml" />
         <storeItem xmlFilename="maps/placeables/pizzeria.xml" />

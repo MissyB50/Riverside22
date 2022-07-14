@@ -115,7 +115,7 @@
         </food>
 
         <water automaticWaterSupply="false" >
-            <waterPlane node="waterPlane" minY="0.065" maxY="0.35" changeVisibility="true" />
+            <waterPlane node="waterPlane" minY="0.06" maxY="0.35" changeVisibility="true" />
             <waterPlaces>
                 <waterPlace node="waterPlace1" />
                 <waterPlace node="waterPlace2" />
