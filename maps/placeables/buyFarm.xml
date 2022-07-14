@@ -26,7 +26,7 @@
     <leveling/>
     <indoorAreas/>
 	<buyingStation node="buyingStation" supportsExtention="false">
-        <loadTrigger triggerNode="loadingTrigger" fillTypes="SEEDS FERTILIZER MANURE PIGFOOD LIME SILAGE DRYGRASS_WINDROW STRAW" fillLitersPerSecond="5000" infiniteCapacity="true" aiNode="aiNodeLoading">
+        <loadTrigger triggerNode="loadingTrigger" fillTypes="SEEDS FERTILIZER MANURE PIGFOOD LIME SILAGE DRYGRASS_WINDROW STRAW STONE LIQUID_FERTILIZER HERBICIDE ROADSALT" fillLitersPerSecond="5000" infiniteCapacity="true" aiNode="aiNodeLoading">
 			<effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" />
 			<effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
 		</loadTrigger>
@@ -38,6 +38,10 @@
             <fillType name="fertilizer" priceScale="1" />
             <fillType name="lime" priceScale="0" />
             <fillType name="manure" priceScale="1"/>
+            <fillType name="stone" priceScale="1"/>
+            <fillType name="herbicide" priceScale="1"/>
+            <fillType name="liquid_fertilizer" priceScale="1"/>
+            <fillType name="roadsalt" priceScale="1"/>
     </buyingStation>
 
     <i3dMappings>

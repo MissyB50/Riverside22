@@ -29,8 +29,6 @@
         <triggerMarker node="playerTriggerMarker"   filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
         <triggerMarker node="woodSellTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="true" />
         <triggerMarker node="loadTriggerMarker"     filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
-        <triggerMarker node="warningStripes_woodTrigger" adjustToGround="true" />
-        <triggerMarker node="warningStripes_palletSpawnArea" adjustToGround="true" />
     </triggerMarkers>
 
     <clearAreas></clearAreas>
@@ -102,7 +100,7 @@
         <i3dMapping id="unloadTriggerMarker" node="0>3|0|0" />
         <i3dMapping id="woodSellTrigger" node="0>3|1" />
         <i3dMapping id="woodSellTriggerMarker" node="0>3|1|0" />
-        <i3dMapping id="sellingStationAINode" node="0>3|3" />
+        <i3dMapping id="sellingStationAINode" node="0>3|2" />
         <i3dMapping id="playerTrigger" node="0>4|0" />
         <i3dMapping id="playerTriggerMarker" node="0>4|0|0" />
         <i3dMapping id="teleportNode" node="0>4|1" />

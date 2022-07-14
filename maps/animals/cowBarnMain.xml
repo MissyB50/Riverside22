@@ -107,7 +107,8 @@
 
         <straw>
             <manure factor="1.5" />
-            <strawPlane node="strawPlane" minY="-0.455" maxY="-0.16" colorChange="false" />
+            <strawPlane node="strawPlane" minY="-0.37" maxY="0.014" colorChange="false" />
+            <strawPlane node="strawPlane1" minY="-0.37" maxY="0.014" colorChange="false" />
         </straw>
 
         <liquidManure />
@@ -182,9 +183,9 @@
         <i3dMapping id="liquidManureTrigger" node="0>7|0" />
         <i3dMapping id="aiLoadingNodeLiquidManure" node="0>7|1" />
         <i3dMapping id="waterPlane" node="0>8|3"/>
-        <i3dMapping id="waterPlane1" node="0>8|4"/>
+        <i3dMapping id="waterPlane1" node="0>8|5"/>
         <i3dMapping id="exactFillRootNodeWater" node="0>8|0" />
-        <i3dMapping id="exactFillRootNodeWater1" node="0>8|5" />
+        <i3dMapping id="exactFillRootNodeWater1" node="0>8|4" />
         <i3dMapping id="waterPlace1" node="0>8|2|0" />
         <i3dMapping id="waterPlace2" node="0>8|2|1" />
         <i3dMapping id="waterPlace3" node="0>8|2|2" />
@@ -204,8 +205,8 @@
         <i3dMapping id="markerAnimals" node="0>12|1" />
         <i3dMapping id="markerLiquidManure" node="0>12|2" />
         <i3dMapping id="markerFood" node="0>12|3" />
-        <i3dMapping id="markerWater" node="0>8|7" />
-        <i3dMapping id="markerWater1" node="0>8|8" />
+        <i3dMapping id="markerWater" node="0>8|6" />
+        <i3dMapping id="markerWater1" node="0>8|7" />
         <i3dMapping id="markerStraw"  node="0>12|4" />
         <i3dMapping id="infoTrigger" node="0>13" />
         <i3dMapping id="infoTriggerVector" node="0>14" />

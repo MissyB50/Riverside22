@@ -17,12 +17,6 @@
             <category>production</category>
             <tab>factories</tab>
         </brush>
-        <vertexBufferMemoryUsage>732160</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>110592</indexBufferMemoryUsage>
-        <textureMemoryUsage>11337728</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>

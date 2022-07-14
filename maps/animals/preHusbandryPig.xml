@@ -73,19 +73,19 @@
     <infoTrigger triggerNode="infoTrigger" />
 
     <husbandry saveId="Animals_PIG" hasStatistics="false">
-        <storage node="storage" fillTypes="LIQUIDMANURE STRAW MANURE WATER" isExtension="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE STRAW MANURE" isExtension="false">
             <capacity fillType="LIQUIDMANURE" capacity="500000" />
             <capacity fillType="STRAW" capacity="50000" />
             <capacity fillType="MANURE" capacity="0" />
-            <capacity fillType="WATER" capacity="120000" />
+<!--             <capacity fillType="WATER" capacity="120000" /> -->
         </storage>
 
          <unloadingStation supportsExtension="true" storageRadius="75" hideFromPricesMenu="true">
             <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" >
-            <unloadTrigger exactFillRootNode="exactFillRootNodeWater" fillTypes="WATER" />
+<!--             <unloadTrigger exactFillRootNode="exactFillRootNodeWater" fillTypes="WATER" /> -->
                 <baleTrigger triggerNode="baleTriggerStraw"/>
             </unloadTrigger>
-            <unloadTrigger fillTypes="MANURE LIQUIDMANURE WATER" />
+            <unloadTrigger fillTypes="MANURE LIQUIDMANURE" />
          </unloadingStation>
 
          <loadingStation supportsExtension="true" storageRadius="15">
@@ -114,8 +114,8 @@
              <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
         </food>
 
-        <water automaticWaterSupply="false" >
-            <waterPlane node="waterPlane" minY="0.06" maxY="0.35" changeVisibility="true" />
+        <water automaticWaterSupply="true" />
+<!--             <waterPlane node="waterPlane" minY="0.06" maxY="0.35" changeVisibility="true" />
             <waterPlaces>
                 <waterPlace node="waterPlace1" />
                 <waterPlace node="waterPlace2" />
@@ -124,7 +124,7 @@
                 <waterPlace node="waterPlace5" />
                 <waterPlace node="waterPlace6" />
             </waterPlaces>
-        </water>
+        </water> -->
     </husbandry>
 
     <i3dMappings>
@@ -147,7 +147,7 @@
         <i3dMapping id="markerLiquidManure" node="0>7|0" />
         <i3dMapping id="markerFood" node="0>7|1" />
         <i3dMapping id="markerAnimals" node="0>7|3" />
-        <i3dMapping id="markerWater" node="0>7|2" />
+<!--         <i3dMapping id="markerWater" node="0>7|2" /> -->
         <i3dMapping id="markerStraw" node="0>5|3" />
         <i3dMapping id="infoTrigger" node="0>8" />
         <i3dMapping id="loadingTrigger" node="0>9" />
@@ -161,7 +161,7 @@
         <i3dMapping id="testArea1End" node="0>11|0|0" />
         <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>12|0" />
         <i3dMapping id="tipOcclusionUpdateArea1End" node="0>12|0|0" />
-        <i3dMapping id="exactFillRootNodeWater" node="0>4|0" />
+<!--         <i3dMapping id="exactFillRootNodeWater" node="0>4|0" />
         <i3dMapping id="waterAINode" node="0>4|1" />
         <i3dMapping id="waterPlace1" node="0>4|2|0" />
         <i3dMapping id="waterPlace2" node="0>4|2|1" />
@@ -169,7 +169,6 @@
         <i3dMapping id="waterPlace4" node="0>4|2|3" />
         <i3dMapping id="waterPlace5" node="0>4|2|4" />
         <i3dMapping id="waterPlace6" node="0>4|2|5" />
-        <i3dMapping id="waterPlane" node="0>4|3" />
-        <i3dMapping id="waterPlane" node="0>4|4" />
+        <i3dMapping id="waterPlane" node="0>4|3" /> -->
     </i3dMappings>
 </placeable>

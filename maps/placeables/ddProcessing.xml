@@ -68,7 +68,7 @@
     <productionPoint>
 	
         <productions>
-            <production id="Diesel Processing" name="$l10n_fillType_sunflower|$l10n_fillType_diesel" cyclesPerHour="200" costsPerActiveHour="15">
+            <production id="Diesel Processing" name="Sunflower Diesel" cyclesPerHour="200" costsPerActiveHour="15">
                 <inputs>
                     <input fillType="SUNFLOWER" amount="4" />
                 </inputs>
@@ -77,7 +77,7 @@
                 </outputs>
             </production>
 			
-			<production id="Diesel Processing2" name="$l10n_fillType_canola|$l10n_fillType_diesel" cyclesPerHour="200" costsPerActiveHour="15">
+			<production id="Diesel Processing2" name="Canola Diesel" cyclesPerHour="200" costsPerActiveHour="15">
                 <inputs>
                     <input fillType="CANOLA" amount="4" />
                 </inputs>
@@ -86,7 +86,7 @@
                 </outputs>
             </production>
 			
-			<production id="Diesel Processing3" name="$l10n_fillType_silage|$l10n_fillType_diesel" cyclesPerHour="200" costsPerActiveHour="15">
+			<production id="Diesel Processing3" name="Silage Diesel" cyclesPerHour="200" costsPerActiveHour="15">
                 <inputs>
                     <input fillType="SILAGE" amount="4" />
                 </inputs>
@@ -95,7 +95,7 @@
                 </outputs>
             </production>
 			
-            <production id="Deionised Water" name="$l10n_fillType_water|$l10n_fillType_deionised_water" cyclesPerHour="100" costsPerActiveHour="7.5">
+            <production id="Deionised Water" name="Denionised Water" cyclesPerHour="100" costsPerActiveHour="7.5">
                 <inputs>
                     <input fillType="WATER" amount="4" />
                 </inputs>
@@ -103,7 +103,7 @@
                     <output fillType="DEIONISED_WATER" amount="3.75" />
                 </outputs>
             </production>
-            <production id="Urea Fertilizer" name="$l10n_fillType_fertilier|$l10n_fillType_urea_fertilizer" cyclesPerHour="100" costsPerActiveHour="7.5">
+            <production id="Urea Fertilizer" name="Urea Fertilizer" cyclesPerHour="100" costsPerActiveHour="7.5">
                 <inputs>
                     <input fillType="FERTILIZER" amount="4" />
                 </inputs>
@@ -111,7 +111,7 @@
                     <output fillType="UREA_FERTILIZER" amount="3.5" />
                 </outputs>
             </production>
-            <production id="DEF Processing" name="$l10n_fillType_urea_fertilizer|$l10n_fillType_deionised_water|$l10n_fillType_def" cyclesPerHour="200" costsPerActiveHour="15">
+            <production id="DEF Processing" name="Diesel Exhaust Fluid" cyclesPerHour="200" costsPerActiveHour="15">
                 <inputs>
                     <input fillType="DEIONISED_WATER" amount="4" />
                 </inputs>
