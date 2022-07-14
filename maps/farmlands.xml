@@ -108,5 +108,6 @@
         <farmland id="104" priceScale="1" npcName="NPC_FR_10" />
         <farmland id="105" priceScale="1" npcName="NPC_FR_01" />
         <farmland id="106" priceScale="2" npcName="NPC_FR_10" /> <!--300-->
+        <farmland id="107" priceScale="1" npcName="NPC_FR_13"/> <!-- chicken-->
     </farmlands>
 </map>

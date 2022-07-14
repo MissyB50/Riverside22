@@ -37,7 +37,7 @@
       <Normalmap fileId="22"/>
       <Glossmap fileId="23"/>
     </Material>
-    <Material name="fakeWater_mat" materialId="5" customShaderId="5">
+    <Material name="fakeWater_mat" materialId="5" alphaBlending="true" customShaderId="5">
       <Texture fileId="2"/>
       <Normalmap fileId="3"/>
       <Glossmap fileId="4"/>
