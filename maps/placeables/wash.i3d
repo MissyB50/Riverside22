@@ -13,18 +13,18 @@
     <File fileId="3" filename="$data/placeables/kaercher/hds9184M/hds9184M_vmask.png"/>
     <File fileId="16" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="14" filename="$data/shared/default_normal.dds"/>
     <File fileId="9" filename="$data/shared/default_normal.png"/>
     <File fileId="15" filename="$data/shared/default_specular.dds"/>
     <File fileId="12" filename="$data/shared/default_vmask.png"/>
     <File fileId="19" filename="../textures/kracher.dds"/>
     <File fileId="20" filename="../textures/panel.dds"/>
     <File fileId="13" filename="../textures/panel1.dds"/>
-    <File fileId="14" filename="../textures/powdercoat_normal.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="kaercherHDS918_4M_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="kaercherHDS918_4M_mat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -38,31 +38,31 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="kaercherHDS918_4MDecals1_mat" materialId="6" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
+    <Material name="kaercherHDS918_4MDecals1_mat" materialId="5" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
       <Texture fileId="11"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="12"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="kaercherHDS918_4MDecals_mat" materialId="7" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
+    <Material name="kaercherHDS918_4MDecals_mat" materialId="6" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
       <Texture fileId="8"/>
       <Normalmap fileId="9"/>
       <Glossmap fileId="10"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
     </Material>
-    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="UnnamedMaterial" materialId="9" alphaBlending="true">
+    <Material name="UnnamedMaterial" materialId="8" alphaBlending="true">
       <Texture fileId="19"/>
     </Material>
-    <Material name="UnnamedMaterial" materialId="10">
+    <Material name="UnnamedMaterial" materialId="9">
       <Texture fileId="20"/>
     </Material>
-    <Material name="UnnamedMaterial" materialId="11" diffuseColor="0 0 0 1">
+    <Material name="UnnamedMaterial" materialId="10" diffuseColor="0 0 0 1">
     </Material>
-    <Material name="washer_mat" materialId="64" customShaderId="16">
+    <Material name="washer_mat" materialId="11" customShaderId="16">
       <Texture fileId="13"/>
       <Normalmap fileId="14"/>
       <Glossmap fileId="15"/>
@@ -82,9 +82,9 @@
   <Scene>
       <TransformGroup name="washer" clipDistance="300" nodeId="24">
         <TransformGroup name="highPressureWasher" nodeId="25">
-          <Shape shapeId="1" name="lance" translation="0.611859 1.16988 -0.967138" rotation="-25 90 0" clipDistance="50" nodeId="26" materialIds="5" receiveShadows="true">
-            <Shape shapeId="2" name="decalsLanceHP" translation="-0.00178426 0.137405 -0.05753" clipDistance="20" nodeId="27" materialIds="7" receiveShadows="true" decalLayer="1"/>
-            <Shape shapeId="3" name="decalAdditional" translation="-0.000593958 0.0709466 -0.123487" clipDistance="30" nodeId="28" materialIds="6" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="1" name="lance" translation="0.611859 1.16988 -0.967138" rotation="-25 90 0" clipDistance="50" nodeId="26" materialIds="4" receiveShadows="true">
+            <Shape shapeId="2" name="decalsLanceHP" translation="-0.00178426 0.137405 -0.05753" clipDistance="20" nodeId="27" materialIds="6" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="3" name="decalAdditional" translation="-0.000593958 0.0709466 -0.123487" clipDistance="30" nodeId="28" materialIds="5" receiveShadows="true" decalLayer="1"/>
           </Shape>
           <TransformGroup name="lanceMountedSoundNode" translation="-0.286099 0.809828 -0.926294" nodeId="29"/>
           <TransformGroup name="exhaust" translation="-2.00272e-07 1.90267 0.320288" nodeId="30"/>
@@ -94,7 +94,7 @@
           <TransformGroup name="positionRef2" translation="-0.3501 0.00164895 0.586643" nodeId="33"/>
           <TransformGroup name="positionRef3" translation="0.350147 0.00168098 0.586639" rotation="0.00262112 -89.9997 0" nodeId="34"/>
         </TransformGroup>
-        <Shape shapeId="4" name="infoTrigger" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="35" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="4" name="infoTrigger" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         <TransformGroup name="clearAreas" nodeId="36">
           <TransformGroup name="clearArea1Start" translation="-0.5 0 -1" nodeId="37">
             <TransformGroup name="clearArea1Width" translation="0 0 2" nodeId="38"/>
@@ -117,17 +117,17 @@
             <TransformGroup name="tipOcclusionUpdateArea1End" translation="1 0 1.66051" nodeId="49"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="visuals" nodeId="103">
-          <Shape shapeId="5" name="karcher" static="true" clipDistance="400" nodeId="104" materialIds="64" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="6" name="plane" nodeId="52" materialIds="11" distanceBlending="false"/>
-            <Shape shapeId="7" name="plane" nodeId="53" materialIds="11" distanceBlending="false"/>
-            <Shape shapeId="8" name="mainDecal" clipDistance="400" nodeId="54" materialIds="9" distanceBlending="false"/>
-            <Shape shapeId="9" name="decal" clipDistance="400" nodeId="55" materialIds="10" distanceBlending="false"/>
-            <Shape shapeId="10" name="rope" clipDistance="40" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="visuals" nodeId="50">
+          <Shape shapeId="5" name="karcher" static="true" clipDistance="400" nodeId="51" materialIds="11" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="6" name="plane" nodeId="52" materialIds="10" distanceBlending="false"/>
+            <Shape shapeId="7" name="plane" nodeId="53" materialIds="10" distanceBlending="false"/>
+            <Shape shapeId="8" name="mainDecal" clipDistance="400" nodeId="54" materialIds="8" distanceBlending="false"/>
+            <Shape shapeId="9" name="decal" clipDistance="400" nodeId="55" materialIds="9" distanceBlending="false"/>
+            <Shape shapeId="10" name="rope" clipDistance="40" nodeId="56" materialIds="4" castsShadows="true" receiveShadows="true"/>
           </Shape>
         </TransformGroup>
-        <TransformGroup name="collisions" nodeId="58">
-          <Shape shapeId="11" name="tipCollision" visibility="false" static="true" collisionMask="524288" nodeId="59" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="collisions" nodeId="57">
+          <Shape shapeId="11" name="tipCollision" visibility="false" static="true" collisionMask="524288" nodeId="58" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
       </TransformGroup>
   </Scene>

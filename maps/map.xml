@@ -114,5 +114,9 @@
         <groundTypeMapping type="grass_dry"      title="$l10n_groundType_grassDry" layer="GRASS_DIRT" />
         <groundTypeMapping type="rock"           title="$l10n_groundType_rock" layer="ROCK" />
         <groundTypeMapping type="rock_granite"   title="$l10n_groundType_rockGranite" layer="ROCK_DARK" />
+        <groundTypeMapping type="cobblestone"    title="$l10n_groundType_cobblestone" layer="COBBLESTONE" />
+        <groundTypeMapping type="concrete_bricks" title="$l10n_groundType_concrete_bricks" layer="CONCRETE_BRICKS" />
+        <groundTypeMapping type="concrete_tiles"  title="$l10n_groundType_concrete_tiles" layer="CONCRETE_TILES" />
+        <groundTypeMapping type="asphalt_rough"   title="$l10n_groundType_asphalt_rough" layer="ASPHALT_ROUGH" />
     </groundTypeMappings>
 </map>

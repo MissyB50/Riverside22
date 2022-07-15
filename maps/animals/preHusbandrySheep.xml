@@ -99,7 +99,6 @@
                 <foodPlace node="foodPlace6" />
             </foodPlaces>
             <foodPlane node="foodPlane" minY="0.03" maxY="0.175" changeVisibility="true" defaultFillType="DRYGRASS_WINDROW"/>
-            <foodPlane node="foodPlane1" minY="0.03" maxY="0.175" changeVisibility="true" defaultFillType="DRYGRASS_WINDROW"/>
             <feedingTrough exactFillRootNode="exactFillRootNodeFood" aiNode="foodAINode">
                 <baleTrigger triggerNode="baleTrigger"/>
             </feedingTrough>
@@ -132,7 +131,6 @@
     <i3dMappings>
         <i3dMapping id="teleportNode" node="0>0" />
         <i3dMapping id="foodPlane" node="0>1|0" />
-        <i3dMapping id="foodPlane1" node="0>1|11" />
         <i3dMapping id="exactFillRootNodeFood" node="0>1|1" />
         <i3dMapping id="foodAINode" node="0>1|2" />
         <i3dMapping id="baleTrigger" node="0>1|3" />

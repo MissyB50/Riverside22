@@ -50,19 +50,11 @@
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
         </levelAreas>
-
-        <paintAreas>
-            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass" />
-        </paintAreas>
     </leveling>
 
     <indoorAreas>
          <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
     </indoorAreas>
-
-    <foliageAreas>
-        <foliageArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" decoFoliage="grassShort" />
-    </foliageAreas>
 
     <tipOcclusionUpdateAreas>
         <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
@@ -229,12 +221,6 @@
         <i3dMapping id="levelArea1Start" node="0>13|0" />
         <i3dMapping id="levelArea1Width" node="0>13|0|0" />
         <i3dMapping id="levelArea1Height" node="0>13|0|1" />
-        <i3dMapping id="paintArea1Start" node="0>14|0" />
-        <i3dMapping id="paintArea1Width" node="0>14|0|0" />
-        <i3dMapping id="paintArea1Height" node="0>14|0|1" />
-        <i3dMapping id="foliageArea1Start" node="0>15|0" />
-        <i3dMapping id="foliageArea1Width" node="0>15|0|0" />
-        <i3dMapping id="foliageArea1Height" node="0>15|0|1" />
         <i3dMapping id="indoorArea1Start" node="0>16|0" />
         <i3dMapping id="indoorArea1Width" node="0>16|0|0" />
         <i3dMapping id="indoorArea1Height" node="0>16|0|1" />

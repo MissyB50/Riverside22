@@ -54,7 +54,7 @@
       <TransformGroup name="sheepBarnSmall" nodeId="24">
         <TransformGroup name="teleportNode" translation="19.8331 0 -108.338" nodeId="25"/>
         <TransformGroup name="food" translation="9.96503 0 -100" rotation="0 20 0" nodeId="26">
-          <Shape shapeId="1" name="foodPlane" translation="3.715 0.175044 -0.312896" clipDistance="30" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="foodPlane" translation="1 0.175044 -0.312896" scale="2 1 1" clipDistance="30" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="2" name="exactFillRootNodeFood" translation="1 0 -1.79959" static="true" collisionMask="1073741824" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <TransformGroup name="foodAINode" translation="1 0 -2.36932" rotation="0 -90 0" nodeId="29"/>
           <Shape shapeId="3" name="baleTrigger" translation="1 0.32165 -1.73862" visibility="false" static="true" trigger="true" collisionMask="16777216" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
@@ -72,7 +72,6 @@
           <Shape shapeId="4" name="feeder4" translation="0.0933288 -0.153187 -0.315827" rotation="0 180 0" clipDistance="150" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="4" name="feeder5" translation="-1.72769 -0.153187 -0.315827" rotation="0 180 0" clipDistance="150" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="4" name="feeder6" translation="-3.54149 -0.153187 -0.315827" rotation="0 180 0" clipDistance="150" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="1" name="foodPlane" translation="-1.71956 0.175044 -0.312896" scale="1.005 1 1" clipDistance="30" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
         <TransformGroup name="storage" translation="-4.63963 0 -94.9" rotation="0 20 0" nodeId="45"/>
         <TransformGroup name="water" translation="-18.2617 0 -89.508" rotation="0 20 0" nodeId="46">

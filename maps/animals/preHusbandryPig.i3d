@@ -87,8 +87,7 @@
       <TransformGroup name="pigBarnBig" nodeId="29">
         <TransformGroup name="teleportNode" translation="0 0 8" rotation="0 180 0" nodeId="30"/>
         <TransformGroup name="food" translation="0 0 1.17008e-15" nodeId="31">
-          <Shape shapeId="1" name="foodPlane" translation="11.2504 -0.14 4.245" rotation="-6.83019e-06 -0 0" scale="1 1 1.00998" nodeId="32" materialIds="9"/>
-          <Shape shapeId="1" name="foodPlane" translation="5.36 -0.14 4.24519" rotation="-6.83019e-06 -0 0" scale="1 1 1.00998" nodeId="33" materialIds="9"/>
+          <Shape shapeId="1" name="foodPlane" translation="8.3104 -0.14 4.24519" rotation="-6.83019e-06 -0 0" scale="2.06414 1 1.00998" nodeId="93" materialIds="9"/>
           <Shape shapeId="2" name="exactFillRootNodeFood" translation="8.30786 0 6.56236" rotation="0 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="34" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <TransformGroup name="foodPlaces" nodeId="35">
             <TransformGroup name="foodPlace1" translation="3.33151 0 2.7" rotation="0 -90 0" nodeId="36"/>

@@ -1,0 +1,579 @@
+GIANTS Engine Runtime 9.0.0 (27910) 64bit (Build Date: Jun 23 2022)
+Copyright (c) 2008-2021, GIANTS Software GmbH (giants-software.com), All Rights Reserved.
+Copyright (c) 2003-2021, Christian Ammann and Stefan Geiger, All Rights Reserved.
+Application: FarmingSimulator2022
+Main System
+  CPU: Intel(R) Core(TM) i7 CPU         950  @ 3.07GHz
+  Memory: 12278 MB
+  OS: Windows NT 10.0 64-bit
+Physics System
+  Version: 5.9.5
+  Thread(s): 2
+Audio System
+  Driver: SoftMixer WASAPI Stereo
+  Version: 2018.11
+  Frequency: 48000
+  Max. active sources: 256
+Render System
+  Driver: Direct 3D 12
+  Card Vendor: NVIDIA Corporation
+  Renderer: NVIDIA GeForce GTX 1660 SUPER
+  Version: 30.0.14.9676 (9.11.2021)
+  Revision: 161
+  Hardware Feature Level : 12_1
+  Windowed Mode               : on
+  V-Sync                      : on
+  Allow Tearing               : off
+  Validation Layer            : off
+  Effective Window Size       : 1920 x 1080px
+  Effective Swap Chain Size   : 1920 x 1080px
+Started 3 threads for threadpool 'Render threadpool'
+Hardware Profile
+  Level: Custom Medium
+  View Distance Factor: 1.000000
+  Shadow Quality: 1.000000 Base-Size: 2048 Filter-Size: 4
+  Shadow Focus Box: false
+  Foliage Shadows: false
+  Shader Quality: 1
+  Skip Mipmaps: 1
+  LOD Distance Factor: 1.250000
+  Terrain LOD Distance Factor: 1.000000
+  Terrain Quality: 2
+  Foliage View Distance Factor: 1.250000
+  Volume Mesh Tessellation Factor: 1.000000
+  Tyre Tracks Segments Factor: 1.500000
+  Max. Number of Shadow Lights: 1
+  Max. Number of Lights: 128
+  Max. Number of Dir Lights: 4
+  Max. Number of Lights Per Cluster: 32
+  MSAA: 1
+  Post Process AA: TAA
+  DLSS Quality: Off
+  AMD FidelityFx SR Quality: Off
+  AMD FidelityFx SR 2.0 Quality: Off
+  Sharpness: 1.00
+  Recommended Window Size: 1280 x 720px
+  Bloom Quality: 3
+  SSAO Quality: 11
+  SSAO Resolution Scaling: 0.500000
+  DOF: Disabled
+  Half Resolution DOF: Disabled
+  Cloud Quality: 2
+  Texture Streaming: Enabled
+  EnvMap Blending: Enabled
+  Dynamic Specular EnvMap: Disabled
+  Shading Rate Quality: 0
+Input System
+  Keyboard enabled
+  Mouse enabled
+  Gamepad/Joystick enabled
+  Force Feedback disabled
+  Devices:
+    XINPUT_GAMEPAD
+      Number of Axes: 6
+      Number of Buttons: 14
+Started 1 threads for threadpool 'TerrainPatchOccluderManager unique worker'
+ Used Start Parameters:
+    exe x64/FarmingSimulator2022Game.exe
+    name FarmingSimulator2022
+Platform: loading defaults
+  Setting 'Master Volume': 1.000
+  Setting 'Is Train Tabbable': false
+  Setting 'Radio Vehicle Only': false
+  Setting 'Radio Active': false
+  Setting 'Use Colorblind Mode': false
+  Setting 'Easy Arm Control': false
+  Setting 'Show Trigger Marker': true
+  Setting 'Show Help Trigger': false
+  Setting 'Show Field-Info': true
+  Setting 'Invert Y-Look': false
+  Setting 'Show Help Icons': true
+  Setting 'Radio Volume': 0.500
+  Setting 'Vehicle Volume': 0.700
+  Setting 'Environment Volume': 1.000
+  Setting 'GUI Volume': 0.500
+  Setting 'Master Volume': 1.000
+  Setting 'Music Volume': 0.500
+Farming Simulator 22
+  Version: 1.6.0.0 b18023
+  Available Languages: en de jp pl cz fr es ru it pt hu nl cs ct br tr ro kr ea da fi no sv fc
+  Language: en
+  Time: 2022-07-15 11:34:44
+  ModDesc Version: 67
+  Mod Directory: C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/
+Extra Content: Unlocked 'PORSCHE_JUNIOR'
+Extra Content: Unlocked 'ALDI_HOODIE'
+Available dlc: (Hash: 1e34e6da3250471b406a092063173ec0) (Version: 1.1.0.0) pdlc_agiPack
+Available dlc: (Hash: 49bfa385ca90594408a7f75db8783578) (Version: 1.1.0.0) pdlc_claasSaddleTracPack
+Available dlc: (Hash: dc21ec04d9c6c802a78e7f384d7872df) (Version: 1.0.0.0) pdlc_extraContentFendtBlackBeauty
+ExtraContent: Unlocked 'FENDT900BB'
+Available dlc: (Hash: 26d28a2c31f8c935da91f6a80bbfaeaf) (Version: 1.0.0.0) pdlc_extraContentMackBlackAnthem
+ExtraContent: Unlocked 'MACK_BLACK_ANTHEM'
+Available dlc: (Hash: 5870071eae37fba9ff3b13a7978dde18) (Version: 1.0.0.0) pdlc_extraContentZetor
+ExtraContent: Unlocked 'ZETOR25K'
+Available mod: (Hash: 90327d4d193dcc64e7824eadf365cea3) (Version: 1.0.2.1) FS22_additionalFieldInfo
+Available mod:  (Version: 1.0.0.0) FS22_chislet_farm
+Warning: Only zip mods are supported in multiplayer. You need to zip the mod FS22_chislet_farm to use it in multiplayer.
+Available mod: (Hash: ef9f4bdbd525a765e01c39e18e744862) (Version: 1.2.0.0) FS22_EasyDevControls
+Available mod: (Hash: ee0058dd7948b39435a59336c6dafaa9) (Version: 1.0.3.0) FS22_noCollisionCamera
+Available mod: (Hash: d557f83c0634e6e0a1176043f277d395) (Version: 1.0.2.0) FS22_precisionFarming
+Available mod:  (Version: 1.0.0.0) FS22_riverside22
+Warning: Only zip mods are supported in multiplayer. You need to zip the mod FS22_riverside22 to use it in multiplayer.
+Available mod: (Hash: 81a8260c4f4558ebb442784a4640c39e) (Version: 1.5.0.0) FS22_storeDeliveries
+Available mod: (Hash: 8983e2826e416cd03e53fcdea585f926) (Version: 1.0.0.1) FS22_tatraPhoenix
+Available mod: (Hash: a700e22a31daf64c6d3abf1c694bdf7a) (Version: 1.0.0.1) FS22_Wholesale
+Available mod: (Hash: fab707068e9b596fc59fc55cbcebf169) (Version: 1.0.0.0) FS22_yp2425A
+dataS/character/humans/player/animations.i3d (1990.59 ms)
+dataS/character/humans/player/vehicleCharacterAnimations.i3d (9.03 ms)
+dataS/character/humans/npc/animations.i3d (163.68 ms)
+2022-07-15 11:35   Loaded 'vehicle' specializations
+2022-07-15 11:35   Loaded 'placeable' specializations
+2022-07-15 11:35   Loaded vehicle types
+2022-07-15 11:35   Loaded placeable types
+2022-07-15 11:35   Info:   Loaded construction brush types
+2022-07-15 11:35   Load dlc: pdlc_agiPack
+2022-07-15 11:35   Load dlc: pdlc_claasSaddleTracPack
+2022-07-15 11:35   Load mod: FS22_additionalFieldInfo
+2022-07-15 11:35   Load mod: FS22_EasyDevControls
+2022-07-15 11:35   Load mod: FS22_noCollisionCamera
+2022-07-15 11:35    noCollisionCamera v17.0.3 by Heady - www.planet-ls.de
+2022-07-15 11:35   Load mod: FS22_precisionFarming
+2022-07-15 11:35   Load mod: FS22_riverside22
+2022-07-15 11:35   Load mod: FS22_storeDeliveries
+2022-07-15 11:35   Load mod: FS22_tatraPhoenix
+2022-07-15 11:35   Load mod: FS22_Wholesale
+2022-07-15 11:35   Load mod: FS22_yp2425A
+2022-07-15 11:35   Register configuration 'baseColor'
+2022-07-15 11:35   Register configuration 'design'
+2022-07-15 11:35   Register configuration 'designColor'
+2022-07-15 11:35   Register configuration 'vehicleType'
+2022-07-15 11:35   Register configuration 'design2'
+2022-07-15 11:35   Register configuration 'design3'
+2022-07-15 11:35   Register configuration 'design4'
+2022-07-15 11:35   Register configuration 'design5'
+2022-07-15 11:35   Register configuration 'design6'
+2022-07-15 11:35   Register configuration 'design7'
+2022-07-15 11:35   Register configuration 'design8'
+2022-07-15 11:35   Register configuration 'ai'
+2022-07-15 11:35   Register configuration 'inputAttacherJoint'
+2022-07-15 11:35   Register configuration 'attacherJoint'
+2022-07-15 11:35   Register workAreaType 'BALER'
+2022-07-15 11:35   Register configuration 'wrappingColor'
+2022-07-15 11:35   Register configuration 'wrappingAnimation'
+2022-07-15 11:35 data/shared/ai/trafficCollision.i3d (18.66 ms)
+2022-07-15 11:35   Register configuration 'baseMaterial'
+2022-07-15 11:35   Register configuration 'designMaterial'
+2022-07-15 11:35   Register configuration 'designMaterial2'
+2022-07-15 11:35   Register configuration 'designMaterial3'
+2022-07-15 11:35   Register configuration 'multipleItemPurchaseAmount'
+2022-07-15 11:35   Register workAreaType 'COMBINECHOPPER'
+2022-07-15 11:35   Register workAreaType 'COMBINESWATH'
+2022-07-15 11:35   Register configuration 'cover'
+2022-07-15 11:35   Register workAreaType 'CULTIVATOR'
+2022-07-15 11:35   Register workAreaType 'CUTTER'
+2022-07-15 11:35   Register configuration 'dischargeable'
+2022-07-15 11:35   Register configuration 'fillUnit'
+2022-07-15 11:35   Register configuration 'fillVolume'
+2022-07-15 11:35   Register configuration 'folding'
+2022-07-15 11:35   Register workAreaType 'FORAGEWAGON'
+2022-07-15 11:35   Register configuration 'frontloader'
+2022-07-15 11:35   Register workAreaType 'FRUITPREPARER'
+2022-07-15 11:35   Register configuration 'motor'
+2022-07-15 11:35   Register workAreaType 'MULCHER'
+2022-07-15 11:35   Register workAreaType 'MOWER'
+2022-07-15 11:35   Register configuration 'pipe'
+2022-07-15 11:35   Register configuration 'plow'
+2022-07-15 11:35   Register workAreaType 'PLOW'
+2022-07-15 11:35   Register configuration 'powerConsumer'
+2022-07-15 11:35   Register workAreaType 'RIDGEMARKER'
+2022-07-15 11:35   Register configuration 'roller'
+2022-07-15 11:35   Register workAreaType 'ROLLER'
+2022-07-15 11:35   Register workAreaType 'SALTSPREADER'
+2022-07-15 11:35   Register workAreaType 'SOWINGMACHINE'
+2022-07-15 11:35   Register workAreaType 'SPRAYER'
+2022-07-15 11:35   Register workAreaType 'STONEPICKER'
+2022-07-15 11:35   Register workAreaType 'STUMPCUTTER'
+2022-07-15 11:35   Register workAreaType 'TEDDER'
+2022-07-15 11:35   Register configuration 'tensionBelts'
+2022-07-15 11:35   Register configuration 'trailer'
+2022-07-15 11:35   Register configuration 'treeSaplingType'
+2022-07-15 11:35   Register configuration 'variableWorkWidth'
+2022-07-15 11:35   Register workAreaType 'WEEDER'
+2022-07-15 11:35   Register configuration 'wheel'
+2022-07-15 11:35   Register configuration 'rimColor'
+2022-07-15 11:35   Register workAreaType 'WINDROWER'
+2022-07-15 11:35   Register workAreaType 'DEFAULT'
+2022-07-15 11:35   Register workAreaType 'AUXILIARY'
+2022-07-15 11:35   Register configuration 'workArea'
+2022-07-15 11:35   Register configuration 'workMode'
+2022-07-15 11:35   Register configuration 'cropSensor'
+2022-07-15 11:35   Register configuration 'manureSensor'
+2022-07-15 11:35   Register configuration 'weedSpotSpray'
+2022-07-15 11:35 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_precisionFarming/vehicles/fritzmeier/isariaProCompact/isariaProCompact.i3d (124.78 ms)
+2022-07-15 11:35 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_precisionFarming/vehicles/johnDeere/manureSensing/manureSensing.i3d (13.29 ms)
+2022-07-15 11:35 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandrySheep.xml'.
+2022-07-15 11:35 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandrySheep.xml'.
+2022-07-15 11:35 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryPig.xml'.
+2022-07-15 11:35 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryPig.xml'.
+2022-07-15 11:35   Info: Loading ConnectionHoses from 'data/shared/connectionHoses/connectionHoses.xml'
+2022-07-15 11:35 data/shared/connectionHoses/hoses.i3d (60.07 ms)
+2022-07-15 11:35 data/shared/connectionHoses/connectors.i3d (204.54 ms)
+2022-07-15 11:35 data/shared/connectionHoses/hoseMaterialHolder.i3d (68.64 ms)
+2022-07-15 11:35 data/objects/roundbales/roundbale125/roundbale125.i3d (89.72 ms)
+2022-07-15 11:35 data/objects/roundbales/roundbale150/roundbale150.i3d (85.20 ms)
+2022-07-15 11:35 data/objects/roundbales/roundbale180/roundbale180.i3d (58.07 ms)
+2022-07-15 11:35 data/objects/squarebales/squarebale240/squarebale240.i3d (29.94 ms)
+2022-07-15 11:35 data/objects/squarebales/squarebale220/squarebale220.i3d (73.33 ms)
+2022-07-15 11:35 data/objects/squarebales/squarebale180/squarebale180.i3d (56.37 ms)
+2022-07-15 11:35 data/objects/squarebales/squarebale120/squarebale120.i3d (61.96 ms)
+2022-07-15 11:35 data/objects/squarebales/squarebale120/packedSquareBale120.i3d (25.30 ms)
+2022-07-15 11:35 data/objects/cottonModules/cottonRoundbale238.i3d (48.68 ms)
+2022-07-15 11:35 data/objects/cottonModules/cottonSquarebale488.i3d (22.34 ms)
+2022-07-15 11:35 data/objects/roundbales/biomass/biomassBale125.i3d (151.46 ms)
+2022-07-15 11:35 dataS/character/animals/wild/crow/crow.i3d (37.41 ms)
+2022-07-15 11:35 data/shared/aiMarker.i3d (15.26 ms)
+2022-07-15 11:35   Info: resetSplitShapes()
+2022-07-15 11:35 data/shared/alphabet/fontMaterialHolder.i3d (227.28 ms)
+2022-07-15 11:35 data/maps/mapFR/licensePlates/licensePlatesFR.i3d (96.74 ms)
+2022-07-15 11:35 data/effects/cutter/maize/maize_harvestReadyDry.i3d (179.74 ms)
+2022-07-15 11:35 data/effects/cutter/sunflower/sunflower_harvestReady.i3d (72.52 ms)
+2022-07-15 11:35 data/effects/cutter/maize/maize_harvestReadyGreen.i3d (48.23 ms)
+2022-07-15 11:35 data/effects/cutter/grass/grass_greenBig.i3d (43.82 ms)
+2022-07-15 11:35 data/sky/sky.i3d (26.60 ms)
+2022-07-15 11:35 data/effects/cutter/grass/grass_harvestReady.i3d (164.03 ms)
+2022-07-15 11:35 data/effects/cutter/sunflower/sunflower_greenBig.i3d (268.70 ms)
+2022-07-15 11:35 data/effects/cutter/wheat/wheat_greenBig.i3d (109.56 ms)
+2022-07-15 11:35 data/effects/cutter/wheat/wheat_harvestReady.i3d (89.06 ms)
+2022-07-15 11:35 data/effects/cutter/barley/barley_greenBig.i3d (99.32 ms)
+2022-07-15 11:35 data/effects/cutter/barley/barley_harvestReady.i3d (62.80 ms)
+2022-07-15 11:35 data/effects/cutter/oat/oat_greenBig.i3d (111.31 ms)
+2022-07-15 11:35 data/effects/cutter/oat/oat_harvestReady.i3d (76.01 ms)
+2022-07-15 11:35 data/effects/cutter/canola/canola_greenBig.i3d (226.64 ms)
+2022-07-15 11:35 data/effects/cutter/canola/canola_harvestReady.i3d (128.02 ms)
+2022-07-15 11:35 data/effects/cutter/soybean/soybean_greenBig.i3d (120.69 ms)
+2022-07-15 11:35 data/effects/cutter/soybean/soybean_harvestReady.i3d (124.18 ms)
+2022-07-15 11:35 data/effects/cutter/sorghum/sorghum_greenBig.i3d (179.20 ms)
+2022-07-15 11:35 data/effects/cutter/sorghum/sorghum_harvestReady.i3d (112.44 ms)
+2022-07-15 11:35 data/effects/cutter/maize/maize_fruits.i3d (72.40 ms)
+2022-07-15 11:35 data/effects/cutter/sunflower/sunflower_fruits.i3d (76.87 ms)
+2022-07-15 11:35 data/effects/cutter/maize/maize_threshing.i3d (144.77 ms)
+2022-07-15 11:35 data/effects/cutter/sunflower/sunflower_threshing.i3d (91.21 ms)
+2022-07-15 11:35 data/effects/fertilizer/fertilizer.i3d (320.19 ms)
+2022-07-15 11:35 data/effects/chopper/strawChopper.i3d (609.41 ms)
+2022-07-15 11:35 data/effects/tedder/tedder.i3d (156.99 ms)
+2022-07-15 11:35 data/effects/windrower/windrower.i3d (203.77 ms)
+2022-07-15 11:35 data/effects/cultivator/cultivator.i3d (174.93 ms)
+2022-07-15 11:35 data/effects/plow/plow.i3d (173.96 ms)
+2022-07-15 11:35 data/effects/pickup/pickupIN.i3d (804.68 ms)
+2022-07-15 11:35 data/effects/pickup/pickupOUT.i3d (33.64 ms)
+2022-07-15 11:35 data/effects/mower/mower.i3d (95.58 ms)
+2022-07-15 11:35 data/effects/mixerWagon/mixerWagon.i3d (35.27 ms)
+2022-07-15 11:35 data/effects/grape/grape_fruitsLeaves.i3d (79.00 ms)
+2022-07-15 11:35 data/effects/grape/grape_fruitsClean.i3d (33.99 ms)
+2022-07-15 11:35 data/effects/grape/grape_fruitsHarvested.i3d (41.23 ms)
+2022-07-15 11:35 data/effects/grape/grape_threshing.i3d (28.95 ms)
+2022-07-15 11:35 data/effects/grape/grape_prePruner.i3d (32.97 ms)
+2022-07-15 11:35 data/effects/olive/olive_fruitsLeaves.i3d (121.58 ms)
+2022-07-15 11:35 data/effects/olive/olive_fruitsClean.i3d (74.79 ms)
+2022-07-15 11:35 data/effects/olive/olive_threshing.i3d (74.28 ms)
+2022-07-15 11:35 data/effects/manure/manure.i3d (82.29 ms)
+2022-07-15 11:35 data/effects/stone/small/stone.i3d (41.48 ms)
+2022-07-15 11:35 data/effects/stone/medium/stone.i3d (17.70 ms)
+2022-07-15 11:35 data/effects/stone/big/stone.i3d (19.72 ms)
+2022-07-15 11:35 data/effects/wood/wood_cutter.i3d (37.15 ms)
+2022-07-15 11:35 data/effects/sugarcane/sugarcane_prepareFruit.i3d (54.37 ms)
+2022-07-15 11:35 data/effects/sugarcane/sugarcane_chopper.i3d (78.26 ms)
+2022-07-15 11:35 data/effects/sugarcane/sugarcane_chaffer.i3d (46.21 ms)
+2022-07-15 11:35 data/effects/sugarcane/sugarcane_cutter.i3d (37.76 ms)
+2022-07-15 11:35 data/effects/snow/snowPieces.i3d (78.56 ms)
+2022-07-15 11:35 data/effects/snow/snowDust.i3d (52.89 ms)
+2022-07-15 11:35 data/sky/rain.i3d (45.42 ms)
+2022-07-15 11:35 data/sky/snow.i3d (33.10 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/map.i3d (12581.33 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/sounds.i3d (321.92 ms)
+2022-07-15 11:36 data/foliage/decoFoliage/decoFoliageFR.i3d (66.68 ms)
+2022-07-15 11:36 data/foliage/groundFoliage/groundFoliage.i3d (165.27 ms)
+2022-07-15 11:36 data/foliage/decoBush/decoBush.i3d (58.68 ms)
+2022-07-15 11:36 data/foliage/meadow/meadowFR.i3d (86.20 ms)
+2022-07-15 11:36 data/foliage/grass/grass.i3d (15.51 ms)
+2022-07-15 11:36 data/foliage/wheat/wheat.i3d (48.84 ms)
+2022-07-15 11:36 data/foliage/canola/canola.i3d (43.67 ms)
+2022-07-15 11:36 data/foliage/barley/barley.i3d (48.24 ms)
+2022-07-15 11:36 data/foliage/maize/maize.i3d (71.64 ms)
+2022-07-15 11:36 data/foliage/potato/potato.i3d (56.92 ms)
+2022-07-15 11:36 data/foliage/potato/potatoHaulm.i3d (6.31 ms)
+2022-07-15 11:36 data/foliage/sugarbeet/sugarbeet.i3d (50.18 ms)
+2022-07-15 11:36 data/foliage/sugarbeet/sugarbeetHaulm.i3d (4.86 ms)
+2022-07-15 11:36 data/foliage/sunflower/sunflower.i3d (34.85 ms)
+2022-07-15 11:36 data/foliage/soybean/soybean.i3d (48.03 ms)
+2022-07-15 11:36 data/foliage/oilseedRadish/oilseedRadish.i3d (9.54 ms)
+2022-07-15 11:36 data/foliage/poplar/poplar.i3d (13.95 ms)
+2022-07-15 11:36 data/foliage/oat/oat.i3d (17.70 ms)
+2022-07-15 11:36 data/foliage/sugarcane/sugarcane.i3d (23.24 ms)
+2022-07-15 11:36 data/foliage/sugarcane/sugarCaneHaulm.i3d (4.65 ms)
+2022-07-15 11:36 data/foliage/cotton/cotton.i3d (24.29 ms)
+2022-07-15 11:36 data/foliage/sorghum/sorghum.i3d (43.08 ms)
+2022-07-15 11:36 data/foliage/olive/olive.i3d (30.80 ms)
+2022-07-15 11:36 data/foliage/grape/grape.i3d (1.89 ms)
+2022-07-15 11:36 Info: transform group 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/data/densityMap_fruits.gdm' has elements very far out from the cell edge (56.51% expansion)
+2022-07-15 11:36 data/foliage/weed/weed.i3d (59.95 ms)
+2022-07-15 11:36 data/foliage/stone/stone.i3d (7.29 ms)
+2022-07-15 11:36 FoliageTransformGroup 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/data/densityMap_fruits.gdm' may need space for up to 3057739 instances (1819 per cell x 1681 cells)
+2022-07-15 11:36 FoliageTransformGroup 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/data/densityMap_weed.gdm' may need space for up to 430592 instances (512 per cell x 841 cells)
+2022-07-15 11:36 FoliageTransformGroup 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/data/densityMap_stones.gdm' may need space for up to 430592 instances (512 per cell x 841 cells)
+2022-07-15 11:36   Info: Load soil map 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/data/infoLayer_soilMap.grle'
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_precisionFarming/shared/sprayerNozzleEffect.i3d (0.38 ms)
+2022-07-15 11:36 Load mod: Store Deliveries : v1.5.0.0 by ViperGTS96
+2022-07-15 11:36 data/effects/cultivator/particle/soilParticle.i3d (128.81 ms)
+2022-07-15 11:36 data/effects/cultivator/cultivatorMeshes_materialHolder.i3d (67.20 ms)
+2022-07-15 11:36 data/effects/slurry/slurryEffects_materialHolder.i3d (97.35 ms)
+2022-07-15 11:36 data/effects/unload/unloadMeshes_materialHolder.i3d (110.91 ms)
+2022-07-15 11:36 data/effects/unload/unloadParticles_materialHolder.i3d (40.27 ms)
+2022-07-15 11:36 data/effects/unload/unloadParticles.i3d (19.77 ms)
+2022-07-15 11:36 data/effects/smoke/smokeParticles.i3d (20.08 ms)
+2022-07-15 11:36 data/effects/smoke/smokeParticles_materialHolder.i3d (19.49 ms)
+2022-07-15 11:36 data/effects/wheel/wheelParticles.i3d (35.59 ms)
+2022-07-15 11:36 data/effects/bees/beesParticles.i3d (30.42 ms)
+2022-07-15 11:36 data/effects/horse/horseStepParticleSystem.i3d (21.32 ms)
+2022-07-15 11:36 data/effects/sprayer/particle/washer.i3d (21.60 ms)
+2022-07-15 11:36 data/effects/sprayer/sprayerMeshes_materialHolder.i3d (71.35 ms)
+2022-07-15 11:36 data/effects/leveler/levelerMeshes_materialHolder.i3d (42.89 ms)
+2022-07-15 11:36 data/effects/wood/particle/forestry.i3d (111.66 ms)
+2022-07-15 11:36 data/effects/belt/beltMeshes_materialHolder.i3d (148.92 ms)
+2022-07-15 11:36 data/effects/potato/particle/potato.i3d (69.30 ms)
+2022-07-15 11:36 data/effects/sugarBeet/particle/sugarBeet.i3d (22.99 ms)
+2022-07-15 11:36 data/effects/cotton/particle/cotton.i3d (44.59 ms)
+2022-07-15 11:36 data/shared/materialHolders/tensionBeltMaterialHolder.i3d (143.66 ms)
+2022-07-15 11:36 data/shared/materialHolders/tireTrackMaterialHolder.i3d (76.57 ms)
+2022-07-15 11:36 data/shared/mapTargetMarker.i3d (19.01 ms)
+2022-07-15 11:36 data/fillPlanes/fillPlane_materialHolder.i3d (31.31 ms)
+2022-07-15 11:36 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryChicken.i3d'.
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryChicken.i3d (54.17 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/shop.i3d (316.40 ms)
+2022-07-15 11:36 dataS/menu/licensePlate/creationBox.i3d (0.32 ms)
+2022-07-15 11:36 data/store/ui/wardrobe.i3d (374.33 ms)
+2022-07-15 11:36 data/shared/assets/marker/markerIcons.i3d (34.36 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/navigationMesh/chickenNavMesh.i3d (32.30 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/horseBarn.i3d (174.07 ms)
+2022-07-15 11:36 data/shared/assets/lights/terraLed/switch.i3d (228.49 ms)
+2022-07-15 11:36 data/placeables/rudolfHormann/controlPanel/controlPanel.i3d (112.18 ms)
+2022-07-15 11:36 data/shared/assets/lights/terraLed/fluorescentTube50W.i3d (115.53 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/navigationMesh/horseNavMesh.i3d (29.16 ms)
+2022-07-15 11:36 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandrySheep.xml'.
+2022-07-15 11:36 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandrySheep.xml'.
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/preHusbandrySheep.i3d (46.50 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/navigationMesh/sheepNavMesh.i3d (26.44 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/cowBarnMain.i3d (615.27 ms)
+2022-07-15 11:36   Error: Index not found: waterPlace7
+2022-07-15 11:36   Error: Index not found: waterPlace8
+2022-07-15 11:36   Error: Index not found: waterPlace9
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/navigationMesh/cowMainNavMesh.i3d (11.50 ms)
+2022-07-15 11:36 data/placeables/lely/astronautA5/astronautA5.i3d (199.23 ms)
+2022-07-15 11:36 data/placeables/lely/vectorGarage/lelyVectorGarage.i3d (440.06 ms)
+2022-07-15 11:36 Warning (script): 'addFeedingPlace': Argument 1 has wrong type. Expected: Int. Actual: Nil 
+2022-07-15 11:36   2022-07-15 11:36 D:\auto_builder\cache\svn\6a531a918d241d27ed9a60cd6da07ee2\src\base\scripting\lua\LuaScriptSystem.cpp (903)2022-07-15 11:36 : 2022-07-15 11:36 expectedType == Value::VoidType || expectedType == Value::ClassType
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryWater.lua (169) : addFeedingPlace
+  dataS/scripts/specialization/SpecializationUtil.lua (19)
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryAnimals.lua (366) : raiseEvent
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryAnimals.lua (260) : createHusbandry
+  dataS/scripts/specialization/SpecializationUtil.lua (19)
+  dataS/scripts/placeables/Placeable.lua (521) : raiseEvent
+  dataS/scripts/placeables/Placeable.lua (416) : finalizePlacement
+  dataS/scripts/placeables/Placeable.lua (465) : onFinishedLoading
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryFeedingRobot.lua (177) : finishLoadingTask
+  dataS/scripts/animals/husbandry/objects/feedingRobot/FeedingRobot.lua (416) : asyncCallbackFunction
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36 Warning (script): 'addFeedingPlace': Argument 1 has wrong type. Expected: Int. Actual: Nil 
+2022-07-15 11:36   2022-07-15 11:36 D:\auto_builder\cache\svn\6a531a918d241d27ed9a60cd6da07ee2\src\base\scripting\lua\LuaScriptSystem.cpp (903)2022-07-15 11:36 : 2022-07-15 11:36 expectedType == Value::VoidType || expectedType == Value::ClassType
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryWater.lua (169) : addFeedingPlace
+  dataS/scripts/specialization/SpecializationUtil.lua (19)
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryAnimals.lua (366) : raiseEvent
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryAnimals.lua (260) : createHusbandry
+  dataS/scripts/specialization/SpecializationUtil.lua (19)
+  dataS/scripts/placeables/Placeable.lua (521) : raiseEvent
+  dataS/scripts/placeables/Placeable.lua (416) : finalizePlacement
+  dataS/scripts/placeables/Placeable.lua (465) : onFinishedLoading
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryFeedingRobot.lua (177) : finishLoadingTask
+  dataS/scripts/animals/husbandry/objects/feedingRobot/FeedingRobot.lua (416) : asyncCallbackFunction
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36 Warning (script): 'addFeedingPlace': Argument 1 has wrong type. Expected: Int. Actual: Nil 
+2022-07-15 11:36   2022-07-15 11:36 D:\auto_builder\cache\svn\6a531a918d241d27ed9a60cd6da07ee2\src\base\scripting\lua\LuaScriptSystem.cpp (903)2022-07-15 11:36 : 2022-07-15 11:36 expectedType == Value::VoidType || expectedType == Value::ClassType
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryWater.lua (169) : addFeedingPlace
+  dataS/scripts/specialization/SpecializationUtil.lua (19)
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryAnimals.lua (366) : raiseEvent
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryAnimals.lua (260) : createHusbandry
+  dataS/scripts/specialization/SpecializationUtil.lua (19)
+  dataS/scripts/placeables/Placeable.lua (521) : raiseEvent
+  dataS/scripts/placeables/Placeable.lua (416) : finalizePlacement
+  dataS/scripts/placeables/Placeable.lua (465) : onFinishedLoading
+  dataS/scripts/animals/husbandry/placeables/PlaceableHusbandryFeedingRobot.lua (177) : finishLoadingTask
+  dataS/scripts/animals/husbandry/objects/feedingRobot/FeedingRobot.lua (416) : asyncCallbackFunction
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryPig.xml'.
+2022-07-15 11:36 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryPig.xml'.
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/preHusbandryPig.i3d (26.65 ms)
+2022-07-15 11:36   Error: Failed to find child 3 from node food, only 3 children given
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/i3d/I3DUtil.lua (20) : printCallstack
+  dataS/scripts/i3d/I3DUtil.lua (91) : checkChildIndex
+  dataS/scripts/i3d/I3DUtil.lua (407) : indexToObject
+  dataS/scripts/xml/XMLFile.lua (296) : closure
+  dataS/scripts/i3d/I3DUtil.lua (403) : iterate
+  dataS/scripts/placeables/Placeable.lua (351) : loadI3DMapping
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36   Error: Index not found: 0>1|3|0
+2022-07-15 11:36   Error: Failed to find child 3 from node food, only 3 children given
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/i3d/I3DUtil.lua (20) : printCallstack
+  dataS/scripts/i3d/I3DUtil.lua (91) : checkChildIndex
+  dataS/scripts/i3d/I3DUtil.lua (407) : indexToObject
+  dataS/scripts/xml/XMLFile.lua (296) : closure
+  dataS/scripts/i3d/I3DUtil.lua (403) : iterate
+  dataS/scripts/placeables/Placeable.lua (351) : loadI3DMapping
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36   Error: Index not found: 0>1|3|1
+2022-07-15 11:36   Error: Failed to find child 3 from node food, only 3 children given
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/i3d/I3DUtil.lua (20) : printCallstack
+  dataS/scripts/i3d/I3DUtil.lua (91) : checkChildIndex
+  dataS/scripts/i3d/I3DUtil.lua (407) : indexToObject
+  dataS/scripts/xml/XMLFile.lua (296) : closure
+  dataS/scripts/i3d/I3DUtil.lua (403) : iterate
+  dataS/scripts/placeables/Placeable.lua (351) : loadI3DMapping
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36   Error: Index not found: 0>1|3|2
+2022-07-15 11:36   Error: Failed to find child 3 from node food, only 3 children given
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/i3d/I3DUtil.lua (20) : printCallstack
+  dataS/scripts/i3d/I3DUtil.lua (91) : checkChildIndex
+  dataS/scripts/i3d/I3DUtil.lua (407) : indexToObject
+  dataS/scripts/xml/XMLFile.lua (296) : closure
+  dataS/scripts/i3d/I3DUtil.lua (403) : iterate
+  dataS/scripts/placeables/Placeable.lua (351) : loadI3DMapping
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36   Error: Index not found: 0>1|3|3
+2022-07-15 11:36   Error: Failed to find child 3 from node food, only 3 children given
+2022-07-15 11:36 LUA call stack:
+  dataS/scripts/i3d/I3DUtil.lua (20) : printCallstack
+  dataS/scripts/i3d/I3DUtil.lua (91) : checkChildIndex
+  dataS/scripts/i3d/I3DUtil.lua (407) : indexToObject
+  dataS/scripts/xml/XMLFile.lua (296) : closure
+  dataS/scripts/i3d/I3DUtil.lua (403) : iterate
+  dataS/scripts/placeables/Placeable.lua (351) : loadI3DMapping
+  dataS/scripts/i3d/I3DManager.lua (134) : asyncCallbackFunction
+2022-07-15 11:36   Error: Index not found: 0>1|3|4
+2022-07-15 11:36   Warning (C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryPig.xml): Missing collision mask bit '30'. Please add this bit to exact fill root node 'RootNode|Riverside_22|pigBarnBig|food|foodPlaces' of unloadTrigger
+2022-07-15 11:36   Error (C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryPig.xml): Placeable loading failed!
+2022-07-15 11:36   Warning: Corrupt savegame, placeable 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/prehusbandryPig.xml' could not be loaded
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/cattleBarn.i3d (240.75 ms)
+2022-07-15 11:36 data/placeables/lely/nautilus/nautilus.i3d (81.82 ms)
+2022-07-15 11:36 data/shared/assets/lights/terraLed/light150W.i3d (57.38 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/animals/navigationMesh/cattleNavMesh.i3d (18.36 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/bga.i3d (19.40 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/bunker.i3d (55.50 ms)
+2022-07-15 11:36 data/placeables/lizard/weighingStation/weighingStationSmall/weighingStationSmall.i3d (106.79 ms)
+2022-07-15 11:36 data/shared/assets/lights/terraLed/spotlight20W.i3d (61.64 ms)
+2022-07-15 11:36 data/placeables/lizard/manureHeap/manureHeap.i3d (55.90 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingStationGrain.i3d (12.92 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/baleMainShop.i3d (6.14 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/baleNorthShop.i3d (5.84 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellADbales.i3d (5.26 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/northFarmShop.i3d (5.57 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/northSellGrain.i3d (21.27 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingFarmShop.i3d (22.04 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingCF.i3d (21.98 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingGM.i3d (12.08 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingGW.i3d (21.83 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingOM.i3d (21.14 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingSM.i3d (22.24 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingGrain1.i3d (21.25 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/restaurant/restaurant.i3d (253.79 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/restaurant/props.i3d (89.71 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/farmersMarket/farmersMarket.i3d (107.37 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/farmersMarket/props.i3d (17.72 ms)
+2022-07-15 11:36 data/shared/assets/lights/lizard/buildings/industrialWallLight.i3d (20.54 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/pizzeria/pizzeria.i3d (180.42 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/pizzeria/props.i3d (22.08 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/fastFoodRestaurant/fastFoodRestaurant.i3d (133.89 ms)
+2022-07-15 11:36 data/placeables/lizard/sellingPoints/fastFoodRestaurant/props.i3d (19.08 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingddf.i3d (20.19 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingSB.i3d (16.99 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingBIO.i3d (18.25 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingBN.i3d (22.96 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingBM.i3d (19.76 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingCW.i3d (21.90 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingWC.i3d (11.96 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingWCM.i3d (49.73 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingPT.i3d (18.71 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingManure.i3d (14.67 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingSlurry.i3d (11.57 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingCN.i3d (16.65 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/buyFarm.i3d (28.53 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/buyNorthFarm.i3d (16.52 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/bakeryEUC.i3d (201.44 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/bakeryEU/props.i3d (119.42 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/carpenterEU/carpenterEU.i3d (103.13 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/carpenterEU/props.i3d (88.23 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/cerealFactory/cerealFactory.i3d (243.93 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/cerealFactory/props.i3d (22.81 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/dairyEU/dairyEU.i3d (244.49 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/dairyEU/props.i3d (76.12 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/oilMill.i3d (106.97 ms)
+2022-07-15 11:36 data/placeables/sellingStationGeneric/sellingStationGenericNoCover.i3d (21.70 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/oilPlant/props.i3d (21.33 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/raisinFactory/raisinFactory.i3d (154.20 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/raisinFactory/props.i3d (83.67 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/spinnery.i3d (111.53 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/spinneryUS/props.i3d (19.02 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/sugarMill/sugarMill.i3d (106.98 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/sugarMill/props.i3d (22.74 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/tailorShop/tailorShop.i3d (149.10 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/tailorShop/props.i3d (20.01 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/grainMill/grainMill.i3d (109.62 ms)
+2022-07-15 11:36 data/placeables/sellingStationGeneric/sellingStationGeneric.i3d (21.03 ms)
+2022-07-15 11:36 data/placeables/lizard/productionPoints/grainMill/props.i3d (114.85 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/ddProcessing.i3d (20.70 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/mixingMill.i3d (13.92 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/woodPro.i3d (53.53 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingStationVehiclesMain.i3d (22.27 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingStationVehiclesShop.i3d (14.36 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingStationVehicles300.i3d (19.07 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingStationVehiclesMiss.i3d (11.89 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingStationVehiclesFarm3.i3d (14.81 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/sellingStationVehiclesCattle.i3d (21.66 ms)
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/wash.i3d (71.50 ms)
+2022-07-15 11:36 Warning: Loading file with invalid case 'C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/Silo300.i3d'.
+2022-07-15 11:36 C:/Users/MissyB/Documents/My Games/FarmingSimulator2022/mods/FS22_riverside22/maps/placeables/Silo300.i3d (24.66 ms)
+2022-07-15 11:36 data/vehicles/albutt/frontloaderShovel/frontloaderShovel.i3d (56.36 ms)
+2022-07-15 11:36   Setting 'Radio Volume': 0.500
+2022-07-15 11:36   Setting 'Vehicle Volume': 0.700
+2022-07-15 11:36   Setting 'Environment Volume': 1.000
+2022-07-15 11:36   Setting 'GUI Volume': 0.500
+2022-07-15 11:36   Info: Savegame Setting 'dirtInterval': 3
+2022-07-15 11:36   Info: Savegame Setting 'snowEnabled': true
+2022-07-15 11:36   Info: Savegame Setting 'growthMode': 1
+2022-07-15 11:36   Info: Savegame Setting 'fuelUsage': 2
+2022-07-15 11:36   Info: Savegame Setting 'plowingRequiredEnabled': true
+2022-07-15 11:36   Info: Savegame Setting 'weedsEnabled': true
+2022-07-15 11:36   Info: Savegame Setting 'limeRequired': true
+2022-07-15 11:36   Info: Savegame Setting 'stonesEnabled': true
+2022-07-15 11:36   Info: Savegame Setting 'economicDifficulty': 2
+2022-07-15 11:36   Info: Savegame Setting 'fixedSeasonalVisuals': nil
+2022-07-15 11:36   Info: Savegame Setting 'plannedDaysPerPeriod': 1
+2022-07-15 11:36   Info: No vehicle navigation cost map found. Start scanning map...
+2022-07-15 11:36 dataS/character/humans/player/player01.i3d (17.84 ms)
+2022-07-15 11:36 dataS/character/humans/player/player02.i3d (17.45 ms)
+2022-07-15 11:36 dataS/character/player01/clothes/bottoms/botJeans.i3d (13.73 ms)
+2022-07-15 11:36 dataS/character/player01/heads/maleHead01.i3d (181.69 ms)
+2022-07-15 11:36 dataS/character/player01/clothes/footwear/footwearWorkboot02.i3d (25.35 ms)
+2022-07-15 11:36 dataS/character/player01/hairStyles/hairStyle3070.i3d (6.03 ms)
+2022-07-15 11:36 dataS/character/player01/clothes/tops/topDenimJacket.i3d (79.37 ms)
+2022-07-15 11:36 dataS/character/player02/brands/brand04/fendBottom.i3d (94.69 ms)
+2022-07-15 11:36 dataS/character/player02/heads/femHead01.i3d (177.92 ms)
+2022-07-15 11:36 dataS/character/player02/brands/brand07/eltenMaddoxLowBlue.i3d (86.64 ms)
+2022-07-15 11:36 dataS/character/player02/attachments/glassesReading.i3d (2.59 ms)
+2022-07-15 11:36 dataS/character/player02/hairStyles/hairStylePonytail02.i3d (10.23 ms)
+2022-07-15 11:36 dataS/character/player02/clothes/tops/topWindBreaker.i3d (74.45 ms)

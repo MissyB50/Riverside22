@@ -67,8 +67,7 @@
               <TransformGroup name="animalPlace4" translation="-2.2202 0 -1.4" nodeId="28"/>
             </TransformGroup>
           </Shape>
-          <Shape shapeId="4" name="feedingTroughPlane" translation="0 -0.29 0" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="4" name="feedingTroughPlane" translation="5.8 -0.29 0" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="feedingTroughPlane" translation="2.85 -0.29 0" nodeId="79" materialIds="7" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="1" name="feedingTroughChicken" translation="5.79682 0 0" static="true" clipDistance="300" nodeId="31" materialIds="5" castsShadows="true" receiveShadows="true"/>
         </Shape>
         <TransformGroup name="warningStripes" nodeId="32">
@@ -102,36 +101,36 @@
           <TransformGroup name="palletArea2Start" translation="0.8 0 -4.4" nodeId="54">
             <TransformGroup name="palletArea2End" translation="0 0 8.4" nodeId="55"/>
           </TransformGroup>
-          <TransformGroup name="palletArea3Start" translation="0 0 -4.4" nodeId="73">
-            <TransformGroup name="palletArea3End" translation="0 0 8.4" nodeId="74"/>
+          <TransformGroup name="palletArea3Start" translation="0 0 -4.4" nodeId="56">
+            <TransformGroup name="palletArea3End" translation="0 0 8.4" nodeId="57"/>
           </TransformGroup>
-          <TransformGroup name="palletArea4Start" translation="-0.8 0 -4.4" nodeId="75">
-            <TransformGroup name="palletArea4End" translation="0 0 8.4" nodeId="76"/>
+          <TransformGroup name="palletArea4Start" translation="-0.8 0 -4.4" nodeId="58">
+            <TransformGroup name="palletArea4End" translation="0 0 8.4" nodeId="59"/>
           </TransformGroup>
-          <TransformGroup name="palletArea5Start" translation="-1.9 0 -4.4" nodeId="77">
-            <TransformGroup name="palletArea5End" translation="0 0 8.4" nodeId="78"/>
-          </TransformGroup>
-        </TransformGroup>
-        <Shape shapeId="9" name="infoTrigger" static="true" trigger="true" collisionMask="3145728" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <Shape shapeId="10" name="loadingTrigger" translation="-1.65379 0 -16.3776" static="true" trigger="true" collisionMask="3145728" nodeId="57" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="58">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-10.1361 0 -3.86918" nodeId="59">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="18.7487 0 12.2014" nodeId="60"/>
+          <TransformGroup name="palletArea5Start" translation="-1.9 0 -4.4" nodeId="60">
+            <TransformGroup name="palletArea5End" translation="0 0 8.4" nodeId="61"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="visuals" nodeId="61">
-          <TransformGroup name="winter" translation="0 0.083 0" nodeId="62"/>
-        </TransformGroup>
-        <TransformGroup name="markerAnimals" translation="-2.54083 0.02 -16.493" nodeId="63"/>
-        <TransformGroup name="markerFood" translation="-25.0602 0.02 -20.857" nodeId="64"/>
-        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="65">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-44.8346 -4.54747e-15 -23.2413" nodeId="66">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="74.2417 0 41.51" nodeId="67"/>
+        <Shape shapeId="9" name="infoTrigger" static="true" trigger="true" collisionMask="3145728" nodeId="62" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="10" name="loadingTrigger" translation="-1.65379 0 -16.3776" static="true" trigger="true" collisionMask="3145728" nodeId="63" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="64">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-10.1361 0 -3.86918" nodeId="65">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="18.7487 0 12.2014" nodeId="66"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="testAreas" nodeId="68">
-          <TransformGroup name="testArea1Start" translation="-47.9451 -15 -17.3834" nodeId="69">
-            <TransformGroup name="testArea1End" translation="98.0925 10 48.039" nodeId="70"/>
+        <TransformGroup name="visuals" nodeId="67">
+          <TransformGroup name="winter" translation="0 0.083 0" nodeId="68"/>
+        </TransformGroup>
+        <TransformGroup name="markerAnimals" translation="-2.54083 0.02 -16.493" nodeId="69"/>
+        <TransformGroup name="markerFood" translation="-25.0602 0.02 -20.857" nodeId="70"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="71">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-44.8346 -4.54747e-15 -23.2413" nodeId="72">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="74.2417 0 41.51" nodeId="73"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="74">
+          <TransformGroup name="testArea1Start" translation="-47.9451 -15 -17.3834" nodeId="75">
+            <TransformGroup name="testArea1End" translation="98.0925 10 48.039" nodeId="76"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>

@@ -273,18 +273,8 @@
             <TransformGroup name="levelArea1Height" translation="-27.8497 0 2.27374e-15" nodeId="152"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="paintAreas" translation="0 0.03 0" nodeId="153">
-          <TransformGroup name="paintArea1Start" translation="10.8401 0 -6.00656" nodeId="154">
-            <TransformGroup name="paintArea1Width" translation="4.54747e-15 0 -24.2236" nodeId="155"/>
-            <TransformGroup name="paintArea1Height" translation="-27.1545 0 0" nodeId="156"/>
-          </TransformGroup>
-        </TransformGroup>
-        <TransformGroup name="foliageAreas" translation="0 0.03 0" nodeId="157">
-          <TransformGroup name="foliageArea1Start" translation="9.9946 0 -6.93754" nodeId="158">
-            <TransformGroup name="foliageArea1Width" translation="0 0 -22.206" nodeId="159"/>
-            <TransformGroup name="foliageArea1Height" translation="-25.6834 0 0" nodeId="160"/>
-          </TransformGroup>
-        </TransformGroup>
+        <TransformGroup name="paintAreas" translation="0 0.03 0" nodeId="153"/>
+        <TransformGroup name="foliageAreas" translation="0 0.03 0" nodeId="157"/>
         <TransformGroup name="indoorAreas" translation="0 0.03 0" nodeId="161">
           <TransformGroup name="indoorArea1Start" translation="11.1379 0 8.77803" nodeId="162">
             <TransformGroup name="indoorArea1Width" translation="4.54747e-15 0 -15.3539" nodeId="163"/>
