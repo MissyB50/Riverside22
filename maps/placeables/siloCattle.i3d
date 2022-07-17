@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="31" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="siloCattle.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="siloCattle" nodeId="14">
+        <TransformGroup name="gameplay" nodeId="15">
+          <TransformGroup name="IN" nodeId="16">
+            <Shape shapeId="1" name="exactFillRootNode" translation="3.72979 -0.45 0" scale="1.35033 1 1.92076" static="true" collisionMask="1073741824" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="aiUnloadingNode" translation="0 0.37 -3.24719e-07" rotation="0 -90 0" nodeId="18"/>
+            <TransformGroup name="markerUnloading" rotation="0 -90 0" nodeId="19"/>
+          </TransformGroup>
+          <TransformGroup name="OUT" nodeId="20">
+            <Shape shapeId="2" name="loadingTrigger" translation="15.771 6.30767 6.56184" scale="1 1.32222 1" static="true" trigger="true" collisionMask="1073741824" nodeId="21" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="15.771 0 6.56184" nodeId="22"/>
+            <TransformGroup name="dischargeEffect" nodeId="23">
+              <Shape shapeId="3" name="pipeEffect" translation="15.771 6.30767 6.56184" rotation="90 0 0" clipDistance="300" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="4" name="pipeEffectSmoke" translation="15.771 -0.247568 6.56184" clipDistance="100" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="aiLoadingNode" translation="15.771 0.37 6.56184" rotation="0 -90 0" nodeId="26"/>
+            <TransformGroup name="markerLoading" translation="14.4292 0.025 6.46505" rotation="0 -90 0" nodeId="27"/>
+          </TransformGroup>
+          <TransformGroup name="storage" nodeId="28"/>
+          <TransformGroup name="mapPosition" nodeId="29"/>
+          <Shape shapeId="5" name="aiSpline" translation="7.06179 0 -6.17362e-07" rotation="0 180 0" visibility="false" nodeId="30"/>
+          <Shape shapeId="6" name="infoTrigger" translation="9.87413 0 0" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="transform" nodeId="37">
+          <TransformGroup name="tip" nodeId="35">
+            <TransformGroup name="tip" nodeId="36"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -149,9 +149,6 @@
                 <waterPlace node="waterPlace4" />
                 <waterPlace node="waterPlace5" />
                 <waterPlace node="waterPlace6" />
-                <waterPlace node="waterPlace7" />
-                <waterPlace node="waterPlace8" />
-                <waterPlace node="waterPlace9" />
             </waterPlaces>
         </water>
     </husbandry>

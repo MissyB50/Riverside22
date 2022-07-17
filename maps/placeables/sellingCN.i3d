@@ -12,7 +12,7 @@
   <Materials>
     <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="UnnamedMaterial" materialId="20" diffuseColor="1 1 1 1">
+    <Material name="UnnamedMaterial" materialId="19" diffuseColor="1 1 1 1">
     </Material>
   </Materials>
 
@@ -25,19 +25,19 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="unloadingStation" lockedgroup="true" nodeId="10">
-        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="11">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-4.40057 0 2.40134" rotation="0 90 0" nodeId="12">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.8 0 8.8" nodeId="13"/>
+      <TransformGroup name="unloadingStation" lockedgroup="true" nodeId="9">
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="10">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-4.40057 0 2.40134" rotation="0 90 0" nodeId="11">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.8 0 8.8" nodeId="12"/>
           </TransformGroup>
         </TransformGroup>
-        <Shape shapeId="1" name="unloadTriggerGrain" static="true" trigger="true" collisionMask="1073741824" nodeId="14" materialIds="4" nonRenderable="true">
-          <TransformGroup name="unloadTriggerGrainMarker" translation="-0.6 0.7 0" nodeId="15"/>
+        <Shape shapeId="1" name="unloadTriggerGrain" static="true" trigger="true" collisionMask="1073741824" nodeId="13" materialIds="4" nonRenderable="true">
+          <TransformGroup name="unloadTriggerGrainMarker" translation="-0.6 0.7 0" nodeId="14"/>
         </Shape>
-        <TransformGroup name="empty" translation="0 0 4" nodeId="23"/>
-        <TransformGroup name="teleportNode" translation="0 0 4" nodeId="17"/>
-        <TransformGroup name="aiNodeGrain" rotation="0 90 0" nodeId="18"/>
-        <Shape shapeId="2" name="aiSplineGrain" rotation="0 180 0" nodeId="19"/>
+        <TransformGroup name="empty" translation="0 0 4" nodeId="15"/>
+        <TransformGroup name="teleportNode" nodeId="16"/>
+        <TransformGroup name="aiNodeGrain" rotation="0 90 0" nodeId="17"/>
+        <Shape shapeId="2" name="aiSplineGrain" rotation="0 180 0" nodeId="18"/>
       </TransformGroup>
   </Scene>
 

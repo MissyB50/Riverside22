@@ -27,6 +27,7 @@
     <base>
         <filename>maps/placeables/Silo300.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" >

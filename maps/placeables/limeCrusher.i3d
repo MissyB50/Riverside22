@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/grimme/sl8022/sl8022Belt_normal.png"/>
+    <File fileId="5" filename="$data/vehicles/grimme/sl8022/sl8022Belt_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="default_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="0.494118 1 0.494118">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.658824 0.658824 0.658824 1">
+    </Material>
+    <Material name="sl8022Belt_mat" materialId="8" diffuseColor="0.337255 0.337255 0.337255 1" customShaderId="6" customShaderVariation="uvScroll_colorMask">
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="offsetUV" value="0 0 0 0"/>
+      <CustomParameter name="colorMat0" value="0.012 0.012 0.012 5"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="limeCrusher.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="limeCrusher" nodeId="23">
+        <TransformGroup name="sellingStation" nodeId="24">
+          <Shape shapeId="1" name="unloadTriggerUpper" translation="0.02375 4.833 0.0280737" scale="4 0.5 1" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="unloadTriggerUpperMarker" translation="0 5.448 0" nodeId="26"/>
+          <Shape shapeId="2" name="unloadTriggerLower" translation="-4.524 0.426022 -3.84055" scale="0.91127 1 0.741958" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="unloadTriggerLowerAINode" translation="-4.524 0.25 -3.84055" rotation="0 180 0" nodeId="28"/>
+          <TransformGroup name="unloadTriggerLowerMarker" translation="-4.524 0.25 -3.84055" nodeId="29"/>
+        </TransformGroup>
+        <TransformGroup name="unloading" nodeId="30">
+          <Shape shapeId="3" name="loadingTrigger" translation="14.03 0 4.58898" rotation="0 90 0" scale="1 1 0.634116" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" translation="14.8178 0 4.58898" nodeId="32"/>
+          <TransformGroup name="aiNodeLoading" translation="37.731 0 12.0823" rotation="0 -90 0" nodeId="33"/>
+          <TransformGroup name="dischargeEffect" translation="18.733 0 6.80654" nodeId="34">
+            <Shape shapeId="4" name="grain" translation="-4.133 5.34275 -2.58195" rotation="8.14222e-13 -5.08889e-13 0" clipDistance="30" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="effectSmoke" translation="-4.133 0 -2.58195" rotation="-2.36171e-06 90 0" scale="1.33134 1.48806 1.57359" clipDistance="300" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="effects" nodeId="37">
+          <Shape shapeId="5" name="effectSmoke" translation="4.7 2.28651 0.127264" rotation="-2.36171e-06 90 0" scale="1.33134 1 1.57359" clipDistance="300" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="effectSmoke" translation="0 2.31853 0.127265" rotation="-2.36171e-06 90 0" scale="1.33134 1 1.57359" clipDistance="300" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="effectSmoke" translation="-4.7 2.27508 0.127265" rotation="-2.36171e-06 90 0" scale="1.33134 1 1.57359" clipDistance="300" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="topArm" translation="0.0942863 2.19807 0.184398" rotation="0 -90 0" scale="1.5 1 1" clipDistance="300" nodeId="41">
+          <TransformGroup name="dischargeNodeRot" translation="-0.0947812 -0.0878174 -5.64113" rotation="-90 0 0" nodeId="42">
+            <TransformGroup name="dischargeNode" translation="0 -1.57772e-32 0" rotation="96.542 0 0" nodeId="43"/>
+          </TransformGroup>
+          <Shape shapeId="6" name="beltTop" translation="-0.0941286 -0.101079 -0.96771" scale="1.5 1 1.58562" clipDistance="300" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="effects" translation="-0.000159779 -0.684223 5.5521" nodeId="45">
+              <Shape shapeId="7" name="pipeUnloadEffect" translation="-0.000184023 0.708374 -11.3481" rotation="90 180 0" clipDistance="100" nodeId="46" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="8" name="pipeSmokeEffect" translation="0.0167564 -3.24966 -11.645" rotation="10.9322 90.7939 10.4812" visibility="false" clipDistance="100" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="effectBeltTop" translation="-0.000184021 0.824229 -6.1501" clipDistance="300" nodeId="48" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="10" name="effectBeltTop_target" translation="-0.000184021 0.824229 -6.1501" visibility="false" clipDistance="300" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="11" name="colPart" translation="-0.10143 -2.00331e-16 -0.279049" visibility="false" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="teleportNode" translation="3 0 -7" nodeId="51"/>
+        <TransformGroup name="productionPoint" translation="6.21414 0.407992 10.3303" rotation="0 180 0" nodeId="52">
+          <Shape shapeId="12" name="playerTrigger" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" translation="-5.09796 0 2.57617" nodeId="54"/>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="13" name="infoTrigger" translation="4.45828 4.58252 -2.52825" scale="0.809918 1 0.757569" static="true" trigger="true" collisionMask="1048576" clipDistance="300" nodeId="55" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="tipOcc" nodeId="56">
+          <TransformGroup name="start" nodeId="57">
+            <TransformGroup name="end" nodeId="58"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="44">
+      <Attribute name="shaderParameter" type="string" value="1.0 1.0 14.0 14.0"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

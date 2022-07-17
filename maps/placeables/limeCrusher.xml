@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Lime Production</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>store_lime.dds</image>
+        <canBeSold>false</canBeSold>
+        <price>50000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/limeCrusher.i3d</filename>
+        <canBeRenamed>false</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas/>
+    </placement>
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerUpperMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="unloadTriggerLowerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+		<triggerMarker node="playerTriggerMarker" 	   filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerUpperMarker" teleportNode="teleportNode" />
+    </hotspots>
+	
+	<productionPoint>
+		<productions sharedThroughputCapacity="false"> 
+			<production id="Lime Production" name="$l10n_fillType_lime" cyclesPerHour="15" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="STONE" amount="1800" />
+					<input fillType="WATER" amount="200" />
+                </inputs>
+                <outputs>
+                    <output fillType="LIME" amount="1500" />
+                    <output fillType="LIQUIDMANURE" amount="500"/>
+                </outputs>
+            </production>
+		</productions>
+
+
+    <sellingStation appearsOnStats="true" node="sellingStation" supportsExtension="true" >
+        <unloadTrigger exactFillRootNode="unloadTriggerUpper" fillTypes="STONE LIME WATER"  />  <!-- give players a bonus for using upper trigger -->
+        <unloadTrigger exactFillRootNode="unloadTriggerLower" fillTypes="STONE LIME WATER" aiNode="unloadTriggerLowerAINode"/>
+		<fillType name="STONE" priceScale="3" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="LIME"  priceScale="4" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WATER" priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="false" />
+        <sounds>
+            <active template="debrisCrusherWork"  />
+			<active template="DEFAULT_REFUEL_SOUND"  />
+        </sounds>
+
+        <effectNodes>
+            <effectNode effectNode="effectSmoke" materialType="unloadingSmoke" />
+            <effectNode effectNode="effectSmoke1" materialType="unloadingSmoke" />			
+            <effectNode effectNode="effectSmoke2" materialType="unloadingSmoke" />
+            <effectNode effectClass="PipeEffect" effectNode="pipeUnloadEffect" materialType="pipe"  delay="0" maxBending="1"  positionUpdateNodes="pipeSmokeEffect" shapeScaleSpread="1 1 0 0" />
+            <effectNode                          effectNode="pipeSmokeEffect" materialType="unloadingSmoke" delay="0"  alignToWorldY="true"/>
+        </effectNodes>
+
+    <conveyorBelt dischargeNodeIndex="1" >
+        <offset movingToolNode="topArm">
+            <effect index="3" inverted="false" minOffset="0" maxOffset="4.4" />
+        </offset>
+        <animationNodes>
+            <animationNode class="ScrollingAnimation" node="beltTop"    shaderParameterComponent="2" scrollSpeed="-0.3" turnOnFadeTime="0.1" turnOffFadeTime="0.1" />
+        </animationNodes>
+        <effects>
+            <effectNode effectClass="ConveyorBeltEffect" effectNode="effectBeltTop"    materialType="belt" delay="5.5" fadeTime="5"   speed="0.7" scrollLength="10" scrollSpeed="0.8" />
+        </effects>
+        <sounds>
+            <belt template="ROLLBELT_LOOP"/>
+        </sounds>
+    </conveyorBelt>
+    </sellingStation>
+	  
+	  <loadingStation>
+			<loadTrigger triggerNode="loadingTrigger" fillTypes="STONE LIME WATER LIQUIDMANURE" fillLitersPerSecond="1000" dischargeNode="dischargeNode" aiNode="aiNodeLoading" >
+				<effectNode effectNode="grain" materialType="unloading" materialTypeId="3" fadeTime="0.5" />
+				<effectNode effectNode="smoke" materialType="smoke"     materialTypeId="1" fadeTime="0.5" />
+			</loadTrigger>
+        </loadingStation>
+
+        <storage isExtension="false" fillLevelSyncThreshold="100">            
+			<capacity fillType="STONE" capacity="200000" />
+            <capacity fillType="LIME"  capacity="500000" />
+            <capacity fillType="WATER" capacity="120000" />
+            <capacity fillType="LIQUIDMANURE" capacity="60000" />
+        </storage>
+		
+		<playerTrigger node="playerTrigger" />	 
+	</productionPoint>	
+
+    <i3dMappings>
+        <i3dMapping id="unloadTriggerUpper" node="0>0|0" />
+        <i3dMapping id="unloadTriggerUpperMarker" node="0>0|1" />
+        <i3dMapping id="unloadTriggerLower" node="0>0|2" />
+        <i3dMapping id="unloadTriggerLowerAINode" node="0>0|3" />
+        <i3dMapping id="unloadTriggerLowerMarker" node="0>0|4" />
+		<i3dMapping id="loadingTrigger" node="0>1|0" />
+		<i3dMapping id="dischargeNode" node="0>1|1" />
+        <i3dMapping id="aiNodeLoading" node="0>1|2" />
+		<i3dMapping id="grain" node="0>1|3|0" />
+    	<i3dMapping id="smoke" node="0>1|3|1" />
+
+        <i3dMapping id="effectSmoke" node="0>2|0" />
+        <i3dMapping id="effectSmoke1" node="0>2|1" />
+        <i3dMapping id="effectSmoke2" node="0>2|2" />
+        <i3dMapping id="pipeUnloadEffect" node="0>3|1|0|0" />
+        <i3dMapping id="pipeSmokeEffect" node="0>3|1|0|1" />
+        <i3dMapping id="effectBeltTop" node="0>3|1|0|2" />
+
+        <i3dMapping id="beltTop" node="0>3|1" />
+
+        <i3dMapping id="teleportNode" node="0>4" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>7|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>7|0|0" />
+        <i3dMapping id="infoTrigger" node="0>6" />
+		<i3dMapping id="playerTrigger" node="0>5|0" />
+		<i3dMapping id="playerTriggerMarker" node="0>5|0|0" />
+    </i3dMappings>
+</placeable>
