@@ -3,14 +3,16 @@
     <storeData>
         <name>$l10n_storeItem_animalBarnCowBig</name>
         <image>$data/placeables/rudolfHormann/cowBarnBig/store_cowBarnBig.png</image>
-        <price>518500</price>
+        <price>1</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>
         </functions>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
-        <dailyUpkeep>200</dailyUpkeep>
+        <dailyUpkeep>1</dailyUpkeep>
         <rotation>0</rotation>
-        <brand>RUDOLFHOERMANN</brand>
+        <brand>NONE</brand>
         <species>placeable</species>
         <category>animalpens</category>
         <brush>

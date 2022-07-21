@@ -8,6 +8,8 @@
             <function>$l10n_function_animalPenPig</function>
         </functions>
         <lifetime>0</lifetime>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <dailyUpkeep>1</dailyUpkeep>
         <rotation>0</rotation>
         <brand>NONE</brand>

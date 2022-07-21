@@ -7,6 +7,8 @@
         </functions>
         <image>$data/placeables/lizard/sellingPoints/pizzeria/store_pizzeria.png</image>
         <price>60000</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

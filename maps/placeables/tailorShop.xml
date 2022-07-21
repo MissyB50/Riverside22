@@ -7,6 +7,8 @@
         </functions>
         <image>$data/placeables/lizard/productionPoints/tailorShop/store_tailorShop.png</image>
         <price>100000</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

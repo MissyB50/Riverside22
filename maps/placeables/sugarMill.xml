@@ -7,6 +7,8 @@
         </functions>
         <image>$data/placeables/lizard/productionPoints/sugarMill/store_sugarMill.png</image>
         <price>80000</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

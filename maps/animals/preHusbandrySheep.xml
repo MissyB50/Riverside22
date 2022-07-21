@@ -9,6 +9,8 @@
         </functions>
         <lifetime>0</lifetime>
         <dailyUpkeep>1</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <rotation>0</rotation>
         <brand>NONE</brand>
         <species>placeable</species>
@@ -105,9 +107,7 @@
         </food>
 
         <water automaticWaterSupply="false" >
-            <waterPlane node="waterPlane" minY="0.03" maxY="0.175" changeVisibility="true" />
-            <waterPlane node="waterPlane1" minY="0.03" maxY="0.175" changeVisibility="true" />
-            <waterPlane node="waterPlane2" minY="0.03" maxY="0.175" changeVisibility="true" />
+            <waterPlane node="waterPlane" minY="0.004" maxY="0.175" changeVisibility="true" />
             <waterPlaces>
                 <waterPlace node="waterPlace1" />
                 <waterPlace node="waterPlace2" />
@@ -150,8 +150,6 @@
         <i3dMapping id="waterPlace5" node="0>3|2|4" />
         <i3dMapping id="waterPlace6" node="0>3|2|5" />
         <i3dMapping id="waterPlane" node="0>3|3" />
-        <i3dMapping id="waterPlane1" node="0>3|10" />
-        <i3dMapping id="waterPlane2" node="0>3|11" />
         <i3dMapping id="palletTrigger" node="0>4|0" />
         <i3dMapping id="palletArea1Start" node="0>4|1" />
         <i3dMapping id="palletArea1End" node="0>4|1|0" />

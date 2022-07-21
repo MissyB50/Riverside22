@@ -51,6 +51,9 @@
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingCN.xml" position="14.3 61.4 643.946" rotation="0 0 0"/>
     <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyFarm.xml" position="644.695 60 -254.505" rotation="0 0 0"/>
     <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyNorthFarm.xml" position="-970.823 76.173 -925.336" rotation="0 0 0"/>
+    <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingManureF.xml" position="628.453 60 -240.624" rotation="0 0 0"/>
+
+
 <!--productions-->
     <placeable mapBoundId="sellingStationBakery" filename="$mapdir$/maps/placeables/bakeryEUC.xml" position="177.175 60 -108.56" rotation="0 -90 0" />
     <placeable mapBoundId="sellingStationCarpenter" filename="$mapdir$/maps/placeables/carpenterEU.xml" position="-266.753 82 -307.547" rotation="0 40 0" />
@@ -81,7 +84,7 @@
 <!--silos-->
     <placeable mapBoundId="farmStorageSilo" filename="$mapdir$/maps/placeables/Silo300.xml" position="-464.369 62 537.9" rotation="0 90 0"/>
     <placeable mapBoundId="farmStorageSilo1" filename="$mapdir$/maps/placeables/SiloFarm3.xml" position="-518.912 62 687.322" rotation="0 0 0"/>
-    <placeable mapBoundId="farmStorageSilo2" filename="$mapdir$/maps/placeables/siloMain.xml" position="757.037 59.996 -773.123" rotation="0 0 0"/>
+<!--     <placeable mapBoundId="farmStorageSilo2" filename="$mapdir$/maps/placeables/siloMain.xml" position="757.037 59.996 -773.123" rotation="0 0 0"/> -->
     <placeable mapBoundId="farmStorageSilo3" filename="$mapdir$/maps/placeables/siloPig.xml" position="681.684 60 -145.04" rotation="0 0 0"/>
     <placeable mapBoundId="farmStorageSilo4" filename="$mapdir$/maps/placeables/siloCattle.xml" position="-951.456 75.2 12.347" rotation="0 90 0"/>
 

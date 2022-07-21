@@ -8,6 +8,8 @@
         <image>$data/placeables/lizard/productionPoints/bakeryEU/store_bakeryEU.png</image>
         <price>50000</price>
         <lifetime>1000</lifetime>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <rotation>0</rotation>
         <brand>NONE</brand>
         <species>placeable</species>

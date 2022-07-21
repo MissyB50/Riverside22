@@ -8,7 +8,9 @@
             <function>$l10n_function_Storage</function>
         </functions>
         <image>store.dds</image>
-        <price>90000</price>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>500</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -52,14 +54,14 @@
 
     <silo>
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
-            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="BULK" aiNode="aiLoadingNode">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypeCategories="BULK" aiNode="aiLoadingNode">
                 <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" />
                 <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
             </loadTrigger>
         </loadingStation>
 
         <unloadingStation supportsExtension="true" storageRadius="50">
-            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="BULK" aiNode="aiUnloadingNode"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="" aiNode="aiUnloadingNode"/>
         </unloadingStation>
 
         <storages>

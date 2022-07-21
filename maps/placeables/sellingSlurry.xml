@@ -47,10 +47,10 @@
  </triggerMarkers>
 
  <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-  <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="aiNodeGrain" fillTypes="LIQUIDMANURE">
+  <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="aiNodeGrain" fillTypes="LIQUIDMANURE DIGESTATE">
   </unloadTrigger>
   <fillType name="LIQUIDMANURE"	priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-  <fillType name="DIGESTATE"	priceScale="20" supportsGreatDemand="true" disablePriceDrop="true" />
+  <fillType name="DIGESTATE"	priceScale="40" supportsGreatDemand="true" disablePriceDrop="true" />
  </sellingStation>
 
  <i3dMappings>

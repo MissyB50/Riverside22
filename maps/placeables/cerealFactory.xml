@@ -6,7 +6,9 @@
             <function>$l10n_function_productionPoint</function>
         </functions>
         <image>$data/placeables/lizard/productionPoints/cerealFactory/store_cerealFactory.png</image>
-        <price>110000</price>
+        <price>0</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

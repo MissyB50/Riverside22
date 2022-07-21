@@ -2,16 +2,15 @@
 <placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>
-		    <en>Large Prodution</en>
-            <de>Große Produktion</de>
-            <fr>Grande production</fr>
-            <sw>Stor produktion</sw>
+            Silo Production
         </name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
         <image>$data/store/store_empty.png</image>
-        <price>110000</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <price>1</price>
         <lifetime>500</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

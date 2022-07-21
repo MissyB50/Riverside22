@@ -7,6 +7,8 @@
         </functions>
         <image>store.dds</image>
         <price>90000</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>500</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

@@ -7,6 +7,8 @@
         </functions>
         <image>maps/textures/store_empty.dds</image>
         <price>150000</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -197,8 +199,8 @@
 
 
     <i3dMappings>
-        <i3dMapping id="testArea1Start" node="0>0" />
-        <i3dMapping id="testArea1End" node="0>0|0" />
+        <i3dMapping id="testArea1Start" node="0>0|0" />
+        <i3dMapping id="testArea1End" node="0>0|0|0" />
         <i3dMapping id="infoTrigger" node="0>2" />
         <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>1|0" />
         <i3dMapping id="tipOcclusionUpdateArea1End" node="0>1|0|0" />
@@ -207,14 +209,13 @@
         <i3dMapping id="pipeEffect" node="0>4|0|2|0" />
         <i3dMapping id="pipeEffectSmoke" node="0>4|0|2|1" />
         <i3dMapping id="aiLoadingNode" node="0>4|0|3" />
-        <i3dMapping id="loadTriggerMarker" node="0>4|1" />
+        <i3dMapping id="loadTriggerMarker" node="0>4|0|4" />
         <i3dMapping id="sellingStation" node="0>5" />
-        <i3dMapping id="unloadTrigger" node="0>5|0" />
-        <i3dMapping id="unloadTriggerMarker" node="0>5|0|0" />
-        <i3dMapping id="unloadTriggerAINode" node="0>5|1" />
-        <i3dMapping id="teleportNode" node="0>5|2" />
+        <i3dMapping id="unloadTrigger" node="0>3|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>3|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>3|1" />
+        <i3dMapping id="teleportNode" node="0>5" />
         <i3dMapping id="playerTrigger" node="0>6|0" />
         <i3dMapping id="playerTriggerMarker" node="0>6|0|0" />
-<!--         <i3dMapping id="effect1" node="0>9|0" /> -->
     </i3dMappings>
 </placeable>

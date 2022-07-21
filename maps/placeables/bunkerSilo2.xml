@@ -8,6 +8,7 @@
         <image>$data/placeables/mapAlpine/bunkerSiloBGA/store_bunkerSiloBGA.png</image>
         <price>1</price>
         <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>

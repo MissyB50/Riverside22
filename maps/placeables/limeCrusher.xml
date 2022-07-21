@@ -7,6 +7,7 @@
         </functions>
         <image>store_lime.dds</image>
         <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <price>50000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>

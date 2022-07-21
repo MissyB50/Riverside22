@@ -8,7 +8,9 @@
             <function>$l10n_function_animalPenHorse</function>
         </functions>
         <lifetime>1000</lifetime>
-        <dailyUpkeep>150</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <dailyUpkeep>1</dailyUpkeep>
         <rotation>0</rotation>
         <brand>RUDOLFHOERMANN</brand>
         <species>placeable</species>

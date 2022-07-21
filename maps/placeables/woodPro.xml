@@ -4,7 +4,7 @@
         <name>Sawmill Production</name>
         <image></image>
         <price>92000</price>
-        <canBeSold>true</canBeSold>
+        <canBeSold>false</canBeSold>
         <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
