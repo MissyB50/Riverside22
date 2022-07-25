@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<feedingRobot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/feedingRobot.xsd">
+    <filename>$data/placeables/lely/vectorGarage/lelyVectorGarage.i3d</filename>
+
+    <robot node="vectorRobot" triggerNode="vectorTrigger" maxSpeed="5" acceleration="1" deceleration="2">
+        <door node="robotDoor" duration="2" maxY="0.75" />
+        <mixer recipe="forage">
+            <animationNodes>
+                <animationNode node="mixer" rotSpeed="-180" rotAxis="2" />
+            </animationNodes>
+        </mixer>
+        <fillPlane node="fillVolume" capacity="1500" />
+        <dischargeEffects>
+            <effectNode effectNode="dischargeEffect" materialType="unloading" materialTypeId="1" defaultFillType="silage" delay="0" fadeInTime="0.5" fadeOutTime="0.1" extraDistance="0"/>
+        </dischargeEffects>
+        <sounds>
+            <driving template="feedingRobotLoop" linkNode="vectorRobot" />
+            <discharging template="manureFill" volumeScale="1.75" linkNode="vectorRobot" />
+        </sounds>
+    </robot>
+
+    <playerTrigger node="playerDetectionTrigger" />
+
+    <unloadingSpots>
+        <unloadingSpot capacity="200000" fillTypes="SILAGE" markerNode="marker3">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeSilage">
+                <baleTrigger triggerNode="baleTriggerSilage"/>
+            </unloadTrigger>
+            <fillPlane node="fillPlaneSilage" minY="-1.2" maxY="0" />
+        </unloadingSpot>
+        <unloadingSpot capacity="100000" fillTypes="STRAW" markerNode="marker2">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw">
+                <baleTrigger triggerNode="baleTriggerStraw"/>
+            </unloadTrigger>
+            <fillPlane node="fillPlaneStraw" minY="-1.2" maxY="0" />
+        </unloadingSpot>
+        <unloadingSpot capacity="100000" fillTypes="DRYGRASS_WINDROW" markerNode="marker1">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeHay">
+                <baleTrigger triggerNode="baleTriggerHay"/>
+            </unloadTrigger>
+            <fillPlane node="fillPlaneHay" minY="-1.2" maxY="0" />
+        </unloadingSpot>
+        <unloadingSpot capacity="50000" fillTypes="MINERAL_FEED" markerNode="marker4">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeMineralFeed">
+                <!--<baleTrigger triggerNode="0>1|0|3"/>-->
+            </unloadTrigger>
+        </unloadingSpot>
+    </unloadingSpots>
+
+    <stateMachine>
+        <states>
+            <state name="LOADING" class="FeedingRobotStateLoading"/>
+            <state name="PAUSED" class="FeedingRobotStatePaused" >
+                <objectChange node="fabric" visibilityActive="false" />
+                <objectChange node="fabricCollision" rigidBodyTypeActive="NONE" />
+            </state>
+            <state name="FILLING" class="FeedingRobotStateFilling" deltaFillLevel="500">
+                <objectChange node="fabric" visibilityActive="true" />
+                <objectChange node="fabricCollision" rigidBodyTypeActive="STATIC" />
+                <animatedObject index="2" direction="1" time="1" reset="true"/>
+            </state>
+            <state name="FILLING_2" class="FeedingRobotStateFilling" deltaFillLevel="500">
+                <animatedObject index="3" direction="1" time="1" reset="true"/>
+            </state>
+            <state name="FILLING_3" class="FeedingRobotStateFilling" deltaFillLevel="500">
+                <animatedObject index="4" direction="1" time="1" reset="true"/>
+            </state>
+            <state name="STARTING" class="FeedingRobotStateStarting" >
+                <animatedObject index="1" direction="1" time="1" />
+                <objectChange node="fabric" visibilityActive="false" />
+                <objectChange node="fabricCollision" rigidBodyTypeActive="NONE" />
+            </state>
+            <state name="DRIVING" class="FeedingRobotStateDriving" />
+            <state name="FINISHED" class="FeedingRobotStateFinished">
+                <animatedObject index="1" direction="-1" time="0" />
+            </state>
+        </states>
+        <transitions>
+            <transition from="LOADING" to="PAUSED" />
+            <transition from="PAUSED" to="FILLING" />
+            <transition from="FILLING" to="FILLING_2" />
+            <transition from="FILLING_2" to="FILLING_3" />
+            <transition from="FILLING_3" to="STARTING" />
+            <transition from="STARTING" to="DRIVING" />
+            <transition from="DRIVING" to="FINISHED" />
+            <transition from="FINISHED" to="PAUSED" />
+        </transitions>
+    </stateMachine>
+
+    <animatedObjects>
+        <animatedObject>
+            <animation>
+                <part node="door">
+                    <keyFrame time="0"  translation="0 0 0"/>
+                    <keyFrame time="0.4"  translation="0 0 0"/>
+                    <keyFrame time="2.4"  translation="0 2.7 0"/>
+                    <keyFrame time="2.8"  translation="0 2.7 0"/>
+                </part>
+                <shader node="door" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0"   values="0 - - - " />
+                    <keyFrame time="0.4" values="0 - - - " />
+                    <keyFrame time="2.4" values="1 - - -" />
+                    <keyFrame time="2.8" values="1 - - -" />
+                </shader>
+            </animation>
+            <sounds>
+                <moving linkNode="door" template="rollingGarageDoor" />
+                <posEnd linkNode="door" template="slidingGateMetalOpen" />
+                <negEnd linkNode="door" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject>
+            <animation>
+                <part node="crane">
+                    <keyFrame time="0.0" translation="0.0 0.0 0.0" />
+                    <keyFrame time="3.5" translation="0.0 0.0 3.0" />
+                    <keyFrame time="14.8" translation="0.0 0.0 3.0" />
+                    <keyFrame time="18.3" translation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 0.0" />
+                </part>
+                <part node="craneMotor">
+                    <keyFrame time="0.0" translation="0.0 0.0 0.0" />
+                    <keyFrame time="2.5" translation="0.0 0.0 0.0" />
+                    <keyFrame time="7.0" translation="6.5 0.0 0.0" />
+                    <keyFrame time="11.0" translation="6.5 0.0 0.0" />
+                    <keyFrame time="15.5" translation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 0.0" />
+                </part>
+                <part node="shovel">
+                    <keyFrame time="0.0"  translation="0.0 0.0 -0.0" />
+                    <keyFrame time="7.2"  translation="0.0 0.0 -0.0" />
+                    <keyFrame time="8.8"  translation="0.0 -2.282 -0.0" />
+                    <keyFrame time="9.6"  translation="0.0 -2.282 -0.0" />
+                    <keyFrame time="11.0" translation="0.0 0.0 -0.0" />
+                    <keyFrame time="18.3" translation="0.0 0.0 -0.0" />
+                    <keyFrame time="19.6" translation="0.0 -0.6 -0.0" />
+                    <keyFrame time="22.0" translation="0.0 -0.6 -0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 -0.0" />
+                </part>
+                <part node="shoveLeft">
+                    <keyFrame time="0.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.2" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.6" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="8.8" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="9.6" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="19.3" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="20.0" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="22.0" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="23.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" rotation="0.0 0.0 0.0" />
+                </part>
+                <part node="shovelRight">
+                    <keyFrame time="0.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.2" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.6" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="8.8" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="9.6" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="19.3" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="20.0" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="22.0" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="23.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" rotation="0.0 0.0 0.0" />
+                </part>
+            </animation>
+            <sounds >
+                <moving linkNode="craneMotor" template="vectorLoop" />
+            </sounds>
+        </animatedObject>
+        <animatedObject>
+            <animation>
+                <part node="crane">
+                    <keyFrame time="0.0" translation="0.0 0.0 0.0" />
+                    <keyFrame time="3.5" translation="0.0 0.0 3.0" />
+                    <keyFrame time="14.8" translation="0.0 0.0 3.0" />
+                    <keyFrame time="18.3" translation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 0.0" />
+                </part>
+                <part node="craneMotor">
+                    <keyFrame time="0.0" translation="0.0 0.0 0.0" />
+                    <keyFrame time="2.5" translation="0.0 0.0 0.0" />
+                    <keyFrame time="7.0" translation="15 0.0 0.0" />
+                    <keyFrame time="11.0" translation="15 0.0 0.0" />
+                    <keyFrame time="15.5" translation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 0.0" />
+                </part>
+                <part node="shovel">
+                    <keyFrame time="0.0"  translation="0.0 0.0 -0.0" />
+                    <keyFrame time="7.2"  translation="0.0 0.0 -0.0" />
+                    <keyFrame time="8.8"  translation="0.0 -2.282 -0.0" />
+                    <keyFrame time="9.6"  translation="0.0 -2.282 -0.0" />
+                    <keyFrame time="11.0" translation="0.0 0.0 -0.0" />
+                    <keyFrame time="18.3" translation="0.0 0.0 -0.0" />
+                    <keyFrame time="19.6" translation="0.0 -0.6 -0.0" />
+                    <keyFrame time="22.0" translation="0.0 -0.6 -0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 -0.0" />
+                </part>
+                <part node="shoveLeft">
+                    <keyFrame time="0.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.2" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.6" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="8.8" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="9.6" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="19.3" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="20.0" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="22.0" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="23.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" rotation="0.0 0.0 0.0" />
+                </part>
+                <part node="shovelRight">
+                    <keyFrame time="0.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.2" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.6" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="8.8" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="9.6" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="19.3" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="20.0" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="22.0" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="23.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" rotation="0.0 0.0 0.0" />
+                </part>
+            </animation>
+            <sounds >
+                <moving linkNode="craneMotor" template="vectorLoop" />
+            </sounds>
+        </animatedObject>
+        <animatedObject>
+            <animation>
+                <part node="crane">
+                    <keyFrame time="0.0" translation="0.0 0.0 0.0" />
+                    <keyFrame time="3.5" translation="0.0 0.0 3.0" />
+                    <keyFrame time="14.8" translation="0.0 0.0 3.0" />
+                    <keyFrame time="18.3" translation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 0.0" />
+                </part>
+                <part node="craneMotor">
+                    <keyFrame time="0.0" translation="0.0 0.0 0.0" />
+                    <keyFrame time="2.5" translation="0.0 0.0 0.0" />
+                    <keyFrame time="7.0" translation="20.5 0.0 0.0" />
+                    <keyFrame time="11.0" translation="20.5 0.0 0.0" />
+                    <keyFrame time="15.5" translation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 0.0" />
+                </part>
+                <part node="shovel">
+                    <keyFrame time="0.0"  translation="0.0 0.0 -0.0" />
+                    <keyFrame time="7.2"  translation="0.0 0.0 -0.0" />
+                    <keyFrame time="8.8"  translation="0.0 -2.282 -0.0" />
+                    <keyFrame time="9.6"  translation="0.0 -2.282 -0.0" />
+                    <keyFrame time="11.0" translation="0.0 0.0 -0.0" />
+                    <keyFrame time="18.3" translation="0.0 0.0 -0.0" />
+                    <keyFrame time="19.6" translation="0.0 -0.6 -0.0" />
+                    <keyFrame time="22.0" translation="0.0 -0.6 -0.0" />
+                    <keyFrame time="24.0" translation="0.0 0.0 -0.0" />
+                </part>
+                <part node="shoveLeft">
+                    <keyFrame time="0.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.2" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.6" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="8.8" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="9.6" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="19.3" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="20.0" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="22.0" rotation="-35.0 0.0 0.0" />
+                    <keyFrame time="23.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" rotation="0.0 0.0 0.0" />
+                </part>
+                <part node="shovelRight">
+                    <keyFrame time="0.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.2" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="7.6" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="8.8" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="9.6" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="19.3" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="20.0" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="22.0" rotation="35.0 0.0 0.0" />
+                    <keyFrame time="23.0" rotation="0.0 0.0 0.0" />
+                    <keyFrame time="24.0" rotation="0.0 0.0 0.0" />
+                </part>
+            </animation>
+            <sounds >
+                <moving linkNode="craneMotor" template="vectorLoop" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="crane" node="0>0|0" />
+        <i3dMapping id="craneMotor" node="0>0|0|0|0" />
+        <i3dMapping id="shovel" node="0>0|0|0|0|0|0" />
+        <i3dMapping id="shoveLeft" node="0>0|0|0|0|0|0|0" />
+        <i3dMapping id="shovelRight" node="0>0|0|0|0|0|0|1" />
+        <i3dMapping id="vectorRobot" node="0>1|0" />
+        <i3dMapping id="vectorTrigger" node="0>1|0|5" />
+        <i3dMapping id="mixer" node="0>1|0|6" />
+        <i3dMapping id="robotDoor" node="0>1|0|7|0" />
+        <i3dMapping id="dischargeEffect" node="0>1|0|8" />
+        <i3dMapping id="fillVolume" node="0>1|0|9" />
+        <i3dMapping id="exactFillRootNodeSilage" node="0>2|0|0" />
+        <i3dMapping id="baleTriggerSilage" node="0>2|0|1" />
+        <i3dMapping id="fillPlaneSilage" node="0>2|0|2" />
+        <i3dMapping id="marker3" node="0>2|0|3" />
+        <i3dMapping id="iconSilageDecal" node="0>2|0|3|0" />
+        <i3dMapping id="exactFillRootNodeStraw" node="0>2|1|0" />
+        <i3dMapping id="marker2" node="0>2|1|1" />
+        <i3dMapping id="iconStrawDecal" node="0>2|1|1|0" />
+        <i3dMapping id="fillPlaneStraw" node="0>2|1|2" />
+        <i3dMapping id="baleTriggerStraw" node="0>2|1|3" />
+        <i3dMapping id="exactFillRootNodeHay" node="0>2|2|0" />
+        <i3dMapping id="marker1" node="0>2|2|1" />
+        <i3dMapping id="iconHayDecal" node="0>2|2|1|0" />
+        <i3dMapping id="fillPlaneHay" node="0>2|2|2" />
+        <i3dMapping id="baleTriggerHay" node="0>2|2|3" />
+        <i3dMapping id="exactFillRootNodeMineralFeed" node="0>2|3|0" />
+        <i3dMapping id="marker4" node="0>2|3|1" />
+        <i3dMapping id="iconMineralFeedDecal" node="0>2|3|1|0" />
+        <i3dMapping id="door" node="0>3|0" />
+        <i3dMapping id="playerDetectionTrigger" node="0>4" />
+        <i3dMapping id="fabricCollision" node="0>5" />
+        <i3dMapping id="fabric" node="0>6|10" />
+    </i3dMappings>
+</feedingRobot>
+

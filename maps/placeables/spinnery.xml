@@ -123,9 +123,9 @@
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="WOOL"   capacity="100000" />
-            <capacity fillType="COTTON" capacity="100000" />
-            <capacity fillType="FABRIC" capacity="50000" />
+            <capacity fillType="WOOL"   capacity="500000" />
+            <capacity fillType="COTTON" capacity="500000" />
+            <capacity fillType="FABRIC" capacity="500000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">

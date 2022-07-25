@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_gasStation</name>
+        <image>$data/store/store_empty.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/gasStation.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <hotspots>
+        <hotspot type="FUEL" linkNode="0>" teleportNode="0>" />
+    </hotspots>
+
+    <buyingStation node="0" supportsExtension="false" >
+        <loadTrigger triggerNode="0" fillTypes="DIESEL" fillLitersPerSecond="20" autoStart="true" infiniteCapacity="true" startFillText="$l10n_action_refuel" stopFillText="$l10n_action_stopRefuel"/>
+        <fillType name="diesel" priceScale="1" />
+    </buyingStation>
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <ai>
+        <updateAreas></updateAreas>
+    </ai>
+</placeable>

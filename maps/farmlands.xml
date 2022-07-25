@@ -2,7 +2,7 @@
 <map>
     <farmlands densityMapFilename="maps/data/infoLayer_farmland.grle" numChannels="7" pricePerHa="15000">
         <farmland id="1"  priceScale="0" npcName="NPC_FR_01" /> <!--other-->
-        <farmland id="2"  priceScale="1" npcName="NPC_FR_02" defaultFarmProperty="true"/> <!--BGA-->
+        <farmland id="2"  priceScale="1.5" npcName="NPC_FR_02" showOnFarmlandsScreen="false" /> <!--BGA-->
         <farmland id="3"  priceScale="1" npcName="NPC_FR_03" defaultFarmProperty="true"/> <!--mainFarm-->
         <farmland id="4"  priceScale="1" npcName="NPC_FR_04" /> <!--pigs-->
         <farmland id="5"  priceScale="1" npcName="NPC_FR_05" /> <!--horse-->

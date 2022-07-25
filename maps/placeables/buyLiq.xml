@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+ <storeData>
+  <name>Buy Liquids</name>
+  <image>$data/store/store_empty.png</image>
+  <price>1</price>
+  <canBeSold>false</canBeSold>
+  <showInStore>false</showInStore>
+  <lifetime>1000</lifetime>
+  <rotation>0</rotation>
+  <brand>NONE</brand>
+  <species>placeable</species>
+  <category>placeableMisc</category>
+ </storeData>
+
+ <base>
+  <filename>maps/placeables/buyLiq.i3d</filename>
+ </base>
+
+ <placement/>
+
+ <clearAreas/>
+
+ <leveling/>
+
+ <indoorAreas/>
+
+ <ai>
+  <updateAreas/>
+ </ai>
+
+ <triggerMarkers>
+  <triggerMarker node="loadingTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+ </triggerMarkers>
+
+ <hotspots>
+  <hotspot type="LOADING" linkNode="fillTrigger" />
+ </hotspots>
+
+ <buyingStation node="fillTrigger" supportsExtension="false" >
+  <loadTrigger triggerNode="fillTrigger" aiNode="aiNode" fillTypes="FERTILIZER LIQUIDFERTILIZER WATER HERBICIDE DIGESTATE" fillLitersPerSecond="400" autoStart="false" />
+  <fillType name="fertilizer"		priceScale="0.8" />
+  <fillType name="liquidFertilizer"	priceScale="0.8" />
+  <fillType name="water"	priceScale="0.8" />
+  <fillType name="digestate"	priceScale="0.8" />
+  <fillType name="herbicide"	priceScale="0.8" />
+ </buyingStation>
+
+ <i3dMappings>
+  <i3dMapping id="fillTrigger" node="0>0" />
+  <i3dMapping id="loadingTriggerMarker" node="0>1" />
+  <i3dMapping id="aiNode" node="0>2" />
+ </i3dMappings>
+
+</placeable>

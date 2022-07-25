@@ -141,7 +141,7 @@
             </part>                
         </animation>
         <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gate" negText="Close Gate" />
-        <openingHours startTime="9" endTime="20" disableIfClosed="false" closedText="closed"/>
+        <openingHours startTime="9" endTime="20" disableIfClosed="true" closedText="closed"/>
         <sounds>
             <moving file="maps/sounds/swingGate.ogg" loops="1" linkNode="3" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
         </sounds>
@@ -159,7 +159,7 @@
             </part>                
         </animation>
         <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gate" negText="Close Gate" />
-        <openingHours startTime="9" endTime="20" disableIfClosed="false" closedText="closed"/>
+        <openingHours startTime="9" endTime="20" disableIfClosed="true" closedText="closed"/>
         <sounds>
             <moving file="maps/sounds/swingGate.ogg" loops="1" linkNode="3" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
         </sounds>
@@ -172,6 +172,7 @@
             </part>
         </animation>
         <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gate" negText="Close Gate" />
+        <openingHours startTime="9" endTime="20" disableIfClosed="true" closedText="closed"/>
         <sounds>
             <moving file="maps/sounds/swingGate.ogg" loops="1" linkNode="2" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
         </sounds>

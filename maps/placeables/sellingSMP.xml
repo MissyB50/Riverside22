@@ -43,11 +43,11 @@
  </hotspots>
 
  <triggerMarkers>
-  <triggerMarker node="unloadTriggerGrainMarker"    filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="false" />
+  <triggerMarker node="unloadTriggerGrainMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="false" />
  </triggerMarkers>
 
     <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="aiNodeLeft" fillTypes="CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE"/>
+        <unloadTrigger exactFillRootNode="unloadTriggerGrain" fillTypes="CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE"/>
         <fillType name="POTATO"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="EGG"            priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="WOOL"           priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
@@ -67,20 +67,20 @@
         <fillType name="GRAPEJUICE"     priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="WOODCHIPS"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CLOTHES"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CEREAL"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CEREAL"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CHOCOLATE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="FURNITURE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
 
  <i3dMappings>
-  <i3dMapping id="unloadingStation" node="0>" />
+  <i3dMapping id="sellingStation" node="0>" />
   <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>0|0" />
   <i3dMapping id="tipOcclusionUpdateArea1End" node="0>0|0|0" />
   <i3dMapping id="unloadTriggerGrain" node="0>1" />
   <i3dMapping id="unloadTriggerGrainMarker" node="0>1|0" />
-  <i3dMapping id="teleportNode" node="0>3" />
-  <i3dMapping id="aiNodeGrain" node="0>4" />
-  <i3dMapping id="aiSplineGrain" node="0>5" />
+  <i3dMapping id="teleportNode" node="0>2" />
+  <i3dMapping id="aiNodeGrain" node="0>3" />
+  <i3dMapping id="aiSplineGrain" node="0>4" />
  </i3dMappings>
 
 </placeable>

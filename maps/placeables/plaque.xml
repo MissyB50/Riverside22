@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Plaque</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>$data/placeables/lizard/gardenSheds/level05/store_gardenShed05.dds</image>
+        <price>1000</price>
+        <dailyUpkeep>13</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>misc</category>
+        <brush>
+            <type>placeable</type>
+            <category>decoration</category>
+            <tab>uncategorized</tab>
+        </brush>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/plaque.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas />
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai/>
+
+    <animatedObjects>
+		<animatedObject saveId="plaque" >
+			<controls triggerNode="0>0" posAction="ACTIVATE_HANDTOOL" posText="action_appear" negText="action_disappear" />
+			<sounds>
+				<moving file="sounds/switchClick.wav" loops="0" linkNode="0>1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+			</sounds>
+			<animation duration="0.1">
+				<part node="0>1">
+					<keyFrame time="0.0" visibility="false"/>
+					<keyFrame time="1" visibility="true" />
+				</part>
+			</animation>
+		</animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="testArea1Start" node="0>2|0" />
+        <i3dMapping id="testArea1End" node="0>2|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>3|0|0" />
+    </i3dMappings>
+</placeable>

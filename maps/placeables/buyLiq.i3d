@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="306" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="buyLiq.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="buyLiq" nodeId="80632">
+        <Shape shapeId="1" name="fillTrigger" translation="0 2.16034 0" rotation="0 90 0" static="true" trigger="true" collisionMask="1075838976" nodeId="80633" materialIds="306" nonRenderable="true"/>
+        <TransformGroup name="loadingTriggerMarker" translation="0 0.7 0" nodeId="80634"/>
+        <TransformGroup name="aiNode" translation="-2.51348e-16 0 0" nodeId="80635"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -46,7 +46,7 @@
  <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
   <unloadTrigger exactFillRootNode="unloadTriggerGrain" fillTypes="POTATO">
   </unloadTrigger>
-  <fillType name="POTATO"			priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
+  <fillType name="POTATO" priceScale="1" supportsGreatDemand="true"	disablePriceDrop="false" />
  </sellingStation>
 
  <i3dMappings>

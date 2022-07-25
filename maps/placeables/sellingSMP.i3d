@@ -2,7 +2,7 @@
 
 <i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
   </Asset>
 
   <Files>
@@ -10,9 +10,9 @@
 
 
   <Materials>
-    <Material name="lambert1" materialId="290" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="UnnamedMaterial" materialId="2586" diffuseColor="1 1 1 1">
+    <Material name="UnnamedMaterial" materialId="18" diffuseColor="1 1 1 1">
     </Material>
   </Materials>
 
@@ -25,18 +25,18 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="unloadingStation" lockedgroup="true" translation="-509.862 60.4981 -12.1454" rotation="-0 90 0" nodeId="76972">
-        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="76973">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-4.40057 0 2.40134" rotation="0 90 0" nodeId="76974">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.8 0 8.8" nodeId="76975"/>
+      <TransformGroup name="unloadingStation" lockedgroup="true" nodeId="9">
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="10">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-4.40057 0 2.40134" rotation="0 90 0" nodeId="11">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.8 0 8.8" nodeId="12"/>
           </TransformGroup>
         </TransformGroup>
-        <Shape shapeId="1" name="unloadTriggerGrain" static="true" trigger="true" collisionMask="1073741824" nodeId="76976" materialIds="290" nonRenderable="true">
-          <TransformGroup name="unloadTriggerGrainMarker" translation="-0.6 0.7 0" nodeId="76977"/>
+        <Shape shapeId="1" name="unloadTriggerGrain" static="true" trigger="true" collisionMask="1073741824" nodeId="13" materialIds="4" nonRenderable="true">
+          <TransformGroup name="unloadTriggerGrainMarker" translation="-0.6 0.7 0" nodeId="14"/>
         </Shape>
-        <TransformGroup name="teleportNode" nodeId="76979"/>
-        <TransformGroup name="aiNodeGrain" translation="1.26555e-06 0 3.884" rotation="0 90 0" nodeId="76980"/>
-        <Shape shapeId="2" name="aiSplineGrain" visibility="false" nodeId="76981"/>
+        <TransformGroup name="teleportNode" nodeId="15"/>
+        <TransformGroup name="aiNodeGrain" translation="1.26555e-06 0 3.884" rotation="0 90 0" nodeId="16"/>
+        <Shape shapeId="2" name="aiSplineGrain" visibility="false" nodeId="17"/>
       </TransformGroup>
   </Scene>
 

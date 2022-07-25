@@ -73,8 +73,8 @@
                     <input fillType="SILAGE" amount="8484" />
                 </inputs>
                 <outputs>
-                    <output fillType="ELECTRICCHARGE" amount="1"    />
-                    <output fillType="METHANE"        amount="5884" />
+                    <output fillType="ELECTRICCHARGE" amount="1"    sellDirectly="true"/>
+                    <output fillType="METHANE"        amount="5884" sellDirectly="true"/>
                     <output fillType="DIGESTATE"      amount="2545" />
                 </outputs>
             </production>
@@ -83,8 +83,8 @@
                     <input fillType="LIQUIDMANURE" amount="2020" />
                 </inputs>
                 <outputs>
-                    <output fillType="ELECTRICCHARGE" amount="1" />
-                    <output fillType="METHANE"        amount="1452" />
+                    <output fillType="ELECTRICCHARGE" amount="1" sellDirectly="true"/>
+                    <output fillType="METHANE"        amount="1452" sellDirectly="true"/>
                     <output fillType="DIGESTATE"      amount="606" />
                 </outputs>
             </production>
@@ -93,8 +93,8 @@
                     <input fillType="MANURE" amount="2020" />
                 </inputs>
                 <outputs>
-                    <output fillType="ELECTRICCHARGE" amount="1" />
-                    <output fillType="METHANE"        amount="1452" />
+                    <output fillType="ELECTRICCHARGE" amount="1" sellDirectly="true"/>
+                    <output fillType="METHANE"        amount="1452" sellDirectly="true"/>
                     <output fillType="DIGESTATE"      amount="606" />
                 </outputs>
             </production>
@@ -104,7 +104,7 @@
                 </inputs>
                 <outputs>
                     <output fillType="ELECTRICCHARGE" amount="1"  sellDirectly="true"/>
-                    <output fillType="METHANE"        amount="721" />
+                    <output fillType="METHANE"        amount="721" sellDirectly="true"/>
                     <output fillType="DIGESTATE"      amount="303" />
                 </outputs>
             </production>

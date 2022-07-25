@@ -131,8 +131,8 @@
         </palletSpawner>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="FABRIC"  capacity="50000" />
-            <capacity fillType="CLOTHES" capacity="50000" />
+            <capacity fillType="FABRIC"  capacity="500000" />
+            <capacity fillType="CLOTHES" capacity="500000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />

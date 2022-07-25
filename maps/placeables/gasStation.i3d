@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="UnnamedMaterial" materialId="534" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gasStation.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="gasStation" nodeId="80627">
+        <Shape shapeId="1" name="gasStationTrigger" translation="1.54619 3.85029 -0.24039" scale="1 0.427595 1.59404" static="true" trigger="true" collisionMask="1075838976" nodeId="80628" materialIds="534" castsShadows="true" receiveShadows="true" nonRenderable="true" distanceBlending="false"/>
+        <TransformGroup name="mapPosition" translation="-0.5 0 -7" nodeId="80629"/>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="80627">
+      <Attribute name="mapPositionIndex" type="string" value="1"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

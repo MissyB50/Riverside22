@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="5" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="32" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sfhMain.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="storage" nodeId="16">
+        <TransformGroup name="silo" nodeId="17">
+          <TransformGroup name="mapPosition" translation="0 0 8" nodeId="18"/>
+          <TransformGroup name="storage" nodeId="19"/>
+          <TransformGroup name="loadingStation" nodeId="20">
+            <TransformGroup name="loadingTriggers" translation="0 0 -4.54747e-15" nodeId="21">
+              <Shape shapeId="1" name="loadingTrigger" static="true" trigger="true" collisionMask="1073741824" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="dischargeNode" translation="4 0 0" nodeId="23"/>
+              <TransformGroup name="aiLoadingNode" translation="4 0 0" rotation="0 -90 0" nodeId="24"/>
+            </TransformGroup>
+            <TransformGroup name="markerLoading" translation="4 0 0" rotation="0 -90 0" nodeId="25"/>
+          </TransformGroup>
+          <TransformGroup name="unloadingStation" nodeId="26">
+            <Shape shapeId="2" name="exactFillRootNode" static="true" trigger="true" collisionMask="1073741824" density="0.0001" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="aiUnloadingNode" translation="-4 0 0" rotation="0 -90 0" nodeId="28"/>
+            <TransformGroup name="markerUnloading" translation="-4 0 0" rotation="0 -90 0" nodeId="29"/>
+          </TransformGroup>
+          <Shape shapeId="3" name="infoTrigger" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="aiSpline" visibility="false" nodeId="31"/>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="33">
+          <TransformGroup name="testArea1Start" translation="-11 0 -4" nodeId="34">
+            <TransformGroup name="testArea1End" translation="22 5 7" nodeId="35"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="36">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-11 0 -4" nodeId="37">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="22 0 7" nodeId="38"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="warningStripesArea1" clipDistance="400" nodeId="39">
+          <Shape shapeId="5" name="warningStripesCorner1" translation="-7 0 1" clipDistance="200" nodeId="40" materialIds="6" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="6" name="warningStripesCorner2" translation="-7 0 -1" clipDistance="200" nodeId="41" materialIds="6" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="7" name="warningStripesCorner3" translation="7 0 -1" clipDistance="200" nodeId="42" materialIds="6" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="8" name="warningStripesCorner4" translation="7 0 1" clipDistance="200" nodeId="43" materialIds="6" receiveShadows="true" decalLayer="1"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

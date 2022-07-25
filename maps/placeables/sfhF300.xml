@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo">
+    <storeData>
+        <name>
+		Commodity Storage
+        </name>
+        <functions>
+            <function>$l10n_function_Storage</function>
+        </functions>
+        <image>store.dds</image>
+        <price>0</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>1</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>none</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/sfhMain.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <silo>
+        <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="5">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="1500" dischargeNode="dischargeNode" fillTypes="seeds fertilizer lime liquidFertilizer herbicide" aiNode="aiLoadingNode"/>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="true" storageRadius="5">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="seeds fertilizer lime liquidFertilizer herbicide" aiNode="aiUnloadingNode"/>
+        </unloadingStation>
+
+        <storages>
+            <storage node="storage" fillTypes="seeds fertilizer lime liquidFertilizer herbicide" capacity="300000" isExtension="true"/>
+        </storages>
+    </silo>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="mapPosition" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+    </triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="mapPosition" node="0>0|0" />
+        <i3dMapping id="storage" node="0>0|1" />
+        <i3dMapping id="loadingTrigger" node="0>0|2|0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|2|0|1" />
+        <i3dMapping id="aiLoadingNode" node="0>0|2|0|2" />
+        <i3dMapping id="markerLoading" node="0>0|2|1" />
+        <i3dMapping id="exactFillRootNode" node="0>0|3|0" />
+        <i3dMapping id="aiUnloadingNode" node="0>0|3|1" />
+        <i3dMapping id="markerUnloading" node="0>0|3|2" />
+        <i3dMapping id="infoTrigger" node="0>0|4" />
+        <i3dMapping id="aiSpline" node="0>0|5" />
+        <i3dMapping id="testArea1Start" node="0>1|0" />
+        <i3dMapping id="testArea1End" node="0>1|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>2|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>2|0|0" />
+    </i3dMappings>
+</placeable>

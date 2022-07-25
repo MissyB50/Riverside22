@@ -30,7 +30,7 @@
           </TransformGroup>
         </TransformGroup>
         <Shape shapeId="1" name="unloadTriggerGrain" static="true" trigger="true" collisionMask="1073741824" nodeId="11" materialIds="4" nonRenderable="true">
-          <TransformGroup name="unloadTriggerGrainMarker" translation="0 0.7 0" nodeId="12"/>
+          <TransformGroup name="unloadTriggerGrainMarker" translation="0 0.7 5" nodeId="12"/>
         </Shape>
         <TransformGroup name="teleportNode" translation="0 0 12" nodeId="13"/>
       </TransformGroup>

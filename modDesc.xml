@@ -116,6 +116,8 @@ Skräddarsydd kalktillverkning.</sw>
         <storeItem xmlFilename="maps/placeables/sellingRC.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingPT.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingCN.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingSMP.xml"/>
+        <storeItem xmlFilename="maps/placeables/sellingSMT.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingSlurry.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingManure.xml"/>
         <storeItem xmlFilename="maps/placeables/buyFarm.xml"/>
@@ -133,15 +135,24 @@ Skräddarsydd kalktillverkning.</sw>
         <storeItem xmlFilename="maps/placeables/Silo300.xml"/>
         <storeItem xmlFilename="maps/placeables/SiloFarm3.xml"/>
         <storeItem xmlFilename="maps/placeables/bga.xml"/>
-<!--         <storeItem xmlFilename="maps/placeables/siloMain.xml"/> -->
+        <storeItem xmlFilename="maps/placeables/siloMain.xml"/>
         <storeItem xmlFilename="maps/placeables/siloCattle.xml"/>
         <storeItem xmlFilename="maps/placeables/siloPig.xml"/>
         <storeItem xmlFilename="maps/placeables/limecrusher.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingManureF.xml"/>
-
-
-
-siloCattle
+        <storeItem xmlFilename="maps/placeables/buyLiq.xml"/>
+<!--         <storeItem xmlFilename="maps/placeables/plaque.xml"/> -->
+        <storeItem xmlFilename="maps/placeables/fuel.xml"/>
+        <storeItem xmlFilename="maps/placeables/sfhMain.xml"/>
+        <storeItem xmlFilename="maps/placeables/sfhMiss.xml"/>
+        <storeItem xmlFilename="maps/placeables/sfhF300.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloBarley.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloCanola.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloOat.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloOther.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloSoy.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloSun.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloWheat.xml"/>
     </storeItems>
 
     <l10n>

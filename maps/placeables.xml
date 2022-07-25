@@ -49,9 +49,16 @@
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingManure.xml" position="-686.588 60 904.592" rotation="0 -90 0"/>
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingSlurry.xml" position="-681.296 60 891.313" rotation="0 -180 0"/>
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingCN.xml" position="14.3 61.4 643.946" rotation="0 0 0"/>
+
+    <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingSMT.xml" position="-509.924 60.5 -2.343" rotation="0 0 0"/>
+    <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingSMP.xml" position="-509.862 60.5 -12.145" rotation="0 0 0"/>
+
+    <placeable mapBoundId="gasStation" filename="$mapdir$/maps/placeables/fuel.xml" position="-430.373 60.8 -24.358" rotation="0 0 0" />
     <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyFarm.xml" position="644.695 60 -254.505" rotation="0 0 0"/>
     <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyNorthFarm.xml" position="-970.823 76.173 -925.336" rotation="0 0 0"/>
+    <placeable mapBoundId="buyingStationGrain" filename="$mapdir$/maps/placeables/buyLiq.xml" position="650 60 -245.5" rotation="0 0 0"/>
     <placeable mapBoundId="sellingStationGrain" filename="$mapdir$/maps/placeables/sellingManureF.xml" position="628.453 60 -240.624" rotation="0 0 0"/>
+<!--    <placeable mapBoundId="plaque" filename="$mapdir$/maps/placeables/plaque.xml" position="-379.359 60 -27.772" rotation="0 0 0"/> -->
 
 
 <!--productions-->
@@ -84,12 +91,18 @@
 <!--silos-->
     <placeable mapBoundId="farmStorageSilo" filename="$mapdir$/maps/placeables/Silo300.xml" position="-464.369 62 537.9" rotation="0 90 0"/>
     <placeable mapBoundId="farmStorageSilo1" filename="$mapdir$/maps/placeables/SiloFarm3.xml" position="-518.912 62 687.322" rotation="0 0 0"/>
-<!--     <placeable mapBoundId="farmStorageSilo2" filename="$mapdir$/maps/placeables/siloMain.xml" position="757.037 59.996 -773.123" rotation="0 0 0"/> -->
-    <placeable mapBoundId="farmStorageSilo3" filename="$mapdir$/maps/placeables/siloPig.xml" position="681.684 60 -145.04" rotation="0 0 0"/>
-    <placeable mapBoundId="farmStorageSilo4" filename="$mapdir$/maps/placeables/siloCattle.xml" position="-951.456 75.2 12.347" rotation="0 90 0"/>
-
-
-
+    <placeable mapBoundId="farmStorageSilo2" filename="$mapdir$/maps/placeables/siloPig.xml" position="681.684 60 -145.04" rotation="0 0 0"/>
+    <placeable mapBoundId="farmStorageSilo3" filename="$mapdir$/maps/placeables/siloCattle.xml" position="-951.456 75.2 12.347" rotation="0 90 0"/>
+    <placeable mapBoundId="farmStorageSilo4" filename="$mapdir$/maps/placeables/siloBarley.xml" position="757.167 60 -763.665" rotation="0 0 0"/>
+    <placeable mapBoundId="farmStorageSilo5" filename="$mapdir$/maps/placeables/siloCanola.xml" position="757.167 60 -763.665" rotation="0 0 0"/>
+    <placeable mapBoundId="farmStorageSilo6" filename="$mapdir$/maps/placeables/siloOat.xml" position="757.167 60 -763.665" rotation="0 0 0"/>
+    <placeable mapBoundId="farmStorageSilo7" filename="$mapdir$/maps/placeables/siloOther.xml" position="757.167 60 -763.665" rotation="0 0 0"/>
+    <placeable mapBoundId="farmStorageSilo8" filename="$mapdir$/maps/placeables/siloSoy.xml" position="757.167 60 -763.665" rotation="0 0 0"/>
+    <placeable mapBoundId="farmStorageSilo9" filename="$mapdir$/maps/placeables/siloSun.xml" position="757.167 60 -763.665" rotation="0 0 0"/>
+    <placeable mapBoundId="farmStorageSilo10" filename="$mapdir$/maps/placeables/siloWheat.xml" position="757.167 60 -763.665" rotation="0 0 0"/>
+    <placeable mapBoundId="sfhMain" filename="$mapdir$/maps/placeables/sfhMain.xml" position="728.531 60 -673.45" rotation="0 0 0"/>
+    <placeable mapBoundId="sfhMiss" filename="$mapdir$/maps/placeables/sfhMiss.xml" position="-489.396 60 913.396" rotation="0 -90 0"/>
+    <placeable mapBoundId="sfhF300" filename="$mapdir$/maps/placeables/sfhF300.xml" position="-456.978 61.9 657.276" rotation="0 -90 0"/>
 
 
 
