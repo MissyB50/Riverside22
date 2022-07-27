@@ -24,7 +24,7 @@
     </storeData>
 
     <base>
-        <filename>maps/placeables/Silo300.i3d</filename>
+        <filename>maps/placeables/silo300.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
 		<boughtWithFarmland>true</boughtWithFarmland>
     </base>

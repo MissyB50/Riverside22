@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="chickenHusbandry">
+    <storeData>
+        <name>Chicken Pen</name>
+        <image>$data/store/store_empty.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>1</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>animalpens</category>
+        <brush>
+            <type>placeable</type>
+            <category>animals</category>
+            <tab>chickens</tab>
+        </brush>
+    </storeData>
+
+	<base>
+        <filename>maps/animals/chickenPen.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>    
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+	<placement useRandomYRotation="false" useManualYRotation="true" >
+		<testAreas>
+			<testArea startNode="testStart" endNode="testEnd" />
+		</testAreas>
+	</placement>
+
+    <clearAreas/>
+
+    <leveling/>
+
+    <indoorAreas/>
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerFood" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="CHICKEN" teleportNode="teleportNode" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <husbandry saveId="Animals_CHICKEN" hasStatistics="false">
+
+        <animals type="CHICKEN" maxNumAnimals="1000" >
+            <navigation rootNode="navigationRootNode" filename="maps/animals/navigationMesh/chickenNavMesh.i3d" />
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+
+        <food capacity="25000" >
+            <foodPlane node="foodPlane" minY="-0.29" maxY="0" changeVisibility="false" defaultFillType="WHEAT"/>
+            <foodPlane node="foodPlane1" minY="-0.29" maxY="0" changeVisibility="false" defaultFillType="WHEAT"/>
+            <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
+        </food>
+
+        <pallets fillType="EGG" maxNumPallets="8" unitText="$l10n_unit_pieces">
+            <palletTrigger node="palletTrigger" />
+            <spawnPlaces>
+                <spawnPlace startNode="palletArea1Start" endNode="palletArea1End" />
+                <spawnPlace startNode="palletArea2Start" endNode="palletArea2End" />
+                <spawnPlace startNode="palletArea3Start" endNode="palletArea3End" />
+                <spawnPlace startNode="palletArea4Start" endNode="palletArea4End" />
+                <spawnPlace startNode="palletArea5Start" endNode="palletArea5End" />
+            </spawnPlaces>
+        </pallets>
+    </husbandry>
+    <i3dMappings>
+        <i3dMapping id="teleportNode" node="0>2" />
+        <i3dMapping id="foodPlane" node="0>0|1" />
+        <i3dMapping id="foodPlane1" node="0>0|2" />
+        <i3dMapping id="exactFillRootNodeFood" node="0>0|0|0" />
+        <i3dMapping id="foodPlace1" node="0>0|0|1|0" />
+        <i3dMapping id="foodPlace2" node="0>0|0|1|1" />
+        <i3dMapping id="foodPlace3" node="0>0|0|1|2" />
+        <i3dMapping id="foodPlace4" node="0>0|0|1|3" />
+        <i3dMapping id="storage" node="0>3" />
+        <i3dMapping id="navigationRootNode" node="0>4" />
+        <i3dMapping id="palletTrigger" node="0>5|0" />
+        <i3dMapping id="palletArea1Start" node="0>5|1" />
+        <i3dMapping id="palletArea1End" node="0>5|1|0" />
+        <i3dMapping id="palletArea2Start" node="0>5|2" />
+        <i3dMapping id="palletArea2End" node="0>5|2|0" />
+        <i3dMapping id="palletArea3Start" node="0>5|3" />
+        <i3dMapping id="palletArea3End" node="0>5|3|0" />
+        <i3dMapping id="palletArea4Start" node="0>5|4" />
+        <i3dMapping id="palletArea4End" node="0>5|4|0" />
+        <i3dMapping id="palletArea5Start" node="0>5|5" />
+        <i3dMapping id="palletArea5End" node="0>5|5|0" />
+        <i3dMapping id="markerFood" node="0>11" />
+        <i3dMapping id="markerAnimals" node="0>10" />
+        <i3dMapping id="infoTrigger" node="0>6" />
+        <i3dMapping id="loadingTrigger" node="0>7" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>12|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>12|0|0" />
+		<i3dMapping id="testStart" node="0>13|0" />
+		<i3dMapping id="testEnd" node="0>13|0|0" />
+    </i3dMappings>
+</placeable>

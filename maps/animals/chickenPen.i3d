@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Riverside_22" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/fillPlanes/wheat_diffuse.dds"/>
+    <File fileId="11" filename="$data/fillPlanes/wheat_normal.dds"/>
+    <File fileId="12" filename="$data/fillPlanes/wheat_specular.dds"/>
+    <File fileId="13" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="15" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="3" filename="$data/shared/default_specular.png"/>
+    <File fileId="5" filename="textures/feedingTrough_specular.dds"/>
+    <File fileId="1" filename="../textures/galvanizedMetal_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chickenNav_mat" materialId="4" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="feedingTrough_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="planes_mat" materialId="7">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="8">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chickenPen.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="preHusbandryChicken" nodeId="20">
+        <Shape shapeId="1" name="feedingTroughChicken" translation="-22.127 -0.009 -18.623" rotation="0 180 0" static="true" clipDistance="300" nodeId="21" materialIds="5" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="2" name="feedingTroughTrigger" translation="2.85448 0 0" scale="2.00925 1 1" static="true" trigger="true" collisionMask="8388608" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <Shape shapeId="3" name="exactFillRootNodeFood" translation="0 0 2.31682" static="true" collisionMask="1073741824" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="foodPlaces" nodeId="24">
+              <TransformGroup name="animalPlace1" translation="2.29778 0 -1.4" nodeId="25"/>
+              <TransformGroup name="animalPlace2" translation="0.719897 0 -1.4" nodeId="26"/>
+              <TransformGroup name="animalPlace3" translation="-0.744348 0 -1.4" nodeId="27"/>
+              <TransformGroup name="animalPlace4" translation="-2.2202 0 -1.4" nodeId="28"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="4" name="feedingTroughPlane" translation="2.85 -0.29 0" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="feedingTroughChicken" translation="5.79682 0 0" static="true" clipDistance="300" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <TransformGroup name="warningStripes" nodeId="31">
+          <TransformGroup name="warningStripesAnimalLoadTrigger" translation="-2.5166 -1.13781e-06 -16.0563" rotation="-180 0 -180" nodeId="32">
+            <Shape shapeId="5" name="warningStripesCorner1" translation="-1 0 -2" scale="0.5 1 0.5" clipDistance="77" nodeId="33" materialIds="8" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="6" name="warningStripesCorner2" translation="1 0 -2" scale="0.5 1 0.5" clipDistance="77" nodeId="34" materialIds="8" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="5" name="warningStripesCorner3" translation="1 -1.43717e-07 2" rotation="180 -5.00896e-06 180" scale="0.5 1 0.5" clipDistance="77" nodeId="35" materialIds="8" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="6" name="warningStripesCorner4" translation="-1 1.80912e-07 2" rotation="180 -5.00896e-06 180" scale="0.5 1 0.5" clipDistance="77" nodeId="36" materialIds="8" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <TransformGroup name="warningStripesFeedingTroughTrigger" translation="-22.0534 -2.71538e-09 -20.513" rotation="-2.5398e-05 90 -2.53835e-05" nodeId="37">
+            <Shape shapeId="6" name="warningStripesCorner2" translation="2 0 -8.60772" clipDistance="100" nodeId="38" materialIds="8" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="5" name="warningStripesCorner3" translation="2 0 2.922" rotation="180 0 180" clipDistance="100" nodeId="39" materialIds="8" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <TransformGroup name="warningStripesPalletSpawner" translation="-42.822 0 -18.7588" nodeId="40">
+            <Shape shapeId="5" name="warningStripesCorner1" translation="0 2.27374e-15 0" clipDistance="100" nodeId="41" materialIds="8" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="6" name="warningStripesCorner2" translation="5.9 0 0" clipDistance="100" nodeId="42" materialIds="8" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="5" name="warningStripesCorner3" translation="5.9 2.27374e-15 9" rotation="0 180 0" clipDistance="100" nodeId="43" materialIds="8" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="6" name="warningStripesCorner4" translation="2.21029e-08 1.13687e-15 9" rotation="0 180 0" clipDistance="100" nodeId="44" materialIds="8" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="teleportNode" translation="-2.48062 0 -21.0782" nodeId="45"/>
+        <TransformGroup name="storage" nodeId="46"/>
+        <TransformGroup name="navigationRootNode" nodeId="47">
+          <Shape shapeId="7" name="navigationMesh" nodeId="48" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="palletAreas" translation="-39.9469 0 -14.0752" nodeId="49">
+          <Shape shapeId="8" name="palletTrigger" translation="-2.12901e-08 1.44 -0.065339" rotation="0 90 0" scale="1.50182 1 2.25395" static="true" trigger="true" collisionMask="2097152" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="palletArea1Start" translation="1.9 0 -4.4" nodeId="51">
+            <TransformGroup name="palletArea1End" translation="0 0 8.4" nodeId="52"/>
+          </TransformGroup>
+          <TransformGroup name="palletArea2Start" translation="0.8 0 -4.4" nodeId="53">
+            <TransformGroup name="palletArea2End" translation="0 0 8.4" nodeId="54"/>
+          </TransformGroup>
+          <TransformGroup name="palletArea3Start" translation="0 0 -4.4" nodeId="55">
+            <TransformGroup name="palletArea3End" translation="0 0 8.4" nodeId="56"/>
+          </TransformGroup>
+          <TransformGroup name="palletArea4Start" translation="-0.8 0 -4.4" nodeId="57">
+            <TransformGroup name="palletArea4End" translation="0 0 8.4" nodeId="58"/>
+          </TransformGroup>
+          <TransformGroup name="palletArea5Start" translation="-1.9 0 -4.4" nodeId="59">
+            <TransformGroup name="palletArea5End" translation="0 0 8.4" nodeId="60"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="9" name="infoTrigger" static="true" trigger="true" collisionMask="3145728" nodeId="61" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="10" name="loadingTrigger" translation="-1.65379 0 -16.3776" static="true" trigger="true" collisionMask="3145728" nodeId="62" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="63">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-10.1361 0 -3.86918" nodeId="64">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="18.7487 0 12.2014" nodeId="65"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="66">
+          <TransformGroup name="winter" translation="0 0.083 0" nodeId="67"/>
+        </TransformGroup>
+        <TransformGroup name="markerAnimals" translation="-2.54083 0.02 -16.493" nodeId="68"/>
+        <TransformGroup name="markerFood" translation="-25.0602 0.02 -20.857" nodeId="69"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="70">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-44.8346 -4.54747e-15 -23.2413" nodeId="71">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="74.2417 0 41.51" nodeId="72"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="73">
+          <TransformGroup name="testArea1Start" translation="-47.9451 -15 -17.3834" nodeId="74">
+            <TransformGroup name="testArea1End" translation="98.0925 10 48.039" nodeId="75"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="48">
+      <Attribute name="animalType" type="string" value="chicken"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

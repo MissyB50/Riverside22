@@ -22,7 +22,7 @@
     </storeData>
 
     <base>
-        <filename>$data/placeables/lizard/productionPoints/tailorShop/tailorShop.i3d</filename>
+        <filename>maps/placeables/tailorShop.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
 

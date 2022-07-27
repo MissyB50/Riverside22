@@ -5,9 +5,9 @@
         <functions>
             <function>$l10n_function_decoration</function>
         </functions>
-        <image>$data/placeables/lizard/gardenSheds/level05/store_gardenShed05.dds</image>
+        <image>$data/store/store_empty.png</image>
         <price>1000</price>
-        <dailyUpkeep>13</dailyUpkeep>
+        <dailyUpkeep>0</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -49,18 +49,15 @@
     <ai/>
 
     <animatedObjects>
-		<animatedObject saveId="plaque" >
-			<controls triggerNode="0>0" posAction="ACTIVATE_HANDTOOL" posText="action_appear" negText="action_disappear" />
-			<sounds>
-				<moving file="sounds/switchClick.wav" loops="0" linkNode="0>1" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
-			</sounds>
-			<animation duration="0.1">
-				<part node="0>1">
-					<keyFrame time="0.0" visibility="false"/>
-					<keyFrame time="1" visibility="true" />
-				</part>
-			</animation>
-		</animatedObject>
+    <animatedObject saveId="plaque">
+        <animation duration="0.2">
+            <part node="0>1">
+                <keyFrame time="0.50" visibility="false" />
+                <keyFrame time="0.51" visibility="true" />
+            </part>
+        </animation>
+        <controls triggerNode="0>0" posAction="ACTIVATE_HANDTOOL" posText="action_change" negText="action_change"/>
+    </animatedObject>
     </animatedObjects>
 
     <i3dMappings>

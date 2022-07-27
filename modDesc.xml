@@ -27,8 +27,46 @@ Key features
 Disturbed Simulations and Cavalier Roy for the use of UK GEO Version 4
 
 Credits to; Cavalier Roy and OlaHaldor for pointing me in the right direction :D]]></en>
-        <de><![CDATA[Dies ist die Beispiel Mod Map FR.]]></de>
-        <sw><![CDATA[Dies ist die Beispiel Mod Map FR.]]></sw>
+        <de><![CDATA[Willkommen zurück bei Riverside Farms. Diese fiktive Karte wurde komplett nach FS22-Standards überarbeitet.
+Hauptmerkmale
+-Standard 2x Karte
+-# der Felder
+-5 aktive Farmen zur Auswahl
+-Mehrere Bereiche, die mit etwas Liebe und Fürsorge (und einer Kettensäge) in zusätzlichen Farmraum umgestaltet werden können
+-Individuell angefertigte Tiergehege in die Karte eingebaut
+-BGA im Besitz eines neuen Farmers und nicht teuer für andere Builds
+-1 Sägewerke
+-1 Hauptwaldstandort mit zusätzlichem Waldgebiet um die Karte herum
+-2 große Bereiche, um Ihrer kreativen Seite freien Lauf zu lassen. Ideal für Produktionsketten oder zusätzliche Hoffläche
+-Viel Stauraum für die größten Maschinen
+-Benutzerdefinierte Bodenkarte für PF
+- Kaufen Sie in großen Mengen mit den Kaufpunkten von North und Mid Farm Shop
+-Kostenloser Kalk in Farms Shops erhältlich
+- Günstiges Fert Seed und Herbizid ebenfalls erhältlich
+
+Disturbed Simulations und Cavalier Roy für die Verwendung von UK GEO Version 4
+
+Anerkennung an; Cavalier Roy und OlaHaldor dafür, dass sie mich in die richtige Richtung gewiesen haben :D]]></de>
+        <sw><![CDATA[Välkommen tillbaka till Riverside Farms. Denna fiktiva karta har totalrenoverats till FS22-standarder.
+Nyckelfunktioner
+-Standard 2x karta
+-Antal fält
+-5 aktiva gårdar för dig att välja mellan
+-Flera områden som med lite Tender Love and Care (och en motorsåg) kan omvandlas till ytterligare gårdsutrymme
+- Skräddarsydda djurpennor inbyggda i kartan
+-BGA ägs vid en ny bondstart och inte dyrt på andra byggen
+-1 sågverk
+-1 huvudskogsläge med ytterligare skogsmark runt karta
+-2 stora ytor för att locka din kreativa sida. Idealisk för produktionskedjor eller ytterligare gårdsutrymme
+- Gott om förvaringsutrymme för de största maskinerna
+-Anpassad jordkarta för PF
+- Köp i bulk med North och Mid Farm Shops köppoäng
+-Gratis lime finns i Farms-butikerna
+- Rimligt prissatta Fert Seed and Herbicid finns också
+
+Disturbed Simulations och Cavalier Roy för användning av UK GEO Version 4
+
+Krediter till; Cavalier Roy och OlaHaldor för att de pekade mig i rätt riktning :D]]></sw>
     </description>
     <iconFilename>icon.png</iconFilename>
     <multiplayer supported="true"/>
@@ -62,11 +100,11 @@ Skräddarsydd kalktillverkning.</sw>
     </maps>
 
     <storeItems>
-        <storeItem xmlFilename="maps/animals/prehusbandryChicken.xml"/>
+        <storeItem xmlFilename="maps/animals/chickenPen.xml"/>
         <storeItem xmlFilename="maps/animals/horseBarn.xml"/>
-        <storeItem xmlFilename="maps/animals/prehusbandrySheep.xml"/>
+        <storeItem xmlFilename="maps/animals/sheepPen.xml"/>
 		<storeItem xmlFilename="maps/animals/cowBarnMain.xml"/>
-        <storeItem xmlFilename="maps/animals/prehusbandryPig.xml"/>
+        <storeItem xmlFilename="maps/animals/pigPen.xml"/>
 		<storeItem xmlFilename="maps/animals/cattleBarn.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingStationVehiclesMain.xml" />
         <storeItem xmlFilename="maps/placeables/sellingStationVehiclesShop.xml" />
@@ -132,16 +170,15 @@ Skräddarsydd kalktillverkning.</sw>
         <storeItem xmlFilename="maps/placeables/wash2.xml"/>
         <storeItem xmlFilename="maps/placeables/wash3.xml"/>
         <storeItem xmlFilename="maps/placeables/wash4.xml"/>
-        <storeItem xmlFilename="maps/placeables/Silo300.xml"/>
-        <storeItem xmlFilename="maps/placeables/SiloFarm3.xml"/>
+        <storeItem xmlFilename="maps/placeables/silo300.xml"/>
+        <storeItem xmlFilename="maps/placeables/siloFarm3.xml"/>
         <storeItem xmlFilename="maps/placeables/bga.xml"/>
-        <storeItem xmlFilename="maps/placeables/siloMain.xml"/>
         <storeItem xmlFilename="maps/placeables/siloCattle.xml"/>
         <storeItem xmlFilename="maps/placeables/siloPig.xml"/>
-        <storeItem xmlFilename="maps/placeables/limecrusher.xml"/>
+        <storeItem xmlFilename="maps/placeables/limeCrusher.xml"/>
         <storeItem xmlFilename="maps/placeables/sellingManureF.xml"/>
         <storeItem xmlFilename="maps/placeables/buyLiq.xml"/>
-<!--         <storeItem xmlFilename="maps/placeables/plaque.xml"/> -->
+<!--        <storeItem xmlFilename="maps/placeables/plaque.xml"/> -->
         <storeItem xmlFilename="maps/placeables/fuel.xml"/>
         <storeItem xmlFilename="maps/placeables/sfhMain.xml"/>
         <storeItem xmlFilename="maps/placeables/sfhMiss.xml"/>
@@ -159,30 +196,37 @@ Skräddarsydd kalktillverkning.</sw>
         <text name="Lights On">
             <en>Lights On</en>
             <de>Lichter an</de>
+            <sw>Ljus på</sw>
         </text>
         <text name="Lights Off">
             <en>Lights Off</en>
             <de>Lichten aus</de>
+            <sw>Ljus av</sw>
         </text>
         <text name="Open Door">
             <en>Open Door</en>
             <de>Offene Tür</de>
+            <sw>Öppen dörr</sw>
         </text>
         <text name="Close Door">
             <en>Close Door</en>
             <de>Öffnen schließen</de>
+            <sw></sw>
         </text>
         <text name="Open Gate">
             <en>Open Gate</en>
             <de>Offenes Tor</de>
+            <sw>Stäng dörr</sw>
         </text>
         <text name="Close Gate">
             <en>Close Gate</en>
             <de>Tor schließen</de>
+            <sw>Stäng porten</sw>
         </text>
         <text name="action_change">
             <en>Show/Hide</en>
             <de>Anzeigen/Ausblenden</de>
+            <sw>Visa gömma</sw>
         </text>
     </l10n>
 

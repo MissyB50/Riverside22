@@ -30,6 +30,16 @@
       <TransformGroup name="statue" clipDistance="111" nodeId="9">
         <Shape shapeId="1" name="trigger" static="true" trigger="true" nodeId="10" materialIds="4" nonRenderable="true"/>
         <Shape shapeId="2" name="plane" translation="0.385991 6.14725 -2.51877" visibility="false" clipDistance="500" nodeId="11" materialIds="5" distanceBlending="false"/>
+        <TransformGroup name="testareas" nodeId="14">
+          <TransformGroup name="start" translation="-1.5 0 -1.5" nodeId="15">
+            <TransformGroup name="end" translation="3 0 3" nodeId="16"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcc" nodeId="17">
+          <TransformGroup name="start" translation="-1.5 0 -1.5" nodeId="18">
+            <TransformGroup name="end" translation="3 0 3" nodeId="19"/>
+          </TransformGroup>
+        </TransformGroup>
       </TransformGroup>
   </Scene>
 

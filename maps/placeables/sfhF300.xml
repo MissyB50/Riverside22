@@ -7,10 +7,12 @@
         <functions>
             <function>$l10n_function_Storage</function>
         </functions>
-        <image>store.dds</image>
+        <image>$data/store/store_empty.png</image>
         <price>0</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
         <lifetime>1000</lifetime>
-        <dailyUpkeep>1</dailyUpkeep>
+        <dailyUpkeep>0</dailyUpkeep>
         <rotation>0</rotation>
         <brand>none</brand>
         <species>placeable</species>

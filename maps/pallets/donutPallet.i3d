@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cakePallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.png"/>
+    <File fileId="7" filename="$data/shared/default_specular.png"/>
+    <File fileId="5" filename="textures/donut_decal_diffuse.dds"/>
+    <File fileId="6" filename="textures/donut_decal_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="4">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Material" materialId="6">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="donutPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="donutPallet_component1" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="14" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="16" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" translation="0 0.456628 0" nodeId="17"/>
+          <TransformGroup name="content" nodeId="18">
+            <TransformGroup name="donutBox1" translation="-0.452266 0.145375 -0.2" nodeId="19" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="21" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox2" translation="-0.152496 0.145375 -0.2" nodeId="22" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox3" translation="0.148651 0.145375 -0.2" nodeId="25" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox4" translation="0.448908 0.145 -0.2" nodeId="28" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox5" translation="0.448009 0.145375 0.2" nodeId="31" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox6" translation="-0.452 0.145375 0.2" nodeId="34" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox7" translation="0.149201 0.145375 0.2" nodeId="37" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="39" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox8" translation="-0.152496 0.145375 0.2" nodeId="40" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="42" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox9" translation="-0.452266 0.272 -0.2" nodeId="43" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="45" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox10" translation="-0.152496 0.272 -0.2" nodeId="46" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="48" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox11" translation="0.148651 0.272 -0.2" nodeId="49" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox12" translation="0.448908 0.272 -0.2" nodeId="52" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="54" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox13" translation="0.448009 0.272 0.2" nodeId="55" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="57" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox14" translation="-0.452 0.272 0.2" nodeId="58" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox15" translation="0.149201 0.272 0.2" nodeId="61" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="62" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="donutBox16" translation="-0.152496 0.272 0.2" nodeId="64" lodDistance="0 4">
+              <Shape shapeId="4" name="donutBox" rotation="-6.83019e-06 -0 0" nodeId="65" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="cakeBox1Tension" translation="0 0.000266196 0" nodeId="66" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="67">
+            <Shape shapeId="6" name="floorCollision01" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="68" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="6" name="floorCollision02" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="69" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+      <Light name="light" rotation="-40 0 -30" nodeId="72" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" range="500"/>
+  </Scene>
+
+</i3D>

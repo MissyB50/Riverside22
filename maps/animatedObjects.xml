@@ -555,26 +555,4 @@
             <moving file="maps/sounds/switchClick.wav" loops="1" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
         </sounds>
     </animatedObject>
-
-<!--other-->
-    <animatedObject index="plaque">
-        <animation duration="0.2">
-            <part node="1">
-                <keyFrame time="0.50" visibility="false" />
-                <keyFrame time="0.51" visibility="true" />
-            </part>
-        </animation>
-        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_change" negText="action_change"/>
-    </animatedObject>
-
-<!--     <animatedObject index="animals">
-        <animation duration="0.1">
-            <part node="1">
-                <keyFrame time="0.50" visibility="false" />
-                <keyFrame time="0.51" visibility="true" />
-            </part>
-        </animation>
-        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="action_change" negText="action_change"/>
-    </animatedObject> -->
-
 </animatedObjects>

@@ -6,7 +6,7 @@
             <function>$l10n_function_productionPoint</function>
         </functions>
         <image>$data/placeables/lizard/productionPoints/bakeryEU/store_bakeryEU.png</image>
-        <price>50000</price>
+        <price>75000</price>
         <lifetime>1000</lifetime>
         <canBeSold>false</canBeSold>
         <showInStore>false</showInStore>
@@ -111,10 +111,35 @@
                     <output fillType="CAKE" amount="5" />
                 </outputs>
             </production>
+            <production id="donut chocolate" name="Chocolate Donut" cyclesPerHour="16" costsPerActiveHour="2.5">
+                <inputs>
+                    <input fillType="FLOUR"      amount="2" />
+                    <input fillType="SUGAR"      amount="2" />
+                    <input fillType="MILK"       amount="2" />
+                    <input fillType="BUTTER"     amount="2" />
+                    <input fillType="CHOCOLATE"  amount="2"/>
+                </inputs>
+                <outputs>
+                    <output fillType="DONUT" amount="5" />
+                </outputs>
+            </production>
+            <production id="donut strawberry" name="Strawberry Donuts" cyclesPerHour="16" costsPerActiveHour="2.5">
+                <inputs>
+                    <input fillType="FLOUR"      amount="2" />
+                    <input fillType="SUGAR"      amount="2" />
+                    <input fillType="MILK"       amount="2" />
+                    <input fillType="BUTTER"     amount="2" />
+                    <input fillType="EGG"        amount="2" />
+                    <input fillType="STRAWBERRY" amount="2"/>
+                </inputs>
+                <outputs>
+                    <output fillType="DONUT" amount="5" />
+                </outputs>
+            </production>
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY" />
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY CHOCOLATE" />
         </sellingStation>
 
         <palletSpawner node="palletSpawner">
@@ -132,6 +157,8 @@
             <capacity fillType="STRAWBERRY" capacity="7000" />
             <capacity fillType="BREAD"      capacity="7000" />
             <capacity fillType="CAKE"       capacity="7000" />
+            <capacity fillType="CHOCOLATE"  capacity="7000" />
+            <capacity fillType="DONUT"       capacity="7000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />

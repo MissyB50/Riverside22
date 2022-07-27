@@ -22,7 +22,7 @@
     </storeData>
 
     <base>
-        <filename>$data/placeables/lizard/productionPoints/sugarMill/sugarMill.i3d</filename>
+        <filename>maps/placeables/sugarMill.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
 

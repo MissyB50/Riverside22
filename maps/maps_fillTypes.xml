@@ -425,58 +425,6 @@
                         specular="$data/fillPlanes/sugarCane_specular.png"
                         distance="$data/fillPlanes/distance/sugarCaneDistance_diffuse.png" />
         </fillType>
-<!-- 		<fillType name="CARROT" title="Carrot" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
-            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
-            <economy pricePerLiter="0.11">
-                <factors>
-                    <factor period="1"  value="1.12" />
-                    <factor period="2"  value="1.04" />
-                    <factor period="3"  value="0.93" />
-                    <factor period="4"  value="0.85" />
-                    <factor period="5"  value="0.79" />
-                    <factor period="6"  value="0.79" />
-                    <factor period="7"  value="0.86" />
-                    <factor period="8"  value="0.96" />
-                    <factor period="9"  value="1.08" />
-                    <factor period="10" value="1.16" />
-                    <factor period="11" value="1.22" />
-                    <factor period="12" value="1.21" />
-                </factors>
-            </economy>
-            <effects prioritizedEffectType="ParticleEffect"/>
-            <image      hud     ="maps/fruits/huds/hud_fill_carrot.png" />
-            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
-            <textures   diffuse ="maps/fruits/fillPlanes/carrot_diffuse.png"
-                        normal  ="maps/fruits/fillPlanes/carrot_normal.png"
-                        specular="maps/fruits/fillPlanes/carrot_specular.png"
-                        distance="maps/fruits/fillPlanes/distance/carrotDistance_diffuse.png" /> 
-        </fillType>
-		<fillType name="ONION" title="Onion" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
-            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
-            <economy pricePerLiter="0.11">
-                <factors>
-                    <factor period="1"  value="1.12" />
-                    <factor period="2"  value="1.04" />
-                    <factor period="3"  value="0.93" />
-                    <factor period="4"  value="0.85" />
-                    <factor period="5"  value="0.79" />
-                    <factor period="6"  value="0.79" />
-                    <factor period="7"  value="0.86" />
-                    <factor period="8"  value="0.96" />
-                    <factor period="9"  value="1.08" />
-                    <factor period="10" value="1.16" />
-                    <factor period="11" value="1.22" />
-                    <factor period="12" value="1.21" />
-                </factors>
-            </economy>
-            <effects prioritizedEffectType="ParticleEffect"/>
-            <image      hud     ="maps/fruits/huds/hud_fill_onion.png" />
-            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
-            <textures   diffuse ="maps/fruits/fillPlanes/onion_diffuse.png"
-                        normal  ="maps/fruits/fillPlanes/onion_normal.png"
-                        specular="maps/fruits/fillPlanes/onion_specular.png"
-                        distance="maps/fruits/fillPlanes/distance/onionDistance_diffuse.png" /> 
-        </fillType> -->
 
         <fillType name="SEEDS" title="$l10n_fillType_seeds" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="15" />
@@ -1296,6 +1244,28 @@
             <pallet     filename="$data/objects/pallets/furnitureStackPallet/furnitureStackPallet.xml" />
         </fillType>
 
+        <fillType name="DONUT" title="DONUT" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.65">
+                <factors>
+                    <factor period="1"  value="0.99" />
+                    <factor period="2"  value="1.02" />
+                    <factor period="3"  value="1.04" />
+                    <factor period="4"  value="1.08" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.92" />
+                    <factor period="7"  value="0.95" />
+                    <factor period="8"  value="0.91" />
+                    <factor period="9"  value="0.96" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="1.04" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image      hud     ="maps/huds/hud_fill_donut.dds" />
+            <pallet     filename="maps/pallets/donutPallet.xml" />
+        </fillType>
+
 <!-- __________________ Production Chains end __________________ -->
 
         <fillType name="ROUNDBALE" title="$l10n_fillType_roundBale" showOnPriceTable="false">
@@ -1648,7 +1618,7 @@
         <fillTypeCategory name="FARMSILO" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM</fillTypeCategory>
         <fillTypeCategory name="HAYLOFT" >STRAW DRYGRASS_WINDROW</fillTypeCategory>
         <fillTypeCategory name="LOADINGVEHICLE">WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SEEDS FORAGE CHAFF WOODCHIPS SILAGE FERTILIZER LIME SORGHUM DEIONISED_WATER UREA_FERTILIZER</fillTypeCategory>
-        <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO EGG</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO EGG DONUT</fillTypeCategory>
         <fillTypeCategory name="PRODUCT_BGA">METHANE ELECTRICCHARGE</fillTypeCategory>
     </fillTypeCategories>
 
