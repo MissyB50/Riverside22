@@ -190,6 +190,10 @@ Skräddarsydd kalktillverkning.</sw>
         <storeItem xmlFilename="maps/placeables/siloSoy.xml"/>
         <storeItem xmlFilename="maps/placeables/siloSun.xml"/>
         <storeItem xmlFilename="maps/placeables/siloWheat.xml"/>
+		<storeItem xmlFilename="maps/pallets/donutPallet.xml"/>
+        <storeItem xmlFilename="maps/vehicle/trailer.xml"/>
+        <storeItem xmlFilename="maps/vehicle/tanker.xml"/>
+        <storeItem xmlFilename="maps/other/doorMat.xml"/>
     </storeItems>
 
     <l10n>
@@ -228,6 +232,19 @@ Skräddarsydd kalktillverkning.</sw>
             <de>Anzeigen/Ausblenden</de>
             <sw>Visa gömma</sw>
         </text>
+        <text name="action_autoloadingOn">
+            <en>Turn on autoload</en>
+            <de>Autoload einschalten</de>
+            <sw></sw>
+        </text>
+        <text name="action_autoloadingOff">
+            <en>Turn off autoload</en>
+            <de>Autoload ausschalten</de>
+            <sw></sw>
+        </text>
+
+
+
     </l10n>
 
 </modDesc>

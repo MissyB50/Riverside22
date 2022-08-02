@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
- <storeData>
-  <name>Bulk Farm Shop</name>
-  <image>$data/store/store_empty.png</image>
-  <price>1</price>
-  <canBeSold>false</canBeSold>
-  <showInStore>false</showInStore>
-  <lifetime>1000</lifetime>
-  <rotation>0</rotation>
-  <brand>NONE</brand>
-  <species>placeable</species>
-  <category>placeableMisc</category>
- </storeData>
+    <storeData>
+        <name>Bulk Farm Shop</name>
+        <image>$data/store/store_empty.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+    </storeData>
 
- <base>
-  <filename>maps/placeables/sellingBM.i3d</filename>
- </base>
+    <base>
+        <filename>maps/placeables/sellingBM.i3d</filename>
+    </base>
 
- <placement />
+    <placement />
 
- <clearAreas></clearAreas>
+    <clearAreas></clearAreas>
 
  <leveling></leveling>
 
@@ -47,41 +47,42 @@
  </triggerMarkers>
 
  <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48" appearsOnStats="false">
-  <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="aiNodeGrain" fillTypes="WHEAT BARLEY CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT SUGARCANE OAT SORGHUM CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE">   
+  <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="aiNodeGrain" fillTypes="WHEAT BARLEY CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT SUGARCANE OAT SORGHUM CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE DONUT">   
   </unloadTrigger>
-  <fillType name="WHEAT"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="BARLEY"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="CANOLA"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="SUNFLOWER"			priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="SOYBEAN"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="MAIZE"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="POTATO"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="SUGARBEET"			priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="SUGARCANE"			priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="OAT"					priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-  <fillType name="SORGHUM"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
-        <fillType name="POTATO"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="EGG"            priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="WOOL"           priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="MILK"           priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="BREAD"          priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="HONEY"          priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="BUTTER"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CHEESE"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="SUNFLOWER_OIL"  priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CANOLA_OIL"     priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="OLIVE_OIL"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="TOMATO"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="LETTUCE"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="STRAWBERRY"     priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="GRAPE"          priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="RAISINS"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="GRAPEJUICE"     priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="WOODCHIPS"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CLOTHES"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CEREAL"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CHOCOLATE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="FURNITURE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WHEAT"			priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BARLEY"			priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CANOLA"			priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUNFLOWER"		priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SOYBEAN"		priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="MAIZE"			priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="POTATO"			priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGARBEET"		priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGARCANE"		priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="OAT"			priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SORGHUM"		priceScale="1"	supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="POTATO"         priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="EGG"            priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WOOL"           priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="MILK"           priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BREAD"          priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="HONEY"          priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BUTTER"         priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHEESE"         priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUNFLOWER_OIL"  priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CANOLA_OIL"     priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="OLIVE_OIL"      priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="TOMATO"         priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="LETTUCE"        priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="STRAWBERRY"     priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="GRAPE"          priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="RAISINS"        priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="GRAPEJUICE"     priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WOODCHIPS"      priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CLOTHES"        priceScale="2"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CEREAL"         priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHOCOLATE"      priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FURNITURE"      priceScale="2"  supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="DONUT"          priceScale="2"  supportsGreatDemand="true" disablePriceDrop="false" />
  </sellingStation>
 
  <i3dMappings>

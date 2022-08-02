@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <vehicles>
-    <vehicle filename="data/vehicles/claas/arion600/arion600.xml" id="1" isAbsolute="true" age="0.000000" price="154500.000000" farmId="1" defaultFarmProperty="true" operatingTime="52.388382" selectedObjectIndex="2" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/arion600/arion600.xml" id="1" isAbsolute="true" age="0.000000" price="4500.000000" farmId="1" defaultFarmProperty="true" operatingTime="52.388382" selectedObjectIndex="2" subSelectedObjectIndex="1">
         <component index="1" position="116.83255004883 60.153961181641 -256.79956054688" rotation="-179.56742180806 39.885480469653 179.99649429172"/>
         <component index="2" position="117.78955841064 60.770645141602 -257.94467163086" rotation="-179.57403343118 39.885490714936 179.99570198978"/>
         <configuration name="cropSensor" id="1"/>
@@ -40,7 +40,7 @@
         <aiFieldWorker lastTurnDirection="false"/>
         <attacherJoints comboDirection="-1"/>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/frontLoader140/frontLoader140.xml" id="2" isAbsolute="true" age="0.000000" price="10000.000000" farmId="1" propertyState="1" operatingTime="42.598530">
+    <vehicle filename="data/vehicles/claas/frontLoader140/frontLoader140.xml" id="2" isAbsolute="true" age="0.000000" price="1000.000000" farmId="1" propertyState="1" defaultFarmProperty="true" operatingTime="42.598530">
         <component index="1" position="118.26824951172 60.225116729736 -258.51751708984" rotation="-179.56742180806 39.885470224369 179.99649429172"/>
         <washable>
             <dirtNode amount="0.002953"/>
@@ -55,7 +55,7 @@
         <wheels lastWheelConfiguration="1"/>
         <attacherJoints comboDirection="-1"/>
     </vehicle>
-    <vehicle filename="data/vehicles/albutt/frontloaderShovel/frontloaderShovel.xml" id="3" isAbsolute="true" age="0.000000" price="1600.000000" farmId="1" propertyState="1" operatingTime="36.425072">
+    <vehicle filename="data/vehicles/albutt/frontloaderShovel/frontloaderShovel.xml" id="3" isAbsolute="true" age="0.000000" price="1600.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="36.425072">
         <component index="1" position="119.09163665771 62.796726226807 -259.50262451172" rotation="-104.01141158671 39.885490714936 179.99648063134"/>
         <configuration name="fillUnit" id="1"/>
         <configuration name="fillVolume" id="1"/>
@@ -74,7 +74,7 @@
             <unit index="2" fillType="UNKNOWN" fillLevel="0.000000"/>
         </fillUnit>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/axion800/axion800.xml" id="4" isAbsolute="true" age="0.000000" price="233200.000000" farmId="1" propertyState="1" operatingTime="46.843170" selectedObjectIndex="2" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/axion800/axion800.xml" id="4" isAbsolute="true" age="0.000000" price="3200.000000" farmId="1" propertyState="1" defaultFarmProperty="true" operatingTime="46.843170" selectedObjectIndex="2" subSelectedObjectIndex="1">
         <component index="1" position="125.5090637207 60.194160461426 -286.20031738281" rotation="-0.28489511436789 86.409433529505 0.069657577528669"/>
         <component index="2" position="126.95015716553 60.849033355713 -286.10983276367" rotation="-0.19929844997756 86.409378887992 0.15465246490052"/>
         <configuration name="cropSensor" id="1"/>
@@ -114,7 +114,7 @@
         <aiFieldWorker lastTurnDirection="false"/>
         <attacherJoints comboDirection="-1"/>
     </vehicle>
-    <vehicle filename="data/vehicles/agco/weight1500/weight1500.xml" id="5" isAbsolute="true" age="0.000000" price="1650.000000" farmId="1" propertyState="1" operatingTime="38.557102">
+    <vehicle filename="data/vehicles/agco/weight1500/weight1500.xml" id="5" isAbsolute="true" age="0.000000" price="650.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="38.557102">
         <component index="1" position="128.62344360352 60.59903717041 -286.00708007813" rotation="-1.193749940727 86.409378887992 0.070736560654546"/>
         <configuration name="baseMaterial" id="31"/>
         <boughtConfiguration name="baseMaterial" id="31"/>
@@ -128,7 +128,7 @@
         <wheels lastWheelConfiguration="1"/>
         <attacherJoints comboDirection="-1"/>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/axion900/axion900.xml" id="6" isAbsolute="true" age="0.000000" price="342200.000000" farmId="1" propertyState="1" operatingTime="62.571281" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/axion900/axion900.xml" id="6" isAbsolute="true" age="0.000000" price="2200.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="62.571281" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="123.74784851074 60.214241027832 -265.16485595703" rotation="-0.7199288323892 88.115607953985 0.45177026948921"/>
         <component index="2" position="125.51181793213 60.901573181152 -265.10665893555" rotation="-0.78202459009387 88.115607953985 0.40556484016687"/>
         <configuration name="fillUnit" id="1"/>
@@ -169,7 +169,7 @@
             <action name="lower" identifier="data/vehicles/kuhn/prolander7500/prolander7500.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/axion960TT/axion960TT.xml" id="7" isAbsolute="true" age="0.000000" price="390400.000000" farmId="1" propertyState="1" operatingTime="67.748764" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/axion960TT/axion960TT.xml" id="7" isAbsolute="true" age="0.000000" price="1400.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="67.748764" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="150.10699462891 60.147899627686 -281.86715698242" rotation="-2.9176931023328 58.612216513332 0.00053641898874998"/>
         <component index="2" position="151.59037780762 60.956199645996 -280.96209716797" rotation="-2.9001181718247 58.612428249197 0.019645796840185"/>
         <component index="3" position="149.61973571777 60.816394805908 -283.49130249023" rotation="-2.4558265325898 58.612264324656 0.00061741101882922"/>
@@ -213,7 +213,7 @@
             <action name="lowerPickup" identifier="data/vehicles/claas/quadrant5300/quadrant5300.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/xerion5000/xerion5000.xml" id="8" isAbsolute="true" age="0.000000" price="441200.000000" farmId="1" propertyState="1" operatingTime="59.482643" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/xerion5000/xerion5000.xml" id="8" isAbsolute="true" age="0.000000" price="1200.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="59.482643" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="149.55310058594 60.113410949707 -265.98651123047" rotation="179.97407761087 24.760933260272 -179.99992304669"/>
         <component index="2" position="150.8020324707 61.028873443604 -268.69430541992" rotation="175.60413624027 24.76152748673 -179.9999776882"/>
         <configuration name="design2" id="10"/>
@@ -260,7 +260,7 @@
         <crabSteering state="1"/>
         <attacherJoints comboDirection="-1"/>
     </vehicle>
-    <vehicle filename="data/vehicles/krampe/bigBodyS750/bigBodyS750.xml" id="9" isAbsolute="true" age="0.000000" price="52500.000000" farmId="1" propertyState="1" operatingTime="26.428844">
+    <vehicle filename="data/vehicles/krampe/bigBodyS750/bigBodyS750.xml" id="9" isAbsolute="true" age="0.000000" price="2500.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="26.428844">
         <component index="1" position="118.54863739014 60.062976837158 -286.46917724609" rotation="-0.12030282991472 88.449201223238 -0.042294128831252"/>
         <configuration name="trailer" id="1"/>
         <configuration name="rimColor" id="1"/>
@@ -296,7 +296,7 @@
         </fillUnit>
         <trailer tipSideIndex="1" doorState="false" tipAnimationTime="0.000000" tipState="0"/>
     </vehicle>
-    <vehicle filename="data/vehicles/kuhn/prolander7500/prolander7500.xml" id="10" isAbsolute="true" age="0.000000" price="59500.000000" farmId="1" propertyState="1" operatingTime="51.076496">
+    <vehicle filename="data/vehicles/kuhn/prolander7500/prolander7500.xml" id="10" isAbsolute="true" age="0.000000" price="500.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="51.076496">
         <component index="1" position="117.09206390381 60.341968536377 -265.47109985352" rotation="-0.040821182528483 86.690926115769 -0.0071414913831973"/>
         <component index="2" position="116.09760284424 61.067512512207 -267.92056274414" rotation="0.0042967338522718 86.690926115769 0.037461833359481"/>
         <component index="3" position="115.82193756104 61.067676544189 -263.1526184082" rotation="-0.10168822988912 86.69116517239 -0.07151256085771"/>
@@ -320,7 +320,7 @@
         <attacherJoints comboDirection="-1"/>
         <foldable foldAnimTime="0.100000"/>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/trion750/trion750.xml" id="11" isAbsolute="true" age="0.000000" price="401000.000000" farmId="1" propertyState="1" operatingTime="38.712696" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/trion750/trion750.xml" id="11" isAbsolute="true" age="0.000000" price="1000.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="38.712696" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="130.22171020508 60.158542633057 -259.37557983398" rotation="-179.29571688288 43.393400740574 179.99709534837"/>
         <component index="2" position="129.65634155273 60.813495635986 -258.77755737305" rotation="-179.29862654347 43.393445136804 179.9929152726"/>
         <configuration name="folding" id="1"/>
@@ -370,7 +370,7 @@
             <action name="turnOn" identifier="data/vehicles/claas/trion750/trion750.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/lexion8000/lexion8000.xml" id="12" isAbsolute="true" age="0.000000" price="491500.000000" farmId="1" propertyState="1" operatingTime="72.947990" selectedObjectIndex="2" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/lexion8000/lexion8000.xml" id="12" isAbsolute="true" age="0.000000" price="1500.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="72.947990" selectedObjectIndex="2" subSelectedObjectIndex="1">
         <component index="1" position="118.63964080811 60.080238342285 -274.63543701172" rotation="-178.42676655629 79.890407287511 -179.9715367805"/>
         <component index="2" position="116.53926849365 60.827331542969 -274.2610168457" rotation="-178.43453931157 79.890407287511 -179.97753368659"/>
         <configuration name="folding" id="1"/>
@@ -417,7 +417,7 @@
             <action name="lower" identifier="data/vehicles/claas/convioFlex1380/convioFlex1380.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/jaguar960TT/jaguar960TT.xml" id="13" isAbsolute="true" age="0.000000" price="382000.000000" farmId="1" propertyState="1" operatingTime="65.780380" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/jaguar960TT/jaguar960TT.xml" id="13" isAbsolute="true" age="0.000000" price="2000.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="65.780380" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="134.29312133789 60.011169433594 -285.31427001953" rotation="1.1658608909636 58.084748324489 -0.0093497252259008"/>
         <component index="2" position="133.01150512695 60.851749420166 -286.11273193359" rotation="1.2055663814345 58.084256550869 0.033932746652487"/>
         <configuration name="fillUnit" id="1"/>
@@ -460,7 +460,7 @@
             <action name="turnOn" identifier="data/vehicles/claas/jaguar960TT/jaguar960TT.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/torion1914/torion1914.xml" id="14" isAbsolute="true" age="0.000000" price="250500.000000" farmId="1" propertyState="1" operatingTime="29.795492" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle filename="data/vehicles/claas/torion1914/torion1914.xml" id="14" isAbsolute="true" age="0.000000" price="500.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="29.795492" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="149.37237548828 60.149932861328 -259.05877685547" rotation="-179.98589383813 56.962275036289 -179.99516923502"/>
         <component index="2" position="149.37236022949 60.149929046631 -259.05877685547" rotation="-179.98650855516 56.139609486612 -179.99553806524"/>
         <component index="3" position="147.90742492676 60.918930053711 -258.07592773438" rotation="-179.98840734775 56.139650467747 179.99566100864"/>
@@ -499,7 +499,7 @@
         <aiFieldWorker lastTurnDirection="false"/>
         <attacherJoints comboDirection="-1"/>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/quadrant5300/quadrant5300.xml" id="15" isAbsolute="true" age="0.000000" price="153500.000000" farmId="1" propertyState="1" operatingTime="54.608017">
+    <vehicle filename="data/vehicles/claas/quadrant5300/quadrant5300.xml" id="15" isAbsolute="true" age="0.000000" price="500.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="54.608017">
         <component index="1" position="144.32615661621 60.097751617432 -285.61196899414" rotation="0.076021519576443 56.345655803304 0.062542948332323"/>
         <component index="2" position="146.19755554199 60.7502784729 -284.36560058594" rotation="14.993892520748 56.345539690088 0.062446325167951"/>
         <configuration name="fillUnit" id="1"/>
@@ -529,7 +529,7 @@
         </fillUnit>
         <baler numBales="0" baleTypeIndex="2" preSelectedBaleTypeIndex="2" fillUnitCapacity="4000.000000"/>
     </vehicle>
-    <vehicle filename="data/vehicles/claas/convioFlex1380/convioFlex1380.xml" id="16" isAbsolute="true" age="0.000000" price="90000.000000" farmId="1" propertyState="1" operatingTime="15.649799">
+    <vehicle filename="data/vehicles/claas/convioFlex1380/convioFlex1380.xml" id="16" isAbsolute="true" age="0.000000" price="500.000000" farmId="1" defaultFarmProperty="true" propertyState="1" operatingTime="15.649799">
         <component index="1" position="123.43756103516 60.067657470703 -275.49291992188" rotation="-171.33110159362 79.890448268646 -179.97209685601"/>
         <configuration name="wheel" id="1"/>
         <boughtConfiguration name="wheel" id="1"/>

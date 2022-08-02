@@ -47,7 +47,7 @@
  </triggerMarkers>
 
  <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48" appearsOnStats="false">
-  <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="aiNodeGrain" fillTypes="WHEAT BARLEY CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT SUGARCANE OAT SORGHUM CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE">   
+  <unloadTrigger exactFillRootNode="unloadTriggerGrain" aiNode="aiNodeGrain" fillTypes="WHEAT BARLEY CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT SUGARCANE OAT SORGHUM CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE DONUT">   
   </unloadTrigger>
   <fillType name="WHEAT"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
   <fillType name="BARLEY"				priceScale="1"		supportsGreatDemand="true"		disablePriceDrop="false" />
@@ -79,9 +79,10 @@
         <fillType name="GRAPEJUICE"     priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="WOODCHIPS"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CLOTHES"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CEREAL"        priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CEREAL"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CHOCOLATE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="FURNITURE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="DONUT"          priceScale="2"  supportsGreatDemand="true" disablePriceDrop="false" />
  </sellingStation>
 
  <i3dMappings>

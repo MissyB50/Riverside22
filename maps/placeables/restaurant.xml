@@ -104,7 +104,7 @@
     </lights>
 
     <sellingStation appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="CEREAL POTATO MAIZE FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BUTTER CHEESE EGG SUGAR CAKE HONEY TOMATO LETTUCE STRAWBERRY GRAPE GRAPEJUICE CHOCOLATE"/>
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="DONUT CEREAL POTATO MAIZE FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BUTTER CHEESE EGG SUGAR CAKE HONEY TOMATO LETTUCE STRAWBERRY GRAPE GRAPEJUICE CHOCOLATE"/>
 
         <fillType name="POTATO"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="MAIZE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -125,7 +125,7 @@
         <fillType name="GRAPEJUICE"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CEREAL"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CHOCOLATE"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-
+        <fillType name="DONUT"          priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
 
         <sounds>
             <idle template="restaurantTemplate"/>

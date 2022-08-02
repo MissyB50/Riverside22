@@ -47,7 +47,7 @@
  </triggerMarkers>
 
     <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTriggerGrain" fillTypes="CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE"/>
+        <unloadTrigger exactFillRootNode="unloadTriggerGrain" fillTypes="CEREAL CLOTHES POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS FURNITURE CHOCOLATE DONUT"/>
         <fillType name="POTATO"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="EGG"            priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="WOOL"           priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
@@ -70,6 +70,7 @@
         <fillType name="CEREAL"         priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CHOCOLATE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="FURNITURE"      priceScale="1"    supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="DONUT"          priceScale="2"  supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
 
  <i3dMappings>

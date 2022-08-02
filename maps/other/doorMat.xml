@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="farmhouse">
+    <storeData>
+        <name>Door Mat</name>
+        <functions>
+            <function>$l10n_function_farmhouse</function>
+        </functions>
+        <image>maps/other/store_mat.dds</image>
+        <price>10</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+    </storeData>
+
+    <base>
+    <filename>maps/other/doorMat.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="false" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End"/>
+        </testAreas>
+    </placement>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+    
+    <indoorArea/>
+
+    <ai/>
+
+    <hotspots>
+        <hotspot type="FARM" linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="sleepingTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="false" />
+    </triggerMarkers>
+
+    <farmhouse spawnNode="playerSpawnLocation">
+        <sleeping triggerNode="sleepingTrigger" cameraNode="sleepingCamera"/>
+    </farmhouse>
+
+    <i3dMappings>
+        <i3dMapping id="sleepingTrigger" node="0>1|0" />
+        <i3dMapping id="sleepingCamera" node="0>1|1" />
+        <i3dMapping id="playerSpawnLocation" node="0>1|3" />
+        <i3dMapping id="sleepingTriggerMarker" node="0>1|2" />
+        <i3dMapping id="hotspotNode" node="0>1|3" />
+        <i3dMapping id="teleportNode" node="0>1|3" />
+        <i3dMapping id="clearArea1Start" node="0>2|0" />
+        <i3dMapping id="clearArea1Width" node="0>2|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>3|0" />
+        <i3dMapping id="levelArea1Width" node="0>3|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>3|0|1" />
+        <i3dMapping id="testArea1Start" node="0>6|0" />
+        <i3dMapping id="testArea1End" node="0>6|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+    </i3dMappings>
+</placeable>

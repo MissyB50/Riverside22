@@ -111,7 +111,7 @@
                     <output fillType="CAKE" amount="5" />
                 </outputs>
             </production>
-            <production id="donut chocolate" name="Chocolate Donut" cyclesPerHour="16" costsPerActiveHour="2.5">
+            <production id="donut chocolate" name="Chocolate Donut" cyclesPerHour="18" costsPerActiveHour="2.5">
                 <inputs>
                     <input fillType="FLOUR"      amount="2" />
                     <input fillType="SUGAR"      amount="2" />
@@ -123,7 +123,7 @@
                     <output fillType="DONUT" amount="5" />
                 </outputs>
             </production>
-            <production id="donut strawberry" name="Strawberry Donuts" cyclesPerHour="16" costsPerActiveHour="2.5">
+            <production id="donut strawberry" name="Strawberry Donuts" cyclesPerHour="18" costsPerActiveHour="2.5">
                 <inputs>
                     <input fillType="FLOUR"      amount="2" />
                     <input fillType="SUGAR"      amount="2" />
@@ -149,16 +149,16 @@
         </palletSpawner>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="FLOUR"      capacity="65000" />
-            <capacity fillType="SUGAR"      capacity="7000" />
-            <capacity fillType="MILK"       capacity="7000" />
-            <capacity fillType="EGG"        capacity="7000" />
-            <capacity fillType="BUTTER"     capacity="7000" />
-            <capacity fillType="STRAWBERRY" capacity="7000" />
-            <capacity fillType="BREAD"      capacity="7000" />
-            <capacity fillType="CAKE"       capacity="7000" />
-            <capacity fillType="CHOCOLATE"  capacity="7000" />
-            <capacity fillType="DONUT"       capacity="7000" />
+            <capacity fillType="FLOUR"      capacity="70000" />
+            <capacity fillType="SUGAR"      capacity="70000" />
+            <capacity fillType="MILK"       capacity="70000" />
+            <capacity fillType="EGG"        capacity="70000" />
+            <capacity fillType="BUTTER"     capacity="70000" />
+            <capacity fillType="STRAWBERRY" capacity="70000" />
+            <capacity fillType="BREAD"      capacity="70000" />
+            <capacity fillType="CAKE"       capacity="70000" />
+            <capacity fillType="CHOCOLATE"  capacity="70000" />
+            <capacity fillType="DONUT"      capacity="70000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />

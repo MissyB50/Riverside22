@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>$l10n_storeItem_cakePallet</name>
+        <name>$l10n_storeItem_donutPallet</name>
         <image>$data/store/store_empty.png</image>
         <category>pallets</category>
         <brand>LIZARD</brand>
@@ -43,22 +43,22 @@
 
     <pallet fillUnitIndex="1" node="pallet_vis">
         <content>
-            <object node="cakeBox1" tensionBeltNode="cakeBox1Tension"/>
-            <object node="cakeBox2" tensionBeltNode="cakeBox2Tension"/>
-            <object node="cakeBox3" tensionBeltNode="cakeBox3Tension"/>
-            <object node="cakeBox4" tensionBeltNode="cakeBox4Tension"/>
-            <object node="cakeBox5" tensionBeltNode="cakeBox5Tension"/>
-            <object node="cakeBox6" tensionBeltNode="cakeBox6Tension"/>
-            <object node="cakeBox7" tensionBeltNode="cakeBox7Tension"/>
-            <object node="cakeBox8" tensionBeltNode="cakeBox8Tension"/>
-            <object node="cakeBox9" tensionBeltNode="cakeBox9Tension"/>
-            <object node="cakeBox10" tensionBeltNode="cakeBox10Tension"/>
-            <object node="cakeBox11" tensionBeltNode="cakeBox11Tension"/>
-            <object node="cakeBox12" tensionBeltNode="cakeBox12Tension"/>
-            <object node="cakeBox13" tensionBeltNode="cakeBox13Tension"/>
-            <object node="cakeBox14" tensionBeltNode="cakeBox14Tension"/>
-            <object node="cakeBox15" tensionBeltNode="cakeBox15Tension"/>
-            <object node="cakeBox16" tensionBeltNode="cakeBox16Tension"/>
+            <object node="donutBox1" tensionBeltNode="donutBox1Tension"/>
+            <object node="donutBox2" tensionBeltNode="donutBox2Tension"/>
+            <object node="donutBox3" tensionBeltNode="donutBox3Tension"/>
+            <object node="donutBox4" tensionBeltNode="donutBox4Tension"/>
+            <object node="donutBox5" tensionBeltNode="donutBox5Tension"/>
+            <object node="donutBox6" tensionBeltNode="donutBox6Tension"/>
+            <object node="donutBox7" tensionBeltNode="donutBox7Tension"/>
+            <object node="donutBox8" tensionBeltNode="donutBox8Tension"/>
+            <object node="donutBox9" tensionBeltNode="donutBox9Tension"/>
+            <object node="donutBox10" tensionBeltNode="donutBox10Tension"/>
+            <object node="donutBox11" tensionBeltNode="donutBox11Tension"/>
+            <object node="donutBox12" tensionBeltNode="donutBox12Tension"/>
+            <object node="donutBox13" tensionBeltNode="donutBox13Tension"/>
+            <object node="donutBox14" tensionBeltNode="donutBox14Tension"/>
+            <object node="donutBox15" tensionBeltNode="donutBox15Tension"/>
+            <object node="donutBox16" tensionBeltNode="donutBox16Tension"/>
         </content>
 
         <sounds>
@@ -69,41 +69,41 @@
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.45" jointTransY="0.11" jointLimitToRotY="true"/>
 
     <i3dMappings>
-        <i3dMapping id="cakePallet_component1" node="0>" />
+        <i3dMapping id="donutPallet" node="0>" />
         <i3dMapping id="pallet_vis" node="0>0" />
         <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
         <i3dMapping id="dischargeNode" node="0>0|1" />
-        <i3dMapping id="cakeBox1" node="0>0|2|0" />
-        <i3dMapping id="cakeBox1Tension" node="0>0|2|0|4" />
-        <i3dMapping id="cakeBox2" node="0>0|2|1" />
-        <i3dMapping id="cakeBox2Tension" node="0>0|2|1|4" />
-        <i3dMapping id="cakeBox3" node="0>0|2|2" />
-        <i3dMapping id="cakeBox3Tension" node="0>0|2|2|4" />
-        <i3dMapping id="cakeBox4" node="0>0|2|3" />
-        <i3dMapping id="cakeBox4Tension" node="0>0|2|3|4" />
-        <i3dMapping id="cakeBox5" node="0>0|2|4" />
-        <i3dMapping id="cakeBox5Tension" node="0>0|2|4|4" />
-        <i3dMapping id="cakeBox6" node="0>0|2|5" />
-        <i3dMapping id="cakeBox6Tension" node="0>0|2|5|4" />
-        <i3dMapping id="cakeBox7" node="0>0|2|6" />
-        <i3dMapping id="cakeBox7Tension" node="0>0|2|6|4" />
-        <i3dMapping id="cakeBox8" node="0>0|2|7" />
-        <i3dMapping id="cakeBox8Tension" node="0>0|2|7|4" />
-        <i3dMapping id="cakeBox9" node="0>0|2|8" />
-        <i3dMapping id="cakeBox9Tension" node="0>0|2|8|4" />
-        <i3dMapping id="cakeBox10" node="0>0|2|9" />
-        <i3dMapping id="cakeBox10Tension" node="0>0|2|9|4" />
-        <i3dMapping id="cakeBox11" node="0>0|2|10" />
-        <i3dMapping id="cakeBox11Tension" node="0>0|2|10|4" />
-        <i3dMapping id="cakeBox12" node="0>0|2|11" />
-        <i3dMapping id="cakeBox12Tension" node="0>0|2|11|4" />
-        <i3dMapping id="cakeBox13" node="0>0|2|12" />
-        <i3dMapping id="cakeBox13Tension" node="0>0|2|12|4" />
-        <i3dMapping id="cakeBox14" node="0>0|2|13" />
-        <i3dMapping id="cakeBox14Tension" node="0>0|2|13|4" />
-        <i3dMapping id="cakeBox15" node="0>0|2|14" />
-        <i3dMapping id="cakeBox15Tension" node="0>0|2|14|4" />
-        <i3dMapping id="cakeBox16" node="0>0|2|15" />
-        <i3dMapping id="cakeBox16Tension" node="0>0|2|15|4" />
+        <i3dMapping id="donutBox1" node="0>0|2|0|0" />
+        <i3dMapping id="donutBox1Tension" node="0>0|2|0|1" />
+        <i3dMapping id="donutBox2" node="0>0|2|1|0" />
+        <i3dMapping id="donutBox2Tension" node="0>0|2|1|1" />
+        <i3dMapping id="donutBox3" node="0>0|2|2|0" />
+        <i3dMapping id="donutBox3Tension" node="0>0|2|2|1" />
+        <i3dMapping id="donutBox4" node="0>0|2|3|0" />
+        <i3dMapping id="donutBox4Tension" node="0>0|2|3|1" />
+        <i3dMapping id="donutBox5" node="0>0|2|4|0" />
+        <i3dMapping id="donutBox5Tension" node="0>0|2|4|1" />
+        <i3dMapping id="donutBox6" node="0>0|2|5|0" />
+        <i3dMapping id="donutBox6Tension" node="0>0|2|5|1" />
+        <i3dMapping id="donutBox7" node="0>0|2|6|0" />
+        <i3dMapping id="donutBox7Tension" node="0>0|2|6|1" />
+        <i3dMapping id="donutBox8" node="0>0|2|7|0" />
+        <i3dMapping id="donutBox8Tension" node="0>0|2|7|1" />
+        <i3dMapping id="donutBox9" node="0>0|2|8|0" />
+        <i3dMapping id="donutBox9Tension" node="0>0|2|8|1" />
+        <i3dMapping id="donutBox10" node="0>0|2|9|0" />
+        <i3dMapping id="donutBox10Tension" node="0>0|2|9|1" />
+        <i3dMapping id="donutBox11" node="0>0|2|10|0" />
+        <i3dMapping id="donutBox11Tension" node="0>0|2|10|1" />
+        <i3dMapping id="donutBox12" node="0>0|2|11|0" />
+        <i3dMapping id="donutBox12Tension" node="0>0|2|11|1" />
+        <i3dMapping id="donutBox13" node="0>0|2|12|0" />
+        <i3dMapping id="donutBox13Tension" node="0>0|2|12|1" />
+        <i3dMapping id="donutBox14" node="0>0|2|13|0" />
+        <i3dMapping id="donutBox14Tension" node="0>0|2|13|1" />
+        <i3dMapping id="donutBox15" node="0>0|2|14|0" />
+        <i3dMapping id="donutBox15Tension" node="0>0|2|14|1" />
+        <i3dMapping id="donutBox16" node="0>0|2|15|0" />
+        <i3dMapping id="donutBox16Tension" node="0>0|2|15|1" />
     </i3dMappings>
 </vehicle>

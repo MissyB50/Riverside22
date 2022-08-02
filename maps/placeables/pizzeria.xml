@@ -99,7 +99,7 @@
     </lights>
 
     <sellingStation appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL CHEESE TOMATO LETTUCE STRAWBERRY GRAPE GRAPEJUICE EGG SUGAR CAKE"/>
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL CHEESE TOMATO LETTUCE STRAWBERRY GRAPE GRAPEJUICE EGG SUGAR CAKE DONUT"/>
 
         <fillType name="FLOUR"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SUNFLOWER_OIL"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -114,7 +114,7 @@
         <fillType name="EGG"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SUGAR"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CAKE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-
+        <fillType name="DONUT"          priceScale="1"  supportsGreatDemand="true" disablePriceDrop="false" />
         <sounds>
             <idle template="pizzeria"/>
         </sounds>

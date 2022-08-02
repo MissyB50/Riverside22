@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="trailer"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+	<annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+	<storeData>
+		<name>
+            Pallet Trailer
+        </name>
+		<specs>
+			<combination filterCategory="trucks"/>
+			<combination xmlFilename="$data/vehicles/krampe/dolly10L/dolly10L.xml"/>
+		</specs>
+		<functions>
+			<function>$l10n_function_palletTransportTrailer</function>
+		</functions>
+		<image>maps/vehicle/store.dds</image>
+		<price>29500</price>
+		<lifetime>600</lifetime>
+		<rotation>0</rotation>
+		<brand>KRONETRAILER</brand>
+		<category>misc</category>
+	</storeData>
+	<base>
+		<typeDesc>$l10n_typeDesc_trailer</typeDesc>
+		<filename>maps/vehicle/trailer.i3d</filename>
+		<size width="3.5" length="14.2" height="4.15" lengthOffset="0.05"/>
+		<components>
+			<component centerOfMass="0 0.4 -1" solverIterationCount="10" mass="5000"/>
+		</components>
+		<schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+	</base>
+	
+	<wheels>
+		<wheelConfigurations>
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
+				<wheels>
+					<wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="true" hasTireTracks="true" configId="truckTrailerKrone">
+						<physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="wheelFrontLeft" forcePointRatio="0.5" initialCompression="50" suspTravel="0.075" spring="50" damper="35" yOffset="-0.059"/>
+					</wheel>
+					<wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="false" hasTireTracks="true" configId="truckTrailerKrone">
+						<physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="wheelFrontRight" forcePointRatio="0.5" initialCompression="50" suspTravel="0.075" spring="50" damper="35" yOffset="-0.059"/>
+					</wheel>
+					<wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="truckTrailerKrone">
+						<physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="wheelMiddleLeft" forcePointRatio="0.5" initialCompression="75" suspTravel="0.075" spring="50" damper="35" yOffset="-0.027"/>
+					</wheel>
+					<wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="truckTrailerKrone">
+						<physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="wheelMiddleRight" forcePointRatio="0.5" initialCompression="75" suspTravel="0.075" spring="50" damper="35" yOffset="-0.027"/>
+					</wheel>
+					<wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="truckTrailerKrone">
+						<physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="100" suspTravel="0.075" spring="50" damper="35" yOffset="0.006"/>
+						<wheelChock parkingNode="wheelChock01_01"/>
+						<wheelChock parkingNode="wheelChock01_02" isInverted="true"/>
+					</wheel>
+					<wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="truckTrailerKrone">
+						<physics tipOcclusionAreaGroupId="1" restLoad="1.1" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="100" suspTravel="0.075" spring="50" damper="35" yOffset="0.006"/>
+					</wheel>
+				</wheels>
+			</wheelConfiguration>
+		</wheelConfigurations>
+		<dynamicallyLoadedWheels>
+			<dynamicallyLoadedWheel linkNode="extraWheel" filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="truckTrailerKrone"/>
+		</dynamicallyLoadedWheels>
+	</wheels>
+	<attachable>
+		<inputAttacherJoints>
+			<inputAttacherJoint node="attacherJoint" jointType="semitrailer" attacherHeight="1.33"/>
+		</inputAttacherJoints>
+		<support animationName="moveSupport"/>
+		<brakeForce force="0.8"/>
+	</attachable>
+	<dynamicallyLoadedParts>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|0" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|1" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|2" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|3" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|4" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|5" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|6" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|7" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|8" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|9" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|10" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|11" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|12" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|13" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|14" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|15" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|16" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|17" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|18" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|19" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|20" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|21" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|22" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|23" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|24" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|25" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|26" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|27" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|28" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|29" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|30" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|31" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|6|32" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|0" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|1" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|2" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|3" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|4" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|5" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|6" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|7" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|8" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|9" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|10" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|11" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|12" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|13" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|14" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|15" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|16" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|17" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|18" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|19" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|20" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|21" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|22" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|23" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|24" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|25" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|26" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|27" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|28" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|29" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|30" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|31" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|7|32" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|0" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|1" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|2" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|3" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|4" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|5" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|6" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|7" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|8" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|9" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|10" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|11" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|12" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|13" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|14" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|15" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|16" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|17" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|18" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|19" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|20" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|21" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|22" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|23" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|24" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|25" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|26" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|27" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|28" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|29" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|30" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|31" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		<dynamicallyLoadedPart node="0" linkNode="0>0|5|8|32" filename="maps/vehicle/pallet/BoxPallet.i3d"/>
+		
+	</dynamicallyLoadedParts>
+	<lights>
+		<sharedLight linkNode="yellowRound_02_01" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml"/>
+		<sharedLight linkNode="yellowRound_02_02" filename="$data/shared/assets/reflectors/lizard/yellowRound_02.xml"/>
+		<sharedLight linkNode="sideMarker03_left" filename="$data/shared/assets/lights/lizard/sideMarker03_left.xml"/>
+		<sharedLight linkNode="sideMarker03_right" filename="$data/shared/assets/lights/lizard/sideMarker03_right.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_01" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_02" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_03" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_04" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_05" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_06" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_07" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08Orange_08" filename="$data/shared/assets/lights/lizard/sideMarker08Orange.xml"/>
+		<sharedLight linkNode="sideMarker08White_01" filename="$data/shared/assets/lights/lizard/sideMarker08White.xml"/>
+		<sharedLight linkNode="sideMarker08White_02" filename="$data/shared/assets/lights/lizard/sideMarker08White.xml"/>
+		<sharedLight linkNode="hellaWorkingLightSquare_02_01" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_reverse.xml">
+			<rotationNode name="rotationNode1" rotation="-70 0 0"/>
+		</sharedLight>
+		<sharedLight linkNode="hellaWorkingLightSquare_02_02" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_reverse.xml">
+			<rotationNode name="rotationNode1" rotation="-70 0 0"/>
+		</sharedLight>
+		<realLights>
+			<high>
+				<light node="backLightsHigh1" lightTypes="0"/>
+				<light node="licensePlateLightHigh" lightTypes="0"/>
+				<brakeLight node="backLightsHigh1"/>
+				<turnLightLeft node="turnLightLeftBack"/>
+				<turnLightRight node="turnLightRightBack"/>
+				<reverseLight node="reverseLightHigh1"/>
+			</high>
+		</realLights>
+		<defaultLights>
+			<defaultLight shaderNode="defaultLight_static" lightTypes="0" intensity="50"/>
+			<defaultLight shaderNode="numberPlateLightsGlass_static" lightTypes="0"/>
+		</defaultLights>
+		<brakeLights>
+			<brakeLight shaderNode="brakelight_static"/>
+		</brakeLights>
+		<turnLights>
+			<turnLightLeft shaderNode="turnLightLeft_static"/>
+			<turnLightRight shaderNode="turnLightRight_static"/>
+		</turnLights>
+		<reverseLights>
+			<reverseLight shaderNode="reverseLight_static"/>
+		</reverseLights>
+	</lights>
+	<licensePlates>
+		<licensePlate node="licensePlateBack" position="BACK" preferedType="ELONGATED" placementArea="0.055 0.255 0.055 0.255" frame="false"/>
+	</licensePlates>
+	<connectionHoses>
+		<hose inputAttacherJointIndices="1" type="airDoubleRed" node="airRed" length="1.3" diameter="0.015" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT" socket="air_red"/>
+		<hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airYellow" length="1.3" diameter="0.015" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT" socket="air_yellow"/>
+		<hose inputAttacherJointIndices="1" type="electric" node="electric" length="1.0" diameter="0.008" minCenterPointOffset="0 0 0.4" maxCenterPointOffset="0 0 2" straighteningFactor="2" isTwoPointHose="false" outgoingAdapter="DEFAULT">
+			<objectChange node="electricCover" rotationActive="-70 0 0" rotationInactive="0 0 0"/>
+		</hose>
+	</connectionHoses>
+	<foldable>
+		<foldingConfigurations>
+			<foldingConfiguration>
+				<foldingParts  posDirectionText="$l10n_action_autoloadingOff" negDirectionText="$l10n_action_autoloadingOn">
+					<foldingPart animationName="toggleCover" startMoveDirection="0" speedScale="1"/>
+				</foldingParts>
+			</foldingConfiguration>
+		</foldingConfigurations>
+	</foldable>
+	<fillUnit>
+		<fillUnitConfigurations>
+			<fillUnitConfiguration>
+				<fillUnits>
+					<unloading width="10" offset="3 0 0" />
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="WHEAT OAT HONEY BREAD BOARDS SILAGE_ADDITIVE BUTTER CAKE CANOLA_OIL CEREAL CHEESE CHOCOLATE CLOTHES EGG FABRIC FLOUR FURNITURE FERTILIZER GRAPEJUICE LETTUCE OLIVE_OIL RAISINS MINERAL_FEED STRAWBERRY SUGAR SUNFLOWER_OIL TOMATO WOOL LIME ROADSALT PIGFOOD SEEDS DONUT" capacity="50000" updateMass="false">
+						<dashboard displayType="ANIMATION" valueType="fillLevel" animName="palletAnimation"/>
+						<exactFillRootNode node="exactFillRoot"/>
+					</fillUnit>
+				</fillUnits>
+			</fillUnitConfiguration>	
+		</fillUnitConfigurations>
+	</fillUnit>
+	<dischargeable requiresTipOcclusionArea="false">
+		<dischargeNode node="0>0|5|5" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+	</dischargeable>
+	<animations>
+		<animation name="toggleCover">
+			<part node="0>0|5|4" startTime="0.0" endTime="0.015" startTrans="0 -10 0" endTrans="0 -1.463 0.25"/>
+		</animation>
+		<animation name="folding">
+			<part node="doorLeftLock01" startTime="0" endTime="0.2" startRot="0 0 0" endRot="0 45 0" tangentType="spline"/>
+			<part node="doorLeftLock02" startTime="0.2" endTime="0.4" startRot="0 0 0" endRot="0 45 0" tangentType="spline"/>
+			<part node="doorLeft" startTime="0.4" endTime="2" startRot="0 0 0" endRot="0 -190 0" tangentType="spline"/>
+			<part node="doorRightLock01" startTime="0.8" endTime="1" startRot="0 0 0" endRot="0 -45 0" tangentType="spline"/>
+			<part node="doorRightLock02" startTime="1" endTime="1.2" startRot="0 0 0" endRot="0 -45 0" tangentType="spline"/>
+			<part node="doorRight" startTime="1.2" endTime="3" startRot="0 0 0" endRot="0 190 0" tangentType="spline"/>
+			<sound template="metalDoorsClose" startTime="0.4" direction="-1" volumeScale="4" pitchScale="0.9"/>
+			<sound template="metalDoorsClose" startTime="1.2" direction="-1" volumeScale="3" pitchScale="0.7"/>
+			<sound template="metalClose" startTime="1.3" direction="-1" volumeScale="4" pitchScale="0.9"/>
+			<sound template="metalClose" startTime="0.5" direction="-1" volumeScale="3" pitchScale="1.7"/>
+			<sound template="clackVar1" startTime="2.99" direction="1" volumeScale="2" pitchScale="1.1"/>
+			<sound template="clackVar1" startTime="1.99" direction="1" volumeScale="2" pitchScale="1.3"/>
+			<sound template="hingeMedium" startTime="2.90" direction="-1" volumeScale="2.8" pitchScale="0.7"/>
+			<sound template="hingeMedium" startTime="1.3" direction="1" volumeScale="2.8" pitchScale="0.7"/>
+			<sound template="metalDoorsLoop" startTime="0.3" endTime="2" volumeScale="3.5" pitchScale="0.9" fadeIn="0.1" fadeOut="0.1"/>
+		</animation>
+		<animation name="moveSupport">
+			<part node="supportArm" startTime="0.5" endTime="1.0" startTrans="0 0 0" endTrans="0 -0.46 0"/>
+			<part node="supportHandleArm" startTime="0" endTime="0.5" startRot="0 0 0" endRot="0 90 0" tangentType="spline"/>
+			<part node="supportHandle" startTime="0.5" endTime="1.0" startRot="0 0 0" endRot="-720 0 0" tangentType="spline"/>
+			<part node="supportHandleArm" startTime="1.0" endTime="1.5" startRot="0 90 0" endRot="0 0 0" tangentType="spline"/>
+			<sound template="slideOpen" startTime="0.4" direction="1" volumeScale="4" pitchScale="1.5" linkNode="attacherJoint"/>
+			<sound template="slideOpen" startTime="1" direction="-1" volumeScale="4" pitchScale="1.5" linkNode="attacherJoint"/>
+			<sound template="clackVar6" startTime="0.99" direction="1" volumeScale="2" pitchScale="0.7" linkNode="attacherJoint"/>
+			<sound template="clackVar6" startTime="0.5" direction="-1" volumeScale="2" pitchScale="0.7" linkNode="attacherJoint"/>
+		</animation>
+		<animation name="coverAnimationLeftFront">
+			<part node="coverLeft_closed" startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
+			<part node="coverLeft_openBack" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
+			<part node="planksLeftFolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0"/>
+			<part node="planksLeftUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0"/>
+			<part node="barLeft01" startTime="4.0" endTime="4.333" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65"/>
+			<part node="barLeft01" startTime="4.333" endTime="6.0" startTrans="1.247 3.882 3.317" endTrans="1.247 3.882 -4.697"/>
+			<part node="barLeft02" startTime="2.333" endTime="2.667" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65"/>
+			<part node="barLeft02" startTime="2.667" endTime="4.0" startTrans="1.247 3.882 -0.013" endTrans="1.247 3.882 -4.997"/>
+			<part node="barLeft03" startTime="1.0" endTime="1.333" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65"/>
+			<part node="barLeft03" startTime="1.333" endTime="1.933" startTrans="1.247 3.882 -3.343" endTrans="1.247 3.882 -4.986" startRot="0.0 0.0 0.65" endRot="0.0 0.0 0.2"/>
+			<part node="barLeft03" startTime="1.933" endTime="2.333" startTrans="1.247 3.882 -4.986" endTrans="1.247 3.882 -6.081"/>
+			<part node="colPartLeft02" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 -3.5" endTrans="1.25 2.5 -5.75"/>
+			<part node="colPartLeft03" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 -1.25" endTrans="1.25 2.5 -5.75"/>
+			<part node="colPartLeft04" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 1.0" endTrans="1.25 2.5 -5.75"/>
+			<part node="colPartLeft05" startTime="1.0" endTime="4.333" startTrans="1.25 2.5 3.25" endTrans="1.25 2.5 0.0"/>
+			<part node="colPartLeft05" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 0.0" endTrans="1.25 2.5 -5.75"/>
+			<part node="colPartLeft06" startTime="1.0" endTime="4.333" startTrans="1.25 2.5 5.5" endTrans="1.25 2.5 2.25"/>
+			<part node="colPartLeft06" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 2.25" endTrans="1.25 2.5 -5.75"/>
+			<sound template="fabricCover1" startTime="0.01" direction="0" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="1.2" direction="1" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="2.6" direction="0" volumeScale="5" pitchScale="0.7"/>
+			<sound template="slideOpen" startTime="4.3" direction="0" volumeScale="6" pitchScale="0.5"/>
+			<sound template="slideOpen" startTime="5.99" direction="-1" volumeScale="6" pitchScale="0.6"/>
+			<sound template="palletsFillWood" startTime="0.1" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.2" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.3" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.4" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.5" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.6" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.7" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.8" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.9" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.99" volumeScale="3.5" pitchScale="1"/>
+		</animation>
+		<animation name="coverAnimationLeftBack">
+			<part node="coverLeft_closed" startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
+			<part node="coverLeft_openFront" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
+			<part node="planksLeftFolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0"/>
+			<part node="planksLeftUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0"/>
+			<part node="barLeft01" startTime="1.0" endTime="1.222" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65"/>
+			<part node="barLeft01" startTime="1.222" endTime="1.667" startTrans="1.247 3.882 3.317" endTrans="1.247 3.882 4.408"/>
+			<part node="barLeft01" startTime="1.667" endTime="1.889" startTrans="1.247 3.882 4.408" endTrans="1.247 3.882 4.954" startRot="0.0 0.0 0.65" endRot="0.0 0.0 0.0"/>
+			<part node="barLeft01" startTime="1.889" endTime="2.333" startTrans="1.247 3.882 4.954" endTrans="1.247 3.882 6.044" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65"/>
+			<part node="barLeft02" startTime="2.333" endTime="2.667" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65"/>
+			<part node="barLeft02" startTime="2.667" endTime="4.0" startTrans="1.247 3.882 -0.013" endTrans="1.247 3.882 4.908"/>
+			<part node="barLeft03" startTime="4.0" endTime="4.333" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65"/>
+			<part node="barLeft03" startTime="4.333" endTime="6.0" startTrans="1.247 3.882 -3.343" endTrans="1.247 3.882 4.617"/>
+			<part node="colPartLeft01" startTime="1.0" endTime="4.333" startTrans="1.25 2.5 -5.75" endTrans="1.25 2.5 -2.25"/>
+			<part node="colPartLeft01" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 -2.25" endTrans="1.25 2.5 5.5"/>
+			<part node="colPartLeft02" startTime="1.0" endTime="4.333" startTrans="1.25 2.5 -3.5" endTrans="1.25 2.5 0.0"/>
+			<part node="colPartLeft02" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 0.0" endTrans="1.25 2.5 5.5"/>
+			<part node="colPartLeft03" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 -1.25" endTrans="1.25 2.5 5.5"/>
+			<part node="colPartLeft04" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 1.0" endTrans="1.25 2.5 5.5"/>
+			<part node="colPartLeft05" startTime="4.333" endTime="6.0" startTrans="1.25 2.5 3.25" endTrans="1.25 2.5 5.5"/>
+			<sound template="fabricCover1" startTime="0.01" direction="0" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="1.2" direction="1" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="2.6" direction="0" volumeScale="5" pitchScale="0.7"/>
+			<sound template="slideOpen" startTime="4.3" direction="0" volumeScale="6" pitchScale="0.5"/>
+			<sound template="slideOpen" startTime="5.99" direction="-1" volumeScale="6" pitchScale="0.6"/>
+			<sound template="palletsFillWood" startTime="0.1" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.2" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.3" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.4" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.5" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.6" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.7" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.8" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.9" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.99" volumeScale="3.5" pitchScale="1"/>
+		</animation>
+		<animation name="coverAnimationRightFront">
+			<part node="coverRight_closed" startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
+			<part node="coverRight_openBack" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
+			<part node="planksRightFolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0"/>
+			<part node="planksRightUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0"/>
+			<part node="barRight01" startTime="4.0" endTime="4.333" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65"/>
+			<part node="barRight01" startTime="4.333" endTime="6.0" startTrans="-1.247 3.882 3.317" endTrans="-1.247 3.882 -4.697"/>
+			<part node="barRight02" startTime="2.333" endTime="2.667" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65"/>
+			<part node="barRight02" startTime="2.667" endTime="4.0" startTrans="-1.247 3.882 -0.013" endTrans="-1.247 3.882 -4.997"/>
+			<part node="barRight03" startTime="1.0" endTime="1.333" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65"/>
+			<part node="barRight03" startTime="1.333" endTime="1.933" startTrans="-1.247 3.882 -3.343" endTrans="-1.247 3.882 -5.016" startRot="0.0 0.0 -0.65" endRot="0.0 0.0 0.0"/>
+			<part node="barRight03" startTime="1.933" endTime="2.333" startTrans="-1.247 3.882 -5.016" endTrans="-1.247 3.882 -6.131"/>
+			<part node="colPartRight02" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 -3.5" endTrans="-1.25 2.5 -5.75"/>
+			<part node="colPartRight03" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 -1.25" endTrans="-1.25 2.5 -5.75"/>
+			<part node="colPartRight04" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 1.0" endTrans="-1.25 2.5 -5.75"/>
+			<part node="colPartRight05" startTime="1.0" endTime="4.333" startTrans="-1.25 2.5 3.25" endTrans="-1.25 2.5 0.0"/>
+			<part node="colPartRight05" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 0.0" endTrans="-1.25 2.5 -5.75"/>
+			<part node="colPartRight06" startTime="1.0" endTime="4.333" startTrans="-1.25 2.5 5.5" endTrans="-1.25 2.5 2.25"/>
+			<part node="colPartRight06" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 2.25" endTrans="-1.25 2.5 -5.75"/>
+			<sound template="fabricCover1" startTime="0.01" direction="0" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="1.2" direction="1" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="2.6" direction="0" volumeScale="5" pitchScale="0.7"/>
+			<sound template="slideOpen" startTime="4.3" direction="0" volumeScale="6" pitchScale="0.5"/>
+			<sound template="slideOpen" startTime="5.99" direction="-1" volumeScale="6" pitchScale="0.6"/>
+			<sound template="palletsFillWood" startTime="0.1" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.2" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.3" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.4" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.5" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.6" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.7" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.8" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.9" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.99" volumeScale="3.5" pitchScale="1"/>
+		</animation>
+		<animation name="coverAnimationRightBack">
+			<part node="coverRight_closed" startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
+			<part node="coverRight_openFront" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
+			<part node="planksRightFolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0"/>
+			<part node="planksRightUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0"/>
+			<part node="barRight01" startTime="1.0" endTime="1.222" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65"/>
+			<part node="barRight01" startTime="1.222" endTime="1.667" startTrans="-1.247 3.882 3.317" endTrans="-1.247 3.882 4.408"/>
+			<part node="barRight01" startTime="1.667" endTime="1.889" startTrans="-1.247 3.882 4.408" endTrans="-1.247 3.882 4.954" startRot="0.0 0.0 -0.65" endRot="0.0 0.0 0.0"/>
+			<part node="barRight01" startTime="1.889" endTime="2.333" startTrans="-1.247 3.882 4.954" endTrans="-1.247 3.882 6.044" startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.0"/>
+			<part node="barRight02" startTime="2.333" endTime="2.667" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65"/>
+			<part node="barRight02" startTime="2.667" endTime="4.0" startTrans="-1.247 3.882 -0.013" endTrans="-1.247 3.882 4.908"/>
+			<part node="barRight03" startTime="4.0" endTime="4.333" startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65"/>
+			<part node="barRight03" startTime="4.333" endTime="6.0" startTrans="-1.247 3.882 -3.343" endTrans="-1.247 3.882 4.617"/>
+			<part node="colPartRight01" startTime="1.0" endTime="4.333" startTrans="-1.25 2.5 -5.75" endTrans="-1.25 2.5 -2.25"/>
+			<part node="colPartRight01" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 -2.25" endTrans="-1.25 2.5 5.5"/>
+			<part node="colPartRight02" startTime="1.0" endTime="4.333" startTrans="-1.25 2.5 -3.5" endTrans="-1.25 2.5 0.0"/>
+			<part node="colPartRight02" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 0.0" endTrans="-1.25 2.5 5.5"/>
+			<part node="colPartRight03" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 -1.25" endTrans="-1.25 2.5 5.5"/>
+			<part node="colPartRight04" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 1.0" endTrans="-1.25 2.5 5.5"/>
+			<part node="colPartRight05" startTime="4.333" endTime="6.0" startTrans="-1.25 2.5 3.25" endTrans="-1.25 2.5 5.5"/>
+			<sound template="fabricCover1" startTime="0.01" direction="0" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="1.2" direction="1" volumeScale="5" pitchScale="1"/>
+			<sound template="slideOpen" startTime="2.6" direction="0" volumeScale="5" pitchScale="0.7"/>
+			<sound template="slideOpen" startTime="4.3" direction="0" volumeScale="6" pitchScale="0.5"/>
+			<sound template="slideOpen" startTime="5.99" direction="-1" volumeScale="6" pitchScale="0.6"/>
+			<sound template="palletsFillWood" startTime="0.1" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.2" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.3" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.4" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.5" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.6" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.7" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.8" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.9" volumeScale="3.5" pitchScale="1"/>
+			<sound template="palletsFillWood" startTime="0.99" volumeScale="3.5" pitchScale="1"/>
+		</animation>
+		
+		<animation name="palletAnimation">
+			<part node="0>0|5|6|0" startTime="0.000" endTime="0.399" visibility="false"/>
+			<part node="0>0|5|6|0" startTime="0.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|1" startTime="0.000" endTime="0.799" visibility="false"/>
+			<part node="0>0|5|6|1" startTime="0.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|2" startTime="0.000" endTime="1.199" visibility="false"/>
+			<part node="0>0|5|6|2" startTime="1.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|3" startTime="0.000" endTime="1.599" visibility="false"/>
+			<part node="0>0|5|6|3" startTime="1.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|4" startTime="0.000" endTime="1.999" visibility="false"/>
+			<part node="0>0|5|6|4" startTime="1.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|5" startTime="0.000" endTime="2.399" visibility="false"/>
+			<part node="0>0|5|6|5" startTime="2.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|6" startTime="0.000" endTime="2.799" visibility="false"/>
+			<part node="0>0|5|6|6" startTime="2.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|7" startTime="0.000" endTime="3.199" visibility="false"/>
+			<part node="0>0|5|6|7" startTime="3.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|8" startTime="0.000" endTime="3.599" visibility="false"/>
+			<part node="0>0|5|6|8" startTime="3.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|9" startTime="0.000" endTime="3.999" visibility="false"/>
+			<part node="0>0|5|6|9" startTime="3.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|10" startTime="0.000" endTime="4.399" visibility="false"/>
+			<part node="0>0|5|6|10" startTime="4.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|11" startTime="0.000" endTime="4.799" visibility="false"/>
+			<part node="0>0|5|6|11" startTime="4.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|12" startTime="0.000" endTime="5.199" visibility="false"/>
+			<part node="0>0|5|6|12" startTime="5.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|13" startTime="0.000" endTime="5.599" visibility="false"/>
+			<part node="0>0|5|6|13" startTime="5.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|14" startTime="0.000" endTime="5.999" visibility="false"/>
+			<part node="0>0|5|6|14" startTime="5.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|15" startTime="0.000" endTime="6.399" visibility="false"/>
+			<part node="0>0|5|6|15" startTime="6.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|16" startTime="0.000" endTime="6.799" visibility="false"/>
+			<part node="0>0|5|6|16" startTime="6.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|17" startTime="0.000" endTime="7.199" visibility="false"/>
+			<part node="0>0|5|6|17" startTime="7.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|18" startTime="0.000" endTime="7.599" visibility="false"/>
+			<part node="0>0|5|6|18" startTime="7.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|19" startTime="0.000" endTime="7.999" visibility="false"/>
+			<part node="0>0|5|6|19" startTime="7.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|20" startTime="0.000" endTime="8.399" visibility="false"/>
+			<part node="0>0|5|6|20" startTime="8.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|21" startTime="0.000" endTime="8.799" visibility="false"/>
+			<part node="0>0|5|6|21" startTime="8.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|22" startTime="0.000" endTime="9.199" visibility="false"/>
+			<part node="0>0|5|6|22" startTime="9.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|23" startTime="0.000" endTime="9.599" visibility="false"/>
+			<part node="0>0|5|6|23" startTime="9.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|24" startTime="0.000" endTime="9.999" visibility="false"/>
+			<part node="0>0|5|6|24" startTime="9.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|25" startTime="0.000" endTime="10.399" visibility="false"/>
+			<part node="0>0|5|6|25" startTime="10.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|26" startTime="0.000" endTime="10.799" visibility="false"/>
+			<part node="0>0|5|6|26" startTime="10.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|27" startTime="0.000" endTime="11.199" visibility="false"/>
+			<part node="0>0|5|6|27" startTime="11.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|28" startTime="0.000" endTime="11.599" visibility="false"/>
+			<part node="0>0|5|6|28" startTime="11.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|29" startTime="0.000" endTime="11.999" visibility="false"/>
+			<part node="0>0|5|6|29" startTime="11.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|30" startTime="0.000" endTime="12.399" visibility="false"/>
+			<part node="0>0|5|6|30" startTime="12.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|31" startTime="0.000" endTime="12.799" visibility="false"/>
+			<part node="0>0|5|6|31" startTime="12.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|6|32" startTime="0.000" endTime="13.199" visibility="false"/>
+			<part node="0>0|5|6|32" startTime="13.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|0" startTime="0.000" endTime="13.599" visibility="false"/>
+			<part node="0>0|5|7|0" startTime="13.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|1" startTime="0.000" endTime="13.999" visibility="false"/>
+			<part node="0>0|5|7|1" startTime="13.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|2" startTime="0.000" endTime="14.399" visibility="false"/>
+			<part node="0>0|5|7|2" startTime="14.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|3" startTime="0.000" endTime="14.799" visibility="false"/>
+			<part node="0>0|5|7|3" startTime="14.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|4" startTime="0.000" endTime="15.199" visibility="false"/>
+			<part node="0>0|5|7|4" startTime="15.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|5" startTime="0.000" endTime="15.599" visibility="false"/>
+			<part node="0>0|5|7|5" startTime="15.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|6" startTime="0.000" endTime="15.999" visibility="false"/>
+			<part node="0>0|5|7|6" startTime="15.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|7" startTime="0.000" endTime="16.399" visibility="false"/>
+			<part node="0>0|5|7|7" startTime="16.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|8" startTime="0.000" endTime="16.799" visibility="false"/>
+			<part node="0>0|5|7|8" startTime="16.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|9" startTime="0.000" endTime="17.199" visibility="false"/>
+			<part node="0>0|5|7|9" startTime="17.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|10" startTime="0.000" endTime="17.599" visibility="false"/>
+			<part node="0>0|5|7|10" startTime="17.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|11" startTime="0.000" endTime="17.999" visibility="false"/>
+			<part node="0>0|5|7|11" startTime="17.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|12" startTime="0.000" endTime="18.399" visibility="false"/>
+			<part node="0>0|5|7|12" startTime="18.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|13" startTime="0.000" endTime="18.799" visibility="false"/>
+			<part node="0>0|5|7|13" startTime="18.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|14" startTime="0.000" endTime="19.199" visibility="false"/>
+			<part node="0>0|5|7|14" startTime="19.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|15" startTime="0.000" endTime="19.599" visibility="false"/>
+			<part node="0>0|5|7|15" startTime="19.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|16" startTime="0.000" endTime="19.999" visibility="false"/>
+			<part node="0>0|5|7|16" startTime="19.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|17" startTime="0.000" endTime="20.399" visibility="false"/>
+			<part node="0>0|5|7|17" startTime="20.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|18" startTime="0.000" endTime="20.799" visibility="false"/>
+			<part node="0>0|5|7|18" startTime="20.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|19" startTime="0.000" endTime="21.199" visibility="false"/>
+			<part node="0>0|5|7|19" startTime="21.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|20" startTime="0.000" endTime="21.599" visibility="false"/>
+			<part node="0>0|5|7|20" startTime="21.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|21" startTime="0.000" endTime="21.999" visibility="false"/>
+			<part node="0>0|5|7|21" startTime="21.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|22" startTime="0.000" endTime="22.399" visibility="false"/>
+			<part node="0>0|5|7|22" startTime="22.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|23" startTime="0.000" endTime="22.799" visibility="false"/>
+			<part node="0>0|5|7|23" startTime="22.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|24" startTime="0.000" endTime="23.199" visibility="false"/>
+			<part node="0>0|5|7|24" startTime="23.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|25" startTime="0.000" endTime="23.599" visibility="false"/>
+			<part node="0>0|5|7|25" startTime="23.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|26" startTime="0.000" endTime="23.999" visibility="false"/>
+			<part node="0>0|5|7|26" startTime="23.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|27" startTime="0.000" endTime="24.399" visibility="false"/>
+			<part node="0>0|5|7|27" startTime="24.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|28" startTime="0.000" endTime="24.799" visibility="false"/>
+			<part node="0>0|5|7|28" startTime="24.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|29" startTime="0.000" endTime="25.199" visibility="false"/>
+			<part node="0>0|5|7|29" startTime="25.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|30" startTime="0.000" endTime="25.599" visibility="false"/>
+			<part node="0>0|5|7|30" startTime="25.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|31" startTime="0.000" endTime="25.999" visibility="false"/>
+			<part node="0>0|5|7|31" startTime="25.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|7|32" startTime="0.000" endTime="26.399" visibility="false"/>
+			<part node="0>0|5|7|32" startTime="26.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|0" startTime="0.000" endTime="26.799" visibility="false"/>
+			<part node="0>0|5|8|0" startTime="26.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|1" startTime="0.000" endTime="27.199" visibility="false"/>
+			<part node="0>0|5|8|1" startTime="27.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|2" startTime="0.000" endTime="27.599" visibility="false"/>
+			<part node="0>0|5|8|2" startTime="27.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|3" startTime="0.000" endTime="27.999" visibility="false"/>
+			<part node="0>0|5|8|3" startTime="27.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|4" startTime="0.000" endTime="28.399" visibility="false"/>
+			<part node="0>0|5|8|4" startTime="28.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|5" startTime="0.000" endTime="28.799" visibility="false"/>
+			<part node="0>0|5|8|5" startTime="28.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|6" startTime="0.000" endTime="29.199" visibility="false"/>
+			<part node="0>0|5|8|6" startTime="29.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|7" startTime="0.000" endTime="29.599" visibility="false"/>
+			<part node="0>0|5|8|7" startTime="29.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|8" startTime="0.000" endTime="29.999" visibility="false"/>
+			<part node="0>0|5|8|8" startTime="29.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|9" startTime="0.000" endTime="30.399" visibility="false"/>
+			<part node="0>0|5|8|9" startTime="30.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|10" startTime="0.000" endTime="30.799" visibility="false"/>
+			<part node="0>0|5|8|10" startTime="30.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|11" startTime="0.000" endTime="31.199" visibility="false"/>
+			<part node="0>0|5|8|11" startTime="31.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|12" startTime="0.000" endTime="31.599" visibility="false"/>
+			<part node="0>0|5|8|12" startTime="31.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|13" startTime="0.000" endTime="31.999" visibility="false"/>
+			<part node="0>0|5|8|13" startTime="31.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|14" startTime="0.000" endTime="32.399" visibility="false"/>
+			<part node="0>0|5|8|14" startTime="32.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|15" startTime="0.000" endTime="32.799" visibility="false"/>
+			<part node="0>0|5|8|15" startTime="32.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|16" startTime="0.000" endTime="33.199" visibility="false"/>
+			<part node="0>0|5|8|16" startTime="33.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|17" startTime="0.000" endTime="33.599" visibility="false"/>
+			<part node="0>0|5|8|17" startTime="33.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|18" startTime="0.000" endTime="33.999" visibility="false"/>
+			<part node="0>0|5|8|18" startTime="33.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|19" startTime="0.000" endTime="34.399" visibility="false"/>
+			<part node="0>0|5|8|19" startTime="34.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|20" startTime="0.000" endTime="34.799" visibility="false"/>
+			<part node="0>0|5|8|20" startTime="34.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|21" startTime="0.000" endTime="35.199" visibility="false"/>
+			<part node="0>0|5|8|21" startTime="35.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|22" startTime="0.000" endTime="35.599" visibility="false"/>
+			<part node="0>0|5|8|22" startTime="35.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|23" startTime="0.000" endTime="35.999" visibility="false"/>
+			<part node="0>0|5|8|23" startTime="35.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|24" startTime="0.000" endTime="36.399" visibility="false"/>
+			<part node="0>0|5|8|24" startTime="36.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|25" startTime="0.000" endTime="36.799" visibility="false"/>
+			<part node="0>0|5|8|25" startTime="36.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|26" startTime="0.000" endTime="37.199" visibility="false"/>
+			<part node="0>0|5|8|26" startTime="37.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|27" startTime="0.000" endTime="37.599" visibility="false"/>
+			<part node="0>0|5|8|27" startTime="37.599" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|28" startTime="0.000" endTime="37.999" visibility="false"/>
+			<part node="0>0|5|8|28" startTime="37.999" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|29" startTime="0.000" endTime="38.399" visibility="false"/>
+			<part node="0>0|5|8|29" startTime="38.399" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|30" startTime="0.000" endTime="38.799" visibility="false"/>
+			<part node="0>0|5|8|30" startTime="38.799" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|31" startTime="0.000" endTime="39.199" visibility="false"/>
+			<part node="0>0|5|8|31" startTime="39.199" endTime="39.999" visibility="true"/>
+			<part node="0>0|5|8|32" startTime="0.000" endTime="39.599" visibility="false"/>
+			<part node="0>0|5|8|32" startTime="39.599" endTime="39.999" visibility="true"/>
+		</animation>
+		
+	</animations>
+	<trailer>
+		<trailerConfigurations>
+			<trailerConfiguration>
+				<trailer infoText="$l10n_info_openCurtain">
+					<tipSide name="$l10n_info_curtainLeftFront" dischargeNodeIndex="1">
+						<manualTipToggle enabled="true" stopOnDeactivate="false" inputActionTextPos="$l10n_action_curtainSideOpen" inputActionTextNeg="$l10n_action_curtainSideClose"/>
+						<animation name="coverAnimationLeftFront" speedScale="1.0"/>
+					</tipSide>
+					<tipSide name="$l10n_info_curtainLeftBack" dischargeNodeIndex="1">
+						<manualTipToggle enabled="true" stopOnDeactivate="false" inputActionTextPos="$l10n_action_curtainSideOpen" inputActionTextNeg="$l10n_action_curtainSideClose"/>
+						<animation name="coverAnimationLeftBack" speedScale="1.0"/>
+					</tipSide>
+					<tipSide name="$l10n_info_curtainRightFront" dischargeNodeIndex="1">
+						<manualTipToggle enabled="true" stopOnDeactivate="false" inputActionTextPos="$l10n_action_curtainSideOpen" inputActionTextNeg="$l10n_action_curtainSideClose"/>
+						<animation name="coverAnimationRightFront" speedScale="1.0"/>
+					</tipSide>
+					<tipSide name="$l10n_info_curtainRightBack" dischargeNodeIndex="1">
+						<manualTipToggle enabled="true" stopOnDeactivate="false" inputActionTextPos="$l10n_action_curtainSideOpen" inputActionTextNeg="$l10n_action_curtainSideClose"/>
+						<animation name="coverAnimationRightBack" speedScale="1.0"/>
+					</tipSide>
+					<tipSide name="$l10n_info_curtainRightBack" dischargeNodeIndex="1">
+						<manualTipToggle enabled="true" stopOnDeactivate="false" startMoveDirection="-1" inputActionTextPos="$l10n_action_openBackDoor" inputActionTextNeg="$l10n_action_closeBackDoor"/>
+						<animation name="folding" speedScale="1.0"/>
+					</tipSide>
+				</trailer>
+			</trailerConfiguration>
+		</trailerConfigurations>
+	</trailer>
+	<tensionBelts>
+		<tensionBeltsConfigurations>
+			<tensionBeltsConfiguration>
+				<tensionBelts linkNode="tensionBelts" jointNode="profiLiner_main_component1" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+					<tensionBelt startNode="startPoint01" endNode="startPoint01End" offsetLeft="0.2">
+						<intersectionNode node="startPoint01Intersection01"/>
+						<intersectionNode node="startPoint01Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint02" endNode="startPoint02End">
+						<intersectionNode node="startPoint02Intersection01"/>
+						<intersectionNode node="startPoint02Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint03" endNode="startPoint03End">
+						<intersectionNode node="startPoint03Intersection01"/>
+						<intersectionNode node="startPoint03Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint04" endNode="startPoint04End">
+						<intersectionNode node="startPoint04Intersection01"/>
+						<intersectionNode node="startPoint04Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint05" endNode="startPoint05End">
+						<intersectionNode node="startPoint05Intersection01"/>
+						<intersectionNode node="startPoint05Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint06" endNode="startPoint06End">
+						<intersectionNode node="startPoint06Intersection01"/>
+						<intersectionNode node="startPoint06Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint07" endNode="startPoint07End">
+						<intersectionNode node="startPoint07Intersection01"/>
+						<intersectionNode node="startPoint07Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint08" endNode="startPoint08End">
+						<intersectionNode node="startPoint08Intersection01"/>
+						<intersectionNode node="startPoint08Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint09" endNode="startPoint09End">
+						<intersectionNode node="startPoint09Intersection01"/>
+						<intersectionNode node="startPoint09Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint10" endNode="startPoint10End">
+						<intersectionNode node="startPoint10Intersection01"/>
+						<intersectionNode node="startPoint10Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint11" endNode="startPoint11End">
+						<intersectionNode node="startPoint11Intersection01"/>
+						<intersectionNode node="startPoint11Intersection02"/>
+					</tensionBelt>
+					<tensionBelt startNode="startPoint12" endNode="startPoint12End" offsetRight="0.2">
+						<intersectionNode node="startPoint12Intersection01"/>
+						<intersectionNode node="startPoint12Intersection02"/>
+					</tensionBelt>
+					<sounds>
+						<toggleBelt template="beltClose"/>
+						<addBelt template="beltOpen"/>
+						<removeBelt template="beltClose"/>
+					</sounds>
+				</tensionBelts>
+			</tensionBeltsConfiguration>
+		</tensionBeltsConfigurations>
+	</tensionBelts>
+	<foliageBending>
+		<bendingNode minX="-1.3" maxX="1.3" minZ="-6.9" maxZ="3.1" yOffset="0.5"/>
+		<bendingNode minX="-1.32" maxX="1.32" minZ="3.05" maxZ="7" yOffset="1"/>
+	</foliageBending>
+	<baseMaterial>
+		<material name="profiLiner_mat" baseNode="profiLiner_vis">
+			<shaderParameter name="colorMat0" value="KRONE_BLUE5"/>
+			<shaderParameter name="colorMat1" value="0.9 0.9 0.9 0"/>
+		</material>
+		<material name="profiLinerAlpha_mat" baseNode="alpha">
+			<shaderParameter name="colorMat0" value="KRONE_BLUE5"/>
+			<shaderParameter name="colorMat1" value="0.9 0.9 0.9 0"/>
+		</material>
+		<material name="profiLinerCurtains_mat" baseNode="coverLeft_closed">
+			<shaderParameter name="colorMat0" value="0.9 0.9 0.9 0"/>
+			<shaderParameter name="colorMat1" value="0.85 0.85 0.85 0"/>
+		</material>
+	</baseMaterial>
+	<baseMaterialConfigurations price="600" useDefaultColors="true">
+		<material name="profiLinerCurtains_mat" shaderParameter="colorMat1"/>
+		<material name="profiLinerCurtains_mat" shaderParameter="colorMat0"/>
+		<baseMaterialConfiguration name="$l10n_ui_colorWhite" color="0.85 0.85 0.85 0"/>
+	</baseMaterialConfigurations>
+	<designMaterialConfigurations price="400" useDefaultColors="true" title="$l10n_configuration_chassisColor">
+		<material name="profiLiner_mat" shaderParameter="colorMat0"/>
+		<material name="profiLinerAlpha_mat" shaderParameter="colorMat0"/>
+		<designMaterialConfiguration name="$l10n_ui_colorBlack" color="SHARED_DA_METAL_BLACK"/>
+		<designMaterialConfiguration name="$l10n_ui_colorBlue" color="KRONE_BLUE5"/>
+	</designMaterialConfigurations>
+	<designMaterial2Configurations price="400" useDefaultColors="true">
+		<material name="profiLiner_mat" shaderParameter="colorMat1"/>
+		<material name="profiLinerAlpha_mat" shaderParameter="colorMat1"/>
+	</designMaterial2Configurations>
+	<designConfigurations>
+		<designConfiguration name="$l10n_configuration_valueDefault" price="0">
+			<objectChange node="configDecal_krone01" visibilityActive="false"/>
+			<objectChange node="configDecal_krone02" visibilityActive="false"/>
+			<objectChange node="configDecal_krone03" visibilityActive="false"/>
+			<objectChange node="configDecal_krone04" visibilityActive="false"/>
+			<objectChange node="configDecal_krone05" visibilityActive="false"/>
+			<objectChange node="configDecal_krone06" visibilityActive="false"/>
+			<objectChange node="configDecal_krone07" visibilityActive="false"/>
+			<objectChange node="configDecal_krone08" visibilityActive="false"/>
+			<objectChange node="configDecal_giants01" visibilityActive="false"/>
+			<objectChange node="configDecal_giants02" visibilityActive="false"/>
+			<objectChange node="configDecal_giants03" visibilityActive="false"/>
+			<objectChange node="configDecal_giants04" visibilityActive="false"/>
+			<objectChange node="configDecal_giants05" visibilityActive="false"/>
+			<objectChange node="configDecal_giants06" visibilityActive="false"/>
+			<objectChange node="configDecal_giants07" visibilityActive="false"/>
+			<objectChange node="configDecal_giants08" visibilityActive="false"/>
+		</designConfiguration>
+		<designConfiguration name="Krone" price="500" displayBrand="KRONETRAILER">
+			<objectChange node="configDecal_krone01" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_krone02" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_krone03" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_krone04" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_krone05" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_krone06" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_krone07" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_krone08" visibilityActive="true" visibilityInactive="false"/>
+			<material name="profiLinerCurtains_mat" shaderParameter="colorMat0" color="0.85 0.85 0.85 0"/>
+			<material name="profiLinerCurtains_mat" shaderParameter="colorMat1" color="0.85 0.85 0.85 0"/>
+		</designConfiguration>
+		<designConfiguration name="GIANTS" price="500" displayBrand="GIANTS">
+			<objectChange node="configDecal_giants01" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_giants02" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_giants03" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_giants04" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_giants05" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_giants06" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_giants07" visibilityActive="true" visibilityInactive="false"/>
+			<objectChange node="configDecal_giants08" visibilityActive="true" visibilityInactive="false"/>
+			<material name="profiLinerCurtains_mat" shaderParameter="colorMat0" color="0.85 0.85 0.85 0"/>
+			<material name="profiLinerCurtains_mat" shaderParameter="colorMat1" color="0.85 0.85 0.85 0"/>
+		</designConfiguration>
+	</designConfigurations>
+	<rimColorConfigurations useDefaultColors="false">
+		<rimColorConfiguration name="$l10n_ui_colorChrome" color="SHARED_WHITE2" material="3" price="6000"/>
+		<rimColorConfiguration name="$l10n_ui_colorGrey" color="SHARED_WHITE1" material="18" price="0"/>
+		<rimColorConfiguration name="$l10n_ui_colorWhite" color="SHARED_WHITE2" material="0" price="0"/>
+		<rimColorConfiguration name="$l10n_ui_colorBlack" color="SHARED_DA_METAL_BLACK" material="0" price="0"/>
+	</rimColorConfigurations>
+	<ai>
+		<agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4" width="2.7" height="4" length="13.9" lengthOffset="1.8"/>
+	</ai>
+	<wearable wearDuration="480" workMultiplier="6" fieldMultiplier="3"/>
+	<washable dirtDuration="90" washDuration="2" workMultiplier="4" fieldMultiplier="3"/>
+	<i3dMappings>
+		<i3dMapping id="profiLiner_main_component1" node="0>"/>
+		<i3dMapping id="profiLiner_vis" node="0>0"/>
+		<i3dMapping id="attacherJoint" node="0>0|0|0"/>
+		<i3dMapping id="supportArm" node="0>0|0|1"/>
+		<i3dMapping id="supportCol" node="0>0|0|1|0"/>
+		<i3dMapping id="electricCover" node="0>0|0|2|0"/>
+		<i3dMapping id="electric" node="0>0|0|2|1"/>
+		<i3dMapping id="airYellow" node="0>0|0|2|2"/>
+		<i3dMapping id="airRed" node="0>0|0|2|3"/>
+		<i3dMapping id="supportHandle" node="0>0|0|3"/>
+		<i3dMapping id="supportHandleArm" node="0>0|0|3|0"/>
+		<i3dMapping id="wheelFrontLeft" node="0>0|1|0"/>
+		<i3dMapping id="wheelFrontRight" node="0>0|1|1"/>
+		<i3dMapping id="wheelMiddleLeft" node="0>0|1|2"/>
+		<i3dMapping id="wheelMiddleRight" node="0>0|1|3"/>
+		<i3dMapping id="wheelBackLeft" node="0>0|1|4"/>
+		<i3dMapping id="wheelBackRight" node="0>0|1|5"/>
+		<i3dMapping id="extraWheel" node="0>0|1|6|0"/>
+		<i3dMapping id="wheelChock01_01" node="0>0|1|7"/>
+		<i3dMapping id="wheelChock01_02" node="0>0|1|8"/>
+		<i3dMapping id="sideMarker08White_02" node="0>0|2|0|0"/>
+		<i3dMapping id="sideMarker08White_01" node="0>0|2|0|1"/>
+		<i3dMapping id="sideMarker08Orange_08" node="0>0|2|0|2"/>
+		<i3dMapping id="sideMarker08Orange_07" node="0>0|2|0|3"/>
+		<i3dMapping id="sideMarker08Orange_06" node="0>0|2|0|4"/>
+		<i3dMapping id="sideMarker08Orange_05" node="0>0|2|0|5"/>
+		<i3dMapping id="sideMarker08Orange_04" node="0>0|2|0|6"/>
+		<i3dMapping id="sideMarker08Orange_03" node="0>0|2|0|7"/>
+		<i3dMapping id="sideMarker08Orange_02" node="0>0|2|0|8"/>
+		<i3dMapping id="sideMarker08Orange_01" node="0>0|2|0|9"/>
+		<i3dMapping id="hellaWorkingLightSquare_02_02" node="0>0|2|0|10"/>
+		<i3dMapping id="hellaWorkingLightSquare_02_01" node="0>0|2|0|11"/>
+		<i3dMapping id="yellowRound_02_02" node="0>0|2|0|12"/>
+		<i3dMapping id="yellowRound_02_01" node="0>0|2|0|13"/>
+		<i3dMapping id="sideMarker03_left" node="0>0|2|0|14"/>
+		<i3dMapping id="sideMarker03_right" node="0>0|2|0|15"/>
+		<i3dMapping id="defaultLight_static" node="0>0|2|1|0"/>
+		<i3dMapping id="brakelight_static" node="0>0|2|1|1"/>
+		<i3dMapping id="turnLightLeft_static" node="0>0|2|1|2"/>
+		<i3dMapping id="turnLightRight_static" node="0>0|2|1|3"/>
+		<i3dMapping id="reverseLight_static" node="0>0|2|1|4"/>
+		<i3dMapping id="numberPlateLightsGlass_static" node="0>0|2|1|5"/>
+		<i3dMapping id="backLightsHigh1" node="0>0|2|2|0"/>
+		<i3dMapping id="turnLightLeftBack" node="0>0|2|3|0"/>
+		<i3dMapping id="turnLightRightBack" node="0>0|2|3|1"/>
+		<i3dMapping id="reverseLightHigh1" node="0>0|2|4|0"/>
+		<i3dMapping id="licensePlateLightHigh" node="0>0|2|5"/>
+		<i3dMapping id="doorLeft" node="0>0|3|0"/>
+		<i3dMapping id="configDecal_krone01" node="0>0|3|0|0|0"/>
+		<i3dMapping id="configDecal_giants01" node="0>0|3|0|0|1"/>
+		<i3dMapping id="doorLeftLock01" node="0>0|3|0|1|2"/>
+		<i3dMapping id="doorLeftLock02" node="0>0|3|0|1|3"/>
+		<i3dMapping id="doorRight" node="0>0|3|1"/>
+		<i3dMapping id="configDecal_krone02" node="0>0|3|1|0|0"/>
+		<i3dMapping id="configDecal_giants02" node="0>0|3|1|0|1"/>
+		<i3dMapping id="doorRightLock01" node="0>0|3|1|1|3"/>
+		<i3dMapping id="doorRightLock02" node="0>0|3|1|1|4"/>
+		<i3dMapping id="coverLeft_closed" node="0>0|3|2|0"/>
+		<i3dMapping id="configDecal_krone03" node="0>0|3|2|0|0|0"/>
+		<i3dMapping id="configDecal_giants03" node="0>0|3|2|0|0|1"/>
+		<i3dMapping id="coverRight_closed" node="0>0|3|2|1"/>
+		<i3dMapping id="configDecal_krone04" node="0>0|3|2|1|0|0"/>
+		<i3dMapping id="configDecal_giants04" node="0>0|3|2|1|0|1"/>
+		<i3dMapping id="coverLeft_openFront" node="0>0|3|2|2"/>
+		<i3dMapping id="configDecal_krone05" node="0>0|3|2|2|0|0"/>
+		<i3dMapping id="configDecal_giants05" node="0>0|3|2|2|0|1"/>
+		<i3dMapping id="coverLeft_openBack" node="0>0|3|2|3"/>
+		<i3dMapping id="configDecal_krone06" node="0>0|3|2|3|0|0"/>
+		<i3dMapping id="configDecal_giants06" node="0>0|3|2|3|0|1"/>
+		<i3dMapping id="coverRight_openFront" node="0>0|3|2|4"/>
+		<i3dMapping id="configDecal_giants07" node="0>0|3|2|4|0|0"/>
+		<i3dMapping id="configDecal_krone07" node="0>0|3|2|4|0|1"/>
+		<i3dMapping id="coverRight_openBack" node="0>0|3|2|5"/>
+		<i3dMapping id="configDecal_krone08" node="0>0|3|2|5|0|0"/>
+		<i3dMapping id="configDecal_giants08" node="0>0|3|2|5|0|1"/>
+		<i3dMapping id="barLeft01" node="0>0|3|3"/>
+		<i3dMapping id="barLeft02" node="0>0|3|4"/>
+		<i3dMapping id="barLeft03" node="0>0|3|5"/>
+		<i3dMapping id="barRight01" node="0>0|3|6"/>
+		<i3dMapping id="barRight02" node="0>0|3|7"/>
+		<i3dMapping id="barRight03" node="0>0|3|8"/>
+		<i3dMapping id="planksLeftFolded" node="0>0|3|9"/>
+		<i3dMapping id="planksLeftUnfolded" node="0>0|3|10"/>
+		<i3dMapping id="planksRightFolded" node="0>0|3|11"/>
+		<i3dMapping id="planksRightUnfolded" node="0>0|3|12"/>
+		<i3dMapping id="colPartLeft01" node="0>0|3|13|0"/>
+		<i3dMapping id="colPartLeft02" node="0>0|3|13|1"/>
+		<i3dMapping id="colPartLeft03" node="0>0|3|13|2"/>
+		<i3dMapping id="colPartLeft04" node="0>0|3|13|3"/>
+		<i3dMapping id="colPartLeft05" node="0>0|3|13|4"/>
+		<i3dMapping id="colPartLeft06" node="0>0|3|13|5"/>
+		<i3dMapping id="colPartRight01" node="0>0|3|13|6"/>
+		<i3dMapping id="colPartRight02" node="0>0|3|13|7"/>
+		<i3dMapping id="colPartRight03" node="0>0|3|13|8"/>
+		<i3dMapping id="colPartRight04" node="0>0|3|13|9"/>
+		<i3dMapping id="colPartRight05" node="0>0|3|13|10"/>
+		<i3dMapping id="colPartRight06" node="0>0|3|13|11"/>
+		<i3dMapping id="tensionBelts" node="0>0|4"/>
+		<i3dMapping id="startPoint01" node="0>0|4|0"/>
+		<i3dMapping id="startPoint01End" node="0>0|4|0|0"/>
+		<i3dMapping id="startPoint01Intersection01" node="0>0|4|0|1"/>
+		<i3dMapping id="startPoint01Intersection02" node="0>0|4|0|2"/>
+		<i3dMapping id="startPoint02" node="0>0|4|1"/>
+		<i3dMapping id="startPoint02End" node="0>0|4|1|0"/>
+		<i3dMapping id="startPoint02Intersection01" node="0>0|4|1|1"/>
+		<i3dMapping id="startPoint02Intersection02" node="0>0|4|1|2"/>
+		<i3dMapping id="startPoint03" node="0>0|4|2"/>
+		<i3dMapping id="startPoint03End" node="0>0|4|2|0"/>
+		<i3dMapping id="startPoint03Intersection01" node="0>0|4|2|1"/>
+		<i3dMapping id="startPoint03Intersection02" node="0>0|4|2|2"/>
+		<i3dMapping id="startPoint04" node="0>0|4|3"/>
+		<i3dMapping id="startPoint04End" node="0>0|4|3|0"/>
+		<i3dMapping id="startPoint04Intersection01" node="0>0|4|3|1"/>
+		<i3dMapping id="startPoint04Intersection02" node="0>0|4|3|2"/>
+		<i3dMapping id="startPoint05" node="0>0|4|4"/>
+		<i3dMapping id="startPoint05End" node="0>0|4|4|0"/>
+		<i3dMapping id="startPoint05Intersection01" node="0>0|4|4|1"/>
+		<i3dMapping id="startPoint05Intersection02" node="0>0|4|4|2"/>
+		<i3dMapping id="startPoint06" node="0>0|4|5"/>
+		<i3dMapping id="startPoint06End" node="0>0|4|5|0"/>
+		<i3dMapping id="startPoint06Intersection01" node="0>0|4|5|1"/>
+		<i3dMapping id="startPoint06Intersection02" node="0>0|4|5|2"/>
+		<i3dMapping id="startPoint07" node="0>0|4|6"/>
+		<i3dMapping id="startPoint07End" node="0>0|4|6|0"/>
+		<i3dMapping id="startPoint07Intersection01" node="0>0|4|6|1"/>
+		<i3dMapping id="startPoint07Intersection02" node="0>0|4|6|2"/>
+		<i3dMapping id="startPoint08" node="0>0|4|7"/>
+		<i3dMapping id="startPoint08End" node="0>0|4|7|0"/>
+		<i3dMapping id="startPoint08Intersection01" node="0>0|4|7|1"/>
+		<i3dMapping id="startPoint08Intersection02" node="0>0|4|7|2"/>
+		<i3dMapping id="startPoint09" node="0>0|4|8"/>
+		<i3dMapping id="startPoint09End" node="0>0|4|8|0"/>
+		<i3dMapping id="startPoint09Intersection01" node="0>0|4|8|1"/>
+		<i3dMapping id="startPoint09Intersection02" node="0>0|4|8|2"/>
+		<i3dMapping id="startPoint10" node="0>0|4|9"/>
+		<i3dMapping id="startPoint10End" node="0>0|4|9|0"/>
+		<i3dMapping id="startPoint10Intersection01" node="0>0|4|9|1"/>
+		<i3dMapping id="startPoint10Intersection02" node="0>0|4|9|2"/>
+		<i3dMapping id="startPoint11" node="0>0|4|10"/>
+		<i3dMapping id="startPoint11End" node="0>0|4|10|0"/>
+		<i3dMapping id="startPoint11Intersection01" node="0>0|4|10|1"/>
+		<i3dMapping id="startPoint11Intersection02" node="0>0|4|10|2"/>
+		<i3dMapping id="startPoint12" node="0>0|4|11"/>
+		<i3dMapping id="startPoint12End" node="0>0|4|11|0"/>
+		<i3dMapping id="startPoint12Intersection01" node="0>0|4|11|1"/>
+		<i3dMapping id="startPoint12Intersection02" node="0>0|4|11|2"/>
+		<i3dMapping id="beltActivationTrigger" node="0>0|4|12"/>
+		<i3dMapping id="alpha" node="0>0|5|0"/>
+		<i3dMapping id="licensePlateBack" node="0>0|6"/>
+		<i3dMapping id="exactFillRoot" node="0>0|5|4"/>
+	</i3dMappings>
+</vehicle>

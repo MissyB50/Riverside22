@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Doormat Model" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+    <File fileId="1" filename="textures/mat.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="mat" materialId="5" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="doorMat.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="doorMat" nodeId="9">
+        <Shape shapeId="1" name="doorMat" static="true" clipDistance="500" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="sleep" nodeId="11">
+          <Shape shapeId="2" name="sleepTrigger" static="true" trigger="true" collisionMask="1048576" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Camera name="sleepCameraNode" translation="-0.416316 3.41707 0.364212" rotation="-78.233 -28.4934 5.46437e-07" nodeId="13" fov="54.4322" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+          <TransformGroup name="sleepTriggerMarker" translation="0 0.8 0" nodeId="14"/>
+          <TransformGroup name="spawnPoint" translation="0 1 1" rotation="0 -90 0" nodeId="15"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="16">
+          <TransformGroup name="clearAreaStart1" translation="-0.85 0 -0.65" nodeId="17">
+            <TransformGroup name="clearAreaWidth1" translation="0 0 1.3" nodeId="18"/>
+            <TransformGroup name="clearAreaHeight1" translation="1.7 0 0" nodeId="19"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="20">
+          <TransformGroup name="levelAreaStart1" translation="-0.85 0 -0.65" nodeId="21">
+            <TransformGroup name="levelAreaWidth1" translation="0 0 1.3" nodeId="22"/>
+            <TransformGroup name="levelAreaHeight1" translation="1.7 0 0" nodeId="23"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="24">
+          <TransformGroup name="indoorAreaStart1" translation="-0.6 0 -0.3" nodeId="25">
+            <TransformGroup name="indoorAreaWidth1" translation="0 0 0.65" nodeId="26"/>
+            <TransformGroup name="indoorAreaHeight1" translation="1.2 0 0" nodeId="27"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="28">
+          <TransformGroup name="tipOcclusionUpdateAreaStart1" translation="-0.8 0 -0.6" nodeId="29">
+            <TransformGroup name="tipOcclusionUpdateAreaEnd1" translation="1.6 0 1.2" nodeId="30"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="31">
+          <TransformGroup name="testAreaStart1" translation="-0.8 0 -0.6" nodeId="32">
+            <TransformGroup name="testAreaEnd1" translation="1.6 0 1.1" nodeId="33"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="SnowMask" nodeId="34">
+          <TransformGroup name="winter" nodeId="35"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

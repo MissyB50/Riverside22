@@ -1245,7 +1245,7 @@
         </fillType>
 
         <fillType name="DONUT" title="DONUT" showOnPriceTable="true">
-            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <physics massPerLiter="0.45" maxPhysicalSurfaceAngle="38" />
             <economy pricePerLiter="1.65">
                 <factors>
                     <factor period="1"  value="0.99" />

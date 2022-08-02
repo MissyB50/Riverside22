@@ -1,17 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <map width="2048" height="2048" imageFilename="maps/overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
     <filename>maps/map.i3d</filename>
-    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
-    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
-    <textureMemoryUsage>0</textureMemoryUsage>
 
     <culling xzOffset="100" />
     <densityMap revision="1" />
     <terrainLodTexture revision="1" />
-    <splitShapes revision="1" />
-    <tipCollision revision="1" />
-    <placementCollision revision="1" />
-    <navigationCollision revision="1" />
+    <splitShapes revision="2" />
+    <tipCollision revision="2" />
+    <placementCollision revision="2" />
+    <navigationCollision revision="4" />
 
     <shop filename="maps/shop.xml" />
     <storeItems filename="$data/maps/mapFR/storeItems.xml" />
@@ -31,7 +28,14 @@
     <npcs filename="$data/maps/mapFR/npcs.xml" />
     <!-- <helpers filename="$data/maps/maps_helpers.xml" /> -->
     
+    <guidedTour filename="$data/maps/mapFR/guidedTour.xml" />
+    
     <helpline filename="$dataS/helpLine.xml">
+        <trigger position="665 65 434"  categoryIndex="2" pageIndex="2" /> <!-- improving yield -->
+        <trigger position="608 65 472"  categoryIndex="8" pageIndex="2" /> <!-- build mode -->
+        <trigger position="-225 69.2 221" categoryIndex="6" pageIndex="1" /> <!-- animals -->
+        <trigger position="622 65 110"    categoryIndex="1" pageIndex="2" /> <!-- shop -->
+        <trigger position="-669 131.2 -559" categoryIndex="4" pageIndex="7" /> <!-- grape -->
     </helpline>
     
     <missionVehicles filename="$dataS/missionVehicles.xml" />
@@ -39,6 +43,7 @@
     <licensePlates filename="$data/maps/mapFR/licensePlates/licensePlatesFR.xml" />
     
     <gameplayHints filename="$dataS/gameplayHints.xml" />
+    <collectibles filename="$data/maps/mapFR/collectibles.xml" />
 
     <hotspots>
         <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="139 -258" teleportWorldPosition="139 60 -258" />
@@ -47,10 +52,10 @@
 
     <!-- <competitiveMultiplayer filename="$data/maps/mapFR/competitiveMultiplayer.xml" /> -->
         <fillTypes filename="maps/maps_fillTypes.xml" />
-        <fruitTypes filename="maps/maps_fruitTypes.xml" />
     <!-- <sprayTypes filename="$data/maps/mapFR/maps_sprayTypes.xml" /> -->
+    <!-- <fruitTypes filename="$data/maps/mapFR/maps_fruitTypes.xml" /> -->
     <!-- <treeTypes filename="$data/maps/mapFR/maps_treeTypes.xml" /> -->
-        <densityMapHeightTypes filename="maps/maps_densityMapHeightTypes.xml" />
+    <!-- <densityMapHeightTypes filename="$data/maps/mapFR/maps_densityMapHeightTypes.xml" /> -->
 
     <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
     <bales filename="$data/maps/maps_bales.xml"/>
@@ -63,31 +68,12 @@
         <additionalFile filename="$data/effects/effects.xml" />
     </additionalFiles>
 
-    <precisionFarming>
-        <soilMap filename="maps/data/infoLayer_soilMap.grle"/>
-
-        <fruitRequirements>
-            <fruitRequirement fruitTypeName="onion" alwaysAllowFertilization="false" ignoreOverfertilization="false">
-                <soil soilTypeIndex="1" targetLevel="110" reduction="110" yieldPotential="0.8"/>
-                <soil soilTypeIndex="2" targetLevel="150" reduction="130" yieldPotential="1.0"/>
-                <soil soilTypeIndex="3" targetLevel="170" reduction="150" yieldPotential="1.25"/>
-                <soil soilTypeIndex="4" targetLevel="130" reduction="130" yieldPotential="0.9"/>
-            </fruitRequirement>
-            <fruitRequirement fruitTypeName="carrot" alwaysAllowFertilization="false" ignoreOverfertilization="false">
-                <soil soilTypeIndex="1" targetLevel="140" reduction="120" yieldPotential="0.8"/>
-                <soil soilTypeIndex="2" targetLevel="160" reduction="140" yieldPotential="1.0"/>
-                <soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
-                <soil soilTypeIndex="4" targetLevel="130" reduction="130" yieldPotential="0.9"/>
-            </fruitRequirement>
-        </fruitRequirements>
-    </precisionFarming>
-
     <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
     <decoFoliages>
         <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
         <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
         <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
-        <decoFoliage layerName="grass" startChannel="0" numChannels="4" mowable="true"/>
+
         <mapping name="grassShort" layerName="decoFoliage" state="1" />
     </decoFoliages>
 
@@ -114,9 +100,5 @@
         <groundTypeMapping type="grass_dry"      title="$l10n_groundType_grassDry" layer="GRASS_DIRT" />
         <groundTypeMapping type="rock"           title="$l10n_groundType_rock" layer="ROCK" />
         <groundTypeMapping type="rock_granite"   title="$l10n_groundType_rockGranite" layer="ROCK_DARK" />
-        <groundTypeMapping type="cobblestone"    title="Cobblestone" layer="COBBLESTONE" />
-        <groundTypeMapping type="concrete_bricks" title="Concrete Brick" layer="CONCRETE_BRICKS" />
-        <groundTypeMapping type="concrete_tiles"  title="Concrete Tiles" layer="CONCRETE_TILES" />
-        <groundTypeMapping type="asphalt_rough"   title="Asphalt Rough" layer="ASPHALT_ROUGH" />
     </groundTypeMappings>
 </map>
