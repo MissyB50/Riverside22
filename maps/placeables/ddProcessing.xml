@@ -116,8 +116,6 @@
             <production id="DEF Processing" name="Diesel Exhaust Fluid" cyclesPerHour="200" costsPerActiveHour="15">
                 <inputs>
                     <input fillType="DEIONISED_WATER" amount="4" />
-                </inputs>
-                <inputs>
                     <input fillType="UREA_FERTILIZER" amount="2" />
                 </inputs>
                 <outputs>
@@ -149,12 +147,12 @@
 
         <playerTrigger node="playerTrigger" />
 
-</productionPoint>
+    </productionPoint>
 	
-        <sounds>
-            <idle template="oilPlantIdle" linkNode="0>" volumeScale="0.3"/>
-            <active template="oilPlantWork" linkNode="0>" volumeScale="0.5"/>
-        </sounds>
+    <sounds>
+        <idle template="oilPlantIdle" linkNode="0>" volumeScale="0.3"/>
+        <active template="oilPlantWork" linkNode="0>" volumeScale="0.5"/>
+    </sounds>
 
     <i3dMappings>
         <i3dMapping id="testArea1Start" node="0>0|0" />
