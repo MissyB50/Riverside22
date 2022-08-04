@@ -36,7 +36,7 @@
     <licensePlates filename="$data/maps/mapFR/licensePlates/licensePlatesFR.xml" />
     
     <gameplayHints filename="$dataS/gameplayHints.xml" />
-    <collectibles filename="$data/maps/mapFR/collectibles.xml" />
+    <collectibles filename="maps/collectibles.xml" />
 
     <hotspots>
         <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="139 -258" teleportWorldPosition="139 60 -258" />
