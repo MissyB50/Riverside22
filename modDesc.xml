@@ -171,7 +171,6 @@ Skräddarsydd kalktillverkning.</sw>
         <storeItem xmlFilename="maps/placeables/wash3.xml"/>
         <storeItem xmlFilename="maps/placeables/wash4.xml"/>
         <storeItem xmlFilename="maps/placeables/silo300.xml"/>
-        <storeItem xmlFilename="maps/placeables/siloFarm3.xml"/>
         <storeItem xmlFilename="maps/placeables/bga.xml"/>
         <storeItem xmlFilename="maps/placeables/siloCattle.xml"/>
         <storeItem xmlFilename="maps/placeables/siloPig.xml"/>

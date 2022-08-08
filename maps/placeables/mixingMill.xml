@@ -178,7 +178,9 @@
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN POTATO SUGARBEET MAIZE STRAW MINERAL_FEED GRASS_WINDROW CHAFF FERTILIZER DIGESTATE MANURE LIQUIDMANURE SILAGE DRYGRASS_WINDROW"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN POTATO SUGARBEET MAIZE STRAW MINERAL_FEED GRASS_WINDROW CHAFF FERTILIZER DIGESTATE MANURE LIQUIDMANURE SILAGE DRYGRASS_WINDROW">
+            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
+			</unloadTrigger>
         </sellingStation>
 
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="5">
@@ -217,5 +219,6 @@
         <i3dMapping id="teleportNode" node="0>5" />
         <i3dMapping id="playerTrigger" node="0>6|0" />
         <i3dMapping id="playerTriggerMarker" node="0>6|0|0" />
+        <i3dMapping id="baleTrigger" node="0>3|2"/>
     </i3dMappings>
 </placeable>

@@ -15,7 +15,9 @@
   <Materials>
     <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="UnnamedMaterial" materialId="27" diffuseColor="1 1 1 1">
+    <Material name="UnnamedMaterial" materialId="5" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="28" diffuseColor="1 1 1 1">
     </Material>
     <Material name="warningStripes_mat" materialId="6">
       <Texture fileId="3"/>
@@ -33,43 +35,50 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="ddfProcessing" nodeId="14">
-        <TransformGroup name="testAreas" nodeId="15">
-          <TransformGroup name="testArea1Start" translation="-10.5 0 -21" nodeId="16">
-            <TransformGroup name="testArea1End" translation="25 13 44.3" nodeId="17"/>
+      <TransformGroup name="ddfProcessing" nodeId="15">
+        <TransformGroup name="testAreas" nodeId="16">
+          <TransformGroup name="testArea1Start" translation="-10.5 0 -21" nodeId="17">
+            <TransformGroup name="testArea1End" translation="25 13 44.3" nodeId="18"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="18">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-10.5 0 -21" nodeId="19">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="25 0 44.3" nodeId="20"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="19">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-10.5 0 -21" nodeId="20">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="25 0 44.3" nodeId="21"/>
           </TransformGroup>
         </TransformGroup>
-        <Shape shapeId="1" name="infoTrigger" static="true" trigger="true" collisionMask="1048576" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <TransformGroup name="sellingStation" nodeId="22">
-          <Shape shapeId="2" name="unloadTrigger" translation="-6.85016 0 13.728" static="true" trigger="true" collisionMask="1073741824" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
-            <TransformGroup name="unloadTriggerMarker" nodeId="24"/>
+        <Shape shapeId="1" name="infoTrigger" static="true" trigger="true" collisionMask="1048576" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="sellingStation" nodeId="23">
+          <Shape shapeId="2" name="unloadTrigger" translation="-6.85 0 13.728" static="true" trigger="true" collisionMask="1073741824" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="unloadTriggerMarker" nodeId="25"/>
           </Shape>
-          <TransformGroup name="unloadTriggerAINode" translation="-7.7977 0 13.7358" rotation="0 90 0" nodeId="25"/>
-          <Shape shapeId="3" name="aiSpline" translation="0.427359 0 13.6858" visibility="false" nodeId="26"/>
+          <TransformGroup name="unloadTriggerAINode" translation="-7.7977 0 13.7358" rotation="0 90 0" nodeId="26"/>
+          <Shape shapeId="3" name="aiSpline" translation="0.427359 0 13.6858" visibility="false" nodeId="27"/>
+          <Shape shapeId="4" name="baleTrigger" translation="-6.85 2.5 13.728" rotation="0 -4.37897e-13 0" static="true" trigger="true" collisionMask="16777216" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
-        <TransformGroup name="loadingStation" nodeId="28">
-          <TransformGroup name="loadingTriggers" nodeId="29">
-            <Shape shapeId="4" name="loadingTrigger" translation="7.536 0 13.7672" scale="2 1 2" static="true" trigger="true" collisionMask="1073741824" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-            <TransformGroup name="dischargeNode" translation="7.536 0 13.7672" nodeId="31"/>
-            <TransformGroup name="aiLoadingNode" translation="7.536 0 13.7672" rotation="0 -90 0" nodeId="32"/>
+        <TransformGroup name="loadingStation" nodeId="30">
+          <TransformGroup name="loadingTriggers" nodeId="31">
+            <Shape shapeId="5" name="loadingTrigger" translation="7.536 0 13.7672" scale="2 1 2" static="true" trigger="true" collisionMask="1073741824" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="7.536 0 13.7672" nodeId="33"/>
+            <TransformGroup name="aiLoadingNode" translation="7.536 0 13.7672" rotation="0 -90 0" nodeId="34"/>
           </TransformGroup>
-          <TransformGroup name="markerLoading" translation="7.63242 0 14.4249" rotation="0 -90 0" nodeId="33"/>
+          <TransformGroup name="markerLoading" translation="7.63242 0 14.4249" rotation="0 -90 0" nodeId="35"/>
         </TransformGroup>
-        <TransformGroup name="productionPoint" nodeId="34">
-          <Shape shapeId="5" name="playerTrigger" translation="1.39199 1.33133 4.56756" static="true" trigger="true" collisionMask="1048576" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
-            <TransformGroup name="playerTriggerMarker" nodeId="36"/>
+        <TransformGroup name="productionPoint" nodeId="36">
+          <Shape shapeId="6" name="playerTrigger" translation="1.39199 1.33133 4.56756" static="true" trigger="true" collisionMask="1048576" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" nodeId="38"/>
           </Shape>
-          <TransformGroup name="teleportNode" translation="5.20687 0 16.3374" nodeId="37"/>
+          <TransformGroup name="teleportNode" translation="5.20687 0 16.3374" nodeId="39"/>
         </TransformGroup>
-        <TransformGroup name="warningStripes" nodeId="38">
-          <Shape shapeId="6" name="warningStripes_loadUnloadArea" translation="-6.99602 0.01 14.008" clipDistance="300" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="warningStripes" nodeId="40">
+          <Shape shapeId="7" name="warningStripes_loadUnloadArea" translation="-6.99602 0.01 14.008" clipDistance="300" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
       </TransformGroup>
   </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="29">
+      <Attribute name="onCreate" type="scriptCallback" value="BaleDestroyerTrigger.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
 
 </i3D>

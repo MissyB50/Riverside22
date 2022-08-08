@@ -137,7 +137,9 @@
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FERTILIZER SUNFLOWER WATER CANOLA SILAGE UREA_FERTILIZER DEIONISED_WATER"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FERTILIZER SUNFLOWER WATER CANOLA SILAGE UREA_FERTILIZER DEIONISED_WATER">
+            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
+			</unloadTrigger>
         </sellingStation>
 
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="5">
@@ -173,5 +175,6 @@
         <i3dMapping id="playerTriggerMarker" node="0>5|0|0" />
         <i3dMapping id="teleportNode" node="0>5|1" />
         <i3dMapping id="warningStripes" node="0>6" />
+        <i3dMapping id="baleTrigger" node="0>3|3"/>
     </i3dMappings>
 </placeable>
